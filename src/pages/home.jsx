@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar.jsx";
 import logoImg from "../assets/lotm_logo.webp"; // Import the image
-import { SectionDropdown, selection } from "../components/sectionDropdown.jsx";
+import { SectionDropdown } from "../components/sectionDropdown.jsx";
 
 export default function Home() {
   return (
@@ -23,8 +23,6 @@ export default function Home() {
                 haven't reached yet.
               </p>
               <SectionDropdown
-                selectedSection={selectedSection}
-                onSectionChange={setSelectedSection}
               />
             </div>
           </div>
