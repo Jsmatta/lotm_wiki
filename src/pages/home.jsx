@@ -15,13 +15,13 @@ export default function Home() {
       <Navbar />
       <main className="bg-base-300 w-full min-h-screen">
         <div className="hero bg-base-300 min-h-screen flex flex-col justify-center px-4 -mt-20">
-          <div className="hero-content text-cente border border-primary rounded-lg p-8 flex-col lg:flex-row-reverse gap-12 bg-base-100 shadow-lg">
-            <img
-              src={logoImg}
-              className="max-w-sm rounded-lg shadow-2xl border-4 border-primary"
-            />
-            <div className="max-w-3xl">
-              <h1 className="text-5xl font-bold">LOTM Wiki</h1>
+          <div className="hero-content text-center border border-primary rounded-lg p-4 md:p-8 flex-col lg:flex-row-reverse gap-6 lg:gap-12 bg-base-100 shadow-lg">
+             <img
+               src={logoImg}
+               className="w-full max-w-sm rounded-lg shadow-2xl border-4 border-primary"
+             />
+             <div className="w-full max-w-3xl">
+               <h1 className="text-4xl md:text-5xl font-bold">LOTM Wiki</h1>
                <p className="py-5  w-full">
                  Welcome to the LOTM Wiki! Your ultimate resource for everything
                  related to the Lord of the Mysteries series. Dive into detailed

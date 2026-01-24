@@ -1,4 +1,5 @@
 import { useState } from "preact/hooks";
+import { createPortal } from "preact/compat";
 
 export const volumes = [
   "Introduction",
@@ -22,50 +23,36 @@ export function useVolumeSelector(initialVolume = 0) {
   };
 }
 
-export function VolumeDropdown({ selectedVolume, onVolumeChange }) {
-  //change the volume
-  const handleVolumeChange = (index) => {
-  onVolumeChange(index);
-  document.activeElement?.blur(); // 👈 closes the dropdown
-};
+export function VolumeDropdown({ isOpen, onClose, selectedVolume, onVolumeChange }) {
+  const handleVolumeChange = (volume) => {
+    if (onVolumeChange) onVolumeChange(volume);
+    onClose();
+  };
 
-  return (
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h7"
-          />
-        </svg>
+  if (!isOpen) return null;
+
+  return createPortal(
+    <div className="modal modal-open z-1000 " onClick={onClose}>
+      <div className="modal-box w-11/12 max-w-md border border-accent" onClick={(e) => e.stopPropagation()}>
+        <h3 className="font-bold text-lg">Select Volume</h3>
+        <ul className="menu bg-base-100 rounded-box w-full">
+          {volumes.map((volume, index) => (
+            <li key={index}>
+              <a
+                onClick={() => handleVolumeChange(index)}
+                className={selectedVolume === index ? "active" : ""}
+              >
+                {volume}
+                {selectedVolume === index && " ✓"}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="modal-action">
+          <button className="btn" onClick={onClose}>Close</button>
+        </div>
       </div>
-      <ul
-        tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 border border-accent rounded-xl z-50 w-52 p-2 shadow-2xl mt-4"
-      >
-        <li className="menu-title">
-          <span>Volumes</span>
-        </li>
-        {volumes.map((volume, index) => (
-          <li key={index}>
-            <a
-              onClick={() => handleVolumeChange(index)}
-              className={selectedVolume === index ? "active" : ""}
-            >
-              {volume}
-              {selectedVolume === index && " ✓"}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    </div>,
+    document.body
   );
 }

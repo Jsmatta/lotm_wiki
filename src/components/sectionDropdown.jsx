@@ -23,7 +23,7 @@ export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionCha
 
   return createPortal(
     <div className="modal modal-open z-1000" onClick={onClose}>
-      <div className="modal-box w-11/12 max-w-md" onClick={(e) => e.stopPropagation()}>
+      <div className="modal-box w-11/12 max-w-md border border-accent" onClick={(e) => e.stopPropagation()}>
         <h3 className="font-bold text-lg">Select Section</h3>
         <ul className="menu bg-base-100 rounded-box w-full">
           {sections.map((section, index) => (

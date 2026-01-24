@@ -12,6 +12,7 @@ export default function Navbar({ onVolumeChange }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedSection, setSelectedSection] = useState(sections[0]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isVolumeDropdownOpen, setIsVolumeDropdownOpen] = useState(false);
 
   const handleVolumeChange = (index) => {
     setSelectedVolume(index);
@@ -24,14 +25,26 @@ export default function Navbar({ onVolumeChange }) {
   return (
     <div className="flex top-4 left-4 right-4 max-w-[calc(100vw-2rem)] h-1 navbar bg-secondary-200 border border-accent shadow-2xl rounded-xl px-4 z-50 backdrop-blur-md bg-opacity-70 overflow-visible">
       <div className="navbar-start">
-        <VolumeDropdown
-          selectedVolume={selectedVolume}
-          onVolumeChange={handleVolumeChange}
-        />
+        <button onClick={() => setIsDropdownOpen(true)} className="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h7"
+            />
+          </svg>
+        </button>
       </div>
       <div className="navbar-center">
         <div className="flex flex-col items-center">
-          <button onClick={() => setIsDropdownOpen(true)} className="btn btn-ghost text-xl">LOTM Wiki</button>
+          <button onClick={() => setIsVolumeDropdownOpen(true)} className="btn btn-ghost text-xl">LOTM Wiki</button>
           <span className="text-sm">{volumes[selectedVolume]}</span>
         </div>
       </div>
@@ -51,6 +64,12 @@ export default function Navbar({ onVolumeChange }) {
         onClose={() => setIsDropdownOpen(false)}
         selectedSection={selectedSection}
         onSectionChange={handleSectionChange}
+      />
+      <VolumeDropdown
+        isOpen={isVolumeDropdownOpen}
+        onClose={() => setIsVolumeDropdownOpen(false)}
+        selectedVolume={selectedVolume}
+        onVolumeChange={handleVolumeChange}
       />
     </div>
   );
