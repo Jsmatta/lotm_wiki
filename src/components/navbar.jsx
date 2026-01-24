@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   useVolumeSelector,
   VolumeDropdown,
@@ -44,7 +45,7 @@ export default function Navbar({ onVolumeChange }) {
       </div>
       <div className="navbar-center">
         <div className="flex flex-col items-center">
-          <button onClick={() => setIsVolumeDropdownOpen(true)} className="btn btn-ghost text-xl">LOTM Wiki</button>
+          <Link onClick={() => setIsVolumeDropdownOpen(true)} className="btn btn-ghost text-xl">LOTM Wiki</Link>
           <span className="text-sm">{volumes[selectedVolume]}</span>
         </div>
       </div>
