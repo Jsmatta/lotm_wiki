@@ -8,7 +8,14 @@
     <script type="module">
       // GitHub Pages SPA redirect
       // Store the original path that caused the 404
-      sessionStorage.setItem('redirect', window.location.pathname + window.location.search + window.location.hash);
+      const currentPath = window.location.pathname + window.location.search + window.location.hash;
+      
+      // Handle direct access to paths without base path
+      if (currentPath.startsWith('/characters') || currentPath.startsWith('/pathways')) {
+        sessionStorage.setItem('redirect', '/lotm_wiki' + currentPath);
+      } else {
+        sessionStorage.setItem('redirect', currentPath);
+      }
       
       // Redirect to the main app
       window.location.replace('/lotm_wiki/');
