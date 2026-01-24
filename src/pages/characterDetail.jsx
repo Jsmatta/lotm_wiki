@@ -77,7 +77,7 @@ export default function CharacterDetail({ selectedVolume }) {
     <div className="min-h-screen">
       <main className="container mx-auto px-4 py-8">
         <div className="mb-6">
-          <Link to="/lotm_wiki/characters" className="btn btn-ghost btn-sm">
+          <Link to="/characters" className="btn btn-ghost btn-sm">
             ← Back to Characters
           </Link>
         </div>

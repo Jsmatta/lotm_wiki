@@ -23,13 +23,13 @@ export default function Home() {
               </p>
               <div className="flex gap-4 justify-center flex-wrap">
                 <Link
-                  to="/lotm_wiki/characters"
+                  to="/characters"
                   className="btn btn-primary normal-case text-base"
                 >
                   Characters
                 </Link>
                 <Link
-                  to="/lotm_wiki/pathways"
+                  to="/pathways"
                   className="btn btn-secondary normal-case text-base"
                 >
                   Pathways

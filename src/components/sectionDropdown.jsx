@@ -19,13 +19,13 @@ export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionCha
   const [activeSection, setActiveSection] = useState("Home");
 
   useEffect(() => {
-    // Determine active section based on current URL
+    // Determine active section based on current URL (HashRouter doesn't have full paths)
     const path = location.pathname;
-    if (path === "/" || path === "/lotm_wiki/" || path === "/lotm_wiki") {
+    if (path === "/") {
       setActiveSection("Home");
-    } else if (path === "/lotm_wiki/characters") {
+    } else if (path === "/characters") {
       setActiveSection("Characters");
-    } else if (path === "/lotm_wiki/pathways") {
+    } else if (path === "/pathways") {
       setActiveSection("Pathways");
     }
   }, [location.pathname]);
@@ -44,7 +44,7 @@ export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionCha
         <ul className="menu bg-base-100 rounded-box w-full">
           <li>
             <Link 
-              to="/lotm_wiki/" 
+              to="/" 
               onClick={() => handleSectionChange("Home")}
               className={activeSection === "Home" ? "active" : ""}
             >
@@ -53,7 +53,7 @@ export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionCha
           </li>
           <li>
             <Link 
-              to="/lotm_wiki/characters" 
+              to="/characters" 
               onClick={() => handleSectionChange("Characters")}
               className={activeSection === "Characters" ? "active" : ""}
             >
@@ -62,7 +62,7 @@ export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionCha
           </li>
           <li>
             <Link 
-              to="/lotm_wiki/pathways" 
+              to="/pathways" 
               onClick={() => handleSectionChange("Pathways")}
               className={activeSection === "Pathways" ? "active" : ""}
             >
