@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { parseMarkdown } from "../utils/markdown.js";
 import { getCharacterImages } from "../utils/characterImages.js";
+import { getCategoryFiles } from "../utils/markdownLoader.js";
 
 export default function Characters({ selectedVolume }) {
   const [characters, setCharacters] = useState([]);
@@ -10,18 +11,15 @@ export default function Characters({ selectedVolume }) {
   useEffect(() => {
     const loadData = async () => {
       try {
-        // Load character data
-        const characterFiles = [
-          () => import("../data/characters/klein_morreti.md?raw"),
-        ];
-        
-        const files = await Promise.all(characterFiles.map(module => module()));
+        // Load character data dynamically
+        const characterFiles = await getCategoryFiles('characters');
+        const files = Object.values(characterFiles).map(file => file.content);
         
         // Load images and create character data
         const imageMap = await getCharacterImages();
         
         const characterData = files.map((file, index) => {
-          const parsed = parseMarkdown(file.default, selectedVolume);
+          const parsed = parseMarkdown(file, selectedVolume);
           const characterFileName = parsed.name
             .toLowerCase()
             .replace(/\s+/g, '_')

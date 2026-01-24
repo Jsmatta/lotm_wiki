@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useVolumeSelector } from "../components/volumeSelector.jsx";
 import { filterByVolume, parseMarkdown } from "../utils/markdown.js";
+import { getCategoryFiles } from "../utils/markdownLoader.js";
 
 export default function Pathways() {
   const { selectedVolume } = useVolumeSelector();
@@ -8,16 +9,14 @@ export default function Pathways() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Import all pathway markdown files
-    const pathwayModules = [
-      () => import("../data/pathways/seer.md?raw"),
-      // Add more pathway files as needed
-    ];
-
-    Promise.all(pathwayModules.map(module => module()))
-      .then(files => {
+    const loadData = async () => {
+      try {
+        // Load pathway data dynamically
+        const pathwayFiles = await getCategoryFiles('pathways');
+        const files = Object.values(pathwayFiles).map(file => file.content);
+        
         const pathwayData = files.map((file, index) => {
-          const parsed = parseMarkdown(file.default, selectedVolume);
+          const parsed = parseMarkdown(file, selectedVolume);
           return {
             id: index,
             name: parsed.name,
@@ -29,12 +28,14 @@ export default function Pathways() {
         
         const filteredPathways = filterByVolume(pathwayData, selectedVolume);
         setPathways(filteredPathways);
-        setLoading(false);
-      })
-      .catch(error => {
+      } catch (error) {
         console.error("Error loading pathways:", error);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+
+    loadData();
   }, [selectedVolume]);
 
   if (loading) {
