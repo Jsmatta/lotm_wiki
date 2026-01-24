@@ -1,11 +1,29 @@
-import { useState } from "preact/hooks";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "preact/hooks";
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/home.jsx";
 import Characters from "./pages/characters.jsx";
 import Pathways from "./pages/pathways.jsx";
 import CharacterDetail from "./pages/characterDetail.jsx";
 import Navbar from "./components/navbar.jsx";
+
+function RedirectHandler() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  useEffect(() => {
+    const redirectPath = sessionStorage.getItem('redirect');
+    if (redirectPath && location.pathname === '/lotm_wiki/') {
+      sessionStorage.removeItem('redirect');
+      const targetPath = redirectPath.replace('/lotm_wiki', '');
+      if (targetPath !== '/') {
+        navigate(targetPath, { replace: true });
+      }
+    }
+  }, [navigate, location.pathname]);
+  
+  return null;
+}
 
 export function App() {
   // Get saved volume from localStorage, default to 0 if not found
@@ -34,6 +52,7 @@ export function App() {
       >
         <Navbar onVolumeChange={handleVolumeChange} selectedVolume={selectedVolume} />
         <div className="pt-20">
+          <RedirectHandler />
           <Routes>
             <Route
               path="/"
