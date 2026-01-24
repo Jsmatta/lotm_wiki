@@ -4,16 +4,21 @@ import {
   VolumeDropdown,
   volumes,
 } from "./volumeSelector.jsx";
-import { SectionDropdown } from "./sectionDropdown.jsx";
+import { SectionDropdown, sections } from "./sectionDropdown.jsx";
 import "../index.css";
 
 export default function Navbar({ onVolumeChange }) {
   const { selectedVolume, setSelectedVolume } = useVolumeSelector();
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedSection, setSelectedSection] = useState(sections[0]);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleVolumeChange = (index) => {
     setSelectedVolume(index);
     if (onVolumeChange) onVolumeChange(index);
+  };
+    const handleSectionChange = (section) => { 
+    setSelectedSection(section);
   };
 
   return (
@@ -26,13 +31,12 @@ export default function Navbar({ onVolumeChange }) {
       </div>
       <div className="navbar-center">
         <div className="flex flex-col items-center">
-          <a className="btn btn-ghost text-xl">LOTM Wiki</a>
-          <span className="text-sm">Volume: {volumes[selectedVolume]}</span>
+          <button onClick={() => setIsDropdownOpen(true)} className="btn btn-ghost text-xl">LOTM Wiki</button>
+          <span className="text-sm">{volumes[selectedVolume]}</span>
         </div>
       </div>
        <div className="navbar-end">
          <div className="flex gap-2">
-           <SectionDropdown />
            <input
              type="text"
              placeholder="Search"
@@ -40,8 +44,14 @@ export default function Navbar({ onVolumeChange }) {
              value={searchQuery}
              onChange={(e) => setSearchQuery(e.target.value)}
            />
-         </div>
-       </div>
+        </div>
+      </div>
+      <SectionDropdown
+        isOpen={isDropdownOpen}
+        onClose={() => setIsDropdownOpen(false)}
+        selectedSection={selectedSection}
+        onSectionChange={handleSectionChange}
+      />
     </div>
   );
 }
