@@ -11,10 +11,10 @@ export default function Home() {
     setSelectedSection(section);  };
 
   return (
-    <div>
+    <div className="bg-base-300 min-h-screen">
       <Navbar />
-      <main className="bg-base-300 w-full min-h-screen">
-        <div className="hero bg-base-300 min-h-screen flex flex-col justify-center px-4 -mt-20">
+      <main className="w-full">
+        <div className="hero min-h-screen flex flex-col justify-center px-4">
           <div className="hero-content text-center border border-primary rounded-lg p-4 md:p-8 flex-col lg:flex-row-reverse gap-6 lg:gap-12 bg-base-100 shadow-lg">
              <img
                src={logoImg}
