@@ -7,14 +7,11 @@
     <title>LOTM Wiki</title>
     <script type="module">
       // GitHub Pages SPA redirect
-      // Get the current path and redirect to index.html while preserving the URL
-      var path = window.location.pathname;
-      var search = window.location.search;
-      var hash = window.location.hash;
+      // Store the original path that caused the 404
+      sessionStorage.setItem('redirect', window.location.pathname + window.location.search + window.location.hash);
       
-      // Replace the 404 URL with the app's base URL + the original path
-      var newPath = '/lotm_wiki' + path.replace('/lotm_wiki/404.html', '') + search + hash;
-      window.location.replace(newPath);
+      // Redirect to the main app
+      window.location.replace('/lotm_wiki/');
     </script>
   </head>
   <body>
