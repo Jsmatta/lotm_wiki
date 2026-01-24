@@ -9,45 +9,41 @@ export default function CharacterDetail({ selectedVolume }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Import character markdown file based on id
-    const characterFiles = [
-      () => import("../data/characters/klein_morreti.md?raw"),
-      // Add more character files as needed
-    ];
-
-    const characterIndex = parseInt(id);
-    
-    if (characterIndex < characterFiles.length) {
-      characterFiles[characterIndex]()
-        .then(file => {
+    const loadCharacter = async () => {
+      try {
+        const characterFiles = [
+          () => import("../data/characters/klein_morreti.md?raw"),
+        ];
+        
+        const characterIndex = parseInt(id);
+        
+        if (characterIndex < characterFiles.length) {
+          const file = await characterFiles[characterIndex]();
           const parsed = parseMarkdown(file.default, selectedVolume);
+          const imageMap = await getCharacterImages();
           
-          // Load character images dynamically
-          getCharacterImages().then(imageMap => {
-            // Get character name from parsed data to match with image filenames
-            const characterFileName = parsed.name
-              .toLowerCase()
-              .replace(/\s+/g, '_')  // Replace spaces with underscores
-              .replace(/[^a-z0-9_]/g, ''); // Remove special characters
-              
-            setCharacter({
-              id: characterIndex,
-              name: parsed.name,
-              introducedInVolume: parsed.introducedInVolume,
-              category: parsed.category,
-              htmlContent: parsed.htmlContent,
-              image: imageMap[characterFileName] || imageMap[Object.keys(imageMap)[0]] // Fallback to first available image
-            });
-            setLoading(false);
+          const characterFileName = parsed.name
+            .toLowerCase()
+            .replace(/\s+/g, '_')
+            .replace(/[^a-z0-9_]/g, '');
+          
+          setCharacter({
+            id: characterIndex,
+            name: parsed.name,
+            introducedInVolume: parsed.introducedInVolume,
+            category: parsed.category,
+            htmlContent: parsed.htmlContent,
+            image: imageMap[characterFileName] || imageMap[Object.keys(imageMap)[0]]
           });
-        })
-        .catch(error => {
-          console.error("Error loading character:", error);
-          setLoading(false);
-        });
-    } else {
-      setLoading(false);
-    }
+        }
+      } catch (error) {
+        console.error("Error loading character:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadCharacter();
   }, [id, selectedVolume]);
 
   if (loading) {
@@ -80,14 +76,12 @@ export default function CharacterDetail({ selectedVolume }) {
   return (
     <div className="min-h-screen">
       <main className="container mx-auto px-4 py-8">
-        {/* Navigation */}
         <div className="mb-6">
           <Link to="/lotm_wiki/characters" className="btn btn-ghost btn-sm">
             ← Back to Characters
           </Link>
         </div>
 
-        {/* Character Header with Image */}
         <div className="bg-base-100/90 backdrop-blur-sm rounded-lg shadow-xl overflow-hidden mb-8">
           <div className="hero lg:hero-side-lg">
             <div className="hero-content flex-col lg:flex-row gap-8 p-8">
@@ -97,7 +91,7 @@ export default function CharacterDetail({ selectedVolume }) {
                     src={character.image}
                     alt={character.name}
                     className="w-full h-full object-cover"
-                   />
+                  />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
                     <div className="text-center">
@@ -111,17 +105,13 @@ export default function CharacterDetail({ selectedVolume }) {
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-4 mb-4">
-                  <h1 className="text-4xl lg:text-5xl font-bold">{character.name}</h1>
-                </div>
-                <div className="prose prose-lg max-w-none text-base-content/80">
-                  <p className="text-lg">Detailed information about {character.name} will be displayed here.</p>
+                  <h1 className="text-4xl lg:text-5xl font-bold border border-accent rounded-lg p-2">{character.name}</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Character Content */}
         <div className="bg-base-100/90 backdrop-blur-sm rounded-lg p-8 shadow-xl">
           <h2 className="text-2xl font-bold mb-6">Character Information</h2>
           <div 
