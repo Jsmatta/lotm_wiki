@@ -4,10 +4,22 @@ import "./index.css";
 import Home from "./pages/home.jsx";
 import Characters from "./pages/characters.jsx";
 import Pathways from "./pages/pathways.jsx";
+import CharacterDetail from "./pages/characterDetail.jsx";
 import Navbar from "./components/navbar.jsx";
 
 export function App() {
-  const [selectedVolume, setSelectedVolume] = useState(0);
+  // Get saved volume from localStorage, default to 0 if not found
+  const getSavedVolume = () => {
+    const saved = localStorage.getItem('selectedVolume');
+    return saved !== null ? parseInt(saved) : 0;
+  };
+  
+  const [selectedVolume, setSelectedVolume] = useState(getSavedVolume());
+
+  const handleVolumeChange = (volume) => {
+    setSelectedVolume(volume);
+    localStorage.setItem('selectedVolume', volume.toString());
+  };
 
   return (
     <Router>
@@ -20,7 +32,7 @@ export function App() {
           backgroundAttachment: "fixed"
         }}
       >
-        <Navbar onVolumeChange={setSelectedVolume} />
+        <Navbar onVolumeChange={handleVolumeChange} selectedVolume={selectedVolume} />
         <div className="pt-20">
           <Routes>
             <Route
@@ -36,16 +48,21 @@ export function App() {
               element={<Characters selectedVolume={selectedVolume} />}
             />
             <Route
+              path="/lotm_wiki/characters/:id"
+              element={<CharacterDetail selectedVolume={selectedVolume} />}
+            />
+            <Route
               path="/lotm_wiki/pathways"
               element={<Pathways selectedVolume={selectedVolume} />}
             />
+
           </Routes>
         </div>
         <footer className="footer sm:footer-horizontal footer-center bg-base-300/90 text-base-content p-4">
           <aside>
             <p>
               © 2026 Created by:  
-              <a href="https://github.com/jsmatta" target="_blank" rel="noopener noreferrer" className="underline">jsmatta</a>
+              <a href="https://github.com/jsmatta" target="_blank" rel="noopener noreferrer" className="underline italic">jsmatta</a>
             </p>
           </aside>
         </footer>

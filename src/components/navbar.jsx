@@ -1,22 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  useVolumeSelector,
   VolumeDropdown,
   volumes,
 } from "./volumeSelector.jsx";
 import { SectionDropdown, sections } from "./sectionDropdown.jsx";
 import "../index.css";
 
-export default function Navbar({ onVolumeChange }) {
-  const { selectedVolume, setSelectedVolume } = useVolumeSelector();
+export default function Navbar({ onVolumeChange, selectedVolume }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedSection, setSelectedSection] = useState(sections[0]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isVolumeDropdownOpen, setIsVolumeDropdownOpen] = useState(false);
 
   const handleVolumeChange = (index) => {
-    setSelectedVolume(index);
     if (onVolumeChange) onVolumeChange(index);
   };
     const handleSectionChange = (section) => { 
