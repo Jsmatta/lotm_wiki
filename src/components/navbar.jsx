@@ -4,6 +4,7 @@ import {
   VolumeDropdown,
   volumes,
 } from "./volumeSelector.jsx";
+import { SectionDropdown } from "./sectionDropdown.jsx";
 import "../index.css";
 
 export default function Navbar({ onVolumeChange }) {
@@ -29,17 +30,18 @@ export default function Navbar({ onVolumeChange }) {
           <span className="text-sm">Volume: {volumes[selectedVolume]}</span>
         </div>
       </div>
-      <div className="navbar-end">
-        <div className="flex gap-2">
-          <input
-            type="text"
-            placeholder="Search"
-            className="input input-bordered w-24 md:w-auto"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </div>
-      </div>
+       <div className="navbar-end">
+         <div className="flex gap-2">
+           <SectionDropdown />
+           <input
+             type="text"
+             placeholder="Search"
+             className="input input-bordered w-24 md:w-auto"
+             value={searchQuery}
+             onChange={(e) => setSearchQuery(e.target.value)}
+           />
+         </div>
+       </div>
     </div>
   );
 }

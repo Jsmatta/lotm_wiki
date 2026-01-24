@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { createPortal } from "preact/compat";
 
 export const sections = [
   "Characters",
@@ -10,32 +11,47 @@ export const sections = [
   "Sealed Artifacts"
 ];
 
-export function SectionDropdown({ selectedSection, onSectionChange }) { 
+export function SectionDropdown({ onSectionChange }) {
+  const [selectedSection, setSelectedSection] = useState(sections[0]);
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleSectionChange = (section) => {
-    onSectionChange(section);
+    setSelectedSection(section);
+    setIsOpen(false);
+    if (onSectionChange) onSectionChange(section);
   };
 
+  const closeModal = () => setIsOpen(false);
+
   return (
-    <div className="dropdown">
-      <button tabIndex={0} className="btn btn-primary normal-case text-base">
-        Sections ▼
+    <>
+      <button onClick={() => setIsOpen(true)} className="btn btn-primary normal-case text-base">
+        navigate
       </button>
-      <ul
-        tabIndex="-1"
-        className="dropdown-content menu bg-base-100 border border-accent rounded-xl z-50 w-52 p-2 shadow-2xl mt-2"
-      >
-        {sections.map((section, index) => (
-          <li key={index}>
-            <a
-              onClick={() => handleSectionChange(section)}
-              className={selectedSection === section ? "active" : ""}
-            >
-              {section}
-              {selectedSection === section && " ✓"}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+      {isOpen && createPortal(
+        <div className="modal modal-open z-1000" onClick={closeModal}>
+          <div className="modal-box w-11/12 max-w-md" onClick={(e) => e.stopPropagation()}>
+            <h3 className="font-bold text-lg">Select Section</h3>
+            <ul className="menu bg-base-100 rounded-box w-full">
+              {sections.map((section, index) => (
+                <li key={index}>
+                  <a
+                    onClick={() => handleSectionChange(section)}
+                    className={selectedSection === section ? "active" : ""}
+                  >
+                    {section}
+                    {selectedSection === section && " ✓"}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <div className="modal-action">
+              <button className="btn" onClick={closeModal}>Close</button>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
+    </>
   );
 }
