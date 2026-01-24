@@ -7,5 +7,6 @@ export default defineConfig({
     tailwindcss(),
     preact()
   ],
+  base: '/lotm_wiki/',
   assetsInclude: ['**/*.md']
 })
