@@ -80,7 +80,7 @@ export default function Characters({ selectedVolume }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {characters.map(character => (
               <Link key={character.id} to={`/lotm_wiki/characters/${character.id}`} className="block group">
-                <div className="card bg-base-100 border-accent shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+                <div className="card bg-base-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer border-2 border-accent hover:border-accent-focus">
                   <figure className="h-48 overflow-hidden bg-base-200">
                     {character.image ? (
                       <img
