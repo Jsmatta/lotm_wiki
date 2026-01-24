@@ -52,7 +52,9 @@ export default function Characters() {
   return (
     <div className="min-h-screen">
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-8">Characters</h1>
+        <div className="bg-base-100/90 backdrop-blur-sm rounded-lg p-6 shadow-xl mb-8">
+          <h1 className="text-4xl font-bold">Characters</h1>
+        </div>
         
         {characters.length === 0 ? (
           <div className="alert alert-info">
@@ -67,7 +69,7 @@ export default function Characters() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {characters.map(character => (
-              <div key={character.id} className="card bg-base-100 shadow-xl">
+              <div key={character.id} className="card bg-base-100/90 backdrop-blur-sm shadow-xl">
                 <div className="card-body">
                   <h2 className="card-title">
                     <a href={`/lotm_wiki/characters/${character.id}`} className="link link-primary">

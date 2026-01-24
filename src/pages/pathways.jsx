@@ -52,7 +52,9 @@ export default function Pathways() {
   return (
     <div className="min-h-screen">
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-8">Pathways</h1>
+        <div className="bg-base-100/90 backdrop-blur-sm rounded-lg p-6 shadow-xl mb-8">
+          <h1 className="text-4xl font-bold">Pathways</h1>
+        </div>
         
         {pathways.length === 0 ? (
           <div className="alert alert-info">
@@ -67,7 +69,7 @@ export default function Pathways() {
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {pathways.map(pathway => (
-              <div key={pathway.id} className="card bg-base-100 shadow-xl">
+              <div key={pathway.id} className="card bg-base-100/90 backdrop-blur-sm shadow-xl">
                 <div className="card-body">
                   <h2 className="card-title">{pathway.name}</h2>
                   <div className="badge badge-outline">Volume {pathway.introducedInVolume}</div>

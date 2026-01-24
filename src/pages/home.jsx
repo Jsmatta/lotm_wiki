@@ -4,15 +4,10 @@ import logoImg from "../assets/lotm_logo.webp"; // Import the image
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-screen bg-base-200 flex flex-col items-center pb-20 -mt-20">
-      <main className="w-full">
-        <div
-          className="hero min-h-screen flex flex-col justify-center px-4"
-          style={{
-            backgroundImage: "url(https://i.redd.it/wxd0v1ggbede1.jpeg)",
-          }}
-        >
-          <div className="hero-content text-center border border-primary rounded-lg p-4 md:p-8 flex-col lg:flex-row-reverse gap-6 lg:gap-12 bg-base-100 shadow-lg">
+    <div className="min-h-screen flex flex-col items-center justify-center">
+      <main className="w-full px-4">
+        <div className="hero min-h-screen flex flex-col justify-center">
+          <div className="hero-content text-center border border-primary rounded-lg p-4 md:p-8 flex-col lg:flex-row-reverse gap-6 lg:gap-12 bg-base-100/90 shadow-xl backdrop-blur-sm">
             <img
               src={logoImg}
               className="w-full max-w-sm rounded-lg shadow-2xl border-4 border-primary"
