@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { createPortal } from "preact/compat";
 
 export const sections = [
+  "Home",
+  "Volumes",
   "Characters",
   "Places",
   "Pathways",
   "Gods",
   "Organizations",
   "Spells",
-  "Sealed Artifacts"
+  "Sealed Artifacts",
 ];
 
 export function SectionDropdown({ onSectionChange }) {

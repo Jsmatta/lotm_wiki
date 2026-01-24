@@ -25,8 +25,9 @@ export function useVolumeSelector(initialVolume = 0) {
 export function VolumeDropdown({ selectedVolume, onVolumeChange }) {
   //change the volume
   const handleVolumeChange = (index) => {
-    onVolumeChange(index);
-  };
+  onVolumeChange(index);
+  document.activeElement?.blur(); // 👈 closes the dropdown
+};
 
   return (
     <div className="dropdown">
