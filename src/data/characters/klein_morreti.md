@@ -1,20 +1,66 @@
 ---
 name: "Klein Moretti"
-introducedInVolume: 1
+introducedInVolume: 0
 category: "character"
 ---
 
-## Volume 1
-Klein Moretti is the main protagonist. He transmigrated into this world and became a Nighthawk.
+## About
+Klein Moretti is the main protagonist of the Lord of the Mysteries series. Originally from Earth, he transmigrated into the body of Leonard Mitchell during a mysterious ceremony. He quickly adapts to this new world filled with supernatural powers and dangerous secrets, joining the Nighthawks organization as he seeks answers about his situation.
 
-**Sequence:** Sequence 9 Seer
+**Current Identity:** Leonard Mitchell  
+**Affiliation:** Nighthawks, Antigonus Family
 
-## Volume 2
-Klein advances and learns more about the mysteries of the world.
+## Appearance
+Klein appears as a young man in his early twenties with brown hair and eyes. As Leonard Mitchell, he maintains a composed and intellectual demeanor, often seen in formal attire suitable for his work as a private investigator.
 
-**Sequence:** Sequence 8 Clown
+## Powers & Abilities
 
-## Volume 3
-Major revelations about Klein's true identity and purpose.
+### Basic Abilities
+**Sequence 9: Seer**
+- Divination and foresight abilities
+- Spirit vision to see supernatural entities
+- Basic ritual mastery
+- Danger premonition
 
-**Sequence:** Sequence 7 Magician
+:::reveal at=1
+**Sequence 8: Clown**
+- Enhanced agility and flexibility
+- Miraculous performance abilities
+- Emotional manipulation
+- Advanced illusion casting
+:::
+
+:::reveal at=2
+**Sequence 7: Magician**
+- Master of sleight of hand and misdirection
+- Portal creation and spatial manipulation
+- Advanced spell casting
+- Summoning and binding magic
+:::
+
+## Personality
+Klein is cautious, intelligent, and adaptable. He maintains a rational approach despite the supernatural nature of his new reality. His experiences on Earth give him unique perspectives that help him navigate the complex political and mystical landscape of his new world.
+
+:::reveal at=1
+## Relationships
+- **The Hanged Man:** Mysterious connection through dreams
+- **Audrey Hall:** Allied noblewoman with shared interests
+- **Fors Wright:** Fellow Nighthawk and trusted companion
+- **Dunn Smith:** Nighthawk captain and mentor figure
+:::
+
+## Status
+**Location:** Tingen City  
+**Occupation:** Private Investigator, Nighthawk  
+**Sequence:** 9 - Seer  
+**Health:** Stable
+
+:::reveal at=1
+**Updated Sequence:** 8 - Clown
+**New Location:** Backlund City
+:::
+
+:::reveal at=2
+**Final Sequence:** 7 - Magician
+**Special Status:** Demigod Candidate
+:::
