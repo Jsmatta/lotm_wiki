@@ -10,12 +10,13 @@
       // Store the original path that caused the 404
       const currentPath = window.location.pathname + window.location.search + window.location.hash;
       
-      // Handle direct access to paths without base path
-      if (currentPath.startsWith('/characters') || currentPath.startsWith('/pathways')) {
-        sessionStorage.setItem('redirect', '/lotm_wiki' + currentPath);
-      } else {
-        sessionStorage.setItem('redirect', currentPath);
+      // Always ensure we have the base path
+      let redirectPath = currentPath;
+      if (!redirectPath.startsWith('/lotm_wiki')) {
+        redirectPath = '/lotm_wiki' + redirectPath;
       }
+      
+      sessionStorage.setItem('redirect', redirectPath);
       
       // Redirect to the main app
       window.location.replace('/lotm_wiki/');
