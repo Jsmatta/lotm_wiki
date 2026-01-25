@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useVolumeSelector } from "../components/volumeSelector.jsx";
 import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
-import { MarkdownRenderer } from "../components/MarkdownRenderer.jsx";
+import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
 
 export default function Pathways() {
   const { selectedVolume } = useVolumeSelector();

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { parseMarkdownForReact } from "../utils/frontmatter.js";
 import { getCharacterImages } from "../utils/characterImages.js";
-import { MarkdownRenderer } from "../components/MarkdownRenderer.jsx";
+import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
 
 export default function CharacterDetail({ selectedVolume }) {
   const { id } = useParams();
