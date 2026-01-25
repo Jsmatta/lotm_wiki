@@ -58,6 +58,18 @@ export function parseMarkdown(markdownContent, selectedVolumeIndex) {
   // Parse reveal blocks (using 0-indexed volumes)
   const processedContent = processRevealBlocks(content, selectedVolumeIndex);
   
+  // Configure marked options for better formatting
+  marked.setOptions({
+    breaks: true,
+    gfm: true,
+    headerIds: true,
+    mangle: false,
+    sanitize: false,
+    smartLists: true,
+    smartypants: true,
+    xhtml: false
+  });
+  
   return {
     ...data,
     content: processedContent,

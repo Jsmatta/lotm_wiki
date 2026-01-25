@@ -75,7 +75,7 @@ export default function Pathways() {
                   <h2 className="card-title">{pathway.name}</h2>
                   <div className="badge badge-outline">Volume {pathway.introducedInVolume}</div>
                   <div 
-                    className="prose prose-sm max-w-none"
+                    className="prose prose-sm max-w-none mt-4 [&_h1]:text-3xl [&_h1]:lg:text-4xl [&_h1]:mt-10 [&_h1]:mb-6 [&_h1]:text-primary [&_h1]:border-b-2 [&_h1]:border-base-300 [&_h1]:pb-2 [&_h2]:text-2xl [&_h2]:lg:text-3xl [&_h2]:mt-8 [&_h2]:mb-5 [&_h2]:text-secondary [&_h2]:border-b-2 [&_h2]:border-base-300 [&_h2]:pb-2 [&_h3]:text-xl [&_h3]:lg:text-2xl [&_h3]:mt-6 [&_h3]:mb-4 [&_h3]:text-accent [&_h3]:border-b-2 [&_h3]:border-base-300 [&_h3]:pb-2 [&_ul]:space-y-2 [&_ul]:my-6 [&_li]:border-l-4 [&_li]:border-accent/30 [&_li]:hover:border-accent/60 [&_li]:transition-colors [&_li]:duration-200 [&_li]:bg-base-100/30 [&_li]:rounded-r [&_li]:p-3 [&_li]:-ml-2"
                     dangerouslySetInnerHTML={{ __html: pathway.htmlContent }}
                   />
                 </div>
