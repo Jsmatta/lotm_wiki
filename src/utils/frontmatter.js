@@ -1,7 +1,7 @@
-import { marked } from 'marked'
+// Frontmatter parsing utilities for markdown files
+// Simple browser-compatible frontmatter parser
 
-// Simple frontmatter parser (browser compatible)
-function parseFrontmatter(content) {
+export function extractFrontmatter(content) {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
   
@@ -51,33 +51,7 @@ function parseFrontmatter(content) {
   }
 }
 
-export function parseMarkdown(markdownContent, selectedVolumeIndex) {
-  // Parse frontmatter with our browser-compatible parser
-  const { data, content } = parseFrontmatter(markdownContent);
-  
-  // Parse reveal blocks (using 0-indexed volumes)
-  const processedContent = processRevealBlocks(content, selectedVolumeIndex);
-  
-  // Configure marked options for better formatting
-  marked.setOptions({
-    breaks: true,
-    gfm: true,
-    headerIds: true,
-    mangle: false,
-    sanitize: false,
-    smartLists: true,
-    smartypants: true,
-    xhtml: false
-  });
-  
-  return {
-    ...data,
-    content: processedContent,
-    htmlContent: marked.parse(processedContent)
-  };
-}
-
-function processRevealBlocks(content, selectedVolume) {
+export function processRevealBlocks(content, selectedVolume) {
   // Match reveal blocks: :::reveal at=2 ... :::
   const revealRegex = /:::reveal at=(\d+)\n([\s\S]*?):::/g
   
@@ -97,6 +71,19 @@ function processRevealBlocks(content, selectedVolume) {
   })
   
   return processedContent.trim()
+}
+
+export function parseMarkdownForReact(markdownContent, selectedVolumeIndex) {
+  // Parse frontmatter
+  const { data, content } = extractFrontmatter(markdownContent);
+  
+  // Process reveal blocks (using 0-indexed volumes)
+  const processedContent = processRevealBlocks(content, selectedVolumeIndex);
+  
+  return {
+    ...data,
+    content: processedContent
+  };
 }
 
 export function filterByVolume(items, selectedVolumeIndex) {

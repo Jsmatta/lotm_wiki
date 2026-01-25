@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { parseMarkdown } from "../utils/markdown.js";
+import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
 import { getCharacterImages } from "../utils/characterImages.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 
@@ -19,23 +19,24 @@ export default function Characters({ selectedVolume }) {
         const imageMap = await getCharacterImages();
         
         const characterData = files.map((file, index) => {
-          const parsed = parseMarkdown(file, selectedVolume);
+          const parsed = parseMarkdownForReact(file, selectedVolume);
           const characterFileName = parsed.name
             .toLowerCase()
             .replace(/\s+/g, '_')
             .replace(/[^a-z0-9_]/g, '');
-            
+          
           return {
             id: index,
             name: parsed.name,
             introducedInVolume: parsed.introducedInVolume,
             category: parsed.category,
-            htmlContent: parsed.htmlContent,
+            content: parsed.content,
             image: imageMap[characterFileName] || imageMap[Object.keys(imageMap)[0]]
           };
         });
         
-        setCharacters(characterData);
+        const filteredCharacters = filterByVolume(characterData, selectedVolume);
+        setCharacters(filteredCharacters);
       } catch (error) {
         console.error("Error loading characters:", error);
       } finally {
