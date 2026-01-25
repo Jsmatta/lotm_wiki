@@ -21,7 +21,7 @@ export default function Navbar({ onVolumeChange, selectedVolume }) {
   };
 
   return (
-    <div className="flex top-4 left-4 right-4 max-w-[calc(100vw-2rem)] h-1 navbar bg-secondary-200 border border-accent shadow-2xl rounded-xl px-4 z-50 backdrop-blur-md bg-opacity-70 overflow-visible">
+    <div className="sticky flex top-4 left-4 right-4 max-w-[calc(100vw-2rem)] h-1 navbar bg-secondary-200 border border-accent shadow-2xl rounded-xl px-4 z-50 backdrop-blur-md bg-opacity-70 overflow-visible">
       <div className="navbar-start">
         <button onClick={() => setIsDropdownOpen(true)} className="btn btn-ghost btn-circle">
           <svg
