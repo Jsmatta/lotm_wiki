@@ -1,17 +1,18 @@
 # LOTM Wiki
 
-A comprehensive wiki for the **Lord of the Mysteries** series, built with Preact and Tailwind CSS. Filter content by volume to avoid spoilers and explore detailed information about characters, pathways, organizations, and more.
+A comprehensive wiki for **Lord of the Mysteries** series, built with Preact and Tailwind CSS. Filter content by volume to avoid spoilers and explore detailed information about characters, pathways, organizations, and more.
 
 ## Features
 
 - 📚 **Volume-Based Content Filtering** - Hide content you haven't reached yet
 - 🔍 **Search Functionality** - Find characters, locations, and lore quickly
 - 🎨 **Dark Theme** - Eye-friendly interface powered by DaisyUI
-- 📖 **Dynamic Markdown Support** - Rich content with progressive reveal based on reading progress
+- 📖 **Natural Markdown Rendering** - Beautiful typography with professional styling
 - ⚡ **Fast & Responsive** - Built with Preact for optimal performance
 - 🗺️ **Multi-Page Navigation** - Dedicated pages for different content types
 - 🚀 **Client-Side Routing** - Smooth navigation with React Router
 - 🔄 **Auto-Discovery** - Markdown files are automatically loaded without manual imports
+- 🎯 **Consistent Styling** - Jottings-style formatting and enhanced typography
 
 ## Project Structure
 
@@ -27,6 +28,7 @@ src/
 ├── pages/
 │   ├── home.jsx           # Home page
 │   ├── characters.jsx     # Characters page
+│   ├── characterDetail.jsx # Individual character page
 │   ├── places.jsx         # Locations page
 │   ├── pathways.jsx       # Pathways page
 │   ├── gods.jsx           # Gods page
@@ -38,8 +40,9 @@ src/
 │   ├── characters/        # Character markdown files (auto-discovered)
 │   └── pathways/          # Pathway markdown files (auto-discovered)
 ├── utils/
-│   ├── markdown.js        # Markdown parsing & volume filtering
+│   ├── frontmatter.js     # YAML frontmatter parsing & volume filtering
 │   ├── markdownLoader.js  # Dynamic markdown file loading
+│   ├── MarkdownRenderer.jsx # Reusable markdown rendering with consistent styling
 │   └── characterImages.js # Dynamic character image loading
 └── assets/
     └── lotm_logo.webp     # Site logo
@@ -96,7 +99,7 @@ npm run deploy
 
 ### Adding Content
 
-The wiki automatically discovers markdown files in the `src/data/` directories. No manual imports required!
+The wiki automatically discovers markdown files in `src/data/` directories. No manual imports required!
 
 1. Create markdown files in `src/data/characters/` or `src/data/pathways/`
 2. Include frontmatter with metadata:
@@ -109,7 +112,7 @@ category: "character"
 ---
 
 ## About
-Basic information about the character...
+Basic information about character...
 
 :::reveal at=1
 ## Volume 1 Progress
@@ -121,6 +124,12 @@ Content revealed after completing Volume 1...
 Content revealed after completing Volume 2...
 :::
 ```
+
+**Styling Notes:**
+- Markdown content is rendered with beautiful typography automatically
+- Headings use different colors (primary, secondary, accent) with proper spacing
+- Lists have a jottings-style appearance with hover effects
+- No custom CSS needed - everything is handled by the MarkdownRenderer utility
 
 ### Progressive Content Reveal
 
@@ -176,10 +185,11 @@ Available content sections:
 
 - **[Preact](https://preactjs.com/)** - Lightweight React alternative
 - **[React Router](https://reactrouter.com/)** - Client-side routing
+- **[React Markdown](https://github.com/remarkjs/react-markdown)** - Safe and customizable markdown rendering
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)** - Beautiful markdown typography
 - **[DaisyUI](https://daisyui.com/)** - Tailwind CSS component library
 - **[Vite](https://vitejs.dev/)** - Next generation frontend build tool with dynamic imports
-- **[Marked](https://marked.js.org/)** - Markdown parser
 - **Custom Markdown Loader** - Dynamic file discovery and loading system
 - **[GH Pages](https://github.com/tschaub/gh-pages)** - GitHub Pages deployment
 
@@ -201,18 +211,20 @@ This project is open source and available under the MIT License.
 - **Categorization**: Files are organized by their containing folder (characters, pathways, etc.)
 - **Naming**: Use kebab-case for filenames (e.g., `klein_morreti.md`)
 - **Images**: Character images are auto-discovered from `src/assets/characters/`
+- **Markdown Rendering**: All content uses the `MarkdownRenderer` utility for consistent styling
 
 ### Adding New Categories
 1. Create a new folder in `src/data/` (e.g., `organizations/`)
 2. Add markdown files with proper frontmatter
-3. Create a page component that uses `getCategoryFiles('organizations')`
-4. Update the navigation as needed
+3. Create a page component that uses `getCategoryFiles('organizations')` and `MarkdownRenderer`
+4. Update navigation as needed
 
 ### Content Guidelines
 - **Frontmatter**: Always include `name`, `introducedInVolume`, and `category`
 - **Volume Numbers**: Use 0 for Introduction, 1 for Volume 1, etc.
 - **Reveal Blocks**: Use progressively for character development and plot progression
 - **Spoilers**: Tag all future content with appropriate reveal volumes
+- **Styling**: Write standard markdown - all formatting is handled automatically
 
 ## Contributing
 
