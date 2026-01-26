@@ -52,13 +52,12 @@ src/
 
 ### Prerequisites
 
-- Node.js (v16+)
-- npm
+- Bun (latest)
 
 ### Installation
 
 ```bash
-npm install
+bun install
 ```
 
 ### Development
@@ -66,7 +65,7 @@ npm install
 Start the development server:
 
 ```bash
-npm run dev
+bun dev
 ```
 
 The site will be available at `http://localhost:5173`
@@ -76,7 +75,7 @@ The site will be available at `http://localhost:5173`
 Build for production:
 
 ```bash
-npm run build
+bun run build
 ```
 
 ### Preview
@@ -84,7 +83,7 @@ npm run build
 Preview production build:
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 ### Deploy
@@ -92,7 +91,7 @@ npm run preview
 Deploy to GitHub Pages:
 
 ```bash
-npm run deploy
+bun run deploy
 ```
 
 ## Usage
@@ -195,10 +194,10 @@ Available content sections:
 
 ## Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run deploy` - Deploy to GitHub Pages
+- `bun run dev` - Start development server
+- `bun run build` - Build for production
+- `bun run preview` - Preview production build
+- `bun run deploy` - Deploy to GitHub Pages
 
 ## License
 
