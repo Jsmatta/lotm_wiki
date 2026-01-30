@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#6b46c1"/>
+  <ellipse cx="128" cy="80" rx="35" ry="25" fill="#e9d5ff"/>
+  <rect x="108" y="75" width="40" height="60" fill="#f3e8ff"/>
+  <circle cx="118" cy="95" r="8" fill="#6b46c1"/>
+  <circle cx="138" cy="95" r="8" fill="#6b46c1"/>
+  <path d="M110 110 Q128 120 146 110" stroke="#6b46c1" stroke-width="2" fill="none"/>
+  <rect x="85" y="70" width="25" height="30" rx="5" fill="#e9d5ff" transform="rotate(-20 97 85)"/>
+  <rect x="146" y="70" width="25" height="30" rx="5" fill="#e9d5ff" transform="rotate(20 159 85)"/>
+  <circle cx="97" cy="85" r="3" fill="#6b46c1"/>
+  <circle cx="159" cy="85" r="3" fill="#6b46c1"/>
+  <circle cx="128" cy="150" r="40" fill="#a855f7" opacity="0.3"/>
+  <circle cx="128" cy="150" r="30" fill="#a855f7" opacity="0.5"/>
+  <path d="M108 140 Q128 130 148 140 L148 160 Q128 170 108 160 Z" fill="#7c3aed"/>
+  <path d="M128 130 L128 170 M108 150 L148 150" stroke="#ffffff" stroke-width="2"/>
+  <text x="128" y="210" text-anchor="middle" fill="#e9d5ff" font-family="Arial" font-size="16" font-weight="bold">Fool</text>
+  <text x="128" y="230" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="12">Pathway</text>
+</svg>
