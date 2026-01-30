@@ -4,8 +4,10 @@ import "./index.css";
 import Home from "./pages/home.jsx";
 import Characters from "./pages/characters.jsx";
 import Pathways from "./pages/pathways.jsx";
+import Places from "./pages/places.jsx";
 import CharacterDetail from "./pages/characterDetail.jsx";
 import PathwayDetail from "./pages/pathwayDetail.jsx";
+import PlacesDetail from "./pages/placesDetail.jsx";
 import Navbar from "./components/navbar.jsx";
 
 
@@ -58,7 +60,14 @@ export function App() {
               path="/pathways/:id"
               element={<PathwayDetail selectedVolume={selectedVolume} />}
             />
-
+            <Route
+              path="/places"
+              element={<Places selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/places/:id"
+              element={<PlacesDetail selectedVolume={selectedVolume} />}
+            />
           </Routes>
         </div>
         <footer className="footer sm:footer-horizontal footer-center bg-base-300/90 text-base-content p-4">

@@ -3,6 +3,7 @@ import { useVolumeSelector } from "../components/volumeSelector";
 import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter";
 import { getCategoryFiles } from "../utils/markdownLoader";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer";
+import { Link } from "react-router-dom";
 
 export default function Places() {
   const { selectedVolume } = useVolumeSelector();
@@ -71,13 +72,13 @@ export default function Places() {
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {places.map(place => (
-              <div key={place.id} className="card bg-base-100/90 backdrop-blur-sm shadow-xl">
+              <Link key={place.id} to={`/places/${place.id}`} className="card bg-base-100/90 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <div className="card-body">
                   <h2 className="card-title">{place.name}</h2>
                   <div className="badge badge-outline">Volume {place.introducedInVolume}</div>
                   <MarkdownRenderer content={place.content} className="prose prose-sm max-w-none mt-4" />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         )}
