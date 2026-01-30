@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
-import { getCharacterImages } from "../utils/characterImages.js";
+import { getCharacterImages } from "../utils/imageLoader.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 
 export default function Characters({ selectedVolume }) {

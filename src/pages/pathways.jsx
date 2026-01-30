@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
-import { getPathwayImages } from "../utils/pathwayImages.js";
+import { getPathwayImages } from "../utils/imageLoader.js";
 
 export default function Pathways({ selectedVolume }) {
   const [pathways, setPathways] = useState([]);

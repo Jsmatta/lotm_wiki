@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { parseMarkdownForReact } from "../utils/frontmatter.js";
-import { getPathwayImages } from "../utils/pathwayImages.js";
+import { getPathwayImages } from "../utils/imageLoader.js";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 
