@@ -43,8 +43,14 @@ src/
 │   ├── frontmatter.js     # YAML frontmatter parsing & volume filtering
 │   ├── markdownLoader.js  # Dynamic markdown file loading
 │   ├── MarkdownRenderer.jsx # Reusable markdown rendering with consistent styling
-│   └── characterImages.js # Dynamic character image loading
+│   └── imageLoader.js     # Universal image loading for all content types
 └── assets/
+    ├── characters/        # Character images
+    ├── pathways/          # Pathway images and symbols
+    ├── places/            # Location images
+    ├── gods/              # Deity images
+    ├── items/             # Item images
+    ├── symbols/           # Symbol and icon images
     └── lotm_logo.webp     # Site logo
 ```
 
@@ -209,14 +215,47 @@ This project is open source and available under the MIT License.
 - **Auto-discovery**: All `.md` files in `src/data/` subdirectories are automatically loaded
 - **Categorization**: Files are organized by their containing folder (characters, pathways, etc.)
 - **Naming**: Use kebab-case for filenames (e.g., `klein_morreti.md`)
-- **Images**: Character images are auto-discovered from `src/assets/characters/`
+- **Images**: All images are auto-discovered from `src/assets/{category}/` folders using the universal image loader
 - **Markdown Rendering**: All content uses the `MarkdownRenderer` utility for consistent styling
 
 ### Adding New Categories
 1. Create a new folder in `src/data/` (e.g., `organizations/`)
 2. Add markdown files with proper frontmatter
 3. Create a page component that uses `getCategoryFiles('organizations')` and `MarkdownRenderer`
-4. Update navigation as needed
+4. For images, add a corresponding folder in `src/assets/` and use the universal image loader
+5. Update navigation as needed
+
+### Image Management
+The universal image loader (`src/utils/imageLoader.js`) handles all image types automatically:
+
+**Supported Categories:**
+- `characters` - Character portraits and artwork
+- `pathways` - Pathway diagrams and symbols
+- `places` - Location images and maps
+- `gods` - Deity illustrations
+- `items` - Item and artifact images
+- `symbols` - Icons and symbol graphics
+
+**Usage:**
+```javascript
+import { getImages, getImage } from "../utils/imageLoader.js";
+
+// Load all images for a category
+const characterImages = await getImages('characters');
+const pathwayImages = await getImages('pathways');
+
+// Search across all categories
+const anyImage = await getImage('image_name');
+
+// Specific category loading
+const { getCharacterImages, getPathwayImages } = await import("../utils/imageLoader.js");
+```
+
+**File Organization:**
+- Place images in `src/assets/{category}/` folders
+- Use kebab-case naming (e.g., `klein-morreti.webp`)
+- Supported formats: webp, jpg, jpeg, png, svg (varies by category)
+- Images are automatically discovered and loaded dynamically
 
 ### Content Guidelines
 - **Frontmatter**: Always include `name`, `introducedInVolume`, and `category`
