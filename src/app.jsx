@@ -5,6 +5,7 @@ import Home from "./pages/home.jsx";
 import Characters from "./pages/characters.jsx";
 import Pathways from "./pages/pathways.jsx";
 import CharacterDetail from "./pages/characterDetail.jsx";
+import PathwayDetail from "./pages/pathwayDetail.jsx";
 import Navbar from "./components/navbar.jsx";
 
 
@@ -52,6 +53,10 @@ export function App() {
             <Route
               path="/pathways"
               element={<Pathways selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/pathways/:id"
+              element={<PathwayDetail selectedVolume={selectedVolume} />}
             />
 
           </Routes>
