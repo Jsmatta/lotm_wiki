@@ -9,7 +9,7 @@ import "../index.css";
 
 export default function Navbar({ onVolumeChange, selectedVolume }) {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedSection, setSelectedSection] = useState(sections[0]);
+  const [selectedSection, setSelectedSection] = useState(sections[0].label);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isVolumeDropdownOpen, setIsVolumeDropdownOpen] = useState(false);
 

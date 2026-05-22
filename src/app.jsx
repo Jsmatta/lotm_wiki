@@ -5,9 +5,18 @@ import Home from "./pages/home.jsx";
 import Characters from "./pages/characters.jsx";
 import Pathways from "./pages/pathways.jsx";
 import Places from "./pages/places.jsx";
+import Volumes from "./pages/volumes.jsx";
+import Gods from "./pages/gods.jsx";
+import Organizations from "./pages/organizations.jsx";
+import Spells from "./pages/spells.jsx";
+import SealedArtifacts from "./pages/sealed_artifacts.jsx";
 import CharacterDetail from "./pages/characterDetail.jsx";
 import PathwayDetail from "./pages/pathwayDetail.jsx";
 import PlacesDetail from "./pages/placesDetail.jsx";
+import GodDetail from "./pages/godDetail.jsx";
+import OrganizationDetail from "./pages/organizationDetail.jsx";
+import SpellDetail from "./pages/spellDetail.jsx";
+import SealedArtifactDetail from "./pages/sealedArtifactDetail.jsx";
 import Navbar from "./components/navbar.jsx";
 
 
@@ -67,6 +76,42 @@ export function App() {
             <Route
               path="/places/:id"
               element={<PlacesDetail selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/volumes"
+              element={<Volumes selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/gods"
+              element={<Gods selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/gods/:id"
+              element={<GodDetail selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/organizations"
+              element={<Organizations selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/organizations/:id"
+              element={<OrganizationDetail selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/spells"
+              element={<Spells selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/spells/:id"
+              element={<SpellDetail selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/sealed-artifacts"
+              element={<SealedArtifacts selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/sealed-artifacts/:id"
+              element={<SealedArtifactDetail selectedVolume={selectedVolume} />}
             />
           </Routes>
         </div>

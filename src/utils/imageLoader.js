@@ -7,6 +7,9 @@ const assetModules = {
   pathways: import.meta.glob('../assets/pathways/*.{webp,jpg,jpeg,png,svg}'),
   places: import.meta.glob('../assets/places/*.{webp,jpg,jpeg,png}'),
   gods: import.meta.glob('../assets/gods/*.{webp,jpg,jpeg,png,svg}'),
+  organizations: import.meta.glob('../assets/organizations/*.{webp,jpg,jpeg,png,svg}'),
+  spells: import.meta.glob('../assets/spells/*.{webp,jpg,jpeg,png,svg}'),
+  sealed_artifacts: import.meta.glob('../assets/sealed_artifacts/*.{webp,jpg,jpeg,png,svg}'),
   items: import.meta.glob('../assets/items/*.{webp,jpg,jpeg,png}'),
   symbols: import.meta.glob('../assets/symbols/*.{webp,jpg,jpeg,png,svg}')
 };
@@ -17,6 +20,9 @@ const categoryExtensions = {
   pathways: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
   places: ['webp', 'jpg', 'jpeg', 'png'],
   gods: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
+  organizations: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
+  spells: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
+  sealed_artifacts: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
   items: ['webp', 'jpg', 'jpeg', 'png'],
   symbols: ['webp', 'jpg', 'jpeg', 'png', 'svg']
 };

@@ -34,6 +34,18 @@ export default function Home() {
                 >
                   Pathways
                 </Link>
+                <Link
+                  to="/places"
+                  className="btn btn-accent normal-case text-base"
+                >
+                  Places
+                </Link>
+                <Link
+                  to="/volumes"
+                  className="btn btn-outline normal-case text-base"
+                >
+                  Volumes
+                </Link>
               </div>
             </div>
           </div>

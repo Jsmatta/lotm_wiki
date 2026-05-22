@@ -3,15 +3,15 @@ import { createPortal } from "preact/compat";
 import { Link, useLocation } from "react-router-dom";
 
 export const sections = [
-  "Home",
-  "Volumes",
-  "Characters",
-  "Places",
-  "Pathways",
-  "Gods",
-  "Organizations",
-  "Spells",
-  "Sealed Artifacts",
+  { label: "Home", path: "/" },
+  { label: "Volumes", path: "/volumes" },
+  { label: "Characters", path: "/characters" },
+  { label: "Places", path: "/places" },
+  { label: "Pathways", path: "/pathways" },
+  { label: "Gods", path: "/gods" },
+  { label: "Organizations", path: "/organizations" },
+  { label: "Spells", path: "/spells" },
+  { label: "Sealed Artifacts", path: "/sealed-artifacts" },
 ];
 
 export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionChange }) {
@@ -19,15 +19,12 @@ export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionCha
   const [activeSection, setActiveSection] = useState("Home");
 
   useEffect(() => {
-    // Determine active section based on current URL (HashRouter doesn't have full paths)
     const path = location.pathname;
-    if (path === "/") {
-      setActiveSection("Home");
-    } else if (path === "/characters") {
-      setActiveSection("Characters");
-    } else if (path === "/pathways") {
-      setActiveSection("Pathways");
-    }
+    const section = sections
+      .filter((item) => item.path !== "/")
+      .find((item) => path === item.path || path.startsWith(`${item.path}/`));
+
+    setActiveSection(section?.label || "Home");
   }, [location.pathname]);
 
   const handleSectionChange = (section) => {
@@ -42,33 +39,17 @@ export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionCha
       <div className="modal-box w-11/12 max-w-md border border-accent" onClick={(e) => e.stopPropagation()}>
         <h3 className="font-bold text-lg">Select Section</h3>
         <ul className="menu bg-base-100 rounded-box w-full">
-          <li>
-            <Link 
-              to="/" 
-              onClick={() => handleSectionChange("Home")}
-              className={activeSection === "Home" ? "active" : ""}
-            >
-              Home {activeSection === "Home" && " ✓"}
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/characters" 
-              onClick={() => handleSectionChange("Characters")}
-              className={activeSection === "Characters" ? "active" : ""}
-            >
-              Characters {activeSection === "Characters" && " ✓"}
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/pathways" 
-              onClick={() => handleSectionChange("Pathways")}
-              className={activeSection === "Pathways" ? "active" : ""}
-            >
-              Pathways {activeSection === "Pathways" && " ✓"}
-            </Link>
-          </li>
+          {sections.map((section) => (
+            <li key={section.path}>
+              <Link
+                to={section.path}
+                onClick={() => handleSectionChange(section.label)}
+                className={activeSection === section.label ? "active" : ""}
+              >
+                {section.label} {activeSection === section.label && " ✓"}
+              </Link>
+            </li>
+          ))}
         </ul>
         <div className="modal-action">
           <button className="btn" onClick={onClose}>Close</button>
