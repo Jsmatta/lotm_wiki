@@ -41,9 +41,23 @@ export default function Navbar({ onVolumeChange, selectedVolume }) {
         </button>
       </div>
       <div className="navbar-center">
-        <div className="flex flex-col items-center">
-          <Link onClick={() => setIsVolumeDropdownOpen(true)} className="btn btn-ghost text-xl">LOTM Wiki</Link>
-          <span className="text-sm">{volumes[selectedVolume]}</span>
+        <div className="flex items-center gap-2">
+          <Link to="/" className="btn btn-ghost text-xl">LOTM Wiki</Link>
+          <button
+            onClick={() => setIsVolumeDropdownOpen(true)}
+            className="btn btn-xs sm:btn-sm btn-accent rounded-full gap-1 normal-case shadow-sm"
+          >
+            {volumes[selectedVolume]}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-3.5 w-3.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
         </div>
       </div>
        <div className="navbar-end">
