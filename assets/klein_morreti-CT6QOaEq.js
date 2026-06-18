@@ -1,0 +1,33 @@
+const e=`---
+name: "Klein Moretti"
+introducedInVolume: 1
+category: "character"
+---
+
+## Overview
+
+Klein Moretti is a history graduate living in Tingen with his elder brother Benson and younger sister Melissa. At the beginning of the story, Zhou Mingrui awakens in Klein's body with incomplete memories and no clear path home.
+
+## Volume 1 Role
+
+Klein becomes entangled with the Antigonus family's notebook and is recruited by the Tingen Nighthawks. He first works as a civilian consultant before drinking the **Sequence 9: Seer** potion and becoming a formal Beyonder.
+
+His careful investigations, divination, ritual knowledge, and willingness to prepare extensively make him valuable to the team. Away from the Nighthawks, he works at the Divination Club to practice the acting method.
+
+## The Gray Fog
+
+The luck enhancement ritual gives Klein access to a mysterious space above gray fog. There he adopts the identity of **Mr. Fool** and begins regular gatherings with Audrey Hall and Alger Wilson.
+
+## Pathway Progress
+
+- **Sequence 9: Seer** — spirit vision, divination, danger intuition, and ritual magic
+- **Sequence 8: Clown** — exceptional balance, body control, agility, and control of facial expressions
+
+## Personality
+
+Klein is cautious, practical, compassionate, and fond of dry humor. His strongest motivation during the Tingen arc is protecting his family while learning enough about mysticism to survive.
+
+## Volume 1 Outcome
+
+Klein helps prevent the catastrophe threatening Tingen. After the final confrontation, he allows his family and former teammates to believe he died and leaves the city to continue investigating the forces behind the tragedy.
+`;export{e as default};
