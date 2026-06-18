@@ -106,7 +106,7 @@ bun run deploy
 
 The wiki automatically discovers markdown files in `src/data/` directories. No manual imports required!
 
-1. Create markdown files in `src/data/characters/` or `src/data/pathways/`
+1. Create a Markdown file in the matching `src/data/<category>/` directory
 2. Include frontmatter with metadata:
 
 ```markdown
@@ -119,14 +119,14 @@ category: "character"
 ## About
 Basic information about character...
 
-:::reveal at=1
+:::spoiler volume=1
 ## Volume 1 Progress
-Content revealed after completing Volume 1...
+Content visible when the reader selects volume index 1 or later.
 :::
 
-:::reveal at=2
+:::spoiler volume=2
 ## Volume 2 Progress  
-Content revealed after completing Volume 2...
+Content visible when the reader selects volume index 2 or later.
 :::
 ```
 
@@ -138,29 +138,79 @@ Content revealed after completing Volume 2...
 
 ### Progressive Content Reveal
 
-The wiki supports spoiler-free content using the `reveal` block syntax:
+The wiki supports spoiler-safe content with fenced spoiler blocks. The
+recommended syntax is `:::spoiler volume=X`; the original
+`:::reveal at=X` syntax remains supported.
 
-- **Basic content**: Always visible to all users
-- **`:::reveal at=X` blocks**: Content hidden until user reaches volume X+1
-- **Volume numbering**: 0 = Introduction, 1 = Volume 1, 2 = Volume 2, etc.
+- **Basic content**: Always visible after the page itself is available
+- **Spoiler blocks**: Visible when the selected volume index is at least `X`
+- **Volume numbering**: Uses the selector index: `0` = Introduction,
+  `1` = The Clown, `2` = The Faceless, and so on
+- **Fail-closed parsing**: Invalid or unclosed spoiler blocks are hidden so
+  malformed content does not accidentally expose spoilers
+
+Both forms below are equivalent:
+
+```markdown
+:::spoiler volume=2
+This appears at index 2 (The Faceless) and later.
+:::
+
+:::reveal at=2
+This also appears at index 2 and later.
+:::
+```
 
 **Example for a character's progression:**
+
 ```markdown
 **Current Sequence:** 9 - Seer
 
-:::reveal at=1
+:::spoiler volume=1
 **Updated Sequence:** 8 - Clown
 **New Abilities:** Enhanced agility, emotional manipulation
 :::
 
-:::reveal at=2
+:::spoiler volume=2
 **Final Sequence:** 7 - Magician  
 **Special Status:** Demigod Candidate
 **New Abilities:** Portal creation, advanced spell casting
 :::
 ```
 
-This allows users to safely browse without spoilers while progressively revealing more content as they advance through the series.
+Spoiler blocks may be nested. A nested block is shown only when both its own
+volume and every parent block are visible:
+
+```markdown
+:::spoiler volume=1
+Visible from The Clown onward.
+
+:::spoiler volume=3
+Visible from The Traveler onward.
+:::
+:::
+```
+
+Flexible whitespace and quoted numbers are accepted:
+
+```markdown
+  :::spoiler volume = "2"
+  This is valid.
+  :::
+```
+
+Directive-looking text inside fenced code blocks is preserved as an example
+and is not interpreted. Opening and closing directives must otherwise be on
+their own lines.
+
+When authoring content:
+
+1. Put public context outside spoiler blocks.
+2. Wrap every later development, identity, power, relationship, or plot fact
+   in the earliest matching volume block.
+3. Close each block with `:::` on its own line.
+4. Run `bun test` to check parser behavior and test multiple selector values
+   in the browser.
 
 ### Volume Filtering
 
@@ -172,7 +222,8 @@ The volume selector in the navbar allows users to:
 
 **How it works:**
 1. **Frontmatter filtering**: Content with `introducedInVolume` higher than selected volume is completely hidden
-2. **Reveal blocks**: Content inside `:::reveal at=X` blocks only appears when user reaches volume X+1
+2. **Spoiler blocks**: Content inside a block appears when
+   `selectedVolume >= volume`
 3. **Safe browsing**: Users can explore characters and concepts without encountering future spoilers
 
 ### Sections
@@ -260,7 +311,8 @@ const { getCharacterImages, getPathwayImages } = await import("../utils/imageLoa
 ### Content Guidelines
 - **Frontmatter**: Always include `name`, `introducedInVolume`, and `category`
 - **Volume Numbers**: Use 0 for Introduction, 1 for Volume 1, etc.
-- **Reveal Blocks**: Use progressively for character development and plot progression
+- **Spoiler Blocks**: Prefer `:::spoiler volume=X`; `:::reveal at=X` is kept
+  for backwards compatibility
 - **Spoilers**: Tag all future content with appropriate reveal volumes
 - **Styling**: Write standard markdown - all formatting is handled automatically
 

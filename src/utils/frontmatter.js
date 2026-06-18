@@ -1,14 +1,14 @@
-// Frontmatter parsing utilities for markdown files
-// Simple browser-compatible frontmatter parser
+// Browser-compatible frontmatter and spoiler parsing utilities.
 
 export function extractFrontmatter(content) {
-  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
-  const match = content.match(frontmatterRegex);
+  const normalizedContent = content.replace(/^\uFEFF/, "").replace(/\r\n?/g, "\n");
+  const frontmatterRegex = /^---[ \t]*\n([\s\S]*?)\n---[ \t]*(?:\n|$)([\s\S]*)$/;
+  const match = normalizedContent.match(frontmatterRegex);
   
   if (!match) {
     return {
       data: {},
-      content: content.trim()
+      content: normalizedContent.trim()
     };
   }
   
@@ -46,38 +46,135 @@ export function extractFrontmatter(content) {
     console.error('Frontmatter parsing error:', error);
     return {
       data: {},
-      content: content.replace(/^---\s*\n[\s\S]*?\n---\s*\n/, '').trim()
+      content: normalizedContent.replace(/^---[ \t]*\n[\s\S]*?\n---[ \t]*(?:\n|$)/, '').trim()
     };
   }
 }
 
-export function processRevealBlocks(content, selectedVolume) {
-  // Match reveal blocks: :::reveal at=2 ... :::
-  const revealRegex = /:::reveal at=(\d+)\n([\s\S]*?):::/g
-  
-  let processedContent = content
-  
-  // Replace reveal blocks based on volume
-  processedContent = processedContent.replace(revealRegex, (match, revealVolume, blockContent) => {
-    const volume = parseInt(revealVolume)
-    
-    if (volume <= selectedVolume) {
-      // Show the content if volume is reached
-      return blockContent.trim()
-    } else {
-      // Hide the content if volume is not reached
-      return ''
+const spoilerOpeningRegex = /^[ \t]*:::(reveal|spoiler)\b(.*)$/i;
+const spoilerClosingRegex = /^[ \t]*:::[ \t]*$/;
+const volumeAttributeRegex = /(?:^|\s)(?:at|volume)\s*=\s*(?:"(\d+)"|'(\d+)'|(\d+))(?=\s|$)/i;
+const codeFenceRegex = /^[ \t]*(`{3,}|~{3,})/;
+
+function appendLines(target, lines) {
+  if (lines.length > 0) {
+    target.push(...lines);
+  }
+}
+
+/**
+ * Remove spoiler blocks that are beyond the selected reading volume.
+ *
+ * Supported opening directives:
+ *   :::reveal at=2
+ *   :::reveal at = "2"
+ *   :::spoiler volume=2
+ *
+ * Blocks may be nested. Directives inside fenced code blocks are treated as
+ * ordinary Markdown. Invalid or unclosed spoiler blocks fail closed so their
+ * contents cannot leak.
+ *
+ * @param {string} content Markdown body without frontmatter.
+ * @param {number} selectedVolumeIndex Zero-based volume selector index.
+ * @param {{ warn?: (message: string) => void }} options Parser options.
+ * @returns {string} Markdown safe to render for the selected volume.
+ */
+export function processRevealBlocks(
+  content,
+  selectedVolumeIndex,
+  { warn = console.warn } = {},
+) {
+  const normalizedContent = content.replace(/\r\n?/g, "\n");
+  const lines = normalizedContent.split("\n");
+  const output = [];
+  const stack = [];
+  let activeFence = null;
+
+  const currentTarget = () => (
+    stack.length > 0 ? stack[stack.length - 1].lines : output
+  );
+
+  lines.forEach((line, index) => {
+    const fenceMatch = line.match(codeFenceRegex);
+
+    if (fenceMatch) {
+      const marker = fenceMatch[1];
+      const markerCharacter = marker[0];
+
+      if (!activeFence) {
+        activeFence = { character: markerCharacter, length: marker.length };
+      } else if (
+        markerCharacter === activeFence.character
+        && marker.length >= activeFence.length
+      ) {
+        activeFence = null;
+      }
+
+      if (stack.length === 0 || stack[stack.length - 1].visible) {
+        currentTarget().push(line);
+      }
+      return;
     }
-  })
-  
-  return processedContent.trim()
+
+    if (activeFence) {
+      if (stack.length === 0 || stack[stack.length - 1].visible) {
+        currentTarget().push(line);
+      }
+      return;
+    }
+
+    const openingMatch = line.match(spoilerOpeningRegex);
+
+    if (openingMatch) {
+      const volumeMatch = openingMatch[2].match(volumeAttributeRegex);
+      const parentVisible = stack.length === 0 || stack[stack.length - 1].visible;
+      const requiredVolume = volumeMatch
+        ? Number(volumeMatch[1] ?? volumeMatch[2] ?? volumeMatch[3])
+        : null;
+
+      if (requiredVolume === null) {
+        warn(
+          `Invalid spoiler directive on line ${index + 1}; expected an "at" or "volume" number. Content was hidden.`,
+        );
+      }
+
+      stack.push({
+        line: index + 1,
+        lines: [],
+        visible: parentVisible
+          && requiredVolume !== null
+          && requiredVolume <= selectedVolumeIndex,
+      });
+      return;
+    }
+
+    if (spoilerClosingRegex.test(line) && stack.length > 0) {
+      const completedBlock = stack.pop();
+
+      if (completedBlock.visible) {
+        appendLines(currentTarget(), completedBlock.lines);
+      }
+      return;
+    }
+
+    if (stack.length === 0 || stack[stack.length - 1].visible) {
+      currentTarget().push(line);
+    }
+  });
+
+  if (stack.length > 0) {
+    stack.forEach((block) => {
+      warn(
+        `Unclosed spoiler directive starting on line ${block.line}. Content was hidden.`,
+      );
+    });
+  }
+
+  return output.join("\n").trim();
 }
 
 export function parseMarkdownForReact(markdownContent, selectedVolumeIndex) {
-  // Parse frontmatter
   const { data, content } = extractFrontmatter(markdownContent);
-  
-  // Process reveal blocks (using 0-indexed volumes)
   const processedContent = processRevealBlocks(content, selectedVolumeIndex);
   
   return {
@@ -87,7 +184,9 @@ export function parseMarkdownForReact(markdownContent, selectedVolumeIndex) {
 }
 
 export function filterByVolume(items, selectedVolumeIndex) {
-  // Keep 0-indexed for consistency with volume selector
-  // Introduction is index 0, so characters introduced in Introduction should have introducedInVolume: 0
-  return items.filter(item => item.introducedInVolume <= selectedVolumeIndex)
+  return items.filter((item) => {
+    const introducedInVolume = Number(item.introducedInVolume);
+    return Number.isFinite(introducedInVolume)
+      && introducedInVolume <= selectedVolumeIndex;
+  });
 }
