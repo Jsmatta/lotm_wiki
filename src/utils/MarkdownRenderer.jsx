@@ -98,7 +98,7 @@ const markdownComponents = {
     <img 
       src={src} 
       alt={alt || ''} 
-      className="rounded-lg shadow-md my-6 max-w-full h-auto"
+      className="rounded-lg shadow-md my-6 max-w-full h-auto object-contain"
       {...props} 
     />
   ),
