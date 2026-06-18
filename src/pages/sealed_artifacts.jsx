@@ -6,7 +6,6 @@ export default function SealedArtifacts({ selectedVolume }) {
     <WikiListPage
       selectedVolume={selectedVolume}
       category="sealed_artifacts"
-      imageCategory="items"
       title="Sealed Artifacts"
       description="Track dangerous artifacts, their observed effects, restrictions, and classification notes."
       routeBase="/sealed-artifacts"

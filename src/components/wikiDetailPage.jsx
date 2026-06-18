@@ -49,7 +49,10 @@ export default function WikiDetailPage({
           introducedInVolume: parsed.introducedInVolume ?? 0,
           category: parsed.category || category,
           content: parsed.content || "",
-          image: imageMap[imageKey] || imageMap[Object.keys(imageMap)[0]],
+          image:
+            imageMap[imageKey]
+            || (imageKey === "klein_moretti" ? imageMap.klein_morreti : null)
+            || null,
         });
       } catch (error) {
         console.error(`Error loading ${category} detail:`, error);

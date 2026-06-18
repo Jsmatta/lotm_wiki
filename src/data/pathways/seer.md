@@ -1,57 +1,34 @@
 ---
 name: "Seer Pathway"
-introducedInVolume: 0
+introducedInVolume: 1
 category: "pathway"
 ---
 
 ## Overview
-The Seer Pathway is one of the 22 extraordinary pathways in the world of Lord of the Mysteries. It is a pathway focused on divination, foresight, and spiritual perception, making it ideal for those who seek to uncover hidden truths and predict future events.
 
-## Pathway Characteristics
-The Seer Pathway emphasizes:
-- Spiritual vision and perception
-- Divination and foresight
-- Understanding of mystical symbols
-- Connection to the spiritual world
-- Ritual mastery and ceremonial magic
+The Seer Pathway specializes in divination, spiritual perception, ritual work, and subtle control over the body. Volume 1 reveals only its first two sequences.
 
-## Sequence Progression
+## Sequence 9: Seer
 
-### Sequence 9: Seer
-The starting point of the pathway, granting basic divination abilities and spiritual sight.
-- **Powers:** Spirit vision, basic divination, danger premonition
-- **Role:** Oracle and spiritual guide
+Seers gain enhanced spirituality and aptitude for many forms of divination.
 
-:::reveal at=2
-### Sequence 8: Clown
-Advancing beyond mere sight to include performance-based mystical abilities.
-- **Powers:** Enhanced agility, emotional manipulation, illusion casting
-- **Role:** Entertainer and spiritual performer
-:::
+- Spirit vision
+- Dream and pendulum divination
+- Ritual magic
+- Intuition for danger
+- Broad knowledge of mysticism
 
-:::reveal at=2
-### Sequence 7: Magician
-Master of mystical arts and spatial manipulation.
-- **Powers:** Portal creation, advanced spell casting, summoning
-- **Role:** Master of arcane arts
-:::
+Their answers are symbolic rather than perfectly literal, so interpretation and careful questioning remain essential.
 
-### Higher Sequences
-The pathway continues through progressively divine sequences, culminating in true godhood.
+## Sequence 8: Clown
 
-## Historical Notables
-Many famous seers and mystics throughout history have walked this pathway, contributing to the understanding of the spiritual world and helping humanity navigate the dangers of the supernatural.
+Clowns gain extraordinary control over their bodies and expressions.
 
-## Beyonder Characteristics
-Beyonders of this pathway typically exhibit:
-- Strong intuition and perceptiveness
-- Calm and analytical demeanor
-- Natural talent for symbolism and interpretation
-- Ability to remain detached in crisis situations
+- Enhanced balance, agility, and coordination
+- Precise muscle and facial control
+- Improved combat movement
+- The ability to keep smiling or control visible emotion under pressure
 
-## Pathway Dangers
-The Seer Pathway carries risks of:
-- Spiritual contamination from prolonged contact with otherworldly entities
-- Mental instability from constant exposure to hidden truths
-- Risk of becoming lost in visions and prophecies
-- Vulnerability to madness from seeing too much
+## Acting Method
+
+The potion is digested by understanding and acting according to its name without losing one's true identity. Klein develops his Seer acting principles through work at Tingen's Divination Club.

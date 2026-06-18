@@ -6,7 +6,6 @@ export default function SealedArtifactDetail({ selectedVolume }) {
     <WikiDetailPage
       selectedVolume={selectedVolume}
       category="sealed_artifacts"
-      imageCategory="items"
       title="Sealed Artifacts"
       singularTitle="Sealed Artifact"
       routeBase="/sealed-artifacts"

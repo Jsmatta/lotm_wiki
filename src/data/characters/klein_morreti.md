@@ -1,66 +1,32 @@
 ---
 name: "Klein Moretti"
-introducedInVolume: 0
+introducedInVolume: 1
 category: "character"
 ---
 
-## About
-Klein Moretti is the main protagonist of the Lord of the Mysteries series. Originally from Earth, he transmigrated into the body of Leonard Mitchell during a mysterious ceremony. He quickly adapts to this new world filled with supernatural powers and dangerous secrets, joining the Nighthawks organization as he seeks answers about his situation.
+## Overview
 
-**Current Identity:** Leonard Mitchell  
-**Affiliation:** Nighthawks, Antigonus Family
+Klein Moretti is a history graduate living in Tingen with his elder brother Benson and younger sister Melissa. At the beginning of the story, Zhou Mingrui awakens in Klein's body with incomplete memories and no clear path home.
 
-## Appearance
-Klein appears as a young man in his early twenties with brown hair and eyes. As Leonard Mitchell, he maintains a composed and intellectual demeanor, often seen in formal attire suitable for his work as a private investigator.
+## Volume 1 Role
 
-## Powers & Abilities
+Klein becomes entangled with the Antigonus family's notebook and is recruited by the Tingen Nighthawks. He first works as a civilian consultant before drinking the **Sequence 9: Seer** potion and becoming a formal Beyonder.
 
-### Basic Abilities
-**Sequence 9: Seer**
-- Divination and foresight abilities
-- Spirit vision to see supernatural entities
-- Basic ritual mastery
-- Danger premonition
+His careful investigations, divination, ritual knowledge, and willingness to prepare extensively make him valuable to the team. Away from the Nighthawks, he works at the Divination Club to practice the acting method.
 
-:::reveal at=1
-**Sequence 8: Clown**
-- Enhanced agility and flexibility
-- Miraculous performance abilities
-- Emotional manipulation
-- Advanced illusion casting
-:::
+## The Gray Fog
 
-:::reveal at=2
-**Sequence 7: Magician**
-- Master of sleight of hand and misdirection
-- Portal creation and spatial manipulation
-- Advanced spell casting
-- Summoning and binding magic
-:::
+The luck enhancement ritual gives Klein access to a mysterious space above gray fog. There he adopts the identity of **Mr. Fool** and begins regular gatherings with Audrey Hall and Alger Wilson.
+
+## Pathway Progress
+
+- **Sequence 9: Seer** — spirit vision, divination, danger intuition, and ritual magic
+- **Sequence 8: Clown** — exceptional balance, body control, agility, and control of facial expressions
 
 ## Personality
-Klein is cautious, intelligent, and adaptable. He maintains a rational approach despite the supernatural nature of his new reality. His experiences on Earth give him unique perspectives that help him navigate the complex political and mystical landscape of his new world.
 
-:::reveal at=1
-## Relationships
-- **The Hanged Man:** Mysterious connection through dreams
-- **Audrey Hall:** Allied noblewoman with shared interests
-- **Fors Wright:** Fellow Nighthawk and trusted companion
-- **Dunn Smith:** Nighthawk captain and mentor figure
-:::
+Klein is cautious, practical, compassionate, and fond of dry humor. His strongest motivation during the Tingen arc is protecting his family while learning enough about mysticism to survive.
 
-## Status
-**Location:** Tingen City  
-**Occupation:** Private Investigator, Nighthawk  
-**Sequence:** 9 - Seer  
-**Health:** Stable
+## Volume 1 Outcome
 
-:::reveal at=1
-**Updated Sequence:** 8 - Clown
-**New Location:** Backlund City
-:::
-
-:::reveal at=2
-**Final Sequence:** 7 - Magician
-**Special Status:** Demigod Candidate
-:::
+Klein helps prevent the catastrophe threatening Tingen. After the final confrontation, he allows his family and former teammates to believe he died and leaves the city to continue investigating the forces behind the tragedy.

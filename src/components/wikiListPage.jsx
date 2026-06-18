@@ -74,7 +74,10 @@ export default function WikiListPage({
             introducedInVolume: parsed.introducedInVolume ?? 0,
             category: parsed.category || category,
             content: parsed.content || "",
-            image: imageMap[imageKey] || imageMap[Object.keys(imageMap)[0]],
+            image:
+              imageMap[imageKey]
+              || (imageKey === "klein_moretti" ? imageMap.klein_morreti : null)
+              || null,
           };
         });
 
