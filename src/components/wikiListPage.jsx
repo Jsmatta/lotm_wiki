@@ -61,15 +61,14 @@ export default function WikiListPage({
 
       try {
         const categoryFiles = await getCategoryFiles(category);
-        const files = Object.values(categoryFiles).map((file) => file.content);
         const imageMap = await getImages(imageCategory);
 
-        const itemData = files.map((file, index) => {
-          const parsed = parseMarkdownForReact(file, selectedVolume);
+        const itemData = Object.entries(categoryFiles).map(([slug, file]) => {
+          const parsed = parseMarkdownForReact(file.content, selectedVolume);
           const imageKey = slugFromName(parsed.name || "");
 
           return {
-            id: index,
+            id: slug,
             name: parsed.name || "Untitled",
             introducedInVolume: parsed.introducedInVolume ?? 0,
             category: parsed.category || category,

@@ -31,20 +31,26 @@ export default function WikiDetailPage({
 
       try {
         const categoryFiles = await getCategoryFiles(category);
-        const files = Object.values(categoryFiles).map((file) => file.content);
-        const itemIndex = parseInt(id);
+        const file = categoryFiles[id];
 
-        if (Number.isNaN(itemIndex) || itemIndex < 0 || itemIndex >= files.length) {
+        if (!file) {
           setItem(null);
           return;
         }
 
-        const parsed = parseMarkdownForReact(files[itemIndex], selectedVolume);
+        const parsed = parseMarkdownForReact(file.content, selectedVolume);
+        
+        // Spoiler check: if the item's volume exceeds the selected volume, act as if not found
+        if (parsed.introducedInVolume !== undefined && parsed.introducedInVolume > selectedVolume) {
+          setItem(null);
+          return;
+        }
+
         const imageMap = await getImages(imageCategory);
         const imageKey = slugFromName(parsed.name || "");
 
         setItem({
-          id: itemIndex,
+          id: id,
           name: parsed.name || "Untitled",
           introducedInVolume: parsed.introducedInVolume ?? 0,
           category: parsed.category || category,
