@@ -38,15 +38,19 @@ export function App() {
 
   return (
     <Router>
-      <div 
-        className="min-h-screen bg-base-300"
+      {/* Fixed background rendered as its own GPU layer — avoids scroll repaint */}
+      <div
+        aria-hidden="true"
         style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: -1,
           backgroundImage: "url(https://i.redd.it/wxd0v1ggbede1.jpeg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundAttachment: "fixed"
         }}
-      >
+      />
+      <div className="min-h-screen bg-base-300/10">
         <Navbar onVolumeChange={handleVolumeChange} selectedVolume={selectedVolume} />
         <div className="pt-20">
           <Routes>
