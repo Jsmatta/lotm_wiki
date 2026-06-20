@@ -1,4 +1,6 @@
 import ReactMarkdown from 'react-markdown';
+import { Link } from 'react-router-dom';
+import { remarkAutoLinkReferences } from './autoLinkReferences.js';
 
 // Custom components for consistent markdown rendering across the app
 const markdownComponents = {
@@ -81,16 +83,24 @@ const markdownComponents = {
     </tr>
   ),
   
-  a: ({href, children}) => (
-    <a 
-      href={href} 
-      className="text-primary hover:text-primary-focus underline transition-colors duration-200"
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-      {children}
-    </a>
-  ),
+  a: ({href, children}) => {
+    const className = "text-primary hover:text-primary-focus underline transition-colors duration-200";
+
+    return href?.startsWith("/") ? (
+      <Link to={href} className={className}>
+        {children}
+      </Link>
+    ) : (
+      <a
+        href={href}
+        className={className}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {children}
+      </a>
+    );
+  },
   
   hr: () => <hr className="my-8 border-t-2 border-base-300" />,
   
@@ -110,12 +120,19 @@ const markdownComponents = {
  * @param {string} props.content - Markdown content to render
  * @param {string} props.className - Additional CSS classes
  * @param {Object} props.components - Custom components to override defaults
+ * @param {Array} props.references - Wiki pages to link when their names appear
  */
-export function MarkdownRenderer({ content, className = "prose prose-lg max-w-none", components = {} }) {
+export function MarkdownRenderer({
+  content,
+  className = "prose prose-lg max-w-none",
+  components = {},
+  references = [],
+}) {
   return (
     <div className={className}>
-      <ReactMarkdown 
+      <ReactMarkdown
         components={{ ...markdownComponents, ...components }}
+        remarkPlugins={[remarkAutoLinkReferences(references)]}
       >
         {content}
       </ReactMarkdown>

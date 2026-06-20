@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { parseMarkdownForReact } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 import { getImages } from "../utils/imageLoader.js";
+import { getWikiReferences } from "../utils/wikiReferences.js";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
 
 function slugFromName(name) {
@@ -24,6 +25,7 @@ export default function WikiDetailPage({
 }) {
   const { id } = useParams();
   const [item, setItem] = useState(null);
+  const [references, setReferences] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -31,11 +33,17 @@ export default function WikiDetailPage({
       setLoading(true);
 
       try {
-        const categoryFiles = await getCategoryFiles(category);
+        const currentPath = `${routeBase}/${id}`;
+        const [categoryFiles, imageMap, wikiReferences] = await Promise.all([
+          getCategoryFiles(category),
+          getImages(imageCategory),
+          getWikiReferences(selectedVolume, currentPath),
+        ]);
         const file = categoryFiles[id];
 
         if (!file) {
           setItem(null);
+          setReferences([]);
           return;
         }
 
@@ -44,12 +52,13 @@ export default function WikiDetailPage({
         // Spoiler check: if the item's volume exceeds the selected volume, act as if not found
         if (parsed.introducedInVolume !== undefined && parsed.introducedInVolume > selectedVolume) {
           setItem(null);
+          setReferences([]);
           return;
         }
 
-        const imageMap = await getImages(imageCategory);
         const imageKey = slugFromName(parsed.name || "");
 
+        setReferences(wikiReferences);
         setItem({
           id: id,
           name: parsed.name || "Untitled",
@@ -64,6 +73,7 @@ export default function WikiDetailPage({
       } catch (error) {
         console.error(`Error loading ${category} detail:`, error);
         setItem(null);
+        setReferences([]);
       } finally {
         setLoading(false);
       }
@@ -112,7 +122,7 @@ export default function WikiDetailPage({
               <h1 className="text-4xl lg:text-5xl font-bold mb-8 text-primary border-b-2 border-primary/30 pb-3">
                 {item.name}
               </h1>
-              <MarkdownRenderer content={item.content} />
+              <MarkdownRenderer content={item.content} references={references} />
             </section>
           </div>
 
