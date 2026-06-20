@@ -84,17 +84,25 @@ export default function Volumes({ selectedVolume }) {
                       <div className="badge badge-secondary w-fit">
                         {details.chapters}
                       </div>
-                      <p className="text-sm text-base-content/80">
-                        {details.summary}
-                      </p>
-                      <a
-                        href={details.source}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link link-primary text-sm w-fit"
-                      >
-                        Volume source
-                      </a>
+                      {index <= selectedVolume ? (
+                        <>
+                          <p className="text-sm text-base-content/80">
+                            {details.summary}
+                          </p>
+                          <a
+                            href={details.source}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="link link-primary text-sm w-fit"
+                          >
+                            Volume source
+                          </a>
+                        </>
+                      ) : (
+                        <p className="text-sm text-base-content/50 italic">
+                          Summary hidden to prevent spoilers.
+                        </p>
+                      )}
                     </>
                   ) : index > 8 ? (
                     <div className="badge badge-ghost w-fit">
