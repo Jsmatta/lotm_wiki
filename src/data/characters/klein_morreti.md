@@ -56,3 +56,45 @@ He acquires the Sea God Scepter, begins answering Kalvetua's former believers, e
 By the end of the volume, Gehrman Sparrow has become a notorious pirate hunter. Klein survives the Rose School of Thought's attack and converts Admiral of Blood Senor into a marionette before returning toward Backlund.
 
 :::
+
+:::spoiler volume=4
+
+## Volume 4 Role
+
+Klein returns to Backlund as **Dwayne Dantès**, a wealthy gentleman identity built to approach Saint Samuel Cathedral and the Antigonus Family's Notebook. He investigates Foggy Town, steals into Chanis Gate, and strengthens his links with Leonard, Sharron, and Reinette.
+
+The volume closes the Tingen revenge arc. Klein works with Leonard and Daly on the Southern Continent and helps kill Ince Zangwill.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5 Role
+
+Klein becomes a demigod, investigates the Great Smog's deeper cause, and disrupts George III's Black Emperor apotheosis ritual. He uses Life's Cane during the war to heal civilians and digest **Sequence 3: Scholar of Yore**.
+
+:::
+
+:::spoiler volume=6
+
+## Volume 6 Role
+
+Amon captures Klein and brings him through the Forsaken Land of the Gods. Klein discovers Chernobyl, learns the world is Earth, escapes by suicide with Evernight's help, and later opens the Giant King's Court path for the City of Silver.
+
+:::
+
+:::spoiler volume=7
+
+## Volume 7 Role
+
+Klein advances to **Sequence 2: Miracle Invoker**, acts as Merlin Hermes, creates Utopia for his Sequence 1 ritual, and survives Adam's trap to become **Sequence 1: Attendant of Mysteries**.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8 Role
+
+Klein completes his Apotheosis Ritual and becomes **Sequence 0: The Fool**. He defeats Amon in Sefirah Castle, resists the Celestial Worthy's awakening, gives the Tarot Club long-term commissions, releases the cocooned transmigrators, and enters slumber with Arrodes.
+
+:::

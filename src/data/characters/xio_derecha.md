@@ -19,3 +19,11 @@ Xio follows the **Arbiter Pathway**, which emphasizes rules, judgment, physical 
 ## Personality
 
 Xio is direct, dutiful, and more disciplined than Fors. She takes responsibility seriously and often becomes the practical half of their partnership.
+
+:::spoiler volume=5
+
+## Volume 5
+
+Xio advances to **Sequence 7: Interrogator** and joins the Tarot Club as **Judgment**. Her investigation into Viscount Stratford, Shermane, and the truth behind her father's case pulls her into the conspiracy surrounding George III.
+
+:::

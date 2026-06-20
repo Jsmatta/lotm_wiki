@@ -19,3 +19,19 @@ Although Leonard often appears casual, he is observant, brave, and suspicious of
 ## After Tingen
 
 Leonard survives the final disaster. The loss of his captain and teammates gives him a personal reason to pursue those responsible.
+
+:::spoiler volume=4
+
+## Volume 4
+
+Leonard traces Gehrman Sparrow back through Sherlock Moriarty to Klein Moretti and confirms that Klein survived Tingen. He also learns the name of the parasite inside him: Pallez Zoroast.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5
+
+Leonard joins the Tarot Club as **The Star** and is promoted to **Sequence 5: Spirit Warlock**. He works with Klein, Pallez, and Will Auceptin to clear Amon avatars from Backlund, then remains one of the main church-side links to Klein during the war and George III crisis.
+
+:::

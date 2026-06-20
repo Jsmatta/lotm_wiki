@@ -17,6 +17,31 @@ const volumeDetails = {
     summary: "As Gehrman Sparrow, Klein travels the Sonia Sea and advances to Marionettist.",
     source: "https://lordofthemysteries.fandom.com/wiki/Volume_3:_Traveler",
   },
+  4: {
+    chapters: "Chapters 733–946",
+    summary: "Klein returns to Backlund as Dwayne Dantès, uncovers deeper angel-level conflicts, and settles the Ince Zangwill grudge.",
+    source: "https://lordofthemysteries.fandom.com/wiki/Volume_4:_Undying",
+  },
+  5: {
+    chapters: "Chapters 947–1150",
+    summary: "War and royal conspiracy dominate Backlund as Klein becomes a demigod and confronts George III's apotheosis plan.",
+    source: "https://lordofthemysteries.fandom.com/wiki/Volume_5:_Red_Priest",
+  },
+  6: {
+    chapters: "Chapters 1151–1266",
+    summary: "Amon drags Klein into the Forsaken Land of the Gods, where Klein learns the truth of the world and opens a path for the City of Silver.",
+    source: "https://lordofthemysteries.fandom.com/wiki/Volume_6:_Lightseeker",
+  },
+  7: {
+    chapters: "Chapters 1267–1353",
+    summary: "Klein advances toward Attendant of Mysteries while the City of Silver reaches the outside world and Mr. Door returns.",
+    source: "https://lordofthemysteries.fandom.com/wiki/Volume_7:_The_Hanged_Man",
+  },
+  8: {
+    chapters: "Chapters 1354–1394",
+    summary: "Klein completes his Apotheosis Ritual, becomes The Fool, defeats Amon, and enters slumber to resist the Celestial Worthy.",
+    source: "https://lordofthemysteries.fandom.com/wiki/Volume_8:_Fool",
+  },
 };
 
 export default function Volumes({ selectedVolume }) {
@@ -71,7 +96,7 @@ export default function Volumes({ selectedVolume }) {
                         Volume source
                       </a>
                     </>
-                  ) : index > 3 ? (
+                  ) : index > 8 ? (
                     <div className="badge badge-ghost w-fit">
                       Content pass not added yet
                     </div>

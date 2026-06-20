@@ -33,3 +33,27 @@ The Great Smog forces her to confront the human cost behind Backlund's polished 
 Audrey advances to **Sequence 7: Psychiatrist**. She explores dreams and the collective subconscious while continuing to supply the Tarot Club with information from Loen's nobility.
 
 :::
+
+:::spoiler volume=5
+
+## Volume 5
+
+Audrey becomes directly involved in the Psychology Alchemists' high-level politics and receives treatment requests from Klein after his demigod advancement. Her empathy and noble position make her increasingly aware of war's civilian cost.
+
+:::
+
+:::spoiler volume=6
+
+## Volume 6
+
+Audrey advances to **Sequence 4: Manipulator** during the winter period. She becomes one of the Tarot Club's highest-sequence members and assists in the Botis operation.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8
+
+Audrey helps Klein stabilize his mental state before the final Apotheosis Ritual and later receives one of The Fool's long-term commissions.
+
+:::

@@ -126,3 +126,94 @@ Volume 3: Traveler (chapters 483–732)**.
 Volume 2 and 3 asset pass. Some pages have no dedicated source image; in those
 cases the script uses directly related pathway, faction, ship, region, or
 artifact artwork rather than an unrelated fallback.
+
+# Volume 4 Content Sources
+
+The Volume 4 entries are original summaries covering the rest of **Lord of
+Mysteries Book 1**:
+
+- [Volume 4: Undying](https://lordofthemysteries.fandom.com/wiki/Volume_4:_Undying), chapters 733–946
+- [Volume 5: Red Priest](https://lordofthemysteries.fandom.com/wiki/Volume_5:_Red_Priest), chapters 947–1150
+- [Volume 6: Lightseeker](https://lordofthemysteries.fandom.com/wiki/Volume_6:_Lightseeker), chapters 1151–1266
+- [Volume 7: The Hanged Man](https://lordofthemysteries.fandom.com/wiki/Volume_7:_The_Hanged_Man), chapters 1267–1353
+- [Volume 8: Fool](https://lordofthemysteries.fandom.com/wiki/Volume_8:_Fool), chapters 1354–1394
+- [Lord of Mysteries on Webnovel](https://www.webnovel.com/book/11022733006234505)
+
+## Principal Volume 4 references
+
+- [Adam](https://lordofthemysteries.fandom.com/wiki/Adam)
+- [Amon](https://lordofthemysteries.fandom.com/wiki/Amon)
+- [Pallez Zoroast](https://lordofthemysteries.fandom.com/wiki/Pallez_Zoroast)
+- [Ince Zangwill](https://lordofthemysteries.fandom.com/wiki/Ince_Zangwill)
+- [Daly Simone](https://lordofthemysteries.fandom.com/wiki/Daly_Simone)
+- [Cohinem](https://lordofthemysteries.fandom.com/wiki/Cohinem)
+- [Ludwell](https://lordofthemysteries.fandom.com/wiki/Ludwell)
+- [Hvin Rambis](https://lordofthemysteries.fandom.com/wiki/Hvin_Rambis)
+- [Qonas Kilgor](https://lordofthemysteries.fandom.com/wiki/Qonas_Kilgor)
+- [George Augustus III](https://lordofthemysteries.fandom.com/wiki/George_Augustus_III)
+- [Trissy](https://lordofthemysteries.fandom.com/wiki/Trissy)
+- [Shermane](https://lordofthemysteries.fandom.com/wiki/Shermane)
+- [Stratford](https://lordofthemysteries.fandom.com/wiki/Stratford)
+- [Katarina Pelle](https://lordofthemysteries.fandom.com/wiki/Katarina_Pelle)
+- [Ernes Boyar](https://lordofthemysteries.fandom.com/wiki/Ernes_Boyar)
+- [Flora Jacob](https://lordofthemysteries.fandom.com/wiki/Flora_Jacob)
+- [Nast Solomon](https://lordofthemysteries.fandom.com/wiki/Nast_Solomon)
+- [William Augustus I](https://lordofthemysteries.fandom.com/wiki/William_Augustus_I)
+- [Suah](https://lordofthemysteries.fandom.com/wiki/Suah)
+- [Hermes](https://lordofthemysteries.fandom.com/wiki/Hermes)
+- [Arianna](https://lordofthemysteries.fandom.com/wiki/Arianna)
+- [Zaratul](https://lordofthemysteries.fandom.com/wiki/Zaratul)
+- [Colin Iliad](https://lordofthemysteries.fandom.com/wiki/Colin_Iliad)
+- [Lovia Tiffany](https://lordofthemysteries.fandom.com/wiki/Lovia_Tiffany)
+- [Kotar](https://lordofthemysteries.fandom.com/wiki/Kotar)
+- [Botis](https://lordofthemysteries.fandom.com/wiki/Botis)
+- [Dorian Gray Abraham](https://lordofthemysteries.fandom.com/wiki/Dorian_Gray_Abraham)
+- [Bethel Abraham](https://lordofthemysteries.fandom.com/wiki/Bethel_Abraham)
+- [Roselle Gustav](https://lordofthemysteries.fandom.com/wiki/Roselle_Gustav)
+- [Verdu Garcia](https://lordofthemysteries.fandom.com/wiki/Verdu_Garcia)
+- [Medici](https://lordofthemysteries.fandom.com/wiki/Medici)
+- [Ancient Sun God](https://lordofthemysteries.fandom.com/wiki/Ancient_Sun_God)
+- [Lilith](https://lordofthemysteries.fandom.com/wiki/Lilith)
+- [Celestial Worthy](https://lordofthemysteries.fandom.com/wiki/Celestial_Worthy)
+- [Outer Deities](https://lordofthemysteries.fandom.com/wiki/Outer_Deities)
+- [Fool Pathway](https://lordofthemysteries.fandom.com/wiki/Fool_Pathway)
+- [Death Pathway](https://lordofthemysteries.fandom.com/wiki/Death_Pathway)
+- [Error Pathway](https://lordofthemysteries.fandom.com/wiki/Error_Pathway)
+- [Black Emperor Pathway](https://lordofthemysteries.fandom.com/wiki/Black_Emperor_Pathway)
+- [Demoness Pathway](https://lordofthemysteries.fandom.com/wiki/Demoness_Pathway)
+- [Twilight Giant Pathway](https://lordofthemysteries.fandom.com/wiki/Twilight_Giant_Pathway)
+- [Forsaken Land of the Gods](https://lordofthemysteries.fandom.com/wiki/Forsaken_Land_of_the_Gods)
+- [Chernobyl](https://lordofthemysteries.fandom.com/wiki/Chernobyl)
+- [Giant King's Court](https://lordofthemysteries.fandom.com/wiki/Giant_King%27s_Court)
+- [Moon City](https://lordofthemysteries.fandom.com/wiki/Moon_City)
+- [Belltaine City](https://lordofthemysteries.fandom.com/wiki/Belltaine_City)
+- [Feysac Empire](https://lordofthemysteries.fandom.com/wiki/Feysac_Empire)
+- [Abandoned Castle](https://lordofthemysteries.fandom.com/wiki/Abandoned_Castle)
+- [Utopia](https://lordofthemysteries.fandom.com/wiki/Utopia)
+- [Calderón City](https://lordofthemysteries.fandom.com/wiki/Calder%C3%B3n_City)
+- [Chaos Sea](https://lordofthemysteries.fandom.com/wiki/Chaos_Sea)
+- [River of Eternal Darkness](https://lordofthemysteries.fandom.com/wiki/River_of_Eternal_Darkness)
+- [Aurora Order](https://lordofthemysteries.fandom.com/wiki/Aurora_Order)
+- [Eternal Life Society](https://lordofthemysteries.fandom.com/wiki/Eternal_Life_Society)
+- [Church of the Earth Mother](https://lordofthemysteries.fandom.com/wiki/Church_of_the_Earth_Mother)
+- [Demoness Sect](https://lordofthemysteries.fandom.com/wiki/Demoness_Sect)
+- [Loen Royal Family](https://lordofthemysteries.fandom.com/wiki/Loen_Royal_Family)
+- [Temperance Faction](https://lordofthemysteries.fandom.com/wiki/Temperance_Faction)
+- [Church of the Fool](https://lordofthemysteries.fandom.com/wiki/Church_of_the_Fool)
+- [Cards of Blasphemy](https://lordofthemysteries.fandom.com/wiki/Cards_of_Blasphemy)
+- [Life's Cane](https://lordofthemysteries.fandom.com/wiki/Life%27s_Cane)
+- [Magic Wishing Lamp](https://lordofthemysteries.fandom.com/wiki/Magic_Wishing_Lamp)
+- [Mutated Sun Sacred Emblem](https://lordofthemysteries.fandom.com/wiki/Mutated_Sun_Sacred_Emblem)
+- [Unshadowed Crucifix](https://lordofthemysteries.fandom.com/wiki/Unshadowed_Crucifix)
+- [Blasphemy Slate](https://lordofthemysteries.fandom.com/wiki/Blasphemy_Slate)
+- [Trunsoest Brass Book](https://lordofthemysteries.fandom.com/wiki/Trunsoest_Brass_Book)
+- [Klein's Apotheosis Ritual](https://lordofthemysteries.fandom.com/wiki/Klein%27s_Apotheosis_Ritual)
+- [George III's Apotheosis Ritual](https://lordofthemysteries.fandom.com/wiki/George_III%27s_Apotheosis_Ritual)
+
+`scripts/download_volume4_images.sh` records the page-image lookup and
+fallback image logic used for the Volume 4–8 asset pass. For entries without a
+dedicated page image, the fallback is a related pathway, faction, setting, or
+volume image from the same source wiki.
+
+`scripts/download_volume5_images.sh` is the focused Volume 5 asset script used
+for the album-by-album correction pass.

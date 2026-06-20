@@ -29,3 +29,11 @@ Fors is witty, lazy when she can afford it, and more courageous than she gives h
 Fors finishes digesting Apprentice and advances to **Sequence 8: Trickmaster**. Her relationship with the Abraham family deepens, and Leymano's Travels becomes an important tool for recording powers exchanged through the Tarot Club.
 
 :::
+
+:::spoiler volume=5
+
+## Volume 5
+
+Fors and Xio explore the Abandoned Castle and become more directly involved with Abraham Family matters. Fors advances to **Sequence 6: Scribe**, giving the Tarot Club a stronger way to preserve and reuse Beyonder powers.
+
+:::

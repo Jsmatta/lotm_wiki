@@ -29,3 +29,11 @@ Emlyn is vain, dramatic, and convinced of his own refinement. Beneath that pride
 Emlyn advances to **Sequence 7: Potions Professor**. He acts as one of Klein's contacts in Backlund, purchases the Tinder from Leonard Mitchell, and begins investigating believers of the Primordial Moon.
 
 :::
+
+:::spoiler volume=5
+
+## Volume 5
+
+Emlyn receives a mission connected to the Rose School of Thought and works with the Tarot Club against Ernes Boyar. The operation sends Ernes to Harvest Church and helps Emlyn advance to **Sequence 5: Scarlet Scholar**.
+
+:::

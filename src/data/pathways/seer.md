@@ -79,3 +79,37 @@ Marionettists perceive and control spirit-body threads. Gradual control first sl
 Klein completes the promotion ritual after hearing mermaid singing in the Sea of Ruins. Senor later becomes his first major long-term marionette.
 
 :::
+
+:::spoiler volume=5
+
+## Later Progression
+
+### Sequence 4: Bizarro Sorcerer
+
+Klein becomes a demigod of the pathway, gaining stronger marionette use, bizarre spell effects, and the ability to fight on a saint-level battlefield.
+
+### Sequence 3: Scholar of Yore
+
+Scholars of Yore draw power from history and can summon projections from the historical void. Klein digests this potion through the war and the legend of the healing Clown.
+
+:::
+
+:::spoiler volume=7
+
+### Sequence 2: Miracle Invoker
+
+Miracle Invokers accumulate wishes and perform miracles within limits. Klein acts as Merlin Hermes to digest this stage.
+
+### Sequence 1: Attendant of Mysteries
+
+Klein completes the advancement through the Utopia ritual, controlling a town of marionettes while surviving pressure from Zaratul, Adam, and Amon.
+
+:::
+
+:::spoiler volume=8
+
+### Sequence 0: The Fool
+
+The Fool controls fooling, change, history, and Sefirah Castle's corresponding authority. Klein's ascension completes the pathway's main novel arc.
+
+:::

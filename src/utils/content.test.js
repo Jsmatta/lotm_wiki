@@ -48,12 +48,12 @@ describe("wiki content", () => {
       expect(entry.data.name).toBeTruthy();
       expect(entry.data.category).toBeTruthy();
       expect(entry.data.introducedInVolume).toBeGreaterThanOrEqual(1);
-      expect(entry.data.introducedInVolume).toBeLessThanOrEqual(3);
+      expect(entry.data.introducedInVolume).toBeLessThanOrEqual(8);
       expect(names.has(entry.data.name)).toBe(false);
       names.add(entry.data.name);
 
       const warnings = [];
-      processRevealBlocks(entry.content, 3, {
+      processRevealBlocks(entry.content, 8, {
         warn: (message) => warnings.push(message),
       });
       expect(warnings).toEqual([]);
