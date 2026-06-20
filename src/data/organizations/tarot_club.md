@@ -21,3 +21,19 @@ The group meets above the gray fog on Monday afternoons. Members exchange Beyond
 ## Volume 1 Development
 
 What begins as Klein's improvised attempt to appear powerful develops into a genuine information network. Audrey and Alger's assumptions about Mr. Fool help Klein establish the gathering's rituals and authority.
+
+:::spoiler volume=2
+
+## Volume 2 Expansion
+
+Derrick Berg joins as **The Sun**, Fors Wall as **The Magician**, and Emlyn White as **The Moon**. The club begins exchanging formulas, ingredients, diary pages, missions, and cross-regional intelligence at a larger scale.
+
+:::
+
+:::spoiler volume=3
+
+## Volume 3 Expansion
+
+Cattleya joins as **The Hermit**. Her high sequence and connection to Bernadette Gustav add substantial knowledge, but also force Klein to enforce clearer rules against investigating Mr. Fool without permission.
+
+:::

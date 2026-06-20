@@ -21,3 +21,11 @@ Derrick follows the **Sun Pathway**, which specializes in purification, light, o
 ## Personality
 
 Derrick is sincere, earnest, and inexperienced with deception. His straightforward nature makes him stand out among the more guarded Tarot Club members.
+
+:::spoiler volume=3
+
+## Volume 3
+
+Derrick advances to **Sequence 7: Solar High Priest** and joins the City of Silver's renewed expedition toward Afternoon Town. Information from the Tarot Club helps him recognize dangers that his companions cannot easily detect.
+
+:::

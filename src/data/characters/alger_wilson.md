@@ -17,3 +17,19 @@ During Volume 1, Alger supplies mysticism knowledge, formulas, and warnings. His
 ## Pathway
 
 Alger follows the Sailor Pathway. His abilities give him excellent balance, strength, swimming ability, and resilience in harsh maritime conditions.
+
+:::spoiler volume=2
+
+## Volume 2
+
+Alger advances to Sequence 8 Seafarer and continues trading formulas and intelligence through the Tarot Club.
+
+:::
+
+:::spoiler volume=3
+
+## Volume 3
+
+Alger advances to **Sequence 7: Wind-blessed**. He meets Klein and Danitz in Bayam, helps navigate local intelligence, and later receives an official assignment to investigate Gehrman Sparrow.
+
+:::

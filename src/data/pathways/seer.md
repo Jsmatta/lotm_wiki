@@ -62,3 +62,20 @@ Faceless Beyonders can alter their appearance and body shape, allowing them to a
 Klein's promotion lets him prepare the Gehrman Sparrow identity before leaving Backlund.
 
 :::
+
+:::spoiler volume=3
+
+## Volume 3 Progression
+
+### Sequence 5: Marionettist
+
+Marionettists perceive and control spirit-body threads. Gradual control first slows a target and can eventually turn it into a marionette that retains many original abilities.
+
+- Detect spirit-body threads
+- Control a target from a limited distance
+- Use multiple marionettes as extensions of the user
+- Combine a marionette's powers with elaborate preparation
+
+Klein completes the promotion ritual after hearing mermaid singing in the Sea of Ruins. Senor later becomes his first major long-term marionette.
+
+:::

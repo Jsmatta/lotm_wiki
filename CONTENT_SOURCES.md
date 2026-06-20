@@ -91,3 +91,38 @@ left out until that volume is added.
 - [Moon Pathway](https://lordofthemysteries.fandom.com/wiki/Moon_Pathway)
 - [Black Emperor Card](https://lordofthemysteries.fandom.com/wiki/Black_Emperor_Card)
 - [Arrodes](https://lordofthemysteries.fandom.com/wiki/Arrodes)
+
+# Volume 3 Content Sources
+
+The Volume 3 entries are original summaries limited to **Lord of Mysteries,
+Volume 3: Traveler (chapters 483–732)**.
+
+## Core scope
+
+- [Volume 3: Traveler](https://lordofthemysteries.fandom.com/wiki/Volume_3:_Traveler)
+- [Lord of Mysteries on Webnovel](https://www.webnovel.com/book/11022733006234505)
+
+## Principal references
+
+- [Danitz](https://lordofthemysteries.fandom.com/wiki/Danitz)
+- [Edwina Edwards](https://lordofthemysteries.fandom.com/wiki/Edwina_Edwards)
+- [Cattleya](https://lordofthemysteries.fandom.com/wiki/Cattleya)
+- [Frank Lee](https://lordofthemysteries.fandom.com/wiki/Frank_Lee)
+- [Anderson Hood](https://lordofthemysteries.fandom.com/wiki/Anderson_Hood)
+- [Reinette Tinekerr](https://lordofthemysteries.fandom.com/wiki/Reinette_Tinekerr)
+- [Bayam](https://lordofthemysteries.fandom.com/wiki/Bayam)
+- [Bansy Harbor](https://lordofthemysteries.fandom.com/wiki/Bansy_Harbor)
+- [Rorsted Archipelago](https://lordofthemysteries.fandom.com/wiki/Rorsted_Archipelago)
+- [Sea of Ruins](https://lordofthemysteries.fandom.com/wiki/Sea_of_Ruins)
+- [Golden Dream Pirates](https://lordofthemysteries.fandom.com/wiki/Golden_Dream_Pirates)
+- [Stars Pirates](https://lordofthemysteries.fandom.com/wiki/Stars_Pirates)
+- [Creeping Hunger](https://lordofthemysteries.fandom.com/wiki/Creeping_Hunger)
+- [Sea God Scepter](https://lordofthemysteries.fandom.com/wiki/Sea_God_Scepter)
+- [Die of Probability](https://lordofthemysteries.fandom.com/wiki/Die_of_Probability)
+- [Groselle's Travels](https://lordofthemysteries.fandom.com/wiki/Groselle%27s_Travels)
+- [Leymano's Travels](https://lordofthemysteries.fandom.com/wiki/Leymano%27s_Travels)
+
+`scripts/download_volume2_3_images.sh` records the image URLs used for the
+Volume 2 and 3 asset pass. Some pages have no dedicated source image; in those
+cases the script uses directly related pathway, faction, ship, region, or
+artifact artwork rather than an unrelated fallback.

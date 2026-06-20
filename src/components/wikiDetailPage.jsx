@@ -4,6 +4,7 @@ import { parseMarkdownForReact } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 import { getImages } from "../utils/imageLoader.js";
 import { getWikiReferences } from "../utils/wikiReferences.js";
+import { getExternalReferences } from "../utils/externalReferences.js";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
 
 function slugFromName(name) {
@@ -26,6 +27,7 @@ export default function WikiDetailPage({
   const { id } = useParams();
   const [item, setItem] = useState(null);
   const [references, setReferences] = useState([]);
+  const [externalReferences, setExternalReferences] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,6 +46,7 @@ export default function WikiDetailPage({
         if (!file) {
           setItem(null);
           setReferences([]);
+          setExternalReferences([]);
           return;
         }
 
@@ -53,12 +56,14 @@ export default function WikiDetailPage({
         if (parsed.introducedInVolume !== undefined && parsed.introducedInVolume > selectedVolume) {
           setItem(null);
           setReferences([]);
+          setExternalReferences([]);
           return;
         }
 
         const imageKey = slugFromName(parsed.name || "");
 
         setReferences(wikiReferences);
+        setExternalReferences(getExternalReferences(parsed.name || "Untitled"));
         setItem({
           id: id,
           name: parsed.name || "Untitled",
@@ -74,6 +79,7 @@ export default function WikiDetailPage({
         console.error(`Error loading ${category} detail:`, error);
         setItem(null);
         setReferences([]);
+        setExternalReferences([]);
       } finally {
         setLoading(false);
       }
@@ -172,6 +178,20 @@ export default function WikiDetailPage({
                     </tr>
                   </tbody>
                 </table>
+
+                <div className="grid gap-2 mt-4 pt-4 border-t border-base-300">
+                  {externalReferences.map((reference) => (
+                    <a
+                      key={reference.href}
+                      href={reference.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-sm normal-case"
+                    >
+                      {reference.label}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </aside>

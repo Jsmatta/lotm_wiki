@@ -10,7 +10,7 @@ Emlyn White is a vampire living in Backlund. He is proud, eccentric, and strongl
 
 ## Volume 2 Role
 
-Emlyn is introduced through Harvest Church and Father Utravsky. His circumstances force him into contact with Klein, and he later prays to The Fool, becoming connected to the Tarot Club.
+Emlyn is introduced through Harvest Church and Father Utravsky. Elder Nibbs Odora later directs him to pray to The Fool, and he joins the Tarot Club as **The Moon** near the end of Volume 2.
 
 His arrival adds the Sanguine and the Moon Pathway to the story's expanding web of powers.
 
@@ -21,3 +21,11 @@ Emlyn follows the **Moon Pathway**, associated with the Sanguine, medicine, vita
 ## Personality
 
 Emlyn is vain, dramatic, and convinced of his own refinement. Beneath that pride, he is not cruel, and Volume 2 shows him helping with medicine after Backlund's disaster.
+
+:::spoiler volume=3
+
+## Volume 3
+
+Emlyn advances to **Sequence 7: Potions Professor**. He acts as one of Klein's contacts in Backlund, purchases the Tinder from Leonard Mitchell, and begins investigating believers of the Primordial Moon.
+
+:::

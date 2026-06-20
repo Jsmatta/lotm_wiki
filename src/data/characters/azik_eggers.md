@@ -15,3 +15,11 @@ Klein consults Azik about history, the Antigonus family, and supernatural events
 ## Mystery
 
 Recurring dreams, forgotten periods of life, and old photographs suggest that Azik's past extends much further than it should. He and Klein agree to help one another investigate their respective mysteries.
+
+:::spoiler volume=3
+
+## Volume 3
+
+Azik joins Klein in confronting Vice Admiral of Ailment Tracy over historical documents connected to Death. He later helps Klein escape the Rose School of Thought's attack near Bayam.
+
+:::

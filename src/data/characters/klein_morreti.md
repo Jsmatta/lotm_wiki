@@ -44,3 +44,15 @@ He advances to **Sequence 7: Magician** and later **Sequence 6: Faceless**. The 
 Klein kills Lanevus, helps disrupt the True Creator's attempted descent, steals the Black Emperor Card, and survives the Great Smog of Backlund. The disaster deepens his hatred of the powerful people who treat ordinary lives as expendable.
 
 :::
+
+:::spoiler volume=3
+
+## Volume 3 Role
+
+Klein leaves Backlund as **Gehrman Sparrow**, an intentionally intimidating adventurer who hunts pirates across the Sonia Sea. He travels through Bansy Harbor, Bayam, Oravi Island, and the Sea of Ruins while refining his Faceless acting.
+
+He acquires the Sea God Scepter, begins answering Kalvetua's former believers, employs Reinette Tinekerr as his messenger, and advances to **Sequence 5: Marionettist** after finding mermaids.
+
+By the end of the volume, Gehrman Sparrow has become a notorious pirate hunter. Klein survives the Rose School of Thought's attack and converts Admiral of Blood Senor into a marionette before returning toward Backlund.
+
+:::

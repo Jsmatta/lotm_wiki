@@ -15,3 +15,11 @@ Arrodes becomes relevant to Klein during Backlund investigations. Its behavior i
 ## Importance
 
 The mirror adds a mix of danger, comedy, and useful information to the Faceless arc. It also shows that sealed artifacts can have personalities and agendas rather than simple effects.
+
+:::spoiler volume=3
+
+## Volume 3
+
+Arrodes communicates with Klein through a telegraph machine, answers questions about Will Auceptin and Leonard Mitchell, and continues addressing Klein with unusual respect.
+
+:::

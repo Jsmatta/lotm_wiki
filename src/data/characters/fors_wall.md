@@ -21,3 +21,11 @@ Fors belongs to the **Apprentice Pathway**, a pathway associated with doors, tra
 ## Personality
 
 Fors is witty, lazy when she can afford it, and more courageous than she gives herself credit for. She often complains, but she does not abandon people close to her.
+
+:::spoiler volume=3
+
+## Volume 3
+
+Fors finishes digesting Apprentice and advances to **Sequence 8: Trickmaster**. Her relationship with the Abraham family deepens, and Leymano's Travels becomes an important tool for recording powers exchanged through the Tarot Club.
+
+:::

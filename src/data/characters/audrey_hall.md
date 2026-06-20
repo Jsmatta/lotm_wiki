@@ -15,3 +15,21 @@ Audrey is accidentally drawn above the gray fog during Klein's ritual. She choos
 ## Pathway
 
 Audrey becomes a **Sequence 9: Spectator**. By carefully observing posture, expression, tone, and unconscious habits, she can read emotions and infer what people are thinking. Her golden retriever, Susie, is accidentally exposed to the same potion.
+
+:::spoiler volume=2
+
+## Volume 2
+
+Audrey advances through Telepathist and joins the Psychology Alchemists. She uses her noble connections to pass warnings about Lanevus, Trissy, and the planned descent of the True Creator.
+
+The Great Smog forces her to confront the human cost behind Backlund's polished upper-class life.
+
+:::
+
+:::spoiler volume=3
+
+## Volume 3
+
+Audrey advances to **Sequence 7: Psychiatrist**. She explores dreams and the collective subconscious while continuing to supply the Tarot Club with information from Loen's nobility.
+
+:::
