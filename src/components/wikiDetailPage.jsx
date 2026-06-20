@@ -18,6 +18,7 @@ export default function WikiDetailPage({
   title,
   routeBase,
   singularTitle,
+  introductionLabel = "Introduction",
   imageCategory = category,
   fallbackIconPath,
 }) {
@@ -156,7 +157,7 @@ export default function WikiDetailPage({
                       <td className="text-sm capitalize">{item.category}</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200/50 text-xs uppercase opacity-70">Introduction</th>
+                      <th className="bg-base-200/50 text-xs uppercase opacity-70">{introductionLabel}</th>
                       <td className="text-sm">Volume {item.introducedInVolume}</td>
                     </tr>
                   </tbody>

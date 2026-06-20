@@ -30,3 +30,17 @@ Klein is cautious, practical, compassionate, and fond of dry humor. His stronges
 ## Volume 1 Outcome
 
 Klein helps prevent the catastrophe threatening Tingen. After the final confrontation, he allows his family and former teammates to believe he died and leaves the city to continue investigating the forces behind the tragedy.
+
+:::reveal at=2
+
+## Volume 2 Role
+
+Klein arrives in Backlund under the identity **Sherlock Moriarty**, working as a private detective while keeping his survival hidden from his family and former teammates. The city exposes him to intelligence conflicts, secret organizations, poverty in East Borough, and conspiracies tied to the True Creator and Ince Zangwill.
+
+He advances to **Sequence 7: Magician** and later **Sequence 6: Faceless**. The new sequence lets him change his appearance and prepare the next identity he will use after leaving Backlund: **Gehrman Sparrow**.
+
+## Backlund Outcome
+
+Klein kills Lanevus, helps disrupt the True Creator's attempted descent, steals the Black Emperor Card, and survives the Great Smog of Backlund. The disaster deepens his hatred of the powerful people who treat ordinary lives as expendable.
+
+:::

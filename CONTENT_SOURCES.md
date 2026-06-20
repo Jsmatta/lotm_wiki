@@ -53,3 +53,41 @@ Entry images are downloaded from the corresponding wiki pages by
 pixels, stripped of embedded metadata, and saved as WebP at quality 82.
 Source ownership and licensing remain with the original artists and publishers;
 the wiki pages provide the source context for each asset.
+
+# Volume 2 Content Sources
+
+The Volume 2 entries in `src/data/` are original summaries limited to
+**Lord of Mysteries, Volume 2: Faceless (chapters 214–482)**. Later-volume
+details from source pages should stay behind `:::reveal at=...` blocks or be
+left out until that volume is added.
+
+## Core scope
+
+- [Volume 2: Faceless](https://lordofthemysteries.fandom.com/wiki/Volume_2:_Faceless)
+- [Lord of Mysteries on Webnovel](https://www.webnovel.com/book/11022733006234505)
+
+## Characters
+
+- [Klein Moretti](https://lordofthemysteries.fandom.com/wiki/Klein_Moretti)
+- [Sharron](https://lordofthemysteries.fandom.com/wiki/Sharron)
+- [Maric](https://lordofthemysteries.fandom.com/wiki/Maric)
+- [Ian Wright](https://lordofthemysteries.fandom.com/wiki/Ian_Wright)
+- [Derrick Berg](https://lordofthemysteries.fandom.com/wiki/Derrick_Berg)
+- [Fors Wall](https://lordofthemysteries.fandom.com/wiki/Fors_Wall)
+- [Xio Derecha](https://lordofthemysteries.fandom.com/wiki/Xio_Derecha)
+- [Emlyn White](https://lordofthemysteries.fandom.com/wiki/Emlyn_White)
+- [Old Kohler](https://lordofthemysteries.fandom.com/wiki/Old_Kohler)
+
+## World and systems
+
+- [Backlund](https://lordofthemysteries.fandom.com/wiki/Backlund)
+- [East Borough](https://lordofthemysteries.fandom.com/wiki/East_Borough)
+- [Harvest Church](https://lordofthemysteries.fandom.com/wiki/Harvest_Church)
+- [MI9](https://lordofthemysteries.fandom.com/wiki/MI9)
+- [Machinery Hivemind](https://lordofthemysteries.fandom.com/wiki/Machinery_Hivemind)
+- [Fool Pathway](https://lordofthemysteries.fandom.com/wiki/Fool_Pathway)
+- [Chained Pathway](https://lordofthemysteries.fandom.com/wiki/Chained_Pathway)
+- [Sun Pathway](https://lordofthemysteries.fandom.com/wiki/Sun_Pathway)
+- [Moon Pathway](https://lordofthemysteries.fandom.com/wiki/Moon_Pathway)
+- [Black Emperor Card](https://lordofthemysteries.fandom.com/wiki/Black_Emperor_Card)
+- [Arrodes](https://lordofthemysteries.fandom.com/wiki/Arrodes)
