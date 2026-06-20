@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   VolumeDropdown,
   volumes,
@@ -8,7 +8,27 @@ import { SectionDropdown, sections } from "./sectionDropdown.jsx";
 import "../index.css";
 
 export default function Navbar({ onVolumeChange, selectedVolume }) {
-  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const currentQuery = queryParams.get("q") || "";
+
+  const [searchQuery, setSearchQuery] = useState(currentQuery);
+
+  useEffect(() => {
+    if (location.pathname === "/search") {
+      setSearchQuery(currentQuery);
+    } else {
+      setSearchQuery("");
+    }
+  }, [location.pathname, currentQuery]);
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
   const [selectedSection, setSelectedSection] = useState(sections[0].label);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isVolumeDropdownOpen, setIsVolumeDropdownOpen] = useState(false);
@@ -61,16 +81,16 @@ export default function Navbar({ onVolumeChange, selectedVolume }) {
         </div>
       </div>
        <div className="navbar-end">
-         <div className="flex gap-2">
+         <form onSubmit={handleSearchSubmit} className="flex gap-2">
            <input
-             type="text"
-             placeholder="Search"
+             type="search"
+             placeholder="Search..."
              className="input input-bordered w-24 md:w-auto"
              value={searchQuery}
-             onChange={(e) => setSearchQuery(e.target.value)}
+             onInput={(e) => setSearchQuery(e.currentTarget.value)}
            />
-        </div>
-      </div>
+         </form>
+       </div>
       <SectionDropdown
         isOpen={isDropdownOpen}
         onClose={() => setIsDropdownOpen(false)}

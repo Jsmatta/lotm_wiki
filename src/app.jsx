@@ -17,6 +17,7 @@ import GodDetail from "./pages/godDetail.jsx";
 import OrganizationDetail from "./pages/organizationDetail.jsx";
 import SpellDetail from "./pages/spellDetail.jsx";
 import SealedArtifactDetail from "./pages/sealedArtifactDetail.jsx";
+import Search from "./pages/search.jsx";
 import Navbar from "./components/navbar.jsx";
 
 
@@ -112,6 +113,10 @@ export function App() {
             <Route
               path="/sealed-artifacts/:id"
               element={<SealedArtifactDetail selectedVolume={selectedVolume} />}
+            />
+            <Route
+              path="/search"
+              element={<Search selectedVolume={selectedVolume} />}
             />
           </Routes>
         </div>
