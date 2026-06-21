@@ -139,4 +139,19 @@ download_page_image sealed_artifacts devils_oil_painting "Devil's Oil Painting" 
 download_page_image sealed_artifacts pale_death "Pale Death" "$death_art"
 download_page_image spells kleins_apotheosis_ritual "Klein's Apotheosis Ritual" "$volume8_art"
 
+download_page_image characters antigonus "Antigonus" "$fool_art"
+download_page_image characters ouroboros "Ouroboros" "$volume8_art"
+
+download_page_image gods lord_of_the_mysteries "Lord of the Mysteries" "$fool_art"
+download_page_image gods mother_goddess_of_depravity "Mother Goddess of Depravity" "https://static.wikia.nocookie.net/lord-of-the-mystery/images/4/4f/Mother_Official_Art.jpg/revision/latest?cb=20210322065604"
+download_page_image gods son_of_chaos "Son of Chaos" "$volume8_art"
+download_page_image gods god_of_almighty "God Almighty" "$visionary_art"
+
+download_page_image places city_of_calamity "City of Calamity" "$red_priest_art"
+download_page_image places brood_hive "Brood Hive" "$volume8_art"
+download_page_image places nation_of_disorder "Nation of Disorder" "$volume8_art"
+download_page_image places knowledge_moor "Knowledge Moor" "$volume8_art"
+download_page_image places key_of_light "Key of Light" "$volume8_art"
+download_page_image places tenebrous_world "Tenebrous World" "$volume8_art"
+
 echo "Downloaded and converted Volume 4-8 images."

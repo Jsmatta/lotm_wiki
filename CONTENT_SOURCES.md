@@ -127,9 +127,9 @@ Volume 2 and 3 asset pass. Some pages have no dedicated source image; in those
 cases the script uses directly related pathway, faction, ship, region, or
 artifact artwork rather than an unrelated fallback.
 
-# Volume 4 Content Sources
+# Volume 4-8 Content Sources
 
-The Volume 4 entries are original summaries covering the rest of **Lord of
+The Volume 4-8 entries are original summaries covering the rest of **Lord of
 Mysteries Book 1**:
 
 - [Volume 4: Undying](https://lordofthemysteries.fandom.com/wiki/Volume_4:_Undying), chapters 733–946
@@ -139,10 +139,8 @@ Mysteries Book 1**:
 - [Volume 8: Fool](https://lordofthemysteries.fandom.com/wiki/Volume_8:_Fool), chapters 1354–1394
 - [Lord of Mysteries on Webnovel](https://www.webnovel.com/book/11022733006234505)
 
-## Principal Volume 4 references
+## Principal Volume 4-6 references
 
-- [Adam](https://lordofthemysteries.fandom.com/wiki/Adam)
-- [Amon](https://lordofthemysteries.fandom.com/wiki/Amon)
 - [Pallez Zoroast](https://lordofthemysteries.fandom.com/wiki/Pallez_Zoroast)
 - [Ince Zangwill](https://lordofthemysteries.fandom.com/wiki/Ince_Zangwill)
 - [Daly Simone](https://lordofthemysteries.fandom.com/wiki/Daly_Simone)
@@ -162,26 +160,14 @@ Mysteries Book 1**:
 - [Suah](https://lordofthemysteries.fandom.com/wiki/Suah)
 - [Hermes](https://lordofthemysteries.fandom.com/wiki/Hermes)
 - [Arianna](https://lordofthemysteries.fandom.com/wiki/Arianna)
-- [Zaratul](https://lordofthemysteries.fandom.com/wiki/Zaratul)
 - [Colin Iliad](https://lordofthemysteries.fandom.com/wiki/Colin_Iliad)
 - [Lovia Tiffany](https://lordofthemysteries.fandom.com/wiki/Lovia_Tiffany)
 - [Kotar](https://lordofthemysteries.fandom.com/wiki/Kotar)
 - [Botis](https://lordofthemysteries.fandom.com/wiki/Botis)
 - [Dorian Gray Abraham](https://lordofthemysteries.fandom.com/wiki/Dorian_Gray_Abraham)
-- [Bethel Abraham](https://lordofthemysteries.fandom.com/wiki/Bethel_Abraham)
 - [Roselle Gustav](https://lordofthemysteries.fandom.com/wiki/Roselle_Gustav)
 - [Verdu Garcia](https://lordofthemysteries.fandom.com/wiki/Verdu_Garcia)
 - [Medici](https://lordofthemysteries.fandom.com/wiki/Medici)
-- [Ancient Sun God](https://lordofthemysteries.fandom.com/wiki/Ancient_Sun_God)
-- [Lilith](https://lordofthemysteries.fandom.com/wiki/Lilith)
-- [Celestial Worthy](https://lordofthemysteries.fandom.com/wiki/Celestial_Worthy)
-- [Outer Deities](https://lordofthemysteries.fandom.com/wiki/Outer_Deities)
-- [Fool Pathway](https://lordofthemysteries.fandom.com/wiki/Fool_Pathway)
-- [Death Pathway](https://lordofthemysteries.fandom.com/wiki/Death_Pathway)
-- [Error Pathway](https://lordofthemysteries.fandom.com/wiki/Error_Pathway)
-- [Black Emperor Pathway](https://lordofthemysteries.fandom.com/wiki/Black_Emperor_Pathway)
-- [Demoness Pathway](https://lordofthemysteries.fandom.com/wiki/Demoness_Pathway)
-- [Twilight Giant Pathway](https://lordofthemysteries.fandom.com/wiki/Twilight_Giant_Pathway)
 - [Forsaken Land of the Gods](https://lordofthemysteries.fandom.com/wiki/Forsaken_Land_of_the_Gods)
 - [Chernobyl](https://lordofthemysteries.fandom.com/wiki/Chernobyl)
 - [Giant King's Court](https://lordofthemysteries.fandom.com/wiki/Giant_King%27s_Court)
@@ -189,10 +175,7 @@ Mysteries Book 1**:
 - [Belltaine City](https://lordofthemysteries.fandom.com/wiki/Belltaine_City)
 - [Feysac Empire](https://lordofthemysteries.fandom.com/wiki/Feysac_Empire)
 - [Abandoned Castle](https://lordofthemysteries.fandom.com/wiki/Abandoned_Castle)
-- [Utopia](https://lordofthemysteries.fandom.com/wiki/Utopia)
 - [Calderón City](https://lordofthemysteries.fandom.com/wiki/Calder%C3%B3n_City)
-- [Chaos Sea](https://lordofthemysteries.fandom.com/wiki/Chaos_Sea)
-- [River of Eternal Darkness](https://lordofthemysteries.fandom.com/wiki/River_of_Eternal_Darkness)
 - [Aurora Order](https://lordofthemysteries.fandom.com/wiki/Aurora_Order)
 - [Eternal Life Society](https://lordofthemysteries.fandom.com/wiki/Eternal_Life_Society)
 - [Church of the Earth Mother](https://lordofthemysteries.fandom.com/wiki/Church_of_the_Earth_Mother)
@@ -207,8 +190,46 @@ Mysteries Book 1**:
 - [Unshadowed Crucifix](https://lordofthemysteries.fandom.com/wiki/Unshadowed_Crucifix)
 - [Blasphemy Slate](https://lordofthemysteries.fandom.com/wiki/Blasphemy_Slate)
 - [Trunsoest Brass Book](https://lordofthemysteries.fandom.com/wiki/Trunsoest_Brass_Book)
-- [Klein's Apotheosis Ritual](https://lordofthemysteries.fandom.com/wiki/Klein%27s_Apotheosis_Ritual)
 - [George III's Apotheosis Ritual](https://lordofthemysteries.fandom.com/wiki/George_III%27s_Apotheosis_Ritual)
+
+## Principal Volume 7 references
+
+- [Adam](https://lordofthemysteries.fandom.com/wiki/Adam)
+- [Amon](https://lordofthemysteries.fandom.com/wiki/Amon)
+- [Zaratul](https://lordofthemysteries.fandom.com/wiki/Zaratul)
+- [Bethel Abraham](https://lordofthemysteries.fandom.com/wiki/Bethel_Abraham)
+- [Antigonus](https://lordofthemysteries.fandom.com/wiki/Antigonus)
+- [Ouroboros](https://lordofthemysteries.fandom.com/wiki/Ouroboros)
+- [True Creator](https://lordofthemysteries.fandom.com/wiki/True_Creator)
+- [God of Combat](https://lordofthemysteries.fandom.com/wiki/God_of_Combat)
+- [Ancient Sun God](https://lordofthemysteries.fandom.com/wiki/Ancient_Sun_God)
+- [Lilith](https://lordofthemysteries.fandom.com/wiki/Lilith)
+- [Death Pathway](https://lordofthemysteries.fandom.com/wiki/Death_Pathway)
+- [Twilight Giant Pathway](https://lordofthemysteries.fandom.com/wiki/Twilight_Giant_Pathway)
+- [Utopia](https://lordofthemysteries.fandom.com/wiki/Utopia)
+- [River of Eternal Darkness](https://lordofthemysteries.fandom.com/wiki/River_of_Eternal_Darkness)
+- [Chaos Sea](https://lordofthemysteries.fandom.com/wiki/Chaos_Sea)
+- [City of Calamity](https://lordofthemysteries.fandom.com/wiki/City_of_Calamity)
+- [Klein's Apotheosis Ritual](https://lordofthemysteries.fandom.com/wiki/Klein%27s_Apotheosis_Ritual)
+
+## Principal Volume 8 references
+
+- [Celestial Worthy](https://lordofthemysteries.fandom.com/wiki/Celestial_Worthy)
+- [Lord of the Mysteries](https://lordofthemysteries.fandom.com/wiki/Lord_of_the_Mysteries)
+- [Outer Deities](https://lordofthemysteries.fandom.com/wiki/Outer_Deities)
+- [Mother Goddess of Depravity](https://lordofthemysteries.fandom.com/wiki/Mother_Goddess_of_Depravity)
+- [Mother Tree of Desire](https://lordofthemysteries.fandom.com/wiki/Mother_Tree_of_Desire)
+- [Son of Chaos](https://lordofthemysteries.fandom.com/wiki/Son_of_Chaos)
+- [God of Almighty](https://lordofthemysteries.fandom.com/wiki/God_of_Almighty)
+- [Fool Pathway](https://lordofthemysteries.fandom.com/wiki/Fool_Pathway)
+- [Error Pathway](https://lordofthemysteries.fandom.com/wiki/Error_Pathway)
+- [Black Emperor Pathway](https://lordofthemysteries.fandom.com/wiki/Black_Emperor_Pathway)
+- [Demoness Pathway](https://lordofthemysteries.fandom.com/wiki/Demoness_Pathway)
+- [Brood Hive](https://lordofthemysteries.fandom.com/wiki/Brood_Hive)
+- [Nation of Disorder](https://lordofthemysteries.fandom.com/wiki/Nation_of_Disorder)
+- [Knowledge Moor](https://lordofthemysteries.fandom.com/wiki/Knowledge_Moor)
+- [Key of Light](https://lordofthemysteries.fandom.com/wiki/Key_of_Light)
+- [Tenebrous World](https://lordofthemysteries.fandom.com/wiki/Tenebrous_World)
 
 `scripts/download_volume4_images.sh` records the page-image lookup and
 fallback image logic used for the Volume 4–8 asset pass. For entries without a

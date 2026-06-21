@@ -28,6 +28,14 @@ Amon captures Klein and escorts him through the Forsaken Land of the Gods, forci
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7 Role
+
+Amon accommodates the Door pathway and descends to stop Klein's Apotheosis Ritual, ultimately becoming a dual-pathway true god.
+
+:::
+
 :::spoiler volume=8
 
 ## Volume 8 Role
