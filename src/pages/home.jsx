@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { usePageTitle } from "../utils/usePageTitle.js";
 import { sections } from "../components/sectionDropdown.jsx";
 import logoImg from "../assets/lotm_logo.webp";
 
@@ -15,6 +16,7 @@ const sectionButtonColors = [
 ];
 
 export default function Home() {
+  usePageTitle("Home");
   const categorySections = sections.filter((section) => section.path !== "/");
 
   return (

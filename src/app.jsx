@@ -1,24 +1,28 @@
 import { useState } from "preact/hooks";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "preact/compat";
 import "./index.css";
-import Home from "./pages/home.jsx";
-import Characters from "./pages/characters.jsx";
-import Pathways from "./pages/pathways.jsx";
-import Places from "./pages/places.jsx";
-import Volumes from "./pages/volumes.jsx";
-import Gods from "./pages/gods.jsx";
-import Organizations from "./pages/organizations.jsx";
-import Spells from "./pages/spells.jsx";
-import SealedArtifacts from "./pages/sealed_artifacts.jsx";
-import CharacterDetail from "./pages/characterDetail.jsx";
-import PathwayDetail from "./pages/pathwayDetail.jsx";
-import PlacesDetail from "./pages/placesDetail.jsx";
-import GodDetail from "./pages/godDetail.jsx";
-import OrganizationDetail from "./pages/organizationDetail.jsx";
-import SpellDetail from "./pages/spellDetail.jsx";
-import SealedArtifactDetail from "./pages/sealedArtifactDetail.jsx";
-import Search from "./pages/search.jsx";
 import Navbar from "./components/navbar.jsx";
+import ErrorBoundary from "./components/errorBoundary.jsx";
+
+const Home = lazy(() => import("./pages/home.jsx"));
+const Characters = lazy(() => import("./pages/characters.jsx"));
+const Pathways = lazy(() => import("./pages/pathways.jsx"));
+const Places = lazy(() => import("./pages/places.jsx"));
+const Volumes = lazy(() => import("./pages/volumes.jsx"));
+const Gods = lazy(() => import("./pages/gods.jsx"));
+const Organizations = lazy(() => import("./pages/organizations.jsx"));
+const Spells = lazy(() => import("./pages/spells.jsx"));
+const SealedArtifacts = lazy(() => import("./pages/sealed_artifacts.jsx"));
+const CharacterDetail = lazy(() => import("./pages/characterDetail.jsx"));
+const PathwayDetail = lazy(() => import("./pages/pathwayDetail.jsx"));
+const PlacesDetail = lazy(() => import("./pages/placesDetail.jsx"));
+const GodDetail = lazy(() => import("./pages/godDetail.jsx"));
+const OrganizationDetail = lazy(() => import("./pages/organizationDetail.jsx"));
+const SpellDetail = lazy(() => import("./pages/spellDetail.jsx"));
+const SealedArtifactDetail = lazy(() => import("./pages/sealedArtifactDetail.jsx"));
+const Search = lazy(() => import("./pages/search.jsx"));
+const NotFound = lazy(() => import("./pages/notFound.jsx"));
 
 
 
@@ -53,7 +57,9 @@ export function App() {
       <div className="min-h-screen bg-base-300/10">
         <Navbar onVolumeChange={handleVolumeChange} selectedVolume={selectedVolume} />
         <div className="pt-20">
-          <Routes>
+          <ErrorBoundary>
+            <Suspense fallback={<div className="flex justify-center p-20"><span className="loading loading-spinner loading-lg text-primary"></span></div>}>
+              <Routes>
             <Route
               path="/"
               element={<Home selectedVolume={selectedVolume} />}
@@ -122,7 +128,10 @@ export function App() {
               path="/search"
               element={<Search selectedVolume={selectedVolume} />}
             />
+            <Route path="*" element={<NotFound />} />
           </Routes>
+        </Suspense>
+      </ErrorBoundary>
         </div>
         <footer className="footer sm:footer-horizontal footer-center bg-base-300/90 text-base-content p-4">
           <aside>

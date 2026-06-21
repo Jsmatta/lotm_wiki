@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useMemo, memo, useCallback } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import { usePageTitle } from "../utils/usePageTitle.js";
 import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 import { getImages } from "../utils/imageLoader.js";
@@ -185,6 +186,8 @@ export default function Search({ selectedVolume }) {
   const [allItems, setAllItems]   = useState([]);
   const [loading, setLoading]     = useState(true);
   const [activeFilter, setActiveFilter] = useState("all");
+  
+  usePageTitle(query ? `Search: ${query}` : "Search");
 
   // Reset category filter when query changes so stale filters don't hide results
   const prevQuery = React.useRef(query);

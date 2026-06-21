@@ -32,7 +32,7 @@ export function VolumeDropdown({ isOpen, onClose, selectedVolume, onVolumeChange
   if (!isOpen) return null;
 
   return createPortal(
-    <div className="modal modal-open z-1000 " onClick={onClose}>
+    <div className="modal modal-open z-1000" role="dialog" aria-modal="true" onClick={onClose}>
       <div className="modal-box w-11/12 max-w-md border border-accent" onClick={(e) => e.stopPropagation()}>
         <h3 className="font-bold text-lg">Select Volume</h3>
         <ul className="menu bg-base-100 rounded-box w-full">

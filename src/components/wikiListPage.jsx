@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { usePageTitle } from "../utils/usePageTitle.js";
 import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 import { getImages } from "../utils/imageLoader.js";
@@ -54,6 +55,7 @@ export default function WikiListPage({
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
+  usePageTitle(title);
 
   useEffect(() => {
     const loadData = async () => {

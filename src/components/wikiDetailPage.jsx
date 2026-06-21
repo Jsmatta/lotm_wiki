@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { usePageTitle } from "../utils/usePageTitle.js";
 import { parseMarkdownForReact } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 import { getImages } from "../utils/imageLoader.js";
@@ -29,6 +30,8 @@ export default function WikiDetailPage({
   const [references, setReferences] = useState([]);
   const [externalReferences, setExternalReferences] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  usePageTitle(item ? item.name : singularTitle);
 
   useEffect(() => {
     const loadItem = async () => {

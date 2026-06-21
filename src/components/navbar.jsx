@@ -43,7 +43,7 @@ export default function Navbar({ onVolumeChange, selectedVolume }) {
   return (
     <div className="sticky flex top-4 left-4 right-4 max-w-[calc(100vw-2rem)] h-1 navbar bg-secondary-200 border border-accent shadow-2xl rounded-xl px-4 z-50 backdrop-blur-md bg-opacity-70 overflow-visible">
       <div className="navbar-start">
-        <button onClick={() => setIsDropdownOpen(true)} className="btn btn-ghost btn-circle">
+        <button onClick={() => setIsDropdownOpen(true)} className="btn btn-ghost btn-circle" aria-label="Open Sections Menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -84,6 +84,7 @@ export default function Navbar({ onVolumeChange, selectedVolume }) {
          <form onSubmit={handleSearchSubmit} className="flex gap-2">
            <input
              type="search"
+             aria-label="Search Wiki"
              placeholder="Search..."
              className="input input-bordered w-24 md:w-auto"
              value={searchQuery}
