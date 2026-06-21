@@ -17,4 +17,12 @@ Contact with the True Creator is associated with corruption, ravings, madness, s
 The conspiracy beneath Tingen ultimately involves an attempt to bring a spawn of the True Creator into existence. Preventing that descent becomes the Nighthawks' final and most costly battle of the volume.
 
 Knowledge of this entity is itself dangerous, and ordinary people are deliberately kept unaware of the threat.
+
+:::spoiler volume=7
+
+## Volume 7 Role
+
+The True Creator acts during the climax of Volume 7, merging with Adam as they work to reclaim the authority of God Almighty.
+
+:::
 `;export{e as default};

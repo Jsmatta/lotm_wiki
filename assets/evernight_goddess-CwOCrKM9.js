@@ -21,4 +21,12 @@ Her emblem is a crimson half-moon surrounded by radiant points against a black b
 The Nighthawks serve as her church's hidden enforcement division. Sleepless-pathway Beyonders draw powers connected to darkness, sleep, and dreams.
 
 Volume 1 presents the Goddess primarily through faith, prayers, rituals, and the institutions acting in her name rather than through direct explanation of her nature.
+
+:::spoiler volume=7
+
+## Volume 7 Role
+
+Amanises, the Evernight Goddess, provides significant protection and guidance to Klein during his Apotheosis Ritual and successfully secures the authority of the God of Combat.
+
+:::
 `;export{e as default};
