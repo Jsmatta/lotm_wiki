@@ -10,4 +10,6 @@ Colin Iliad is the Chief of the City of Silver and a central leader of its effor
 
 ## Volume 6 Role
 
-Colin becomes a Silver Knight and leads the decisive exploration toward the Giant King's Court. His leadership keeps the City of Silver aligned with The Fool's guidance.
+Colin receives the Fool's blessing and advances to **Sequence 3: Silver Knight**, then leads the City of Silver's final expedition into the Giant King's Court alongside Derrick, Lovia Tiffany, and Gehrman Sparrow (Klein).
+
+When the expedition confronts the Dark Angel evil spirit Sasrir, Colin sacrifices himself to restrain it so Derrick can land the killing blow. His lingering spirit asks Derrick to open the gate, names him a new Elder of the six-member council, reveals the curse of the Gift of the Land, and warns him not to trust the Seven Orthodox Gods too readily — before vanishing as he finally sees the sunlight the city had been denied for over two thousand years.
