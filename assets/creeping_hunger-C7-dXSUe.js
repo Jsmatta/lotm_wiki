@@ -1,6 +1,6 @@
 const e=`---
 name: "Creeping Hunger"
-introducedInVolume: 2
+introducedInVolume: 1
 category: "sealed artifact"
 ---
 

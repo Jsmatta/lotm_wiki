@@ -1,6 +1,6 @@
 const e=`---
 name: "Unshadowed Crucifix"
-introducedInVolume: 6
+introducedInVolume: 5
 category: "sealed artifact"
 ---
 

@@ -1,6 +1,6 @@
 const e=`---
 name: "Cards of Blasphemy"
-introducedInVolume: 4
+introducedInVolume: 2
 category: "sealed artifact"
 ---
 
