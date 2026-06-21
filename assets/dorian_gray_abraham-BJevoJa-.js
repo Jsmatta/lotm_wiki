@@ -10,7 +10,7 @@ Dorian Gray Abraham is an Abraham Family member tied to Fors Wall's advancement 
 
 ## Volume 6 Role
 
-Dorian's contact with Fors deepens the Door Pathway storyline and shows how the Abraham Family's curse shapes every attempt to restore the family.
+Fors's interactions with Dorian make the Abraham Family's curse — any member who advances past Sequence 5 is cursed by Mr. Door — the emotional core of the volume. Dorian's teacher Ma'am Esvlad is one of the cursed, which drives Fors's determination to find a way to save the family while advancing her own Apprentice pathway.
 
 :::spoiler volume=7
 
