@@ -1,4 +1,4 @@
-import{_}from"./index-BOrjbmba.js";function O(e){const a=e.replace(/^\uFEFF/,"").replace(/\r\n?/g,`
+import{_}from"./index-C7RMfFXa.js";function O(e){const a=e.replace(/^\uFEFF/,"").replace(/\r\n?/g,`
 `),d=/^---[ \t]*\n([\s\S]*?)\n---[ \t]*(?:\n|$)([\s\S]*)$/,r=a.match(d);if(!r)return{data:{},content:a.trim()};try{const s=r[1],c=r[2],t={};return s.split(`
 `).forEach(m=>{const o=m.indexOf(":");if(o>0){const n=m.substring(0,o).trim();let i=m.substring(o+1).trim();(i.startsWith('"')&&i.endsWith('"')||i.startsWith("'")&&i.endsWith("'"))&&(i=i.slice(1,-1)),!isNaN(i)&&i!==""&&(i=Number(i)),t[n]=i}}),{data:t,content:c.trim()}}catch(s){return console.error("Frontmatter parsing error:",s),{data:{},content:a.replace(/^---[ \t]*\n[\s\S]*?\n---[ \t]*(?:\n|$)/,"").trim()}}}const I=/^[ \t]*:::(reveal|spoiler)\b(.*)$/i,R=/^[ \t]*:::[ \t]*$/,V=/(?:^|\s)(?:at|volume)\s*=\s*(?:"(\d+)"|'(\d+)'|(\d+))(?=\s|$)/i,P=/^[ \t]*(`{3,}|~{3,})/;function T(e,a){a.length>0&&e.push(...a)}function A(e,a,{warn:d=console.warn}={}){const s=e.replace(/\r\n?/g,`
 `).split(`
