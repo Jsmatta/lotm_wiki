@@ -4,6 +4,7 @@ import { usePageTitle } from "../utils/usePageTitle.js";
 import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 import { getImages } from "../utils/imageLoader.js";
+import LoadingPage from "../components/loadingPage.jsx";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -287,6 +288,9 @@ export default function Search({ selectedVolume }) {
   const handleFilterClick = useCallback((id) => setActiveFilter(id), []);
 
   // ── Render ────────────────────────────────────────────────────────────────
+  if (loading) {
+    return <LoadingPage />;
+  }
 
   return (
     <div className="min-h-screen">

@@ -5,6 +5,7 @@ import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
 import { getCategoryFiles } from "../utils/markdownLoader.js";
 import { getImages } from "../utils/imageLoader.js";
 import { CompactMarkdown } from "../utils/MarkdownRenderer.jsx";
+import LoadingPage from "./loadingPage.jsx";
 
 const iconPaths = {
   characters: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
@@ -109,15 +110,7 @@ export default function WikiListPage({
   }, [items, query]);
 
   if (loading) {
-    return (
-      <div className="min-h-screen">
-        <main className="container mx-auto px-4 py-8">
-          <div className="flex justify-center">
-            <span className="loading loading-spinner loading-lg"></span>
-          </div>
-        </main>
-      </div>
-    );
+    return <LoadingPage />;
   }
 
   return (

@@ -4,6 +4,7 @@ import { Suspense, lazy } from "preact/compat";
 import "./index.css";
 import Navbar from "./components/navbar.jsx";
 import ErrorBoundary from "./components/errorBoundary.jsx";
+import LoadingPage from "./components/loadingPage.jsx";
 
 const Home = lazy(() => import("./pages/home.jsx"));
 const Characters = lazy(() => import("./pages/characters.jsx"));
@@ -58,7 +59,7 @@ export function App() {
         <Navbar onVolumeChange={handleVolumeChange} selectedVolume={selectedVolume} />
         <div className="pt-20">
           <ErrorBoundary>
-            <Suspense fallback={<div className="flex justify-center p-20"><span className="loading loading-spinner loading-lg text-primary"></span></div>}>
+            <Suspense fallback={<LoadingPage fullScreen />}>
               <Routes>
             <Route
               path="/"

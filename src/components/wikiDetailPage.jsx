@@ -7,6 +7,7 @@ import { getImages } from "../utils/imageLoader.js";
 import { getWikiReferences } from "../utils/wikiReferences.js";
 import { getExternalReferences } from "../utils/externalReferences.js";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
+import LoadingPage from "./loadingPage.jsx";
 
 function slugFromName(name) {
   return name
@@ -92,15 +93,7 @@ export default function WikiDetailPage({
   }, [category, imageCategory, id, selectedVolume]);
 
   if (loading) {
-    return (
-      <div className="min-h-screen">
-        <main className="container mx-auto px-4 py-8">
-          <div className="flex justify-center">
-            <span className="loading loading-spinner loading-lg"></span>
-          </div>
-        </main>
-      </div>
-    );
+    return <LoadingPage />;
   }
 
   if (!item) {
