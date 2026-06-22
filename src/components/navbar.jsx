@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useMemo } from "preact/hooks";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   VolumeDropdown,
@@ -10,23 +10,24 @@ import "../index.css";
 export default function Navbar({ onVolumeChange, selectedVolume }) {
   const navigate = useNavigate();
   const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
-  const currentQuery = queryParams.get("q") || "";
+  const currentQuery = useMemo(() => {
+    if (location.pathname !== "/search") return "";
+    return new URLSearchParams(location.search).get("q") || "";
+  }, [location.pathname, location.search]);
 
-  const [searchQuery, setSearchQuery] = useState(currentQuery);
+  const searchInputRef = useRef(null);
 
   useEffect(() => {
-    if (location.pathname === "/search") {
-      setSearchQuery(currentQuery);
-    } else {
-      setSearchQuery("");
+    if (searchInputRef.current && searchInputRef.current.value !== currentQuery) {
+      searchInputRef.current.value = currentQuery;
     }
-  }, [location.pathname, currentQuery]);
+  }, [currentQuery]);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    if (searchQuery.trim()) {
-      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    const trimmedQuery = searchInputRef.current?.value.trim() || "";
+    if (trimmedQuery) {
+      navigate(`/search?q=${encodeURIComponent(trimmedQuery)}`);
     }
   };
   const [selectedSection, setSelectedSection] = useState(sections[0].label);
@@ -87,8 +88,8 @@ export default function Navbar({ onVolumeChange, selectedVolume }) {
              aria-label="Search Wiki"
              placeholder="Search..."
              className="input input-bordered w-24 md:w-auto"
-             value={searchQuery}
-             onInput={(e) => setSearchQuery(e.currentTarget.value)}
+             ref={searchInputRef}
+             defaultValue={currentQuery}
            />
          </form>
        </div>
