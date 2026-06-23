@@ -27,35 +27,56 @@ const categoryExtensions = {
   symbols: ['webp', 'jpg', 'jpeg', 'png', 'svg']
 };
 
-export async function getImages(category = null) {
+const imageCache = new Map();
+const allImagesCacheKey = "__all__";
+
+async function loadImagesForCategories(categoriesToLoad) {
   const images = {};
-  const categoriesToLoad = category ? [category] : Object.keys(assetModules);
-  
+
   for (const cat of categoriesToLoad) {
     if (!assetModules[cat]) continue;
-    
+
     const categoryImages = {};
     const modules = assetModules[cat];
-    
-    // Load all image modules for this category
+
     const loadedImages = await Promise.all(
       Object.entries(modules).map(async ([path, module]) => {
         const imgModule = await module();
-        // Extract filename without extension
-        const fileName = path.split('/').pop().split('.')[0];
+        const fileName = path.split("/").pop().split(".")[0];
         return { fileName, src: imgModule.default };
-      })
+      }),
     );
-    
-    // Build image map for this category
+
     loadedImages.forEach(({ fileName, src }) => {
       categoryImages[fileName] = src;
     });
-    
+
     images[cat] = categoryImages;
   }
-  
-  return category ? images[category] || {} : images;
+
+  return images;
+}
+
+export async function getImages(category = null) {
+  const cacheKey = category ?? allImagesCacheKey;
+
+  if (!imageCache.has(cacheKey)) {
+    const categoriesToLoad = category ? [category] : Object.keys(assetModules);
+    imageCache.set(cacheKey, loadImagesForCategories(categoriesToLoad));
+  }
+
+  try {
+    const images = await imageCache.get(cacheKey);
+    return category ? images[category] || {} : images;
+  } catch (error) {
+    imageCache.delete(cacheKey);
+    throw error;
+  }
+}
+
+/** Warm image caches during idle time */
+export function preloadAllImages() {
+  return getImages();
 }
 
 // Get images for specific category

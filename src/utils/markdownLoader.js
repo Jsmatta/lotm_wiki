@@ -20,33 +20,52 @@ const categoryModules = {
   sealed_artifacts: sealedArtifactModules,
 };
 
-export async function getCategoryFiles(category) {
+const categoryCache = new Map();
+
+async function loadCategoryFiles(category) {
   const modules = categoryModules[category];
 
   if (!modules) {
     return {};
   }
-  
+
   const files = {};
-  
-  // Load all modules for this category
+
   const loadedFiles = await Promise.all(
     Object.entries(modules).map(async ([path, module]) => {
       const mdModule = await module();
-      // Extract filename without extension
-      const fileName = path.split('/').pop().replace(/\.[^/.]+$/, '');
-      
-      return { 
-        fileName, 
-        content: mdModule.default 
+      const fileName = path.split("/").pop().replace(/\.[^/.]+$/, "");
+
+      return {
+        fileName,
+        content: mdModule.default,
       };
-    })
+    }),
   );
-  
-  // Build file map
+
   loadedFiles.forEach(({ fileName, content }) => {
     files[fileName] = { content };
   });
-  
+
   return files;
+}
+
+export async function getCategoryFiles(category) {
+  if (!categoryCache.has(category)) {
+    categoryCache.set(category, loadCategoryFiles(category));
+  }
+
+  try {
+    return await categoryCache.get(category);
+  } catch (error) {
+    categoryCache.delete(category);
+    throw error;
+  }
+}
+
+/** Warm raw markdown caches during idle time */
+export function preloadAllCategories() {
+  return Promise.all(
+    Object.keys(categoryModules).map((category) => getCategoryFiles(category)),
+  );
 }

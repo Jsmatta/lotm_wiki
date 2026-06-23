@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function LoadingPage({ fullScreen = false }) {
+export default function LoadingPage({ fullScreen = false, message = "DIVINING SECRETS" }) {
   const containerClasses = fullScreen 
     ? "min-h-screen w-full flex flex-col items-center justify-center bg-base-300/20 backdrop-blur-sm fixed inset-0 z-[100]"
     : "min-h-[60vh] w-full flex flex-col items-center justify-center";
 
   return (
-    <div className={containerClasses}>
+    <div className={containerClasses} role="status" aria-live="polite" aria-busy="true">
       <div className="flex flex-col items-center justify-center space-y-6 bg-base-100/90 p-12 rounded-[2rem] shadow-2xl border border-primary/30 backdrop-blur-md transition-all duration-500 hover:shadow-primary/20 hover:border-primary/50">
         <div className="relative w-24 h-24 flex items-center justify-center">
           {/* Outer rotating ring */}
@@ -25,7 +25,7 @@ export default function LoadingPage({ fullScreen = false }) {
         
         <div className="flex flex-col items-center space-y-2">
           <h2 className="text-2xl font-bold tracking-widest bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-pulse">
-            DIVINING SECRETS
+            {message}
           </h2>
           <div className="flex space-x-1">
             <span className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></span>

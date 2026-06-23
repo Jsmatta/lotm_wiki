@@ -1,10 +1,8 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { memo, useEffect, useMemo, useState } from "preact/compat";
 import { Link } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
-import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
-import { getCategoryFiles } from "../utils/markdownLoader.js";
-import { getImages } from "../utils/imageLoader.js";
-import { CompactMarkdown } from "../utils/MarkdownRenderer.jsx";
+import { getCategoryItems } from "../utils/wikiContent.js";
+import { truncateText } from "../utils/textUtils.js";
 import LoadingPage from "./loadingPage.jsx";
 
 const iconPaths = {
@@ -16,13 +14,6 @@ const iconPaths = {
   spells: "M13 10V3L4 14h7v7l9-11h-7z",
   sealed_artifacts: "M12 11c0-1.105-.895-2-2-2S8 9.895 8 11s.895 2 2 2 2-.895 2-2zm0 0c0 1.105.895 2 2 2s2-.895 2-2-.895-2-2-2-2 .895-2 2zm-2 0H5m14 0h-5",
 };
-
-function slugFromName(name) {
-  return name
-    .toLowerCase()
-    .replace(/\s+/g, "_")
-    .replace(/[^a-z0-9_]/g, "");
-}
 
 function EmptyIcon({ category }) {
   return (
@@ -43,6 +34,55 @@ function EmptyIcon({ category }) {
   );
 }
 
+const WikiListCard = memo(function WikiListCard({ item, category, routeBase }) {
+  const preview = useMemo(
+    () => truncateText(item.plainText, 180),
+    [item.plainText],
+  );
+
+  return (
+    <Link
+      to={`${routeBase}/${item.id}`}
+      className="card bg-base-100/95 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-accent/50 hover:border-accent group"
+    >
+      <figure className="h-48 overflow-hidden bg-base-200">
+        {item.image ? (
+          <img
+            src={item.image}
+            alt={item.name}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center">
+            <div className="text-center px-4">
+              <EmptyIcon category={category} />
+              <span className="text-base-content/50 text-sm">No Image</span>
+            </div>
+          </div>
+        )}
+      </figure>
+      <div className="card-body gap-3">
+        <div className="flex items-start justify-between gap-3">
+          <h2 className="card-title text-lg group-hover:text-accent transition-colors">
+            {item.name}
+          </h2>
+          <div className="badge badge-outline shrink-0">
+            V{item.introducedInVolume}
+          </div>
+        </div>
+        <div className="badge badge-secondary badge-sm">{item.category}</div>
+        {preview && (
+          <p className="line-clamp-4 text-sm text-base-content/80 leading-relaxed">
+            {preview}
+          </p>
+        )}
+      </div>
+    </Link>
+  );
+});
+
 export default function WikiListPage({
   selectedVolume,
   category,
@@ -59,40 +99,30 @@ export default function WikiListPage({
   usePageTitle(title);
 
   useEffect(() => {
+    let cancelled = false;
+
     const loadData = async () => {
       setLoading(true);
 
       try {
-        const categoryFiles = await getCategoryFiles(category);
-        const imageMap = await getImages(imageCategory);
-
-        const itemData = Object.entries(categoryFiles).map(([slug, file]) => {
-          const parsed = parseMarkdownForReact(file.content, selectedVolume);
-          const imageKey = slugFromName(parsed.name || "");
-
-          return {
-            id: slug,
-            name: parsed.name || "Untitled",
-            introducedInVolume: parsed.introducedInVolume ?? 0,
-            category: parsed.category || category,
-            content: parsed.content || "",
-            image:
-              imageMap[imageKey]
-              || (imageKey === "klein_moretti" ? imageMap.klein_morreti : null)
-              || null,
-          };
-        });
-
-        setItems(filterByVolume(itemData, selectedVolume));
+        const itemData = await getCategoryItems(category, selectedVolume, imageCategory);
+        if (!cancelled) {
+          setItems(itemData);
+        }
       } catch (error) {
         console.error(`Error loading ${category}:`, error);
-        setItems([]);
+        if (!cancelled) {
+          setItems([]);
+        }
       } finally {
-        setLoading(false);
+        if (!cancelled) {
+          setLoading(false);
+        }
       }
     };
 
     loadData();
+    return () => { cancelled = true; };
   }, [category, imageCategory, selectedVolume]);
 
   const visibleItems = useMemo(() => {
@@ -103,14 +133,14 @@ export default function WikiListPage({
     }
 
     return items.filter((item) =>
-      `${item.name} ${item.category} ${item.content}`
+      `${item.name} ${item.category} ${item.plainText}`
         .toLowerCase()
         .includes(normalizedQuery),
     );
   }, [items, query]);
 
   if (loading) {
-    return <LoadingPage />;
+    return <LoadingPage message={`Gathering ${title.toLowerCase()}…`} />;
   }
 
   return (
@@ -174,44 +204,12 @@ export default function WikiListPage({
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {visibleItems.map((item) => (
-              <Link
+              <WikiListCard
                 key={item.id}
-                to={`${routeBase}/${item.id}`}
-                className="card bg-base-100/95 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-accent/50 hover:border-accent group"
-              >
-                <figure className="h-48 overflow-hidden bg-base-200">
-                  {item.image ? (
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <div className="text-center px-4">
-                        <EmptyIcon category={category} />
-                        <span className="text-base-content/50 text-sm">No Image</span>
-                      </div>
-                    </div>
-                  )}
-                </figure>
-                <div className="card-body gap-3">
-                  <div className="flex items-start justify-between gap-3">
-                    <h2 className="card-title text-lg group-hover:text-accent transition-colors">
-                      {item.name}
-                    </h2>
-                    <div className="badge badge-outline shrink-0">
-                      V{item.introducedInVolume}
-                    </div>
-                  </div>
-                  <div className="badge badge-secondary badge-sm">{item.category}</div>
-                  {item.content && (
-                    <div className="line-clamp-4 text-sm text-base-content/80">
-                      <CompactMarkdown content={item.content} className="max-w-none" />
-                    </div>
-                  )}
-                </div>
-              </Link>
+                item={item}
+                category={category}
+                routeBase={routeBase}
+              />
             ))}
           </div>
         )}

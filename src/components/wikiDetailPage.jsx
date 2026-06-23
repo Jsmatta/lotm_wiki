@@ -1,20 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "preact/hooks";
 import { Link, useParams } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
-import { parseMarkdownForReact } from "../utils/frontmatter.js";
-import { getCategoryFiles } from "../utils/markdownLoader.js";
-import { getImages } from "../utils/imageLoader.js";
+import { getCategoryItem } from "../utils/wikiContent.js";
 import { getWikiReferences } from "../utils/wikiReferences.js";
 import { getExternalReferences } from "../utils/externalReferences.js";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
 import LoadingPage from "./loadingPage.jsx";
-
-function slugFromName(name) {
-  return name
-    .toLowerCase()
-    .replace(/\s+/g, "_")
-    .replace(/[^a-z0-9_]/g, "");
-}
 
 export default function WikiDetailPage({
   selectedVolume,
@@ -35,65 +26,50 @@ export default function WikiDetailPage({
   usePageTitle(item ? item.name : singularTitle);
 
   useEffect(() => {
+    let cancelled = false;
+
     const loadItem = async () => {
       setLoading(true);
 
       try {
         const currentPath = `${routeBase}/${id}`;
-        const [categoryFiles, imageMap, wikiReferences] = await Promise.all([
-          getCategoryFiles(category),
-          getImages(imageCategory),
+        const [loadedItem, wikiReferences] = await Promise.all([
+          getCategoryItem(category, id, selectedVolume, imageCategory),
           getWikiReferences(selectedVolume, currentPath),
         ]);
-        const file = categoryFiles[id];
 
-        if (!file) {
+        if (cancelled) return;
+
+        if (!loadedItem) {
           setItem(null);
           setReferences([]);
           setExternalReferences([]);
           return;
         }
-
-        const parsed = parseMarkdownForReact(file.content, selectedVolume);
-        
-        // Spoiler check: if the item's volume exceeds the selected volume, act as if not found
-        if (parsed.introducedInVolume !== undefined && parsed.introducedInVolume > selectedVolume) {
-          setItem(null);
-          setReferences([]);
-          setExternalReferences([]);
-          return;
-        }
-
-        const imageKey = slugFromName(parsed.name || "");
 
         setReferences(wikiReferences);
-        setExternalReferences(getExternalReferences(parsed.name || "Untitled"));
-        setItem({
-          id: id,
-          name: parsed.name || "Untitled",
-          introducedInVolume: parsed.introducedInVolume ?? 0,
-          category: parsed.category || category,
-          content: parsed.content || "",
-          image:
-            imageMap[imageKey]
-            || (imageKey === "klein_moretti" ? imageMap.klein_morreti : null)
-            || null,
-        });
+        setExternalReferences(getExternalReferences(loadedItem.name));
+        setItem(loadedItem);
       } catch (error) {
         console.error(`Error loading ${category} detail:`, error);
-        setItem(null);
-        setReferences([]);
-        setExternalReferences([]);
+        if (!cancelled) {
+          setItem(null);
+          setReferences([]);
+          setExternalReferences([]);
+        }
       } finally {
-        setLoading(false);
+        if (!cancelled) {
+          setLoading(false);
+        }
       }
     };
 
     loadItem();
-  }, [category, imageCategory, id, selectedVolume]);
+    return () => { cancelled = true; };
+  }, [category, imageCategory, id, routeBase, selectedVolume]);
 
   if (loading) {
-    return <LoadingPage />;
+    return <LoadingPage message={`Opening ${singularTitle.toLowerCase()} record…`} />;
   }
 
   if (!item) {
@@ -118,7 +94,6 @@ export default function WikiDetailPage({
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-start">
-          {/* Main Content Column */}
           <div className="flex-1 order-2 lg:order-1 w-full">
             <section className="bg-base-100/90 backdrop-blur-sm rounded-lg p-8 shadow-xl border-4 border-primary">
               <h1 className="text-4xl lg:text-5xl font-bold mb-8 text-primary border-b-2 border-primary/30 pb-3">
@@ -128,16 +103,16 @@ export default function WikiDetailPage({
             </section>
           </div>
 
-          {/* Sidebar / Infobox Column */}
           <aside className="w-full lg:w-80 shrink-0 order-1 lg:order-2">
             <div className="bg-info/10 backdrop-blur-sm rounded-lg shadow-xl overflow-hidden border-4 border-accent">
-              {/* Infobox Image */}
               <div className="p-1 bg-base-200">
                 <div className="rounded-md overflow-hidden bg-base-300">
                   {item.image ? (
                     <img
                       src={item.image}
                       alt={item.name}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-auto block"
                     />
                   ) : (
@@ -156,7 +131,6 @@ export default function WikiDetailPage({
                 </div>
               </div>
 
-              {/* Infobox Details */}
               <div className="p-4">
                 <h2 className="text-center font-bold text-xl mb-4 border-b border-base-300 pb-2">
                   {item.name}

@@ -1,9 +1,7 @@
-import React, { useEffect, useState, useMemo, memo, useCallback } from "react";
+import { memo, useEffect, useState, useMemo, useCallback, useRef } from "preact/compat";
 import { Link, useSearchParams } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
-import { parseMarkdownForReact, filterByVolume } from "../utils/frontmatter.js";
-import { getCategoryFiles } from "../utils/markdownLoader.js";
-import { getImages } from "../utils/imageLoader.js";
+import { getAllCategoryItems } from "../utils/wikiContent.js";
 import LoadingPage from "../components/loadingPage.jsx";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
@@ -46,28 +44,8 @@ const categoryRoutes = {
 
 // ─── Pure helpers (defined outside component, never re-created) ──────────────
 
-function slugFromName(name) {
-  return name
-    .toLowerCase()
-    .replace(/\s+/g, "_")
-    .replace(/[^a-z0-9_]/g, "");
-}
-
 function escapeRegExp(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-/** Strip markdown syntax so snippets show clean prose */
-function stripMarkdown(text) {
-  return text
-    .replace(/^#{1,6}\s+/gm, "")          // headings
-    .replace(/\*{1,2}([^*]+)\*{1,2}/g, "$1") // bold / italic
-    .replace(/`{1,3}[^`]*`{1,3}/g, "")    // inline code / fences
-    .replace(/:::reveal[^]*?:::/g, "")     // spoiler blocks
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // links
-    .replace(/^\s*[-*>]\s+/gm, "")        // list markers / blockquotes
-    .replace(/\n{2,}/g, " ")              // collapse newlines
-    .trim();
 }
 
 function getMatchSnippet(plainText, query) {
@@ -191,7 +169,7 @@ export default function Search({ selectedVolume }) {
   usePageTitle(query ? `Search: ${query}` : "Search");
 
   // Reset category filter when query changes so stale filters don't hide results
-  const prevQuery = React.useRef(query);
+  const prevQuery = useRef(query);
   if (prevQuery.current !== query) {
     prevQuery.current = query;
     if (activeFilter !== "all") setActiveFilter("all");
@@ -204,50 +182,15 @@ export default function Search({ selectedVolume }) {
     const loadAll = async () => {
       setLoading(true);
       try {
-        // getImages() MUST resolve first — category loaders reference imageMap in their closures
-        const imageMap = await getImages();
-
-        if (cancelled) return;
-
-        const categoryEntries = await Promise.all(
-          Object.keys(categoryRoutes).map(async (category) => {
-            try {
-              const files = await getCategoryFiles(category);
-              return Object.entries(files).map(([slug, file]) => {
-                const parsed   = parseMarkdownForReact(file.content, selectedVolume);
-                const imageKey = slugFromName(parsed.name || "");
-
-                const img =
-                  imageMap[category]?.[imageKey] ||
-                  (category === "characters" && imageKey === "klein_moretti"
-                    ? imageMap.characters?.klein_morreti
-                    : null) ||
-                  null;
-
-                // Pre-compute a clean plain-text blob for searching
-                const plainText = stripMarkdown(parsed.content || "");
-
-                return {
-                  id:                 slug,
-                  name:               parsed.name || "Untitled",
-                  introducedInVolume: parsed.introducedInVolume ?? 1,
-                  category,
-                  plainText,
-                  image: img,
-                };
-              });
-            } catch {
-              return [];
-            }
-          })
-        );
-
-        if (cancelled) return;
-
-        const combined = categoryEntries.flat();
-        setAllItems(filterByVolume(combined, selectedVolume));
+        const combined = await getAllCategoryItems(selectedVolume);
+        if (!cancelled) {
+          setAllItems(combined);
+        }
       } catch (err) {
         console.error("Search: failed to load categories", err);
+        if (!cancelled) {
+          setAllItems([]);
+        }
       } finally {
         if (!cancelled) setLoading(false);
       }
@@ -289,7 +232,7 @@ export default function Search({ selectedVolume }) {
 
   // ── Render ────────────────────────────────────────────────────────────────
   if (loading) {
-    return <LoadingPage />;
+    return <LoadingPage message="Indexing the archive…" />;
   }
 
   return (
@@ -319,12 +262,7 @@ export default function Search({ selectedVolume }) {
         </section>
 
         {/* Body */}
-        {loading ? (
-          <div className="flex flex-col items-center gap-4 py-16">
-            <span className="loading loading-spinner loading-lg text-primary" />
-            <p className="text-base-content/50 text-sm">Loading wiki index…</p>
-          </div>
-        ) : query.trim() === "" ? (
+        {query.trim() === "" ? (
           <div className="alert alert-info bg-base-100/90 backdrop-blur-sm">
             <div>
               <h3 className="font-bold">No query provided</h3>

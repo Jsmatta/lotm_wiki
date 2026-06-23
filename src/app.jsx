@@ -1,10 +1,12 @@
-import { useState } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "preact/compat";
+import { Suspense, lazy, startTransition } from "preact/compat";
 import "./index.css";
 import Navbar from "./components/navbar.jsx";
 import ErrorBoundary from "./components/errorBoundary.jsx";
 import LoadingPage from "./components/loadingPage.jsx";
+import { preloadAllCategories } from "./utils/markdownLoader.js";
+import { preloadAllImages } from "./utils/imageLoader.js";
 
 const Home = lazy(() => import("./pages/home.jsx"));
 const Characters = lazy(() => import("./pages/characters.jsx"));
@@ -25,25 +27,118 @@ const SealedArtifactDetail = lazy(() => import("./pages/sealedArtifactDetail.jsx
 const Search = lazy(() => import("./pages/search.jsx"));
 const NotFound = lazy(() => import("./pages/notFound.jsx"));
 
+function preloadWikiAssets() {
+  preloadAllCategories().catch(() => {});
+  preloadAllImages().catch(() => {});
+}
 
+function AppRoutes({ selectedVolume }) {
+  return (
+    <Suspense fallback={<LoadingPage fullScreen message="Entering the archives…" />}>
+      <Routes>
+          <Route
+            path="/"
+            element={<Home selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/characters"
+            element={<Characters selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/characters/:id"
+            element={<CharacterDetail selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/pathways"
+            element={<Pathways selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/pathways/:id"
+            element={<PathwayDetail selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/places"
+            element={<Places selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/places/:id"
+            element={<PlacesDetail selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/volumes"
+            element={<Volumes selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/gods"
+            element={<Gods selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/gods/:id"
+            element={<GodDetail selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/organizations"
+            element={<Organizations selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/organizations/:id"
+            element={<OrganizationDetail selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/spells"
+            element={<Spells selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/spells/:id"
+            element={<SpellDetail selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/sealed-artifacts"
+            element={<SealedArtifacts selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/sealed-artifacts/:id"
+            element={<SealedArtifactDetail selectedVolume={selectedVolume} />}
+          />
+          <Route
+            path="/search"
+            element={<Search selectedVolume={selectedVolume} />}
+          />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+    </Suspense>
+  );
+}
 
 export function App() {
-  // Get saved volume from localStorage, default to 0 if not found
   const getSavedVolume = () => {
-    const saved = localStorage.getItem('selectedVolume');
-    return saved !== null ? parseInt(saved) : 0;
+    const saved = localStorage.getItem("selectedVolume");
+    return saved !== null ? parseInt(saved, 10) : 0;
   };
-  
-  const [selectedVolume, setSelectedVolume] = useState(getSavedVolume());
+
+  const [selectedVolume, setSelectedVolume] = useState(getSavedVolume);
+
+  useEffect(() => {
+    const preload = () => preloadWikiAssets();
+
+    if ("requestIdleCallback" in window) {
+      const idleId = requestIdleCallback(preload, { timeout: 3000 });
+      return () => cancelIdleCallback(idleId);
+    }
+
+    const timeoutId = setTimeout(preload, 500);
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const handleVolumeChange = (volume) => {
-    setSelectedVolume(volume);
-    localStorage.setItem('selectedVolume', volume.toString());
+    startTransition(() => {
+      setSelectedVolume(volume);
+      localStorage.setItem("selectedVolume", volume.toString());
+    });
   };
 
   return (
     <Router>
-      {/* Fixed background rendered as its own GPU layer — avoids scroll repaint */}
       <div
         aria-hidden="true"
         style={{
@@ -59,85 +154,14 @@ export function App() {
         <Navbar onVolumeChange={handleVolumeChange} selectedVolume={selectedVolume} />
         <div className="pt-20">
           <ErrorBoundary>
-            <Suspense fallback={<LoadingPage fullScreen />}>
-              <Routes>
-            <Route
-              path="/"
-              element={<Home selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/characters"
-              element={<Characters selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/characters/:id"
-              element={<CharacterDetail selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/pathways"
-              element={<Pathways selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/pathways/:id"
-              element={<PathwayDetail selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/places"
-              element={<Places selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/places/:id"
-              element={<PlacesDetail selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/volumes"
-              element={<Volumes selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/gods"
-              element={<Gods selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/gods/:id"
-              element={<GodDetail selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/organizations"
-              element={<Organizations selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/organizations/:id"
-              element={<OrganizationDetail selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/spells"
-              element={<Spells selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/spells/:id"
-              element={<SpellDetail selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/sealed-artifacts"
-              element={<SealedArtifacts selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/sealed-artifacts/:id"
-              element={<SealedArtifactDetail selectedVolume={selectedVolume} />}
-            />
-            <Route
-              path="/search"
-              element={<Search selectedVolume={selectedVolume} />}
-            />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </ErrorBoundary>
+            <AppRoutes selectedVolume={selectedVolume} />
+          </ErrorBoundary>
         </div>
         <footer className="footer sm:footer-horizontal footer-center bg-base-300/90 text-base-content p-4">
           <aside>
             <p>
-              © 2026 Created by:  
+              © 2026 Created by:
+              {" "}
               <a href="https://github.com/jsmatta" target="_blank" rel="noopener noreferrer" className="underline italic">jsmatta</a>
             </p>
           </aside>
