@@ -1,1 +1,0 @@
-import{u as e}from"./index-CM_5qhmv.js";import{W as t}from"./wikiDetailPage-DkGqYJod.js";import"./usePageTitle-DQqviAnL.js";import"./wikiContent-BAVVz_7t.js";function p({selectedVolume:l}){return e(t,{selectedVolume:l,category:"spells",title:"Spells",singularTitle:"Spell",routeBase:"/spells",fallbackIconPath:"M13 10V3L4 14h7v7l9-11h-7z"})}export{p as default};

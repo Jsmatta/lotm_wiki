@@ -1,4 +1,4 @@
-import{g as y,e as b}from"./index-CM_5qhmv.js";function I(t){const n=t.replace(/^\uFEFF/,"").replace(/\r\n?/g,`
+import{g as y,e as b}from"./index-DhijpDOp.js";function I(t){const n=t.replace(/^\uFEFF/,"").replace(/\r\n?/g,`
 `),r=/^---[ \t]*\n([\s\S]*?)\n---[ \t]*(?:\n|$)([\s\S]*)$/,s=n.match(r);if(!s)return{data:{},content:n.trim()};try{const i=s[1],o=s[2],e={};return i.split(`
 `).forEach(u=>{const a=u.indexOf(":");if(a>0){const h=u.substring(0,a).trim();let l=u.substring(a+1).trim();(l.startsWith('"')&&l.endsWith('"')||l.startsWith("'")&&l.endsWith("'"))&&(l=l.slice(1,-1)),!isNaN(l)&&l!==""&&(l=Number(l)),e[h]=l}}),{data:e,content:o.trim()}}catch(i){return console.error("Frontmatter parsing error:",i),{data:{},content:n.replace(/^---[ \t]*\n[\s\S]*?\n---[ \t]*(?:\n|$)/,"").trim()}}}const $=/^[ \t]*:::(reveal|spoiler)\b(.*)$/i,F=/^[ \t]*:::[ \t]*$/,_=/(?:^|\s)(?:at|volume)\s*=\s*(?:"(\d+)"|'(\d+)'|(\d+))(?=\s|$)/i,k=/^[ \t]*(`{3,}|~{3,})/;function E(t,n){n.length>0&&t.push(...n)}function M(t,n,{warn:r=console.warn}={}){const i=t.replace(/\r\n?/g,`
 `).split(`
