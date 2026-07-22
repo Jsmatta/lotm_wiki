@@ -7,7 +7,7 @@ export default function LoadingPage({ fullScreen = false, message = "DIVINING SE
 
   return (
     <div className={containerClasses} role="status" aria-live="polite" aria-busy="true">
-      <div className="flex flex-col items-center justify-center space-y-6 bg-base-100/90 p-12 rounded-[2rem] shadow-2xl border border-primary/30 backdrop-blur-md transition-all duration-500 hover:shadow-primary/20 hover:border-primary/50">
+      <div className="flex flex-col items-center justify-center space-y-6 bg-base-100/90 p-12 rounded-[4xl] shadow-2xl border border-primary/30 backdrop-blur-md transition-all duration-500 hover:shadow-primary/20 hover:border-primary/50">
         <div className="relative w-24 h-24 flex items-center justify-center">
           {/* Outer rotating ring */}
           <div className="absolute inset-0 rounded-full border-t-4 border-primary border-r-4 border-r-transparent animate-spin"></div>
@@ -24,7 +24,7 @@ export default function LoadingPage({ fullScreen = false, message = "DIVINING SE
         </div>
         
         <div className="flex flex-col items-center space-y-2">
-          <h2 className="text-2xl font-bold tracking-widest bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-pulse">
+          <h2 className="text-2xl font-bold tracking-widest bg-linear-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-pulse">
             {message}
           </h2>
           <div className="flex space-x-1">
