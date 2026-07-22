@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "preact/compat";
 import { Link, useLocation } from "react-router-dom";
+import { sections } from "../utils/sections.js";
 
-export const sections = [
-  { label: "Home", path: "/" },
-  { label: "Volumes", path: "/volumes" },
-  { label: "Characters", path: "/characters" },
-  { label: "Places", path: "/places" },
-  { label: "Pathways", path: "/pathways" },
-  { label: "Gods", path: "/gods" },
-  { label: "Organizations", path: "/organizations" },
-  { label: "Spells", path: "/spells" },
-  { label: "Sealed Artifacts", path: "/sealed-artifacts" },
-];
+export { sections } from "../utils/sections.js";
 
 export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionChange }) {
   const location = useLocation();
