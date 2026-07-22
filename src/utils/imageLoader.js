@@ -14,19 +14,6 @@ const assetModules = {
   symbols: import.meta.glob('../assets/symbols/*.{webp,jpg,jpeg,png,svg}')
 };
 
-// Extensions supported for each category
-const categoryExtensions = {
-  characters: ['webp', 'jpg', 'jpeg', 'png'],
-  pathways: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
-  places: ['webp', 'jpg', 'jpeg', 'png'],
-  gods: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
-  organizations: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
-  spells: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
-  sealed_artifacts: ['webp', 'jpg', 'jpeg', 'png', 'svg'],
-  items: ['webp', 'jpg', 'jpeg', 'png'],
-  symbols: ['webp', 'jpg', 'jpeg', 'png', 'svg']
-};
-
 const imageCache = new Map();
 const allImagesCacheKey = "__all__";
 
@@ -102,52 +89,6 @@ export async function getItemImages() {
 
 export async function getSymbolImages() {
   return getImages('symbols');
-}
-
-// Universal path-based fallback function
-export function getImagePath(fileName, category) {
-  if (!category || !categoryExtensions[category]) {
-    console.warn(`Invalid category: ${category}`);
-    return null;
-  }
-  
-  const extensions = categoryExtensions[category];
-  
-  for (const ext of extensions) {
-    const path = `../assets/${category}/${fileName}.${ext}`;
-    try {
-      return path;
-    } catch (error) {
-      continue;
-    }
-  }
-  
-  return null;
-}
-
-// Legacy fallback functions for backward compatibility
-export function getCharacterImagePath(fileName) {
-  return getImagePath(fileName, 'characters');
-}
-
-export function getPathwayImagePath(fileName) {
-  return getImagePath(fileName, 'pathways');
-}
-
-export function getPlaceImagePath(fileName) {
-  return getImagePath(fileName, 'places');
-}
-
-export function getGodImagePath(fileName) {
-  return getImagePath(fileName, 'gods');
-}
-
-export function getItemImagePath(fileName) {
-  return getImagePath(fileName, 'items');
-}
-
-export function getSymbolImagePath(fileName) {
-  return getImagePath(fileName, 'symbols');
 }
 
 // Helper function to get image with automatic category detection

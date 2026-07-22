@@ -12,7 +12,7 @@ export function stripMarkdown(text) {
     .replace(/^#{1,6}\s+/gm, "")
     .replace(/\*{1,2}([^*]+)\*{1,2}/g, "$1")
     .replace(/`{1,3}[^`]*`{1,3}/g, "")
-    .replace(/:::reveal[^]*?:::/g, "")
+    .replace(/:::(reveal|spoiler)[^]*?:::/g, "")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/^\s*[-*>]\s+/gm, "")
     .replace(/\n{2,}/g, " ")
