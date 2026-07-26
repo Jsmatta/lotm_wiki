@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function LoadingPage({ fullScreen = false, message = "DIVINING SECRETS" }) {
   const containerClasses = fullScreen 
     ? "min-h-screen w-full flex flex-col items-center justify-center bg-base-300/20 backdrop-blur-sm fixed inset-0 z-[100]"

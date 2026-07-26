@@ -7,6 +7,7 @@ import ErrorBoundary from "./components/errorBoundary.jsx";
 import LoadingPage from "./components/loadingPage.jsx";
 import { preloadAllCategories } from "./utils/markdownLoader.js";
 import { preloadAllImages } from "./utils/imageLoader.js";
+import { VolumeProvider } from "./utils/volumeContext.jsx";
 
 const Home = lazy(() => import("./pages/home.jsx"));
 const Characters = lazy(() => import("./pages/characters.jsx"));
@@ -32,78 +33,27 @@ function preloadWikiAssets() {
   preloadAllImages().catch(() => {});
 }
 
-function AppRoutes({ selectedVolume }) {
+function AppRoutes() {
   return (
     <Suspense fallback={<LoadingPage fullScreen message="Entering the archives…" />}>
       <Routes>
-          <Route
-            path="/"
-            element={<Home selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/characters"
-            element={<Characters selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/characters/:id"
-            element={<CharacterDetail selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/pathways"
-            element={<Pathways selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/pathways/:id"
-            element={<PathwayDetail selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/places"
-            element={<Places selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/places/:id"
-            element={<PlacesDetail selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/volumes"
-            element={<Volumes selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/gods"
-            element={<Gods selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/gods/:id"
-            element={<GodDetail selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/organizations"
-            element={<Organizations selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/organizations/:id"
-            element={<OrganizationDetail selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/spells"
-            element={<Spells selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/spells/:id"
-            element={<SpellDetail selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/sealed-artifacts"
-            element={<SealedArtifacts selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/sealed-artifacts/:id"
-            element={<SealedArtifactDetail selectedVolume={selectedVolume} />}
-          />
-          <Route
-            path="/search"
-            element={<Search selectedVolume={selectedVolume} />}
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/characters" element={<Characters />} />
+          <Route path="/characters/:id" element={<CharacterDetail />} />
+          <Route path="/pathways" element={<Pathways />} />
+          <Route path="/pathways/:id" element={<PathwayDetail />} />
+          <Route path="/places" element={<Places />} />
+          <Route path="/places/:id" element={<PlacesDetail />} />
+          <Route path="/volumes" element={<Volumes />} />
+          <Route path="/gods" element={<Gods />} />
+          <Route path="/gods/:id" element={<GodDetail />} />
+          <Route path="/organizations" element={<Organizations />} />
+          <Route path="/organizations/:id" element={<OrganizationDetail />} />
+          <Route path="/spells" element={<Spells />} />
+          <Route path="/spells/:id" element={<SpellDetail />} />
+          <Route path="/sealed-artifacts" element={<SealedArtifacts />} />
+          <Route path="/sealed-artifacts/:id" element={<SealedArtifactDetail />} />
+          <Route path="/search" element={<Search />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
     </Suspense>
@@ -154,7 +104,9 @@ export function App() {
         <Navbar onVolumeChange={handleVolumeChange} selectedVolume={selectedVolume} />
         <div className="pt-20">
           <ErrorBoundary>
-            <AppRoutes selectedVolume={selectedVolume} />
+            <VolumeProvider value={selectedVolume}>
+              <AppRoutes />
+            </VolumeProvider>
           </ErrorBoundary>
         </div>
         <footer className="footer sm:footer-horizontal footer-center bg-base-300/90 text-base-content p-4">

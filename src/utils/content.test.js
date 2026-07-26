@@ -69,12 +69,8 @@ describe("wiki content", () => {
           .map((file) => file.replace(/\.[^.]+$/, "")),
       );
       const slug = slugFromName(entry.data.name);
-      const hasLegacyKleinImage = (
-        slug === "klein_moretti"
-        && imageNames.has("klein_morreti")
-      );
 
-      expect(imageNames.has(slug) || hasLegacyKleinImage).toBe(true);
+      expect(imageNames.has(slug)).toBe(true);
     }
   });
 });

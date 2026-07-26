@@ -2,9 +2,11 @@ import { useMemo, useState, useEffect } from "preact/hooks";
 import { Link, useLocation } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
 import { getAllCategoryItems } from "../utils/wikiContent.js";
+import { useSelectedVolume } from "../utils/volumeContext.jsx";
 import LoadingPage from "../components/loadingPage.jsx";
 
-export default function SearchPage({ selectedVolume }) {
+export default function SearchPage() {
+  const selectedVolume = useSelectedVolume();
   const location = useLocation();
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);

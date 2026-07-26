@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { createPortal } from "preact/compat";
+import { useState, useEffect } from "preact/hooks";
 import { Link, useLocation } from "react-router-dom";
 import { sections } from "../utils/sections.js";
+import Modal from "./modal.jsx";
 
 export { sections } from "../utils/sections.js";
 
@@ -23,30 +23,21 @@ export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionCha
     onClose();
   };
 
-  if (!isOpen) return null;
-
-  return createPortal(
-    <div className="modal modal-open z-1000" onClick={onClose}>
-      <div className="modal-box w-11/12 max-w-md border border-accent" onClick={(e) => e.stopPropagation()}>
-        <h3 className="font-bold text-lg">Select Section</h3>
-        <ul className="menu bg-base-100 rounded-box w-full">
-          {sections.map((section) => (
-            <li key={section.path}>
-              <Link
-                to={section.path}
-                onClick={() => handleSectionChange(section.label)}
-                className={activeSection === section.label ? "active" : ""}
-              >
-                {section.label} {activeSection === section.label && " ✓"}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="modal-action">
-          <button className="btn" onClick={onClose}>Close</button>
-        </div>
-      </div>
-    </div>,
-    document.body
+  return (
+    <Modal isOpen={isOpen} onClose={onClose} title="Select Section">
+      <ul className="menu bg-base-100 rounded-box w-full">
+        {sections.map((section) => (
+          <li key={section.path}>
+            <Link
+              to={section.path}
+              onClick={() => handleSectionChange(section.label)}
+              className={activeSection === section.label ? "active" : ""}
+            >
+              {section.label} {activeSection === section.label && " ✓"}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Modal>
   );
 }

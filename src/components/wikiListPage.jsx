@@ -3,17 +3,9 @@ import { Link } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
 import { getCategoryItems } from "../utils/wikiContent.js";
 import { truncateText } from "../utils/textUtils.js";
+import { categoryIconPaths, defaultCategoryIconPath } from "../utils/categoryIcons.js";
+import { useSelectedVolume } from "../utils/volumeContext.jsx";
 import LoadingPage from "./loadingPage.jsx";
-
-const iconPaths = {
-  characters: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
-  pathways: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z",
-  places: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z",
-  gods: "M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.16c.969 0 1.371 1.24.588 1.81l-3.365 2.444a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.539 1.118l-3.365-2.444a1 1 0 00-1.176 0l-3.365 2.444c-.784.57-1.838-.197-1.539-1.118l1.286-3.957a1 1 0 00-.364-1.118L4.06 9.384c-.783-.57-.38-1.81.588-1.81h4.16a1 1 0 00.95-.69l1.286-3.957z",
-  organizations: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z",
-  spells: "M13 10V3L4 14h7v7l9-11h-7z",
-  sealed_artifacts: "M12 11c0-1.105-.895-2-2-2S8 9.895 8 11s.895 2 2 2 2-.895 2-2zm0 0c0 1.105.895 2 2 2s2-.895 2-2-.895-2-2-2-2 .895-2 2zm-2 0H5m14 0h-5",
-};
 
 function EmptyIcon({ category }) {
   return (
@@ -28,7 +20,7 @@ function EmptyIcon({ category }) {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
-        d={iconPaths[category] || iconPaths.pathways}
+        d={categoryIconPaths[category] || defaultCategoryIconPath}
       />
     </svg>
   );
@@ -84,7 +76,6 @@ const WikiListCard = memo(function WikiListCard({ item, category, routeBase }) {
 });
 
 export default function WikiListPage({
-  selectedVolume,
   category,
   title,
   description,
@@ -93,6 +84,7 @@ export default function WikiListPage({
   emptyTitle,
   emptyDescription,
 }) {
+  const selectedVolume = useSelectedVolume();
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");

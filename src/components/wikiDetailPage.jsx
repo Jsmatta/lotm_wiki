@@ -5,10 +5,10 @@ import { getCategoryItem } from "../utils/wikiContent.js";
 import { getWikiReferences } from "../utils/wikiReferences.js";
 import { getExternalReferences } from "../utils/externalReferences.js";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
+import { useSelectedVolume } from "../utils/volumeContext.jsx";
 import LoadingPage from "./loadingPage.jsx";
 
 export default function WikiDetailPage({
-  selectedVolume,
   category,
   title,
   routeBase,
@@ -17,6 +17,7 @@ export default function WikiDetailPage({
   imageCategory = category,
   fallbackIconPath,
 }) {
+  const selectedVolume = useSelectedVolume();
   const { id } = useParams();
   const [item, setItem] = useState(null);
   const [references, setReferences] = useState([]);

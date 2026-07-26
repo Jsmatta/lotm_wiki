@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
 import { volumes } from "../components/volumeSelector.jsx";
+import { useSelectedVolume } from "../utils/volumeContext.jsx";
 
-export default function VolumesPage({ selectedVolume }) {
+export default function VolumesPage() {
+  const selectedVolume = useSelectedVolume();
   usePageTitle("Volumes");
 
   return (

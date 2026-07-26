@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks";
-import { createPortal } from "preact/compat";
+import Modal from "./modal.jsx";
 
 export const volumes = [
   "Introduction",
@@ -29,30 +29,22 @@ export function VolumeDropdown({ isOpen, onClose, selectedVolume, onVolumeChange
     onClose();
   };
 
-  if (!isOpen) return null;
-
-  return createPortal(
-    <div className="modal modal-open z-1000" role="dialog" aria-modal="true" onClick={onClose}>
-      <div className="modal-box w-11/12 max-w-md border border-accent" onClick={(e) => e.stopPropagation()}>
-        <h3 className="font-bold text-lg">Select Volume</h3>
-        <ul className="menu bg-base-100 rounded-box w-full">
-          {volumes.map((volume, index) => (
-            <li key={index}>
-              <a
-                onClick={() => handleVolumeChange(index)}
-                className={selectedVolume === index ? "active" : ""}
-              >
-                {volume}
-                {selectedVolume === index && " ✓"}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <div className="modal-action">
-          <button className="btn" onClick={onClose}>Close</button>
-        </div>
-      </div>
-    </div>,
-    document.body
+  return (
+    <Modal isOpen={isOpen} onClose={onClose} title="Select Volume">
+      <ul className="menu bg-base-100 rounded-box w-full">
+        {volumes.map((volume, index) => (
+          <li key={index}>
+            <button
+              type="button"
+              onClick={() => handleVolumeChange(index)}
+              className={selectedVolume === index ? "active" : ""}
+            >
+              {volume}
+              {selectedVolume === index && " ✓"}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </Modal>
   );
 }

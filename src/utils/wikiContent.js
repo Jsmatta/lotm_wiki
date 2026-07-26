@@ -27,22 +27,25 @@ function yieldToMain() {
 }
 
 function resolveImage(imageMap, imageKey) {
-  return (
-    imageMap[imageKey]
-    || (imageKey === "klein_moretti" ? imageMap.klein_morreti : null)
-    || null
-  );
+  return imageMap[imageKey] || null;
 }
 
 function buildItem(slug, file, selectedVolume, imageMap, category) {
   const parsed = parseMarkdownForReact(file.content, selectedVolume);
   const imageKey = slugFromName(parsed.name || "");
   const content = parsed.content || "";
+  const introducedInVolume = Number(parsed.introducedInVolume);
+
+  if (!Number.isFinite(introducedInVolume)) {
+    console.warn(
+      `"${parsed.name || slug}" (${category}/${slug}) is missing a valid introducedInVolume; hiding it until fixed.`,
+    );
+  }
 
   return {
     id: slug,
     name: parsed.name || "Untitled",
-    introducedInVolume: parsed.introducedInVolume ?? 0,
+    introducedInVolume,
     category: parsed.category || category,
     content,
     plainText: stripMarkdown(content),
@@ -104,7 +107,7 @@ export async function getCategoryItem(category, id, selectedVolume, imageCategor
 
   const item = buildItem(id, file, selectedVolume, imageMap, category);
 
-  if (item.introducedInVolume > selectedVolume) {
+  if (!Number.isFinite(item.introducedInVolume) || item.introducedInVolume > selectedVolume) {
     return null;
   }
 
