@@ -1,1 +1,0 @@
-import{y as i}from"./index-C7_j8d7r.js";function r(e){i(()=>{const t=document.title;return document.title=e?`${e} | LOTM Wiki`:"Lord of the Mysteries Wiki",()=>{document.title=t}},[e])}export{r as u};
