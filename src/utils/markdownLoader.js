@@ -22,7 +22,7 @@ const categoryModules = {
 
 const categoryCache = new Map();
 
-async function loadCategoryFiles(category) {
+export async function loadCategoryFiles(category) {
   const modules = categoryModules[category];
 
   if (!modules) {
@@ -51,6 +51,8 @@ async function loadCategoryFiles(category) {
 }
 
 export async function getCategoryFiles(category) {
+  if (!category) return {};
+
   if (!categoryCache.has(category)) {
     categoryCache.set(category, loadCategoryFiles(category));
   }
@@ -138,56 +140,3 @@ export function preloadAllCategories() {
 
 /** Export CategoryLoader for lazy loading */
 export { CategoryLoader };
-
-/**
- * Load category files lazily - triggers on first access
- */
-export async function getCategoryFiles(category) {
-  if (!category) return {};
-
-  // Check if CategoryLoader exists for this category
-  const loaderKey = `categoryLoader_${category}`;
-  
-  // Simple lazy loading - just call the loader function
-  if (!categoryCache.has(category)) {
-    categoryCache.set(category, loadCategoryFiles(category));
-  }
-
-  try {
-    return await categoryCache.get(category);
-  } catch (error) {
-    categoryCache.delete(category);
-    throw error;
-  }
-}
-
-/**
- * Explicitly load a category (alternative to using CategoryLoader)
- */
-export async function loadCategoryFiles(category) {
-  const modules = categoryModules[category];
-
-  if (!modules) {
-    return {};
-  }
-
-  const files = {};
-
-  const loadedFiles = await Promise.all(
-    Object.entries(modules).map(async ([path, module]) => {
-      const mdModule = await module();
-      const fileName = path.split("/").pop().replace(/\.[^/.]+$/, "");
-
-      return {
-        fileName,
-        content: mdModule.default,
-      };
-    }),
-  );
-
-  loadedFiles.forEach(({ fileName, content }) => {
-    files[fileName] = { content };
-  });
-
-  return files;
-}

@@ -66,6 +66,11 @@ export async function getImages(category = null) {
   }
 }
 
+/** Warm the complete image-module cache during browser idle time. */
+export function preloadAllImages() {
+  return getImages();
+}
+
 export async function loadImages(category = null) {
   const cacheKey = category ?? allImagesCacheKey;
   
