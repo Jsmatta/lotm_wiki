@@ -1,42 +1,25 @@
-import { useState } from "preact/hooks";
+import { VOLUMES } from "../config/volumes.js";
+import { useSelectVolume, useSelectedVolume } from "../utils/volumeContext.jsx";
 import Modal from "./modal.jsx";
 
-export const volumes = [
-  "Introduction",
-  "The Clown",
-  "The Faceless",
-  "The Traveler",
-  "The Undying",
-  "The Red Priest",
-  "The Lightseeker",
-  "The Hanged Man",
-  "The Fool",
-];
+export function VolumeDropdown({ isOpen, onClose }) {
+  const selectedVolume = useSelectedVolume();
+  const selectVolume = useSelectVolume();
 
-export function useVolumeSelector(initialVolume = 0) {
-  const [selectedVolume, setSelectedVolume] = useState(initialVolume);
-
-  return {
-    selectedVolume,
-    setSelectedVolume,
-    volumes,
-  };
-}
-
-export function VolumeDropdown({ isOpen, onClose, selectedVolume, onVolumeChange }) {
-  const handleVolumeChange = (volume) => {
-    if (onVolumeChange) onVolumeChange(volume);
+  const handleSelect = (index) => {
+    selectVolume(index);
     onClose();
   };
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title="Select Volume">
       <ul className="menu bg-base-100 rounded-box w-full">
-        {volumes.map((volume, index) => (
-          <li key={index}>
+        {VOLUMES.map((volume, index) => (
+          <li key={volume}>
             <button
               type="button"
-              onClick={() => handleVolumeChange(index)}
+              onClick={() => handleSelect(index)}
+              aria-current={selectedVolume === index ? "true" : undefined}
               className={selectedVolume === index ? "active" : ""}
             >
               {volume}

@@ -18,41 +18,46 @@ A comprehensive wiki for **Lord of the Mysteries** series, built with Preact and
 
 ```
 src/
-├── app.jsx                 # Main app component with routing
-├── main.jsx               # Entry point
-├── index.css              # Tailwind & DaisyUI styles
+├── app.jsx                 # App shell; generates routes from the category registry
+├── main.jsx                # Entry point
+├── index.css               # Tailwind & DaisyUI styles
+├── config/
+│   ├── categories.js       # Single source of truth for every content category
+│   ├── volumes.js          # Canonical volume list + clamping helpers
+│   └── icons.js            # Shared SVG path data
 ├── components/
-│   ├── navbar.jsx         # Navigation bar with volume selector
+│   ├── navbar.jsx          # Navigation bar with volume selector
 │   ├── sectionDropdown.jsx # Section selector dropdown
-│   └── volumeSelector.jsx  # Volume selection logic
-├── pages/
-│   ├── home.jsx           # Home page
-│   ├── characters.jsx     # Characters page
-│   ├── characterDetail.jsx # Individual character page
-│   ├── places.jsx         # Locations page
-│   ├── pathways.jsx       # Pathways page
-│   ├── gods.jsx           # Gods page
-│   ├── organizations.jsx  # Organizations page
-│   ├── spells.jsx         # Spells page
-│   ├── sealed_artifacts.jsx # Sealed artifacts page
-│   └── volumes.jsx        # Volumes page
+│   ├── volumeSelector.jsx  # Volume selection dropdown
+│   ├── wikiListPage.jsx    # Grid/search view shared by every category
+│   ├── wikiDetailPage.jsx  # Single-entry view shared by every category
+│   ├── icon.jsx            # Shared outline-SVG wrapper
+│   ├── modal.jsx           # Focus-trapping modal used by both dropdowns
+│   ├── loadingPage.jsx     # Loading state
+│   └── errorBoundary.jsx   # Top-level error boundary
+├── pages/                  # Only the non-category pages
+│   ├── home.jsx
+│   ├── volumes.jsx
+│   ├── search.jsx
+│   └── notFound.jsx
 ├── data/
-│   ├── characters/        # Character markdown files (auto-discovered)
-│   └── pathways/          # Pathway markdown files (auto-discovered)
+│   └── <category>/         # Markdown files, auto-discovered by folder
 ├── utils/
-│   ├── frontmatter.js     # YAML frontmatter parsing & volume filtering
-│   ├── markdownLoader.js  # Dynamic markdown file loading
-│   ├── MarkdownRenderer.jsx # Reusable markdown rendering with consistent styling
-│   └── imageLoader.js     # Universal image loading for all content types
+│   ├── frontmatter.js      # YAML frontmatter parsing & volume filtering
+│   ├── markdownLoader.js   # Auto-discovery + one-time parse of every .md file
+│   ├── wikiContent.js      # Volume-filtered, render-ready items
+│   ├── wikiReferences.js   # Linkable page index per volume
+│   ├── autoLinkReferences.js # Remark plugin that cross-links wiki names
+│   ├── MarkdownRenderer.jsx  # Reusable markdown rendering with consistent styling
+│   ├── imageLoader.js      # Image URL lookup by slugified name
+│   └── useAsyncData.js     # Cancellation-safe async loading hook
 └── assets/
-    ├── characters/        # Character images
-    ├── pathways/          # Pathway images and symbols
-    ├── places/            # Location images
-    ├── gods/              # Deity images
-    ├── items/             # Item images
-    ├── symbols/           # Symbol and icon images
-    └── lotm_logo.webp     # Site logo
+    ├── <category>/         # Images, matched to entries by slugified name
+    └── lotm_logo.webp      # Site logo
 ```
+
+Content categories are declared once in `src/config/categories.js`; routes,
+navigation, home-page cards, and content validation are all derived from it.
 
 ## Getting Started
 
@@ -270,43 +275,42 @@ This project is open source and available under the MIT License.
 - **Markdown Rendering**: All content uses the `MarkdownRenderer` utility for consistent styling
 
 ### Adding New Categories
-1. Create a new folder in `src/data/` (e.g., `organizations/`)
-2. Add markdown files with proper frontmatter
-3. Create a page component that uses `getCategoryFiles('organizations')` and `MarkdownRenderer`
-4. For images, add a corresponding folder in `src/assets/` and use the universal image loader
-5. Update navigation as needed
+
+1. Add one entry to `CATEGORIES` in `src/config/categories.js`:
+
+```javascript
+{
+  key: "artifacts",              // folder name under src/data/ and src/assets/
+  route: "/artifacts",           // URL segment; may differ from the folder name
+  title: "Artifacts",
+  singular: "Artifact",
+  description: "Shown at the top of the list page.",
+  icon: "M13 10V3L4 14h7v7l9-11h-7z",   // outline SVG path data
+}
+```
+
+2. Create `src/data/artifacts/` and add markdown files with proper frontmatter.
+3. Create `src/assets/artifacts/` and add one image per entry.
+4. Run `bun test`.
+
+Routes, the navigation dropdown, the home-page card, and content validation are
+all generated from that entry — there is no page component to write and nothing
+to register in `src/app.jsx`.
 
 ### Image Management
-The universal image loader (`src/utils/imageLoader.js`) handles all image types automatically:
 
-**Supported Categories:**
-- `characters` - Character portraits and artwork
-- `pathways` - Pathway diagrams and symbols
-- `places` - Location images and maps
-- `gods` - Deity illustrations
-- `items` - Item and artifact images
-- `symbols` - Icons and symbol graphics
+Images are matched to entries by slugifying the frontmatter `name`
+(lowercased, spaces to underscores, other characters dropped):
 
-**Usage:**
-```javascript
-import { getImages, getImage } from "../utils/imageLoader.js";
-
-// Load all images for a category
-const characterImages = await getImages('characters');
-const pathwayImages = await getImages('pathways');
-
-// Search across all categories
-const anyImage = await getImage('image_name');
-
-// Specific category loading
-const { getCharacterImages, getPathwayImages } = await import("../utils/imageLoader.js");
+```
+name: "Klein Moretti"  ->  src/assets/characters/klein_moretti.webp
 ```
 
 **File Organization:**
-- Place images in `src/assets/{category}/` folders
-- Use kebab-case naming (e.g., `klein-morreti.webp`)
-- Supported formats: webp, jpg, jpeg, png, svg (varies by category)
-- Images are automatically discovered and loaded dynamically
+- Place images in `src/assets/{category}/`, one per entry
+- Name the file after the slugified `name`, **not** the markdown filename
+- Supported formats: webp, jpg, jpeg, png, svg, avif, gif
+- Discovery is automatic; `bun test` fails if an entry has no matching image
 
 ### Content Guidelines
 - **Frontmatter**: Always include `name`, `introducedInVolume`, and `category`

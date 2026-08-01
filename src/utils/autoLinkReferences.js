@@ -1,8 +1,12 @@
+// Remark plugin that turns bare mentions of other wiki pages into links.
+
 function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function createReferencePattern(references) {
+  // Longest name first so "Church of the Evernight Goddess" wins over the
+  // "Evernight Goddess" it contains.
   const names = references
     .map((reference) => reference.name)
     .sort((first, second) => second.length - first.length)
@@ -13,7 +17,28 @@ function createReferencePattern(references) {
     : null;
 }
 
-function linkTextNode(node, referencesByName, pattern) {
+// Building the alternation over every wiki page is the expensive part, and the
+// reference list is cached per volume upstream — so keying the compiled form on
+// the array identity means one compile per volume instead of one per page view.
+const compiledCache = new WeakMap();
+
+function compile(references) {
+  let compiled = compiledCache.get(references);
+
+  if (!compiled) {
+    compiled = {
+      byName: new Map(
+        references.map((reference) => [reference.name.toLowerCase(), reference]),
+      ),
+      pattern: createReferencePattern(references),
+    };
+    compiledCache.set(references, compiled);
+  }
+
+  return compiled;
+}
+
+function linkTextNode(node, byName, pattern, currentPath) {
   const nodes = [];
   let lastIndex = 0;
   let match;
@@ -24,7 +49,16 @@ function linkTextNode(node, referencesByName, pattern) {
     const leadingText = match[1];
     const linkedText = match[2];
     const linkedTextIndex = match.index + leadingText.length;
-    const reference = referencesByName.get(linkedText.toLowerCase());
+    const reference = byName.get(linkedText.toLowerCase());
+
+    if (match[0].length === 0) {
+      pattern.lastIndex += 1;
+    }
+
+    // Leave the text alone when it names the page we are already on.
+    if (!reference || reference.to === currentPath) {
+      continue;
+    }
 
     if (linkedTextIndex > lastIndex) {
       nodes.push({
@@ -40,10 +74,6 @@ function linkTextNode(node, referencesByName, pattern) {
     });
 
     lastIndex = linkedTextIndex + linkedText.length;
-
-    if (match[0].length === 0) {
-      pattern.lastIndex += 1;
-    }
   }
 
   if (nodes.length === 0) {
@@ -69,11 +99,12 @@ const ignoredNodeTypes = new Set([
   "html",
 ]);
 
-export function remarkAutoLinkReferences(references = []) {
-  const referencesByName = new Map(
-    references.map((reference) => [reference.name.toLowerCase(), reference]),
-  );
-  const pattern = createReferencePattern(references);
+/**
+ * @param {Array<{name: string, to: string}>} references Linkable wiki pages.
+ * @param {{currentPath?: string|null}} options `currentPath` is left unlinked.
+ */
+export function remarkAutoLinkReferences(references = [], { currentPath = null } = {}) {
+  const { byName, pattern } = compile(references);
 
   return () => (tree) => {
     if (!pattern) {
@@ -87,7 +118,7 @@ export function remarkAutoLinkReferences(references = []) {
 
       node.children = node.children.flatMap((child) => {
         if (child.type === "text") {
-          return linkTextNode(child, referencesByName, pattern);
+          return linkTextNode(child, byName, pattern, currentPath);
         }
 
         visit(child);
@@ -98,4 +129,3 @@ export function remarkAutoLinkReferences(references = []) {
     visit(tree);
   };
 }
-

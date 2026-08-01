@@ -1,50 +1,52 @@
-import { extractFrontmatter } from "./frontmatter.js";
-import { getCategoryFiles } from "./markdownLoader.js";
+// The set of wiki pages that auto-linking may point at, for a given volume.
 
-const categoryRoutes = {
-  characters: "/characters",
-  pathways: "/pathways",
-  places: "/places",
-  gods: "/gods",
-  organizations: "/organizations",
-  spells: "/spells",
-  sealed_artifacts: "/sealed-artifacts",
-};
+import { getCategoryEntries } from "./markdownLoader.js";
+import { CATEGORIES } from "../config/categories.js";
 
-let referenceCache;
+let allReferences;
+
+// Cached per volume so the array identity is stable across detail pages. The
+// auto-link plugin keys its compiled regex off that identity, so every detail
+// page at the same volume reuses one compiled pattern.
+const referencesByVolume = new Map();
 
 async function loadReferences() {
-  const categoryEntries = await Promise.all(
-    Object.entries(categoryRoutes).map(async ([category, routeBase]) => {
-      const files = await getCategoryFiles(category);
+  const perCategory = await Promise.all(
+    CATEGORIES.map(async ({ key, route }) => {
+      const entries = await getCategoryEntries(key);
 
-      return Object.entries(files).map(([id, file]) => {
-        const { data } = extractFrontmatter(file.content);
-
-        return {
-          id,
-          name: data.name,
-          introducedInVolume: Number(data.introducedInVolume),
-          to: `${routeBase}/${id}`,
-        };
-      });
+      return entries
+        .filter((entry) => entry.name && Number.isFinite(entry.introducedInVolume))
+        .map((entry) => ({
+          id: entry.id,
+          name: entry.name,
+          introducedInVolume: entry.introducedInVolume,
+          to: `${route}/${entry.id}`,
+        }));
     }),
   );
 
-  return categoryEntries
-    .flat()
-    .filter((reference) => reference.name && Number.isFinite(reference.introducedInVolume));
+  return perCategory.flat();
 }
 
-export async function getWikiReferences(selectedVolume, currentPath) {
-  referenceCache ??= loadReferences();
-  const references = await referenceCache;
+export function getWikiReferences(selectedVolume) {
+  let pending = referencesByVolume.get(selectedVolume);
 
-  return references.filter(
-    (reference) => (
-      reference.introducedInVolume <= selectedVolume
-      && reference.to !== currentPath
-    ),
-  );
+  if (!pending) {
+    pending = (async () => {
+      allReferences ??= loadReferences();
+      const references = await allReferences;
+
+      return references.filter(
+        (reference) => reference.introducedInVolume <= selectedVolume,
+      );
+    })().catch((error) => {
+      referencesByVolume.delete(selectedVolume);
+      throw error;
+    });
+
+    referencesByVolume.set(selectedVolume, pending);
+  }
+
+  return pending;
 }
-

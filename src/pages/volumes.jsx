@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
-import { volumes } from "../components/volumeSelector.jsx";
+import { VOLUMES } from "../config/volumes.js";
 import { useSelectedVolume } from "../utils/volumeContext.jsx";
 
 export default function VolumesPage() {
@@ -18,21 +18,25 @@ export default function VolumesPage() {
         </section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-          {volumes.map((volume, index) => (
-            <div
-              key={volume}
-              className={`card border ${index === selectedVolume ? "border-accent bg-accent/5" : "border-base-300 bg-base-100/90"}`}
-            >
-              <div className="card-body">
-                <div className="flex items-center justify-between gap-2">
-                  <h2 className="card-title">Volume {index}</h2>
-                  {index === selectedVolume && <span className="badge badge-accent">Current</span>}
+          {VOLUMES.map((volume, index) => {
+            const isCurrent = index === selectedVolume;
+
+            return (
+              <div
+                key={volume}
+                className={`card border ${isCurrent ? "border-accent bg-accent/5" : "border-base-300 bg-base-100/90"}`}
+              >
+                <div className="card-body">
+                  <div className="flex items-center justify-between gap-2">
+                    <h2 className="card-title">Volume {index}</h2>
+                    {isCurrent && <span className="badge badge-accent">Current</span>}
+                  </div>
+                  <p className="text-base-content/80">{volume}</p>
+                  <Link to="/characters" className="btn btn-sm btn-outline mt-3">Browse entries</Link>
                 </div>
-                <p className="text-base-content/80">{volume}</p>
-                <Link to="/characters" className="btn btn-sm btn-outline mt-3">Browse entries</Link>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </main>
     </div>

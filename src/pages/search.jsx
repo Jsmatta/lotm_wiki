@@ -1,48 +1,31 @@
-import { useMemo, useState, useEffect } from "preact/hooks";
+import { useCallback, useMemo } from "preact/hooks";
 import { Link, useLocation } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
-import { getAllCategoryItems } from "../utils/wikiContent.js";
+import { useAsyncData } from "../utils/useAsyncData.js";
+import { getAllItems } from "../utils/wikiContent.js";
 import { useSelectedVolume } from "../utils/volumeContext.jsx";
 import LoadingPage from "../components/loadingPage.jsx";
+
+const EMPTY_ITEMS = [];
 
 export default function SearchPage() {
   const selectedVolume = useSelectedVolume();
   const location = useLocation();
-  const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const query = useMemo(() => new URLSearchParams(location.search).get("q") || "", [location.search]);
+  const query = useMemo(
+    () => new URLSearchParams(location.search).get("q") || "",
+    [location.search],
+  );
 
   usePageTitle("Search");
 
-  useEffect(() => {
-    let cancelled = false;
-
-    const loadItems = async () => {
-      setLoading(true);
-      try {
-        const allItems = await getAllCategoryItems(selectedVolume);
-        if (!cancelled) setItems(allItems);
-      } catch (error) {
-        console.error("Error loading search index:", error);
-        if (!cancelled) setItems([]);
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    };
-
-    loadItems();
-    return () => { cancelled = true; };
-  }, [selectedVolume]);
+  const load = useCallback(() => getAllItems(selectedVolume), [selectedVolume]);
+  const { data: items, loading } = useAsyncData(load, [selectedVolume], EMPTY_ITEMS);
 
   const visibleItems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
-    if (!normalizedQuery) return [];
+    if (!normalizedQuery) return EMPTY_ITEMS;
 
-    return items.filter((item) =>
-      `${item.name} ${item.category} ${item.plainText}`
-        .toLowerCase()
-        .includes(normalizedQuery),
-    );
+    return items.filter((item) => item.searchText.includes(normalizedQuery));
   }, [items, query]);
 
   if (loading) {
@@ -55,7 +38,9 @@ export default function SearchPage() {
         <section className="bg-base-100/90 rounded-lg p-6 shadow-xl mb-8">
           <h1 className="text-4xl font-bold">Search</h1>
           <p className="mt-3 text-base-content/80">
-            {query ? `Showing results for “${query}”.` : "Enter a search term in the navbar to look through the wiki."}
+            {query
+              ? `Showing results for “${query}”.`
+              : "Enter a search term in the navbar to look through the wiki."}
           </p>
         </section>
 
@@ -66,10 +51,14 @@ export default function SearchPage() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {visibleItems.map((item) => (
-              <Link key={`${item.category}-${item.id}`} to={`/${item.category}/${item.id}`} className="card bg-base-100/90 border border-base-300 hover:border-accent">
+              <Link
+                key={item.href}
+                to={item.href}
+                className="card bg-base-100/90 border border-base-300 hover:border-accent"
+              >
                 <div className="card-body">
                   <h2 className="card-title text-lg">{item.name}</h2>
-                  <div className="badge badge-secondary badge-sm capitalize">{item.category}</div>
+                  <div className="badge badge-secondary badge-sm capitalize">{item.label}</div>
                   <p className="text-sm text-base-content/80">Volume {item.introducedInVolume}</p>
                 </div>
               </Link>

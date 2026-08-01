@@ -1,42 +1,45 @@
-import { useState, useEffect } from "preact/hooks";
+import { useMemo } from "preact/hooks";
 import { Link, useLocation } from "react-router-dom";
-import { sections } from "../utils/sections.js";
+import { NAV_SECTIONS } from "../config/categories.js";
 import Modal from "./modal.jsx";
 
-export { sections } from "../utils/sections.js";
+/** The active section is derived from the URL — no separate state to keep in sync. */
+function useActiveSection() {
+  const { pathname } = useLocation();
 
-export function SectionDropdown({ isOpen, onClose, selectedSection, onSectionChange }) {
-  const location = useLocation();
-  const [activeSection, setActiveSection] = useState("Home");
+  return useMemo(() => {
+    const section = NAV_SECTIONS.find(
+      (item) => item.path !== "/"
+        && (pathname === item.path || pathname.startsWith(`${item.path}/`)),
+    );
 
-  useEffect(() => {
-    const path = location.pathname;
-    const section = sections
-      .filter((item) => item.path !== "/")
-      .find((item) => path === item.path || path.startsWith(`${item.path}/`));
+    return section?.path ?? "/";
+  }, [pathname]);
+}
 
-    setActiveSection(section?.label || "Home");
-  }, [location.pathname]);
-
-  const handleSectionChange = (section) => {
-    if (onSectionChange) onSectionChange(section);
-    onClose();
-  };
+export function SectionDropdown({ isOpen, onClose }) {
+  const activePath = useActiveSection();
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title="Select Section">
       <ul className="menu bg-base-100 rounded-box w-full">
-        {sections.map((section) => (
-          <li key={section.path}>
-            <Link
-              to={section.path}
-              onClick={() => handleSectionChange(section.label)}
-              className={activeSection === section.label ? "active" : ""}
-            >
-              {section.label} {activeSection === section.label && " ✓"}
-            </Link>
-          </li>
-        ))}
+        {NAV_SECTIONS.map((section) => {
+          const isActive = activePath === section.path;
+
+          return (
+            <li key={section.path}>
+              <Link
+                to={section.path}
+                onClick={onClose}
+                aria-current={isActive ? "page" : undefined}
+                className={isActive ? "active" : ""}
+              >
+                {section.label}
+                {isActive && " ✓"}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </Modal>
   );

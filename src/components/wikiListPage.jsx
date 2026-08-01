@@ -1,40 +1,24 @@
-import { memo, useEffect, useMemo, useState } from "preact/compat";
+import { memo, useCallback, useDeferredValue, useMemo, useState } from "preact/compat";
 import { Link } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
+import { useAsyncData } from "../utils/useAsyncData.js";
 import { getCategoryItems } from "../utils/wikiContent.js";
 import { truncateText } from "../utils/textUtils.js";
-import { categoryIconPaths, defaultCategoryIconPath } from "../utils/categoryIcons.js";
+import { getCategory } from "../config/categories.js";
+import { ICON_PATHS } from "../config/icons.js";
 import { useSelectedVolume } from "../utils/volumeContext.jsx";
+import Icon from "./icon.jsx";
 import LoadingPage from "./loadingPage.jsx";
+import NotFoundPage from "../pages/notFound.jsx";
 
-function EmptyIcon({ category }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-16 w-16 mx-auto text-base-content/30 mb-2"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d={categoryIconPaths[category] || defaultCategoryIconPath}
-      />
-    </svg>
-  );
-}
+const EMPTY_ITEMS = [];
 
-const WikiListCard = memo(function WikiListCard({ item, category, routeBase }) {
-  const preview = useMemo(
-    () => truncateText(item.plainText, 180),
-    [item.plainText],
-  );
+const WikiListCard = memo(function WikiListCard({ item, icon }) {
+  const preview = useMemo(() => truncateText(item.plainText, 180), [item]);
 
   return (
     <Link
-      to={`${routeBase}/${item.id}`}
+      to={item.href}
       className="card bg-base-100/95 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-accent/50 hover:border-accent group"
     >
       <figure className="h-48 overflow-hidden bg-base-200">
@@ -49,7 +33,7 @@ const WikiListCard = memo(function WikiListCard({ item, category, routeBase }) {
         ) : (
           <div className="w-full h-full flex items-center justify-center">
             <div className="text-center px-4">
-              <EmptyIcon category={category} />
+              <Icon path={icon} className="h-16 w-16 mx-auto text-base-content/30 mb-2" />
               <span className="text-base-content/50 text-sm">No Image</span>
             </div>
           </div>
@@ -64,7 +48,7 @@ const WikiListCard = memo(function WikiListCard({ item, category, routeBase }) {
             V{item.introducedInVolume}
           </div>
         </div>
-        <div className="badge badge-secondary badge-sm">{item.category}</div>
+        <div className="badge badge-secondary badge-sm">{item.label}</div>
         {preview && (
           <p className="line-clamp-4 text-sm text-base-content/80 leading-relaxed">
             {preview}
@@ -75,64 +59,43 @@ const WikiListCard = memo(function WikiListCard({ item, category, routeBase }) {
   );
 });
 
-export default function WikiListPage({
-  category,
-  title,
-  description,
-  routeBase,
-  imageCategory = category,
-  emptyTitle,
-  emptyDescription,
-}) {
+/**
+ * Grid and search view shared by every content category. Routed from
+ * `src/app.jsx` with just a category key; all copy comes from the registry.
+ */
+export default function WikiListPage({ category }) {
+  const config = getCategory(category);
   const selectedVolume = useSelectedVolume();
-  const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
-  usePageTitle(title);
+  // Typing stays responsive while the (potentially long) list re-filters.
+  const deferredQuery = useDeferredValue(query);
 
-  useEffect(() => {
-    let cancelled = false;
+  usePageTitle(config?.title);
 
-    const loadData = async () => {
-      setLoading(true);
-
-      try {
-        const itemData = await getCategoryItems(category, selectedVolume, imageCategory);
-        if (!cancelled) {
-          setItems(itemData);
-        }
-      } catch (error) {
-        console.error(`Error loading ${category}:`, error);
-        if (!cancelled) {
-          setItems([]);
-        }
-      } finally {
-        if (!cancelled) {
-          setLoading(false);
-        }
-      }
-    };
-
-    loadData();
-    return () => { cancelled = true; };
-  }, [category, imageCategory, selectedVolume]);
+  const load = useCallback(
+    () => getCategoryItems(category, selectedVolume),
+    [category, selectedVolume],
+  );
+  const { data: items, loading } = useAsyncData(load, [category, selectedVolume], EMPTY_ITEMS);
 
   const visibleItems = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
+    const normalizedQuery = deferredQuery.trim().toLowerCase();
 
     if (!normalizedQuery) {
       return items;
     }
 
-    return items.filter((item) =>
-      `${item.name} ${item.category} ${item.plainText}`
-        .toLowerCase()
-        .includes(normalizedQuery),
-    );
-  }, [items, query]);
+    // `searchText` is pre-lowercased and memoized per item, so a keystroke is
+    // one substring scan per entry rather than a rebuild of the haystack.
+    return items.filter((item) => item.searchText.includes(normalizedQuery));
+  }, [items, deferredQuery]);
+
+  if (!config) {
+    return <NotFoundPage />;
+  }
 
   if (loading) {
-    return <LoadingPage message={`Gathering ${title.toLowerCase()}…`} />;
+    return <LoadingPage message={`Gathering ${config.title.toLowerCase()}…`} />;
   }
 
   return (
@@ -141,12 +104,10 @@ export default function WikiListPage({
         <section className="bg-base-100/90 backdrop-blur-sm rounded-lg p-6 shadow-xl mb-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <h1 className="text-4xl font-bold">{title}</h1>
-              {description && (
-                <p className="mt-3 max-w-3xl text-base-content/80">
-                  {description}
-                </p>
-              )}
+              <h1 className="text-4xl font-bold">{config.title}</h1>
+              <p className="mt-3 max-w-3xl text-base-content/80">
+                {config.description}
+              </p>
               <div className="stats stats-horizontal bg-base-200/70 mt-5 shadow-sm">
                 <div className="stat py-3">
                   <div className="stat-title">Visible</div>
@@ -159,19 +120,11 @@ export default function WikiListPage({
               </div>
             </div>
             <label className="input input-bordered flex items-center gap-2 w-full lg:w-80">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 opacity-70"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
+              <Icon path={ICON_PATHS.search} className="h-4 w-4 opacity-70" />
               <input
                 type="search"
                 className="grow"
-                placeholder={`Search ${title.toLowerCase()}`}
+                placeholder={`Search ${config.title.toLowerCase()}`}
                 value={query}
                 onInput={(event) => setQuery(event.currentTarget.value)}
               />
@@ -181,27 +134,22 @@ export default function WikiListPage({
 
         {items.length === 0 ? (
           <div className="alert alert-info bg-base-100/90 backdrop-blur-sm">
-            <EmptyIcon category={category} />
+            <Icon path={config.icon} className="h-16 w-16 text-base-content/30" />
             <div>
-              <h3 className="font-bold">{emptyTitle || `No ${title.toLowerCase()} found`}</h3>
+              <h3 className="font-bold">No {config.title.toLowerCase()} found</h3>
               <div className="text-sm">
-                {emptyDescription || `Add markdown files under src/data/${category}/ to populate this section.`}
+                Add markdown files under src/data/{category}/ to populate this section.
               </div>
             </div>
           </div>
         ) : visibleItems.length === 0 ? (
           <div className="alert alert-warning bg-base-100/90 backdrop-blur-sm">
-            <span>No results match "{query}".</span>
+            <span>No results match "{deferredQuery}".</span>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {visibleItems.map((item) => (
-              <WikiListCard
-                key={item.id}
-                item={item}
-                category={category}
-                routeBase={routeBase}
-              />
+              <WikiListCard key={item.id} item={item} icon={config.icon} />
             ))}
           </div>
         )}

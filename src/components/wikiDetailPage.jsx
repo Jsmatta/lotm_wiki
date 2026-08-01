@@ -1,76 +1,58 @@
-import { useEffect, useState } from "preact/hooks";
+import { useCallback, useMemo } from "preact/hooks";
 import { Link, useParams } from "react-router-dom";
 import { usePageTitle } from "../utils/usePageTitle.js";
+import { useAsyncData } from "../utils/useAsyncData.js";
 import { getCategoryItem } from "../utils/wikiContent.js";
 import { getWikiReferences } from "../utils/wikiReferences.js";
 import { getExternalReferences } from "../utils/externalReferences.js";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
+import { getCategory } from "../config/categories.js";
 import { useSelectedVolume } from "../utils/volumeContext.jsx";
+import Icon from "./icon.jsx";
 import LoadingPage from "./loadingPage.jsx";
+import NotFoundPage from "../pages/notFound.jsx";
 
-export default function WikiDetailPage({
-  category,
-  title,
-  routeBase,
-  singularTitle,
-  introductionLabel = "Introduction",
-  imageCategory = category,
-  fallbackIconPath,
-}) {
+const EMPTY_RESULT = { item: null, references: [] };
+
+/**
+ * Single-entry view shared by every content category, routed as
+ * `/:category/:id` where `id` is the markdown filename.
+ */
+export default function WikiDetailPage({ category }) {
+  const config = getCategory(category);
   const selectedVolume = useSelectedVolume();
   const { id } = useParams();
-  const [item, setItem] = useState(null);
-  const [references, setReferences] = useState([]);
-  const [externalReferences, setExternalReferences] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const currentPath = config ? `${config.route}/${id}` : null;
 
-  usePageTitle(item ? item.name : singularTitle);
+  const load = useCallback(async () => {
+    const [item, references] = await Promise.all([
+      getCategoryItem(category, id, selectedVolume),
+      getWikiReferences(selectedVolume),
+    ]);
 
-  useEffect(() => {
-    let cancelled = false;
+    return item ? { item, references } : EMPTY_RESULT;
+  }, [category, id, selectedVolume]);
 
-    const loadItem = async () => {
-      setLoading(true);
+  const { data, loading } = useAsyncData(
+    load,
+    [category, id, selectedVolume],
+    EMPTY_RESULT,
+  );
+  const { item, references } = data;
 
-      try {
-        const currentPath = `${routeBase}/${id}`;
-        const [loadedItem, wikiReferences] = await Promise.all([
-          getCategoryItem(category, id, selectedVolume, imageCategory),
-          getWikiReferences(selectedVolume, currentPath),
-        ]);
+  const externalReferences = useMemo(
+    () => (item ? getExternalReferences(item.name) : []),
+    [item],
+  );
 
-        if (cancelled) return;
+  usePageTitle(item ? item.name : config?.singular);
 
-        if (!loadedItem) {
-          setItem(null);
-          setReferences([]);
-          setExternalReferences([]);
-          return;
-        }
-
-        setReferences(wikiReferences);
-        setExternalReferences(getExternalReferences(loadedItem.name));
-        setItem(loadedItem);
-      } catch (error) {
-        console.error(`Error loading ${category} detail:`, error);
-        if (!cancelled) {
-          setItem(null);
-          setReferences([]);
-          setExternalReferences([]);
-        }
-      } finally {
-        if (!cancelled) {
-          setLoading(false);
-        }
-      }
-    };
-
-    loadItem();
-    return () => { cancelled = true; };
-  }, [category, imageCategory, id, routeBase, selectedVolume]);
+  if (!config) {
+    return <NotFoundPage />;
+  }
 
   if (loading) {
-    return <LoadingPage message={`Opening ${singularTitle.toLowerCase()} record…`} />;
+    return <LoadingPage message={`Opening ${config.singular.toLowerCase()} record…`} />;
   }
 
   if (!item) {
@@ -78,7 +60,7 @@ export default function WikiDetailPage({
       <div className="min-h-screen">
         <main className="container mx-auto px-4 py-8">
           <div className="alert alert-error bg-base-100/90 backdrop-blur-sm">
-            <span>{singularTitle} not found</span>
+            <span>{config.singular} not found</span>
           </div>
         </main>
       </div>
@@ -89,8 +71,8 @@ export default function WikiDetailPage({
     <div className="min-h-screen">
       <main className="container mx-auto px-4 py-8">
         <div className="mb-6">
-          <Link to={routeBase} className="btn btn-ghost btn-sm">
-            Back to {title}
+          <Link to={config.route} className="btn btn-ghost btn-sm">
+            Back to {config.title}
           </Link>
         </div>
 
@@ -100,7 +82,11 @@ export default function WikiDetailPage({
               <h1 className="text-4xl lg:text-5xl font-bold mb-8 text-primary border-b-2 border-primary/30 pb-3">
                 {item.name}
               </h1>
-              <MarkdownRenderer content={item.content} references={references} />
+              <MarkdownRenderer
+                content={item.content}
+                references={references}
+                currentPath={currentPath}
+              />
             </section>
           </div>
 
@@ -118,15 +104,7 @@ export default function WikiDetailPage({
                     />
                   ) : (
                     <div className="w-full aspect-square flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-20 w-20 text-base-content/20"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={fallbackIconPath} />
-                      </svg>
+                      <Icon path={config.icon} className="h-20 w-20 text-base-content/20" />
                     </div>
                   )}
                 </div>
@@ -141,10 +119,10 @@ export default function WikiDetailPage({
                   <tbody>
                     <tr>
                       <th className="bg-base-200/50 text-xs uppercase opacity-70 w-1/3">Category</th>
-                      <td className="text-sm capitalize">{item.category}</td>
+                      <td className="text-sm capitalize">{item.label}</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200/50 text-xs uppercase opacity-70">{introductionLabel}</th>
+                      <th className="bg-base-200/50 text-xs uppercase opacity-70">Introduced In</th>
                       <td className="text-sm">Volume {item.introducedInVolume}</td>
                     </tr>
                   </tbody>

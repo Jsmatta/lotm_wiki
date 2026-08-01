@@ -173,20 +173,17 @@ export function processRevealBlocks(
   return output.join("\n").trim();
 }
 
-export function parseMarkdownForReact(markdownContent, selectedVolumeIndex) {
-  const { data, content } = extractFrontmatter(markdownContent);
-  const processedContent = processRevealBlocks(content, selectedVolumeIndex);
-  
-  return {
-    ...data,
-    content: processedContent
-  };
+/**
+ * Whether an item is safe to show at the reader's volume. Anything without a
+ * usable `introducedInVolume` fails closed and stays hidden.
+ */
+export function isWithinVolume(item, selectedVolumeIndex) {
+  const introducedInVolume = Number(item.introducedInVolume);
+
+  return Number.isFinite(introducedInVolume)
+    && introducedInVolume <= selectedVolumeIndex;
 }
 
 export function filterByVolume(items, selectedVolumeIndex) {
-  return items.filter((item) => {
-    const introducedInVolume = Number(item.introducedInVolume);
-    return Number.isFinite(introducedInVolume)
-      && introducedInVolume <= selectedVolumeIndex;
-  });
+  return items.filter((item) => isWithinVolume(item, selectedVolumeIndex));
 }

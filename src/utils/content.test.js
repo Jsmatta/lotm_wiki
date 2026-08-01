@@ -2,25 +2,14 @@ import { describe, expect, test } from "bun:test";
 import { readdir, readFile } from "node:fs/promises";
 import { extname, join } from "node:path";
 import { extractFrontmatter, processRevealBlocks } from "./frontmatter.js";
+import { slugFromName } from "./textUtils.js";
+import { CATEGORY_KEYS } from "../config/categories.js";
+import { LAST_VOLUME } from "../config/volumes.js";
 
 const dataRoot = join(import.meta.dir, "../data");
 const assetsRoot = join(import.meta.dir, "../assets");
-const categories = [
-  "characters",
-  "pathways",
-  "places",
-  "gods",
-  "organizations",
-  "spells",
-  "sealed_artifacts",
-];
-
-function slugFromName(name) {
-  return name
-    .toLowerCase()
-    .replace(/\s+/g, "_")
-    .replace(/[^a-z0-9_]/g, "");
-}
+// Driven by the registry so a new category is validated the moment it is added.
+const categories = CATEGORY_KEYS;
 
 async function loadEntries() {
   const entries = [];
@@ -48,12 +37,12 @@ describe("wiki content", () => {
       expect(entry.data.name).toBeTruthy();
       expect(entry.data.category).toBeTruthy();
       expect(entry.data.introducedInVolume).toBeGreaterThanOrEqual(1);
-      expect(entry.data.introducedInVolume).toBeLessThanOrEqual(8);
+      expect(entry.data.introducedInVolume).toBeLessThanOrEqual(LAST_VOLUME);
       expect(names.has(entry.data.name)).toBe(false);
       names.add(entry.data.name);
 
       const warnings = [];
-      processRevealBlocks(entry.content, 8, {
+      processRevealBlocks(entry.content, LAST_VOLUME, {
         warn: (message) => warnings.push(message),
       });
       expect(warnings).toEqual([]);
@@ -71,6 +60,23 @@ describe("wiki content", () => {
       const slug = slugFromName(entry.data.name);
 
       expect(imageNames.has(slug)).toBe(true);
+    }
+  });
+
+  test("registers every content folder in the category registry", async () => {
+    // The loaders discover folders by glob, so a folder missing from the
+    // registry would ship content with no route and no nav entry.
+    const folders = (await readdir(dataRoot, { withFileTypes: true }))
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name);
+
+    for (const folder of folders) {
+      const hasMarkdown = (await readdir(join(dataRoot, folder)))
+        .some((file) => extname(file) === ".md");
+
+      if (hasMarkdown) {
+        expect(CATEGORY_KEYS).toContain(folder);
+      }
     }
   });
 });

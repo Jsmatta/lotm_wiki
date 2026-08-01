@@ -1,3 +1,4 @@
+import { useMemo } from 'preact/hooks';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 import { remarkAutoLinkReferences } from './autoLinkReferences.js';
@@ -114,46 +115,49 @@ const markdownComponents = {
   ),
 };
 
+const NO_REFERENCES = [];
+const NO_OVERRIDES = {};
+
 /**
- * Reusable Markdown component with consistent styling
+ * Reusable Markdown component with consistent styling.
+ *
+ * Both `components` and `remarkPlugins` are memoized: react-markdown reparses
+ * whenever either identity changes, so building them inline would re-run the
+ * full markdown pipeline on every render.
+ *
  * @param {Object} props
  * @param {string} props.content - Markdown content to render
  * @param {string} props.className - Additional CSS classes
  * @param {Object} props.components - Custom components to override defaults
  * @param {Array} props.references - Wiki pages to link when their names appear
+ * @param {string} props.currentPath - Route of the page being rendered; its own
+ *   name is left unlinked rather than linking back to itself
  */
 export function MarkdownRenderer({
   content,
   className = "prose prose-lg max-w-none",
-  components = {},
-  references = [],
+  components = NO_OVERRIDES,
+  references = NO_REFERENCES,
+  currentPath = null,
 }) {
+  const mergedComponents = useMemo(
+    () => (components === NO_OVERRIDES
+      ? markdownComponents
+      : { ...markdownComponents, ...components }),
+    [components],
+  );
+
+  const remarkPlugins = useMemo(
+    () => [remarkAutoLinkReferences(references, { currentPath })],
+    [references, currentPath],
+  );
+
   return (
     <div className={className}>
-      <ReactMarkdown
-        components={{ ...markdownComponents, ...components }}
-        remarkPlugins={[remarkAutoLinkReferences(references)]}
-      >
+      <ReactMarkdown components={mergedComponents} remarkPlugins={remarkPlugins}>
         {content}
       </ReactMarkdown>
     </div>
-  );
-}
-
-/**
- * Compact version for cards and smaller spaces
- */
-export function CompactMarkdown({ content, className = "prose prose-sm max-w-none" }) {
-  return (
-    <MarkdownRenderer 
-      content={content} 
-      className={className}
-      components={{
-        h1: ({children}) => <h1 className="text-xl font-bold mt-4 mb-2 text-primary">{children}</h1>,
-        h2: ({children}) => <h2 className="text-lg font-semibold mt-3 mb-2 text-secondary">{children}</h2>,
-        h3: ({children}) => <h3 className="text-base font-medium mt-2 mb-1 text-accent">{children}</h3>,
-      }}
-    />
   );
 }
 

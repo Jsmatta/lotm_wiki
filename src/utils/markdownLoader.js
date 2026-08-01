@@ -1,142 +1,110 @@
-// Dynamic markdown loader for wiki content files
-// Automatically imports all markdown files from data directories
+// Discovers and parses every wiki markdown file.
+//
+// One wildcard glob covers all categories, so a new `src/data/<category>/`
+// folder is picked up with no change here. Files stay lazily imported (the
+// corpus is a few hundred kB), and `vite.config.js` bundles each category
+// folder into a single chunk so opening a category costs one request rather
+// than one per entry.
 
-// Vite requires literal strings for import.meta.glob
-const characterModules = import.meta.glob('../data/characters/*.md', { query: '?raw' });
-const pathwayModules = import.meta.glob('../data/pathways/*.md', { query: '?raw' });
-const placeModules = import.meta.glob('../data/places/*.md', { query: '?raw' });
-const godModules = import.meta.glob('../data/gods/*.md', { query: '?raw' });
-const organizationModules = import.meta.glob('../data/organizations/*.md', { query: '?raw' });
-const spellModules = import.meta.glob('../data/spells/*.md', { query: '?raw' });
-const sealedArtifactModules = import.meta.glob('../data/sealed_artifacts/*.md', { query: '?raw' });
+import { extractFrontmatter } from "./frontmatter.js";
 
-const categoryModules = {
-  characters: characterModules,
-  pathways: pathwayModules,
-  places: placeModules,
-  gods: godModules,
-  organizations: organizationModules,
-  spells: spellModules,
-  sealed_artifacts: sealedArtifactModules,
-};
+const rawModules = import.meta.glob("../data/*/*.md", {
+  query: "?raw",
+  import: "default",
+});
 
-const categoryCache = new Map();
+const ENTRY_PATH = /\/data\/([^/]+)\/([^/]+)\.md$/;
 
-export async function loadCategoryFiles(category) {
-  const modules = categoryModules[category];
+/** category -> Map<id, () => Promise<string>>, in stable glob (alphabetical) order. */
+const loadersByCategory = new Map();
 
-  if (!modules) {
-    return {};
+for (const [path, load] of Object.entries(rawModules)) {
+  const match = path.match(ENTRY_PATH);
+  if (!match) continue;
+
+  const [, category, id] = match;
+  let loaders = loadersByCategory.get(category);
+
+  if (!loaders) {
+    loaders = new Map();
+    loadersByCategory.set(category, loaders);
   }
 
-  const files = {};
-
-  const loadedFiles = await Promise.all(
-    Object.entries(modules).map(async ([path, module]) => {
-      const mdModule = await module();
-      const fileName = path.split("/").pop().replace(/\.[^/.]+$/, "");
-
-      return {
-        fileName,
-        content: mdModule.default,
-      };
-    }),
-  );
-
-  loadedFiles.forEach(({ fileName, content }) => {
-    files[fileName] = { content };
-  });
-
-  return files;
+  loaders.set(id, load);
 }
 
-export async function getCategoryFiles(category) {
-  if (!category) return {};
-
-  if (!categoryCache.has(category)) {
-    categoryCache.set(category, loadCategoryFiles(category));
-  }
-
-  try {
-    return await categoryCache.get(category);
-  } catch (error) {
-    categoryCache.delete(category);
-    throw error;
-  }
-}
+/** Category folders that actually exist under `src/data/`. */
+export const DISCOVERED_CATEGORIES = [...loadersByCategory.keys()];
 
 /**
- * CategoryLoader class for per-category lazy loading
- * Uses LRU cache with max 20 entries per category
- * Auto-clears on new category load when at capacity
+ * Parsed entries, cached per category for the lifetime of the page. Parsing is
+ * volume-independent: only `body` is filtered later, so switching volumes never
+ * re-reads or re-parses frontmatter.
  */
-class CategoryLoader {
-  constructor(category) {
-    this.category = category;
-    this.categoryCache = new Map();
-    this.isReady = false;
-    this.promise = null;
+const entriesByCategory = new Map();
+const entryIndexByCategory = new Map();
+
+function parseEntry(category, id, raw) {
+  const { data, content } = extractFrontmatter(raw);
+  const introducedInVolume = Number(data.introducedInVolume);
+
+  if (!Number.isFinite(introducedInVolume)) {
+    console.warn(
+      `"${data.name || id}" (${category}/${id}) is missing a valid introducedInVolume; hiding it until fixed.`,
+    );
   }
 
-  async load() {
-    if (this.isReady && this.categoryCache.size > 0) {
-      return this.categoryCache.get(0);
-    }
-
-    if (this.promise && !this.promise.ran) {
-      this.promise.ran = true;
-      return this.promise;
-    }
-
-    this.promise = (async () => {
-      const modules = categoryModules[this.category];
-      
-      if (!modules) {
-        this.isReady = true;
-        this.categoryCache.set(0, {});
-        return {};
-      }
-
-      const files = {};
-      const loadedFiles = await Promise.all(
-        Object.entries(modules).map(async ([path, module]) => {
-          const mdModule = await module();
-          const fileName = path.split("/").pop().replace(/\.[^/.]+$/, "");
-          return { fileName, content: mdModule.default };
-        }),
-      );
-
-      loadedFiles.forEach(({ fileName, content }) => {
-        files[fileName] = { content };
-      });
-
-      this.categoryCache.set(0, files);
-      this.isReady = true;
-      return files;
-    })();
-
-    return this.promise;
-  }
-
-  getAll() {
-    const all = {};
-    if (this.isReady) {
-      for (const [cat, files] of this.categoryCache.entries()) {
-        for (const [fileName, data] of Object.entries(files)) {
-          all[cat + ':' + fileName] = data;
-        }
-      }
-    }
-    return all;
-  }
+  return {
+    id,
+    category,
+    name: data.name,
+    // Frontmatter `category` is the display label ("character"); the folder
+    // name is the routing key ("characters").
+    label: data.category || category,
+    introducedInVolume,
+    body: content,
+  };
 }
 
-/** Warm raw markdown caches during idle time */
-export function preloadAllCategories() {
+async function loadCategory(category) {
+  const loaders = loadersByCategory.get(category);
+
   return Promise.all(
-    Object.keys(categoryModules).map((category) => getCategoryFiles(category)),
+    [...loaders].map(async ([id, load]) => parseEntry(category, id, await load())),
   );
 }
 
-/** Export CategoryLoader for lazy loading */
-export { CategoryLoader };
+/** @returns {Promise<Array<{id, category, name, label, introducedInVolume, body}>>} */
+export function getCategoryEntries(category) {
+  if (!loadersByCategory.has(category)) return Promise.resolve([]);
+
+  let pending = entriesByCategory.get(category);
+
+  if (!pending) {
+    pending = loadCategory(category).catch((error) => {
+      entriesByCategory.delete(category);
+      throw error;
+    });
+    entriesByCategory.set(category, pending);
+  }
+
+  return pending;
+}
+
+/** Look up one entry by its filename key without scanning the category. */
+export async function getCategoryEntry(category, id) {
+  const entries = await getCategoryEntries(category);
+  let index = entryIndexByCategory.get(category);
+
+  if (!index) {
+    index = new Map(entries.map((entry) => [entry.id, entry]));
+    entryIndexByCategory.set(category, index);
+  }
+
+  return index.get(id) ?? null;
+}
+
+/** Warm every category during browser idle time. */
+export function preloadAllCategories() {
+  return Promise.all(DISCOVERED_CATEGORIES.map(getCategoryEntries));
+}

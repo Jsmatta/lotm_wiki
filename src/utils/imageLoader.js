@@ -1,182 +1,40 @@
-// Universal image loader for all wiki content
-// Supports characters, pathways, places, gods, and any other categories
-// Implements lazy loading with progressive loading strategy
+// Resolves content images by slugified item name.
+//
+// The glob is eager on purpose: each entry resolves to nothing more than a
+// hashed URL string, so inlining them costs a few kB in the main bundle and
+// removes one network round-trip per image just to discover its URL. The
+// images themselves are still fetched only when an <img> enters the viewport.
 
-// Dynamic imports for different asset categories
-const assetModules = {
-  characters: import.meta.glob('../assets/characters/*.{webp,jpg,jpeg,png}'),
-  pathways: import.meta.glob('../assets/pathways/*.{webp,jpg,jpeg,png,svg}'),
-  places: import.meta.glob('../assets/places/*.{webp,jpg,jpeg,png}'),
-  gods: import.meta.glob('../assets/gods/*.{webp,jpg,jpeg,png,svg}'),
-  organizations: import.meta.glob('../assets/organizations/*.{webp,jpg,jpeg,png,svg}'),
-  spells: import.meta.glob('../assets/spells/*.{webp,jpg,jpeg,png,svg}'),
-  sealed_artifacts: import.meta.glob('../assets/sealed_artifacts/*.{webp,jpg,jpeg,png,svg}'),
-  items: import.meta.glob('../assets/items/*.{webp,jpg,jpeg,png}'),
-  symbols: import.meta.glob('../assets/symbols/*.{webp,jpg,jpeg,png,svg}')
-};
+const imageModules = import.meta.glob(
+  "../assets/*/*.{webp,jpg,jpeg,png,svg,avif,gif}",
+  { eager: true, import: "default" },
+);
 
-const imageCache = new Map();
-const allImagesCacheKey = "__all__";
+const ASSET_PATH = /\/assets\/([^/]+)\/([^/]+)\.[^.]+$/;
 
-// Track loading state for progressive loading
-const loadingPromises = new Map();
-const loadedCategories = new Set();
+/** category -> Map<slug, url> */
+const imagesByCategory = new Map();
 
-async function loadImagesForCategories(categoriesToLoad) {
-  const images = {};
+for (const [path, url] of Object.entries(imageModules)) {
+  const match = path.match(ASSET_PATH);
+  if (!match) continue;
 
-  for (const cat of categoriesToLoad) {
-    if (!assetModules[cat]) continue;
+  const [, category, slug] = match;
+  let images = imagesByCategory.get(category);
 
-    const categoryImages = {};
-    const modules = assetModules[cat];
-
-    const loadedImages = await Promise.all(
-      Object.entries(modules).map(async ([path, module]) => {
-        const imgModule = await module();
-        const fileName = path.split("/").pop().split(".")[0];
-        return { fileName, src: imgModule.default };
-      }),
-    );
-
-    loadedImages.forEach(({ fileName, src }) => {
-      categoryImages[fileName] = src;
-    });
-
-    images[cat] = categoryImages;
+  if (!images) {
+    images = new Map();
+    imagesByCategory.set(category, images);
   }
 
-  return images;
-}
-
-export async function getImages(category = null) {
-  const cacheKey = category ?? allImagesCacheKey;
-
-  if (!imageCache.has(cacheKey)) {
-    const categoriesToLoad = category ? [category] : Object.keys(assetModules);
-    imageCache.set(cacheKey, loadImagesForCategories(categoriesToLoad));
-  }
-
-  try {
-    const images = await imageCache.get(cacheKey);
-    return category ? images[category] || {} : images;
-  } catch (error) {
-    imageCache.delete(cacheKey);
-    throw error;
-  }
-}
-
-/** Warm the complete image-module cache during browser idle time. */
-export function preloadAllImages() {
-  return getImages();
-}
-
-export async function loadImages(category = null) {
-  const cacheKey = category ?? allImagesCacheKey;
-  
-  if (loadingPromises.has(cacheKey)) {
-    return loadingPromises.get(cacheKey);
-  }
-
-  if (loadedCategories.has(category) && category) {
-    return imageCache.get(allImagesCacheKey)?.[category] || {};
-  }
-
-  const promise = (async () => {
-    const categoriesToLoad = category ? [category] : Object.keys(assetModules);
-    imageCache.set(cacheKey, loadImagesForCategories(categoriesToLoad));
-    
-    if (category) {
-      loadedCategories.add(category);
-    }
-    
-    const images = await imageCache.get(cacheKey);
-    return category ? images[category] || {} : images;
-  })();
-
-  loadingPromises.set(cacheKey, promise);
-  return promise;
-}
-
-/** Get a single image by source */
-export function getImage(src) {
-  // Check if we have this specific image cached
-  if (imageCache.has(src)) {
-    return imageCache.get(src);
-  }
-  return null;
+  images.set(slug, url);
 }
 
 /**
- * Load a single image with placeholder and return a Promise
- * Usage: const imgPromise = loadImage('/characters/klein.webp');
+ * @param {string} category Asset folder name.
+ * @param {string} slug Item name run through `slugFromName`.
+ * @returns {string|null} Hashed image URL, or null when no image matches.
  */
-export async function loadImage(src) {
-  if (imageCache.has(src)) {
-    return imageCache.get(src);
-  }
-  
-  // Create placeholder
-  const placeholder = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600' style='background:linear-gradient(135deg,%23cbd5e1 0%2C%23e2e8f0 100%)'%3E%3Crect width='400' height='600' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='%2364748b' text-anchor='middle'%3EImage loading...%3C/text%3E%3C/svg%3E`;
-  
-  const promise = (async () => {
-    try {
-      // Check cache first
-      if (imageCache.has(src)) {
-        return imageCache.get(src);
-      }
-      
-      // Try to get from category
-      const category = src.split('/').pop()?.split('.').slice(0, -1).join('.');
-      if (category) {
-        const images = await getImages(category);
-        if (images[category === category] || images[category]) {
-          const result = images[category] || images[category];
-          if (result && !imageCache.has(src)) {
-            imageCache.set(src, result);
-          }
-          return result;
-        }
-      }
-      
-      // Fallback: return placeholder
-      return src.startsWith('data:') ? src : placeholder;
-    } catch (error) {
-      return src.startsWith('data:') ? src : placeholder;
-    }
-  })();
-  
-  return promise;
+export function getImage(category, slug) {
+  return imagesByCategory.get(category)?.get(slug) ?? null;
 }
-
-/**
- * Load all images in a category with progressive loading
- * Main images first, then related images progressively
- */
-export async function loadImagesProgressive(category = null) {
-  const cacheKey = category ?? allImagesCacheKey;
-  const results = {};
-
-  if (loadingPromises.has(cacheKey)) {
-    results.loading = loadingPromises.get(cacheKey);
-    results.loaded = {};
-    return { loading: results.loading, loaded: results.loaded, total: Object.keys(results.loaded).length };
-  }
-
-  const categoriesToLoad = category ? [category] : Object.keys(assetModules);
-  const promise = (async () => {
-    // Warm up the cache
-    const allImages = await loadImagesForCategories(categoriesToLoad);
-    
-    // Progressive loading: return empty first, fill as images load
-    results.loaded = allImages;
-    imageCache.set(cacheKey, allImages);
-    
-    return { allImages: allImages[category] || allImages };
-  })();
-
-  loadingPromises.set(cacheKey, promise);
-  return { loading: loadingPromises.get(cacheKey), loaded: results.loaded };
-}
-
-export { assetModules };

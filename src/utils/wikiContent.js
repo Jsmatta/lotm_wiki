@@ -1,20 +1,16 @@
-import { getCategoryFiles } from "./markdownLoader.js";
-import { getImages } from "./imageLoader.js";
-import { parseMarkdownForReact, filterByVolume } from "./frontmatter.js";
+// Turns parsed markdown entries into render-ready items for the current volume.
+
+import { getCategoryEntries, getCategoryEntry } from "./markdownLoader.js";
+import { getImage } from "./imageLoader.js";
+import { filterByVolume, isWithinVolume, processRevealBlocks } from "./frontmatter.js";
 import { slugFromName, stripMarkdown } from "./textUtils.js";
+import { CATEGORY_KEYS, getCategory } from "../config/categories.js";
+
+// Spoiler-stripping the largest category is a few ms of blocking work; yielding
+// between chunks keeps volume switches from janking the frame.
+const PARSE_CHUNK_SIZE = 24;
 
 const itemsCache = new Map();
-const PARSE_CHUNK_SIZE = 12;
-
-const ALL_CATEGORIES = [
-  "characters",
-  "pathways",
-  "places",
-  "gods",
-  "organizations",
-  "spells",
-  "sealed_artifacts",
-];
 
 function yieldToMain() {
   return new Promise((resolve) => {
@@ -26,125 +22,100 @@ function yieldToMain() {
   });
 }
 
-function resolveImage(imageMap, imageKey) {
-  return imageMap[imageKey] || null;
-}
+function buildItem(entry, selectedVolume) {
+  const category = getCategory(entry.category);
+  const routeBase = category?.route ?? `/${entry.category}`;
+  const name = entry.name || "Untitled";
+  const content = processRevealBlocks(entry.body, selectedVolume);
 
-function buildItem(slug, file, selectedVolume, imageMap, category) {
-  const parsed = parseMarkdownForReact(file.content, selectedVolume);
-  const imageKey = slugFromName(parsed.name || "");
-  const content = parsed.content || "";
-  const introducedInVolume = Number(parsed.introducedInVolume);
-
-  if (!Number.isFinite(introducedInVolume)) {
-    console.warn(
-      `"${parsed.name || slug}" (${category}/${slug}) is missing a valid introducedInVolume; hiding it until fixed.`,
-    );
-  }
-
-  return {
-    id: slug,
-    name: parsed.name || "Untitled",
-    introducedInVolume,
-    category: parsed.category || category,
+  const item = {
+    id: entry.id,
+    name,
+    /** Folder/registry key, e.g. "sealed_artifacts". */
+    category: entry.category,
+    /** Frontmatter label shown on badges, e.g. "sealed artifact". */
+    label: entry.label,
+    /** Route for this item — the route segment is not always the folder name. */
+    href: `${routeBase}/${entry.id}`,
+    introducedInVolume: entry.introducedInVolume,
     content,
-    plainText: stripMarkdown(content),
-    image: resolveImage(imageMap, imageKey),
+    image: getImage(entry.category, slugFromName(name)),
   };
-}
 
-async function parseCategoryEntries(categoryFiles, selectedVolume, imageMap, category) {
-  const entries = Object.entries(categoryFiles);
-  const results = [];
+  // Only card previews and search need the prose forms, and stripping markdown
+  // is the most expensive step per item. Derive them on first read and memoize,
+  // so detail pages never pay for them and search filtering does the work once.
+  let plainText;
+  let searchText;
 
-  for (let i = 0; i < entries.length; i += PARSE_CHUNK_SIZE) {
-    const chunk = entries.slice(i, i + PARSE_CHUNK_SIZE);
-
-    for (const [slug, file] of chunk) {
-      results.push(buildItem(slug, file, selectedVolume, imageMap, category));
-    }
-
-    if (i + PARSE_CHUNK_SIZE < entries.length) {
-      await yieldToMain();
-    }
-  }
-
-  return filterByVolume(results, selectedVolume);
-}
-
-export async function getCategoryItems(category, selectedVolume, imageCategory = category) {
-  const cacheKey = `${category}:${selectedVolume}:${imageCategory}`;
-
-  if (!itemsCache.has(cacheKey)) {
-    const promise = (async () => {
-      const [categoryFiles, imageMap] = await Promise.all([
-        getCategoryFiles(category),
-        getImages(imageCategory),
-      ]);
-
-      return parseCategoryEntries(categoryFiles, selectedVolume, imageMap, category);
-    })();
-
-    itemsCache.set(cacheKey, promise);
-  }
-
-  try {
-    return await itemsCache.get(cacheKey);
-  } catch (error) {
-    itemsCache.delete(cacheKey);
-    throw error;
-  }
-}
-
-export async function getCategoryItem(category, id, selectedVolume, imageCategory = category) {
-  const [categoryFiles, imageMap] = await Promise.all([
-    getCategoryFiles(category),
-    getImages(imageCategory),
-  ]);
-
-  const file = categoryFiles[id];
-  if (!file) return null;
-
-  const item = buildItem(id, file, selectedVolume, imageMap, category);
-
-  if (!Number.isFinite(item.introducedInVolume) || item.introducedInVolume > selectedVolume) {
-    return null;
-  }
+  Object.defineProperties(item, {
+    plainText: {
+      enumerable: false,
+      get: () => (plainText ??= stripMarkdown(content)),
+    },
+    searchText: {
+      enumerable: false,
+      get: () => (searchText ??= `${name} ${item.label} ${item.plainText}`.toLowerCase()),
+    },
+  });
 
   return item;
 }
 
-export async function getAllCategoryItems(selectedVolume) {
-  const cacheKey = `__all__:${selectedVolume}`;
+async function buildItems(entries, selectedVolume) {
+  // Filter before processing: entries beyond the reader's volume are dropped
+  // without ever running the spoiler parser over their body.
+  const visible = filterByVolume(entries, selectedVolume);
+  const items = [];
 
-  if (!itemsCache.has(cacheKey)) {
-    const promise = (async () => {
-      const imageMap = await getImages();
+  for (let index = 0; index < visible.length; index += PARSE_CHUNK_SIZE) {
+    for (const entry of visible.slice(index, index + PARSE_CHUNK_SIZE)) {
+      items.push(buildItem(entry, selectedVolume));
+    }
 
-      const categoryEntries = await Promise.all(
-        ALL_CATEGORIES.map(async (category) => {
-          const files = await getCategoryFiles(category);
-          const items = await parseCategoryEntries(
-            files,
-            selectedVolume,
-            imageMap[category] || {},
-            category,
-          );
-
-          return items.map((item) => ({ ...item, category }));
-        }),
-      );
-
-      return categoryEntries.flat();
-    })();
-
-    itemsCache.set(cacheKey, promise);
+    if (index + PARSE_CHUNK_SIZE < visible.length) {
+      await yieldToMain();
+    }
   }
 
-  try {
-    return await itemsCache.get(cacheKey);
-  } catch (error) {
-    itemsCache.delete(cacheKey);
-    throw error;
+  return items;
+}
+
+/** Memoize a pending result, dropping the entry if it rejects so retries work. */
+function cached(key, factory) {
+  let pending = itemsCache.get(key);
+
+  if (!pending) {
+    pending = factory().catch((error) => {
+      itemsCache.delete(key);
+      throw error;
+    });
+    itemsCache.set(key, pending);
   }
+
+  return pending;
+}
+
+export function getCategoryItems(category, selectedVolume) {
+  return cached(`${category}:${selectedVolume}`, async () =>
+    buildItems(await getCategoryEntries(category), selectedVolume));
+}
+
+export async function getCategoryItem(category, id, selectedVolume) {
+  const entry = await getCategoryEntry(category, id);
+
+  return entry && isWithinVolume(entry, selectedVolume)
+    ? buildItem(entry, selectedVolume)
+    : null;
+}
+
+/** Flat index across every category, reusing the per-category caches. */
+export function getAllItems(selectedVolume) {
+  return cached(`*:${selectedVolume}`, async () => {
+    const perCategory = await Promise.all(
+      CATEGORY_KEYS.map((category) => getCategoryItems(category, selectedVolume)),
+    );
+
+    return perCategory.flat();
+  });
 }
