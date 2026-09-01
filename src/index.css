@@ -1,4 +1,87 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-   themes: night --default;
- }
+  themes: night --default;
+}
+
+/* Occult Brutalist Texture & Grid */
+:root {
+  --bg-grid-color: rgba(255, 255, 255, 0.08);
+  --bg-grid-subtle: rgba(255, 255, 255, 0.03);
+}
+
+.bg-occult-grid {
+  background-color: #0b0d13;
+  background-image: 
+    linear-gradient(to right, var(--bg-grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--bg-grid-color) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.bg-occult-grid-overlay {
+  background-color: rgba(11, 13, 19, 0.84);
+  background-image: 
+    linear-gradient(to right, var(--bg-grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--bg-grid-color) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Brutalist Hard Geometric Drop Shadows */
+.brutal-shadow-xs {
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.brutal-shadow-sm {
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.brutal-shadow {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutal-shadow-lg {
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.brutal-shadow-xl {
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.brutal-shadow-primary {
+  box-shadow: 4px 4px 0px #38bdf8;
+}
+
+.brutal-shadow-accent {
+  box-shadow: 4px 4px 0px #f472b6;
+}
+
+.brutal-shadow-secondary {
+  box-shadow: 4px 4px 0px #818cf8;
+}
+
+.brutal-shadow-warning {
+  box-shadow: 4px 4px 0px #fbbf24;
+}
+
+/* Interactive Tactile Press Effects */
+.brutal-btn {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.brutal-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.brutal-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.brutal-card {
+  transition: transform 0.15s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.15s cubic-bezier(0.2, 0, 0, 1), border-color 0.15s ease;
+}
+
+.brutal-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px #000000;
+}

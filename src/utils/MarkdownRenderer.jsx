@@ -1,32 +1,52 @@
 import { useMemo } from 'preact/hooks';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
+import HoverLink from '../components/hoverLink.jsx';
 import { remarkAutoLinkReferences } from './autoLinkReferences.js';
 
 // Custom components for consistent markdown rendering across the app
 const markdownComponents = {
-  h1: ({children}) => <h1 className="text-4xl lg:text-5xl font-bold mt-12 mb-8 text-primary border-b-2 border-base-300 pb-2">{children}</h1>,
-  h2: ({children}) => <h2 className="text-3xl lg:text-4xl font-bold mt-10 mb-6 text-secondary border-b-2 border-base-300 pb-2">{children}</h2>,
-  h3: ({children}) => <h3 className="text-2xl lg:text-3xl font-bold mt-8 mb-5 text-accent border-b-2 border-base-300 pb-2">{children}</h3>,
-  h4: ({children}) => <h4 className="text-xl lg:text-2xl font-bold mt-6 mb-4 text-primary border-b-2 border-base-300 pb-2">{children}</h4>,
-  h5: ({children}) => <h5 className="text-lg lg:text-xl font-bold mt-4 mb-3 text-secondary">{children}</h5>,
-  h6: ({children}) => <h6 className="text-base lg:text-lg font-bold mt-3 mb-2 text-accent">{children}</h6>,
+  h1: ({children}) => (
+    <h1 className="text-3xl lg:text-4xl font-black uppercase font-mono mt-10 mb-6 text-primary border-b-2 border-base-content/30 pb-2">
+      {children}
+    </h1>
+  ),
+  h2: ({children}) => (
+    <h2 className="text-2xl lg:text-3xl font-black uppercase font-mono mt-8 mb-4 text-secondary border-b-2 border-base-content/20 pb-2 flex items-center gap-2">
+      <span className="text-primary font-mono">//</span>
+      {children}
+    </h2>
+  ),
+  h3: ({children}) => (
+    <h3 className="text-xl lg:text-2xl font-bold uppercase font-mono mt-6 mb-3 text-accent flex items-center gap-2">
+      <span className="text-accent">■</span>
+      {children}
+    </h3>
+  ),
+  h4: ({children}) => (
+    <h4 className="text-lg lg:text-xl font-bold uppercase font-mono mt-5 mb-2 text-primary">
+      {children}
+    </h4>
+  ),
+  h5: ({children}) => <h5 className="text-base font-bold uppercase font-mono mt-4 mb-2 text-secondary">{children}</h5>,
+  h6: ({children}) => <h6 className="text-sm font-bold uppercase font-mono mt-3 mb-1 text-accent">{children}</h6>,
   
-  ul: ({children}) => <ul className="space-y-2 my-6">{children}</ul>,
-  ol: ({children}) => <ol className="space-y-2 my-6">{children}</ol>,
+  ul: ({children}) => <ul className="space-y-2 my-5 list-none">{children}</ul>,
+  ol: ({children}) => <ol className="space-y-2 my-5 list-decimal list-inside">{children}</ol>,
   li: ({children}) => (
-    <li className="relative pl-2 pb-2 border-l-4 border-accent/30 hover:border-accent/60 transition-colors duration-200 bg-base-100/50 rounded-r p-3 -ml-2">
+    <li className="relative pl-3 pb-2 border-l-4 border-accent bg-base-100 p-3 my-2 border-t border-r border-b border-base-content/20 font-sans text-sm sm:text-base leading-relaxed">
       {children}
     </li>
   ),
   
-  p: ({children}) => <p className="my-4 leading-relaxed">{children}</p>,
+  p: ({children}) => <p className="my-4 leading-relaxed font-sans text-sm sm:text-base text-base-content/90">{children}</p>,
   
-  strong: ({children}) => <strong className="text-primary font-bold">{children}</strong>,
-  em: ({children}) => <em className="text-secondary italic">{children}</em>,
+  strong: ({children}) => <strong className="text-primary font-bold font-mono uppercase tracking-wide">{children}</strong>,
+  em: ({children}) => <em className="text-secondary italic font-serif">{children}</em>,
   
   blockquote: ({children}) => (
-    <blockquote className="border-l-4 border-primary bg-base-100/50 pl-6 py-4 my-6 rounded-r-lg italic">
+    <blockquote className="border-l-4 border-primary bg-base-100 p-4 my-6 border-t border-r border-b border-base-content/20 font-mono text-sm brutal-shadow-xs italic">
+      <div className="text-primary font-bold text-xs uppercase mb-1 tracking-widest">[OCCULT INSCRIPTION]</div>
       {children}
     </blockquote>
   ),
@@ -34,63 +54,63 @@ const markdownComponents = {
   code: ({inline, children, ...props}) => {
     if (inline) {
       return (
-        <code className="bg-base-200 text-accent px-2 py-1 rounded text-sm font-medium" {...props}>
+        <code className="bg-base-100 text-accent px-1.5 py-0.5 border border-base-content/30 font-mono text-xs font-bold" {...props}>
           {children}
         </code>
       );
     }
     return (
-      <code className="block bg-base-200 text-base-content p-4 rounded-lg overflow-x-auto my-6 border-l-4 border-accent font-mono text-sm" {...props}>
+      <code className="block bg-base-100 text-base-content p-4 overflow-x-auto my-6 border-2 border-base-content font-mono text-xs brutal-shadow-xs" {...props}>
         {children}
       </code>
     );
   },
   
   pre: ({children}) => (
-    <pre className="bg-base-200 p-4 rounded-lg overflow-x-auto my-6 border-l-4 border-accent">
+    <pre className="bg-base-100 p-4 overflow-x-auto my-6 border-2 border-base-content brutal-shadow-xs">
       {children}
     </pre>
   ),
   
   table: ({children}) => (
     <div className="overflow-x-auto my-6">
-      <table className="min-w-full bg-base-100/50 rounded-lg overflow-hidden">
+      <table className="min-w-full bg-base-100 border-2 border-base-content font-mono text-xs">
         {children}
       </table>
     </div>
   ),
   
   thead: ({children}) => (
-    <thead className="bg-primary/10">
+    <thead className="bg-base-300 border-b-2 border-base-content text-base-content uppercase">
       {children}
     </thead>
   ),
   
   th: ({children}) => (
-    <th className="px-6 py-4 font-semibold text-left">
+    <th className="px-4 py-3 font-bold text-left border-r-2 border-base-content last:border-r-0 tracking-wider">
       {children}
     </th>
   ),
   
   td: ({children}) => (
-    <td className="px-6 py-4 border-b border-base-200">
+    <td className="px-4 py-3 border-b border-r-2 border-base-content/20 last:border-r-0">
       {children}
     </td>
   ),
   
   tr: ({children}) => (
-    <tr className="border-b border-base-200 last:border-b-0">
+    <tr className="border-b border-base-content/20 last:border-b-0 hover:bg-base-200/50">
       {children}
     </tr>
   ),
   
   a: ({href, children}) => {
-    const className = "text-primary hover:text-primary-focus underline transition-colors duration-200";
+    const className = "text-primary hover:text-accent font-bold underline decoration-2 transition-colors duration-150";
 
     return href?.startsWith("/") ? (
-      <Link to={href} className={className}>
+      <HoverLink href={href} className={className}>
         {children}
-      </Link>
+      </HoverLink>
     ) : (
       <a
         href={href}
@@ -103,13 +123,13 @@ const markdownComponents = {
     );
   },
   
-  hr: () => <hr className="my-8 border-t-2 border-base-300" />,
+  hr: () => <hr className="my-8 border-t-2 border-base-content/30" />,
   
   img: ({src, alt, ...props}) => (
     <img 
       src={src} 
       alt={alt || ''} 
-      className="rounded-lg shadow-md my-6 max-w-full h-auto object-contain"
+      className="border-2 border-base-content brutal-shadow my-6 max-w-full h-auto object-contain bg-base-100"
       {...props} 
     />
   ),

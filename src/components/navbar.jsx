@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { VolumeDropdown } from "./volumeSelector.jsx";
 import { SectionDropdown } from "./sectionDropdown.jsx";
+import CommandPalette from "./commandPalette.jsx";
 import { volumeTitle } from "../config/volumes.js";
 import { ICON_PATHS } from "../config/icons.js";
 import { useSelectedVolume } from "../utils/volumeContext.jsx";
@@ -13,6 +14,20 @@ export default function Navbar() {
   const selectedVolume = useSelectedVolume();
   const searchInputRef = useRef(null);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
+
+  // Global Cmd+K / Ctrl+K keyboard shortcut
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setIsCommandPaletteOpen((prev) => !prev);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const currentQuery = useMemo(() => {
     if (location.pathname !== "/search") return "";
@@ -33,54 +48,75 @@ export default function Navbar() {
 
     if (query) {
       navigate(`/search?q=${encodeURIComponent(query)}`);
+    } else {
+      setIsCommandPaletteOpen(true);
     }
   };
 
   const closeDropdown = () => setOpenDropdown(null);
 
   return (
-    <div className="sticky flex top-4 left-4 right-4 max-w-[calc(100vw-2rem)] h-1 navbar bg-secondary-200 border border-accent shadow-2xl rounded-xl px-4 z-50 backdrop-blur-md bg-opacity-70 overflow-visible">
-      <div className="navbar-start">
-        <button
-          type="button"
-          onClick={() => setOpenDropdown("sections")}
-          className="btn btn-ghost btn-circle"
-          aria-label="Open sections menu"
-        >
-          <Icon path={ICON_PATHS.menu} />
-        </button>
-      </div>
+    <header className="sticky top-3 mx-3 sm:mx-6 max-w-[calc(100vw-1.5rem)] sm:max-w-7xl z-50">
+      <div className="navbar bg-base-200 border-2 border-base-content brutal-shadow rounded-none px-3 sm:px-5 min-h-[3.75rem] flex items-center justify-between">
+        <div className="navbar-start w-auto flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setOpenDropdown("sections")}
+            className="btn btn-sm btn-square bg-base-100 border-2 border-base-content rounded-none brutal-shadow-xs brutal-btn hover:bg-primary hover:text-primary-content"
+            aria-label="Open sections menu"
+          >
+            <Icon path={ICON_PATHS.menu} className="h-5 w-5" />
+          </button>
+          <Link
+            to="/"
+            className="btn btn-ghost rounded-none font-mono font-black text-base sm:text-lg tracking-wider uppercase px-2 hover:bg-base-300"
+          >
+            <span className="text-primary">LOTM</span>//WIKI
+          </Link>
+        </div>
 
-      <div className="navbar-center">
-        <div className="flex items-center gap-2">
-          <Link to="/" className="btn btn-ghost text-xl">LOTM Wiki</Link>
+        <div className="navbar-center hidden sm:flex items-center">
           <button
             type="button"
             onClick={() => setOpenDropdown("volumes")}
-            className="btn btn-xs sm:btn-sm btn-accent rounded-full gap-1 normal-case shadow-sm"
+            className="btn btn-sm bg-accent text-accent-content border-2 border-black rounded-none font-mono font-bold text-xs uppercase tracking-wide gap-1.5 brutal-shadow-xs brutal-btn"
             aria-label="Change reading volume"
           >
-            {volumeTitle(selectedVolume)}
-            <Icon path={ICON_PATHS.chevronDown} className="h-3.5 w-3.5" />
+            <span className="opacity-80">[VOL. {selectedVolume}]</span>
+            <span>{volumeTitle(selectedVolume)}</span>
+            <Icon path={ICON_PATHS.chevronDown} className="h-3.5 w-3.5 ml-0.5" />
           </button>
         </div>
-      </div>
 
-      <div className="navbar-end">
-        <form onSubmit={handleSearchSubmit} className="flex gap-2" role="search">
-          <input
-            type="search"
-            aria-label="Search wiki"
-            placeholder="Search..."
-            className="input input-bordered w-24 md:w-auto"
-            ref={searchInputRef}
-            defaultValue={currentQuery}
-          />
-        </form>
-      </div>
+        <div className="navbar-end w-auto flex items-center gap-2">
+          <div className="sm:hidden">
+            <button
+              type="button"
+              onClick={() => setOpenDropdown("volumes")}
+              className="btn btn-xs bg-accent text-accent-content border-2 border-black rounded-none font-mono font-bold uppercase brutal-shadow-xs"
+              aria-label="Change reading volume"
+            >
+              V{selectedVolume}
+            </button>
+          </div>
+          <button
+            type="button"
+            onClick={() => setIsCommandPaletteOpen(true)}
+            className="flex items-center gap-2 px-3 py-1.5 bg-base-100 border-2 border-base-content/80 hover:border-primary font-mono text-xs brutal-shadow-xs brutal-btn"
+            aria-label="Open global search (Cmd+K)"
+          >
+            <Icon path={ICON_PATHS.search} className="h-3.5 w-3.5 text-primary" />
+            <span className="hidden md:inline uppercase text-base-content/70">SEARCH ARCHIVES</span>
+            <kbd className="hidden sm:inline-block bg-base-300 px-1.5 py-0.5 border border-base-content/30 text-[10px] font-bold">
+              ⌘K
+            </kbd>
+          </button>
+        </div>
 
-      <SectionDropdown isOpen={openDropdown === "sections"} onClose={closeDropdown} />
-      <VolumeDropdown isOpen={openDropdown === "volumes"} onClose={closeDropdown} />
-    </div>
+        <SectionDropdown isOpen={openDropdown === "sections"} onClose={closeDropdown} />
+        <VolumeDropdown isOpen={openDropdown === "volumes"} onClose={closeDropdown} />
+        <CommandPalette isOpen={isCommandPaletteOpen} onClose={() => setIsCommandPaletteOpen(false)} />
+      </div>
+    </header>
   );
 }

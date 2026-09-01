@@ -8,28 +8,29 @@ import Icon from "../components/icon.jsx";
 
 const NOVEL_URL = "https://www.webnovel.com/book/11022733006234505";
 
-// Tailwind extracts class names statically, so each accent variant has to
-// appear as a complete literal rather than being interpolated per step.
 const STEP_ACCENTS = {
-  primary: "text-primary border-primary/20 group-hover:bg-primary group-hover:text-primary-content group-hover:shadow-primary/40",
-  secondary: "text-secondary border-secondary/20 group-hover:bg-secondary group-hover:text-secondary-content group-hover:shadow-secondary/40",
-  accent: "text-accent border-accent/20 group-hover:bg-accent group-hover:text-accent-content group-hover:shadow-accent/40",
+  primary: "bg-primary text-primary-content border-black",
+  secondary: "bg-secondary text-secondary-content border-black",
+  accent: "bg-accent text-accent-content border-black",
 };
 
 const HOW_IT_WORKS = [
   {
-    title: "Pick your volume",
-    body: "Use the volume selector in the navbar to choose exactly how far you have read in the series.",
+    step: "01",
+    title: "SET CLEARANCE LEVEL",
+    body: "Use the volume selector in the navbar to define your exact current reading milestone in the series.",
     accent: STEP_ACCENTS.primary,
   },
   {
-    title: "Browse safely",
-    body: "Entries introduced in later volumes are completely hidden, and spoiler blocks stay collapsed until you reach them.",
+    step: "02",
+    title: "CLASSIFIED REDACTIONS",
+    body: "Entries introduced in future volumes remain completely locked, and internal spoilers stay sealed.",
     accent: STEP_ACCENTS.secondary,
   },
   {
-    title: "Progress naturally",
-    body: "Come back and update your volume level as you advance to unlock new character profiles, pathways, and lore.",
+    step: "03",
+    title: "ADVANCE ACCESS",
+    body: "Upgrade your volume level as you read to progressively declassify deeper pathways, deities, and artifacts.",
     accent: STEP_ACCENTS.accent,
   },
 ];
@@ -38,22 +39,29 @@ function SectionCard({ label, path, icon }) {
   return (
     <Link
       to={path}
-      className="group relative overflow-hidden rounded-[1.5rem] bg-base-100/30 backdrop-blur-xl border border-white/10 p-6 transition-all duration-500 hover:-translate-y-2 hover:bg-base-100/50 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/20"
+      className="group block bg-base-200 border-2 border-base-content brutal-shadow brutal-card p-6 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      <div className="flex items-start justify-between gap-4 mb-4">
+        <div className="w-12 h-12 bg-base-100 border-2 border-base-content flex items-center justify-center brutal-shadow-xs group-hover:bg-primary group-hover:text-primary-content transition-colors">
+          <Icon path={icon} className="h-6 w-6" strokeWidth={2} />
+        </div>
+        <span className="font-mono text-[10px] font-bold tracking-widest text-base-content/60 border border-base-content/30 px-1.5 py-0.5 bg-base-100 uppercase">
+          ARCHIVE
+        </span>
+      </div>
 
-      <div className="relative flex flex-col items-center text-center gap-4">
-        <div className="p-4 rounded-full bg-base-200/50 text-base-content border border-white/5 group-hover:bg-primary group-hover:text-primary-content group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
-          <Icon path={icon} className="h-8 w-8" strokeWidth={1.5} />
-        </div>
-        <div>
-          <h3 className="text-xl font-bold tracking-wide group-hover:text-primary transition-colors duration-300">
-            {label}
-          </h3>
-          <p className="text-sm text-base-content/70 mt-2 font-medium opacity-80 group-hover:opacity-100 transition-opacity">
-            Explore the mysteries of {label.toLowerCase()}
-          </p>
-        </div>
+      <div>
+        <h3 className="text-xl font-bold font-mono tracking-tight uppercase group-hover:text-primary transition-colors">
+          {label}
+        </h3>
+        <p className="text-xs text-base-content/80 mt-2 font-mono leading-relaxed">
+          Access classified records, dossiers, and lore regarding {label.toLowerCase()}.
+        </p>
+      </div>
+
+      <div className="mt-5 pt-3 border-t-2 border-base-content/10 flex items-center justify-between font-mono text-xs font-bold text-primary group-hover:text-accent transition-colors">
+        <span>ACCESS DOSSIER</span>
+        <span>→</span>
       </div>
     </Link>
   );
@@ -61,14 +69,17 @@ function SectionCard({ label, path, icon }) {
 
 function HowItWorksStep({ step, title, body, accent }) {
   return (
-    <div className="relative z-10 group text-center space-y-6 p-8 rounded-[2rem] hover:bg-base-100/40 hover:backdrop-blur-xl border border-transparent hover:border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-      <div
-        className={`w-20 h-20 mx-auto rounded-full bg-base-200 flex items-center justify-center text-2xl font-black border transition-all duration-500 shadow-lg group-hover:scale-110 ${accent}`}
-      >
-        {step}
+    <div className="bg-base-100 border-2 border-base-content brutal-shadow p-6 space-y-4">
+      <div className="flex items-center justify-between">
+        <div className={`w-10 h-10 border-2 font-mono font-black text-sm flex items-center justify-center brutal-shadow-xs ${accent}`}>
+          {step}
+        </div>
+        <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-base-content/60">
+          PROTOCOL
+        </span>
       </div>
-      <h3 className="text-2xl font-bold tracking-wide">{title}</h3>
-      <p className="text-base-content/70 leading-relaxed font-medium">{body}</p>
+      <h3 className="text-lg font-bold font-mono uppercase tracking-tight">{title}</h3>
+      <p className="text-xs sm:text-sm text-base-content/80 leading-relaxed font-sans">{body}</p>
     </div>
   );
 }
@@ -78,95 +89,95 @@ export default function HomePage() {
   usePageTitle("LOTM Wiki");
 
   return (
-    <div className="min-h-screen pb-16 font-sans">
-      <main className="container mx-auto px-4 pt-12 space-y-20">
+    <div className="min-h-screen">
+      <main className="container mx-auto px-3 sm:px-6 space-y-16">
 
         {/* HERO SECTION */}
-        <section className="relative overflow-hidden rounded-[2.5rem] bg-base-300/30 backdrop-blur-2xl border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)]">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
-          <div className="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-primary/20 blur-[100px] pointer-events-none mix-blend-screen" />
-          <div className="absolute bottom-0 left-0 -ml-32 -mb-32 w-96 h-96 rounded-full bg-accent/20 blur-[100px] pointer-events-none mix-blend-screen" />
-
-          <div className="relative flex flex-col lg:flex-row items-center gap-12 p-10 lg:p-16 w-full max-w-none">
-            <div className="flex-1 space-y-8 z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-base-100/40 border border-white/10 backdrop-blur-md shadow-sm">
-                <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
-                </span>
-                <span className="text-sm font-semibold tracking-wide text-base-content">
-                  Spoiler-Free Reading: Volume {selectedVolume}
-                </span>
+        <section className="bg-base-200 border-2 border-base-content brutal-shadow-lg p-6 sm:p-10 lg:p-12 relative">
+          <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-10">
+            <div className="flex-1 space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-base-100 border-2 border-base-content font-mono text-xs font-bold uppercase tracking-wider brutal-shadow-xs">
+                <span className="w-2.5 h-2.5 bg-primary border border-black animate-pulse"></span>
+                <span>SECURITY CLEARANCE: VOLUME {selectedVolume}</span>
               </div>
 
-              <div className="space-y-4">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">
-                  <span className="block text-base-content drop-shadow-md">Lord of the</span>
-                  <span className="block mt-2 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent drop-shadow-sm pb-2">
-                    Mysteries Wiki
+              <div className="space-y-3">
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-none">
+                  <span className="block text-base-content">LORD OF THE</span>
+                  <span className="block text-primary underline decoration-4 decoration-accent underline-offset-8 mt-2">
+                    MYSTERIES
                   </span>
                 </h1>
-                <p className="text-lg md:text-xl text-base-content/80 max-w-2xl leading-relaxed font-medium">
-                  Journey through the Beyonder pathways, uncover ancient artifacts, and explore the vast world of deities and secret organizations.
+                <p className="text-sm sm:text-base text-base-content/80 max-w-xl font-mono pt-2 leading-relaxed">
+                  Confidential archive covering Beyonder pathways, sealed artifacts, ancient deities, and secret occult factions.
                 </p>
               </div>
 
-              <div className="flex flex-wrap items-center gap-4 pt-4">
-                <Link to="/characters" className="btn btn-primary btn-lg rounded-full px-8 shadow-[0_0_20px_rgba(0,0,0,0)] hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300">
-                  Enter the Archives
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <Link
+                  to="/characters"
+                  className="btn btn-primary rounded-none border-2 border-black font-mono font-bold text-xs sm:text-sm uppercase tracking-wider brutal-shadow brutal-btn px-6"
+                >
+                  ACCESS ARCHIVES →
                 </Link>
                 <a
                   href={NOVEL_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-outline btn-lg rounded-full px-8 border-white/20 hover:border-accent hover:bg-accent/10 hover:text-accent backdrop-blur-sm transition-all duration-300"
+                  className="btn btn-outline rounded-none border-2 border-base-content font-mono font-bold text-xs sm:text-sm uppercase tracking-wider brutal-shadow-xs brutal-btn px-6 bg-base-100"
                 >
-                  Read the Novel
-                  <Icon path={ICON_PATHS.externalLink} className="h-5 w-5 ml-2" />
+                  READ ORIGINAL NOVEL
+                  <Icon path={ICON_PATHS.externalLink} className="h-4 w-4 ml-1" />
                 </a>
               </div>
             </div>
 
-            {/* Volume Status Card */}
-            <div className="w-full lg:w-96 shrink-0 group z-10 perspective-[1000px]">
-              <div className="relative rounded-[2rem] bg-base-100/40 backdrop-blur-xl border border-white/10 p-8 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)] transition-transform duration-500 hover:rotate-y-[-5deg] hover:rotate-x-[5deg] hover:bg-base-100/50">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            {/* Volume Status Dossier */}
+            <div className="w-full lg:w-88 shrink-0 bg-base-100 border-2 border-base-content brutal-shadow p-6 space-y-4">
+              <div className="flex items-center justify-between border-b-2 border-base-content/20 pb-3">
+                <span className="font-mono text-xs font-bold uppercase tracking-widest text-primary">
+                  [ DOSSIER STATUS ]
+                </span>
+                <span className="badge badge-accent font-mono text-[10px] font-bold rounded-none border border-black">
+                  ACTIVE
+                </span>
+              </div>
 
-                <div className="relative space-y-6">
-                  <div>
-                    <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3">Current Reading Point</h2>
-                    <div className="h-1 w-16 bg-gradient-to-r from-primary to-accent rounded-full" />
-                  </div>
-
-                  <div>
-                    <div className="text-4xl font-black bg-gradient-to-br from-base-content to-base-content/50 bg-clip-text text-transparent">
-                      {volumeTitle(selectedVolume)}
-                    </div>
-                  </div>
-
-                  <p className="text-sm text-base-content/70 leading-relaxed font-medium">
-                    Content from later volumes is safely hidden. Adjust your volume in the navigation bar to reveal more secrets.
-                  </p>
+              <div>
+                <div className="font-mono text-[11px] text-base-content/60 uppercase">Current Reading Point:</div>
+                <div className="text-2xl sm:text-3xl font-black uppercase tracking-tight font-mono text-base-content mt-1">
+                  {volumeTitle(selectedVolume)}
                 </div>
+              </div>
+
+              <div className="p-3 bg-base-200 border-2 border-base-content/30 font-mono text-xs text-base-content/80 leading-relaxed">
+                Spoilers beyond Volume {selectedVolume} are strictly quarantined. Adjust reading clearance in the header bar.
               </div>
             </div>
           </div>
         </section>
 
         {/* CATEGORIES SECTION */}
-        <section className="space-y-10">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 px-2">
-            <div className="space-y-2">
-              <h2 className="text-4xl font-bold tracking-tight text-base-content drop-shadow-sm">Explore the Wiki</h2>
-              <p className="text-base-content/70 font-medium text-lg">Delve into the various archives of knowledge.</p>
+        <section className="space-y-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-2 border-base-content/20 pb-4">
+            <div>
+              <div className="font-mono text-xs font-bold text-primary tracking-widest uppercase">
+                // ARCHIVE DIRECTORIES
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight font-mono mt-1">
+                Explore the Wiki
+              </h2>
             </div>
-            <Link to="/search" className="btn btn-ghost rounded-full hover:bg-base-200/50 backdrop-blur-sm border border-white/5 transition-all shadow-sm">
-              <Icon path={ICON_PATHS.search} className="h-5 w-5 mr-2 text-base-content/70" />
-              Search Everything
+            <Link
+              to="/search"
+              className="btn btn-sm rounded-none border-2 border-base-content font-mono text-xs font-bold uppercase bg-base-200 brutal-shadow-xs brutal-btn"
+            >
+              <Icon path={ICON_PATHS.search} className="h-4 w-4 mr-1.5" />
+              GLOBAL SEARCH
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {EXPLORE_SECTIONS.map((section) => (
               <SectionCard key={section.path} {...section} />
             ))}
@@ -174,23 +185,23 @@ export default function HomePage() {
         </section>
 
         {/* HOW IT WORKS SECTION */}
-        <section className="relative overflow-hidden rounded-[2.5rem] bg-base-300/40 backdrop-blur-2xl border border-white/10 p-10 lg:p-16 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)]">
-          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent pointer-events-none" />
-
-          <div className="relative z-10">
-            <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <h2 className="text-4xl font-bold tracking-tight drop-shadow-sm">How the Spoiler Filter Works</h2>
-              <p className="text-base-content/70 text-lg font-medium">Navigate the dangerous world of Beyonders without fearing premature revelations.</p>
+        <section className="bg-base-200 border-2 border-base-content brutal-shadow-lg p-6 sm:p-10 lg:p-12 space-y-8">
+          <div className="border-b-2 border-base-content/20 pb-4">
+            <div className="font-mono text-xs font-bold text-primary tracking-widest uppercase">
+              // SECURITY PROTOCOLS
             </div>
+            <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight font-mono mt-1">
+              How the Spoiler Quarantine Operates
+            </h2>
+            <p className="text-xs sm:text-sm text-base-content/80 font-mono mt-1">
+              Navigate the dangerous world of Beyonders without risking premature revelations.
+            </p>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-              {/* Connecting line for desktop */}
-              <div className="hidden md:block absolute top-10 left-[20%] right-[20%] h-[2px] bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 z-0" />
-
-              {HOW_IT_WORKS.map((entry, index) => (
-                <HowItWorksStep key={entry.title} step={index + 1} {...entry} />
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {HOW_IT_WORKS.map((entry) => (
+              <HowItWorksStep key={entry.step} {...entry} />
+            ))}
           </div>
         </section>
       </main>

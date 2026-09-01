@@ -58,9 +58,15 @@ export default function WikiDetailPage({ category }) {
   if (!item) {
     return (
       <div className="min-h-screen">
-        <main className="container mx-auto px-4 py-8">
-          <div className="alert alert-error bg-base-100/90 backdrop-blur-sm">
-            <span>{config.singular} not found</span>
+        <main className="container mx-auto px-3 sm:px-6">
+          <div className="bg-base-200 border-2 border-base-content brutal-shadow p-8 font-mono">
+            <h2 className="text-xl font-black uppercase text-error">[!] RECORD NOT FOUND</h2>
+            <p className="text-sm text-base-content/70 mt-2">
+              The requested {config.singular.toLowerCase()} dossier could not be located in archive volume {selectedVolume}.
+            </p>
+            <Link to={config.route} className="btn btn-sm btn-primary rounded-none border-2 border-black font-mono font-bold uppercase tracking-wider mt-6 brutal-shadow-xs brutal-btn">
+              ← Return to {config.title}
+            </Link>
           </div>
         </main>
       </div>
@@ -69,31 +75,56 @@ export default function WikiDetailPage({ category }) {
 
   return (
     <div className="min-h-screen">
-      <main className="container mx-auto px-4 py-8">
-        <div className="mb-6">
-          <Link to={config.route} className="btn btn-ghost btn-sm">
-            Back to {config.title}
+      <main className="container mx-auto px-3 sm:px-6">
+        <div className="mb-6 flex items-center justify-between">
+          <Link
+            to={config.route}
+            className="btn btn-sm rounded-none border-2 border-base-content bg-base-200 font-mono text-xs font-bold uppercase tracking-wide brutal-shadow-xs brutal-btn"
+          >
+            ← BACK TO {config.title}
           </Link>
+          <span className="font-mono text-xs font-bold uppercase tracking-widest text-base-content/60 hidden sm:inline-block">
+            SECURITY LEVEL: VOLUME {selectedVolume}
+          </span>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-start">
+          {/* Main Article Dossier */}
           <div className="flex-1 order-2 lg:order-1 w-full">
-            <section className="bg-base-100/90 backdrop-blur-sm rounded-lg p-8 shadow-xl border-4 border-primary">
-              <h1 className="text-4xl lg:text-5xl font-bold mb-8 text-primary border-b-2 border-primary/30 pb-3">
+            <article className="bg-base-200 border-2 border-base-content brutal-shadow-lg p-6 sm:p-10">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="w-2.5 h-2.5 bg-primary border border-black"></span>
+                <span className="font-mono text-xs font-bold uppercase tracking-widest text-primary">
+                  [ CLASSIFIED DOSSIER RECORD // {item.label.toUpperCase()} ]
+                </span>
+              </div>
+
+              <h1 className="text-3xl sm:text-5xl font-black font-mono uppercase tracking-tight text-base-content border-b-2 border-base-content/30 pb-4 mb-8">
                 {item.name}
               </h1>
+
               <MarkdownRenderer
                 content={item.content}
                 references={references}
                 currentPath={currentPath}
               />
-            </section>
+            </article>
           </div>
 
+          {/* Sidebar Dossier Sheet */}
           <aside className="w-full lg:w-80 shrink-0 order-1 lg:order-2">
-            <div className="bg-info/10 backdrop-blur-sm rounded-lg shadow-xl overflow-hidden border-4 border-accent">
-              <div className="p-1 bg-base-200">
-                <div className="rounded-md overflow-hidden bg-base-300">
+            <div className="bg-base-200 border-2 border-base-content brutal-shadow-lg overflow-hidden">
+              <div className="bg-base-300 border-b-2 border-base-content p-3 text-center">
+                <div className="font-mono text-[11px] font-bold uppercase tracking-widest text-base-content/70">
+                  // PROFILE SHEET
+                </div>
+                <h2 className="font-mono font-black text-lg uppercase tracking-tight text-base-content mt-0.5">
+                  {item.name}
+                </h2>
+              </div>
+
+              <div className="p-3 bg-base-100 border-b-2 border-base-content">
+                <div className="border-2 border-base-content overflow-hidden bg-base-300">
                   {item.image ? (
                     <img
                       src={item.image}
@@ -103,44 +134,67 @@ export default function WikiDetailPage({ category }) {
                       className="w-full h-auto block"
                     />
                   ) : (
-                    <div className="w-full aspect-square flex items-center justify-center">
-                      <Icon path={config.icon} className="h-20 w-20 text-base-content/20" />
+                    <div className="w-full aspect-square flex flex-col items-center justify-center p-4">
+                      <Icon path={config.icon} className="h-16 w-16 text-base-content/20 mb-2" />
+                      <span className="font-mono text-xs font-bold uppercase text-base-content/40">
+                        [NO IMAGE RECORD]
+                      </span>
                     </div>
                   )}
                 </div>
               </div>
 
-              <div className="p-4">
-                <h2 className="text-center font-bold text-xl mb-4 border-b border-base-300 pb-2">
-                  {item.name}
-                </h2>
-
-                <table className="table table-compact w-full bg-transparent">
+              <div className="p-4 space-y-4 font-mono text-xs">
+                <table className="w-full border-collapse">
                   <tbody>
-                    <tr>
-                      <th className="bg-base-200/50 text-xs uppercase opacity-70 w-1/3">Category</th>
-                      <td className="text-sm capitalize">{item.label}</td>
+                    <tr className="border-b-2 border-base-content/10">
+                      <th className="py-2 pr-2 text-left font-bold uppercase text-base-content/60 w-2/5">
+                        CATEGORY:
+                      </th>
+                      <td className="py-2 text-left font-bold text-primary uppercase">
+                        {item.label}
+                      </td>
+                    </tr>
+                    <tr className="border-b-2 border-base-content/10">
+                      <th className="py-2 pr-2 text-left font-bold uppercase text-base-content/60">
+                        INTRODUCED:
+                      </th>
+                      <td className="py-2 text-left font-bold text-accent uppercase">
+                        VOLUME {item.introducedInVolume}
+                      </td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200/50 text-xs uppercase opacity-70">Introduced In</th>
-                      <td className="text-sm">Volume {item.introducedInVolume}</td>
+                      <th className="py-2 pr-2 text-left font-bold uppercase text-base-content/60">
+                        CLEARANCE:
+                      </th>
+                      <td className="py-2 text-left font-bold text-success uppercase">
+                        AUTHORIZED
+                      </td>
                     </tr>
                   </tbody>
                 </table>
 
-                <div className="grid gap-2 mt-4 pt-4 border-t border-base-300">
-                  {externalReferences.map((reference) => (
-                    <a
-                      key={reference.href}
-                      href={reference.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-outline btn-sm normal-case"
-                    >
-                      {reference.label}
-                    </a>
-                  ))}
-                </div>
+                {externalReferences.length > 0 && (
+                  <div className="pt-3 border-t-2 border-base-content/20 space-y-2">
+                    <div className="font-bold text-[10px] text-base-content/60 uppercase tracking-wider">
+                      EXTERNAL ARCHIVES:
+                    </div>
+                    <div className="grid gap-2">
+                      {externalReferences.map((reference) => (
+                        <a
+                          key={reference.href}
+                          href={reference.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-xs rounded-none border-2 border-base-content font-mono font-bold uppercase tracking-wider bg-base-100 brutal-shadow-xs brutal-btn flex items-center justify-between"
+                        >
+                          <span>{reference.label}</span>
+                          <Icon path={ICON_PATHS.externalLink} className="h-3 w-3" />
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </aside>

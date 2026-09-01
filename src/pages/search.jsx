@@ -34,32 +34,54 @@ export default function SearchPage() {
 
   return (
     <div className="min-h-screen">
-      <main className="container mx-auto px-4 py-8">
-        <section className="bg-base-100/90 rounded-lg p-6 shadow-xl mb-8">
-          <h1 className="text-4xl font-bold">Search</h1>
-          <p className="mt-3 text-base-content/80">
+      <main className="container mx-auto px-3 sm:px-6">
+        <section className="bg-base-200 border-2 border-base-content brutal-shadow p-6 sm:p-8 mb-8">
+          <div className="font-mono text-xs font-bold text-primary tracking-widest uppercase">
+            // ARCHIVE SEARCH ENGINE
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-black uppercase font-mono tracking-tight mt-1">
+            Archive Search
+          </h1>
+          <p className="mt-2 text-xs sm:text-sm text-base-content/80 font-mono leading-relaxed">
             {query
-              ? `Showing results for “${query}”.`
-              : "Enter a search term in the navbar to look through the wiki."}
+              ? `Displaying records matching query "${query}" (Quarantine: Volume ${selectedVolume}).`
+              : "Enter a search term in the command bar to inspect the lore database."}
           </p>
         </section>
 
         {!query ? (
-          <div className="alert alert-info bg-base-100/90">Search for a character, place, or concept.</div>
+          <div className="bg-base-200 border-2 border-base-content brutal-shadow p-6 font-mono text-xs sm:text-sm">
+            <span className="text-primary font-bold">[?] PROMPT:</span> Enter a character name, pathway, deity, or artifact in the navigation search bar.
+          </div>
         ) : visibleItems.length === 0 ? (
-          <div className="alert alert-warning bg-base-100/90">No results match “{query}”.</div>
+          <div className="bg-base-200 border-2 border-base-content brutal-shadow p-6 font-mono text-xs sm:text-sm">
+            <span className="text-warning font-bold">[!] NO RECORDS FOUND:</span> No declassified records match "{query}" within Volume {selectedVolume}.
+          </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {visibleItems.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
-                className="card bg-base-100/90 border border-base-300 hover:border-accent"
+                className="bg-base-200 border-2 border-base-content brutal-shadow brutal-card p-5 flex flex-col justify-between gap-4 group"
               >
-                <div className="card-body">
-                  <h2 className="card-title text-lg">{item.name}</h2>
-                  <div className="badge badge-secondary badge-sm capitalize">{item.label}</div>
-                  <p className="text-sm text-base-content/80">Volume {item.introducedInVolume}</p>
+                <div>
+                  <div className="flex items-center justify-between gap-2 border-b border-base-content/10 pb-2 mb-3">
+                    <span className="inline-block bg-accent text-accent-content font-mono text-[10px] font-bold px-1.5 py-0.5 border border-black uppercase">
+                      {item.label}
+                    </span>
+                    <span className="font-mono text-[10px] font-bold text-base-content/60">
+                      VOL. {item.introducedInVolume}
+                    </span>
+                  </div>
+                  <h2 className="font-mono font-bold text-lg uppercase tracking-tight group-hover:text-primary transition-colors">
+                    {item.name}
+                  </h2>
+                </div>
+
+                <div className="pt-2 border-t border-base-content/10 flex items-center justify-between font-mono text-xs font-bold text-primary group-hover:text-accent transition-colors">
+                  <span>INSPECT RECORD</span>
+                  <span>→</span>
                 </div>
               </Link>
             ))}

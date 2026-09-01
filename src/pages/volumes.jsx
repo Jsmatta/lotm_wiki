@@ -9,30 +9,56 @@ export default function VolumesPage() {
 
   return (
     <div className="min-h-screen">
-      <main className="container mx-auto px-4 py-8">
-        <section className="bg-base-100/90 rounded-lg p-6 shadow-xl mb-8">
-          <h1 className="text-4xl font-bold">Volumes</h1>
-          <p className="mt-3 text-base-content/80">
-            Each volume tracks the point in the story where content is safe to reveal.
+      <main className="container mx-auto px-3 sm:px-6">
+        <section className="bg-base-200 border-2 border-base-content brutal-shadow p-6 sm:p-8 mb-8">
+          <div className="font-mono text-xs font-bold text-primary tracking-widest uppercase">
+            // CHRONICLES DIRECTORY
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-black uppercase font-mono tracking-tight mt-1">
+            Story Volumes & Clearance
+          </h1>
+          <p className="mt-2 text-xs sm:text-sm text-base-content/80 font-mono max-w-2xl leading-relaxed">
+            Each volume marks an epoch in Klein Moretti's journey. Setting your clearance prevents early exposure to high-sequence revelations.
           </p>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {VOLUMES.map((volume, index) => {
             const isCurrent = index === selectedVolume;
 
             return (
               <div
                 key={volume}
-                className={`card border ${isCurrent ? "border-accent bg-accent/5" : "border-base-300 bg-base-100/90"}`}
+                className={`border-2 border-base-content brutal-shadow brutal-card p-6 flex flex-col justify-between gap-4 ${
+                  isCurrent ? "bg-base-100 border-primary" : "bg-base-200"
+                }`}
               >
-                <div className="card-body">
-                  <div className="flex items-center justify-between gap-2">
-                    <h2 className="card-title">Volume {index}</h2>
-                    {isCurrent && <span className="badge badge-accent">Current</span>}
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between gap-2 border-b-2 border-base-content/10 pb-3">
+                    <span className="font-mono font-bold text-xs uppercase tracking-widest text-primary">
+                      [ VOLUME {index} ]
+                    </span>
+                    {isCurrent && (
+                      <span className="bg-accent text-accent-content font-mono font-bold text-[10px] px-2 py-0.5 border border-black uppercase tracking-wider">
+                        ACTIVE CLEARANCE
+                      </span>
+                    )}
                   </div>
-                  <p className="text-base-content/80">{volume}</p>
-                  <Link to="/characters" className="btn btn-sm btn-outline mt-3">Browse entries</Link>
+                  <h2 className="font-mono font-black text-xl uppercase tracking-tight text-base-content">
+                    {volume}
+                  </h2>
+                  <p className="text-xs text-base-content/80 font-mono">
+                    Declassifies lore and character profiles introduced up to Volume {index}.
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t-2 border-base-content/10 flex items-center justify-between">
+                  <Link
+                    to="/characters"
+                    className="btn btn-sm rounded-none border-2 border-base-content font-mono text-xs font-bold uppercase bg-base-100 brutal-shadow-xs brutal-btn w-full"
+                  >
+                    BROWSE VOLUME {index} ENTRIES →
+                  </Link>
                 </div>
               </div>
             );
