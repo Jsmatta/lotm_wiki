@@ -88,7 +88,7 @@ The mirror adds a mix of danger, comedy, and useful information to the Faceless 
 Arrodes communicates with Klein through a telegraph machine, answers questions about Will Auceptin and Leonard Mitchell, and continues addressing Klein with unusual respect.
 
 :::
-`,M=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"})),o=`---
+`,P=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"})),o=`---
 name: "Artificial Death"
 introducedInVolume: 5
 category: "sealed artifact"
@@ -101,7 +101,7 @@ Artificial Death is a Death-related power and artifact thread connected to Azik 
 ## Volume 5 Role
 
 Klein gives an Artificial Death feather to Audrey, adding a high-level Death element to the Tarot Club's resources and risks.
-`,A=Object.freeze(Object.defineProperty({__proto__:null,default:o},Symbol.toStringTag,{value:"Module"})),r=`---
+`,M=Object.freeze(Object.defineProperty({__proto__:null,default:o},Symbol.toStringTag,{value:"Module"})),i=`---
 name: "Biological Poison Bottle"
 introducedInVolume: 2
 category: "sealed artifact"
@@ -118,7 +118,7 @@ It can release different illnesses and poisons over an area, making it useful fo
 ## Volume 2 Role
 
 Klein obtains the bottle in Backlund and studies its origin through divination. Its indiscriminate effects require careful handling and reinforce the danger of biological Beyonder powers.
-`,P=Object.freeze(Object.defineProperty({__proto__:null,default:r},Symbol.toStringTag,{value:"Module"})),i=`---
+`,A=Object.freeze(Object.defineProperty({__proto__:null,default:i},Symbol.toStringTag,{value:"Module"})),r=`---
 name: "Black Emperor Card"
 introducedInVolume: 2
 category: "sealed artifact"
@@ -135,7 +135,7 @@ After advancing to Magician, Klein steals the card during the exhibition. The op
 ## Importance
 
 The card gives Klein access to high-level pathway knowledge and reinforces Roselle's continuing influence on the modern Beyonder world.
-`,B=Object.freeze(Object.defineProperty({__proto__:null,default:i},Symbol.toStringTag,{value:"Module"})),s=`---
+`,B=Object.freeze(Object.defineProperty({__proto__:null,default:r},Symbol.toStringTag,{value:"Module"})),s=`---
 name: "Blasphemy Slate"
 introducedInVolume: 6
 category: "sealed artifact"
@@ -156,7 +156,7 @@ The history of the Ancient Sun God and the Forsaken Land of the Gods points towa
 Klein reads the Second Blasphemy Slate while trapped by Adam, gaining decisive information about Above the Sequence and the cosmos.
 
 :::
-`,R=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"})),l=`---
+`,K=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"})),l=`---
 name: "Cards of Blasphemy"
 introducedInVolume: 2
 category: "sealed artifact"
@@ -177,31 +177,67 @@ Klein receives more card-related information as his understanding of high-sequen
 Klein obtains The Fool card after the Belltaine City incident, making the Cards of Blasphemy directly relevant to his final pathway progress.
 
 :::
-`,K=Object.freeze(Object.defineProperty({__proto__:null,default:l},Symbol.toStringTag,{value:"Module"})),c=`---
+`,R=Object.freeze(Object.defineProperty({__proto__:null,default:l},Symbol.toStringTag,{value:"Module"})),c=`---
 name: "Creeping Hunger"
 introducedInVolume: 1
-category: "sealed artifact"
+category: "sealed_artifacts"
 ---
 
 ## Overview
 
-Creeping Hunger is a glove created from a Shepherd characteristic. It can graze souls and use selected abilities from the dead.
+**Creeping Hunger** is an infamous human-skin glove crafted from the Beyonder characteristic of a **Sequence 5: Shepherd** (Secrets Supplicant / Hanged Man Pathway). Originally wielded by Pirate Admiral **Qilangos (Rear Admiral Hurricane)** to infiltrate Backlund and assassinate Duke Negan, it eventually becomes Klein Moretti's signature combat artifact throughout his adventures as the legendary pirate hunter **Gehrman Sparrow**.
 
-## Cost
+When unequipped, it resembles a thin, pale glove woven from human skin. When worn and activated, it fuses with the wielder's left hand, turning transparent with mystical blood-red vessels.
 
-The glove hungers for living human souls. If it is not fed according to its requirements, it may turn against its owner.
+## Core Abilities: Grazing Souls
 
-## Volume 2
+Creeping Hunger possesses the terrifying authority to **Graze** the souls and astral projections of deceased Beyonders, allowing the wielder to deploy their sequence powers as if they were their own:
+- **Capacity**: Can store up to **5 distinct grazed souls** simultaneously.
+- **Ability Deployment**: For each soul, the wielder can unleash up to **3 specific Beyonder abilities** associated with that target's original sequence.
+- **Instantaneous Switching**: The wielder can cycle between different souls in combat with a mere thought, creating devastating multi-pathway combination attacks.
 
-Klein obtains Creeping Hunger after helping Sharron and Maric fight members of the Rose School of Thought.
+## Negative Effects & Price of Use
+
+Creeping Hunger is a Grade 1 Sealed Artifact possessing a ravenous, sadistic semi-sentience:
+- **The Hunger**: It demands a fresh, living human being to devour every single day. If deprived of food for more than 24 hours, it will turn upon its wielder and consume their flesh, blood, and soul.
+- **Suppression & Feeding Methods**: Klein strictly refuses to harm innocents. He satisfies the glove's hunger by executing condemned pirates, murderers, and corrupt criminals, or suppresses its hunger temporarily using high-tier mystical artifacts like **Azik's Copper Whistle** and divine purification above the gray fog.
+
+:::reveal at=2
+
+## Volume 2: The Backlund Hunt
+
+Klein acquires Creeping Hunger after partnering with the demigod Azik Eggers to eliminate Qilangos. After neutralizing the soul-taint above the gray fog, Klein begins experimenting with its soul slots, preparing versatile combat combinations for his time in Backlund as Sherlock Moriarty.
+
+:::
 
 :::spoiler volume=3
 
-## Volume 3
+## Volume 3: Legend of the Pirate Hunter
 
-The artifact becomes central to Gehrman Sparrow's combat style. Klein uses different grazed souls for travel, disguise, attack, and control while seeking ways to satisfy or bypass its hunger.
+Creeping Hunger becomes the foundation of **Gehrman Sparrow's** terrifying maritime reputation across the Five Seas:
+- **The Traveler (Door Pathway)**: Grants **Teleportation / Blink**, allowing Gehrman Sparrow to vanish instantly from artillery fire and reposition across islands.
+- **The Baron of Corruption (Black Emperor Pathway)**: Grants **Distortion** (bending enemy trajectories and intent) and **Bribe**.
+- **The Zombie (Death Pathway)**: Grants superhuman physical defense, frost manipulation, and dead-silence concealment.
+- **The Interrogator (Justiciar Pathway)**: Grants **Psychic Piercing**, stunning enemy minds during critical shootouts.
 
 :::
+
+:::spoiler volume=4
+
+## Volume 4: Undoing the Past
+
+Klein utilizes Creeping Hunger during high-stakes covert operations in Backlund, combining its Traveler teleportation with Magician paper-figurine substitutions to infiltrate Saint Samuel Cathedral and escape the Red Gloves.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5: Demigod Transformations
+
+After Klein advances to **Sequence 4: Bizarro Sorcerer**, Creeping Hunger is further purified with the blood of divine angels and demigods. Its negative backlash is permanently suppressed, turning it into a compliant holy relic subordinate to The Fool.
+
+:::
+
 `,z=Object.freeze(Object.defineProperty({__proto__:null,default:c},Symbol.toStringTag,{value:"Module"})),d=`---
 name: "Devil's Oil Painting"
 introducedInVolume: 7
@@ -232,7 +268,7 @@ Its rolls influence luck and probability. Favorable results can make an unlikely
 ## Volume 3 Role
 
 Darkwill hires Gehrman Sparrow to protect him while delivering the die to Oravi Island. Klein survives its influence through caution, divination, and the pressure of his own unusual fate.
-`,$=Object.freeze(Object.defineProperty({__proto__:null,default:u},Symbol.toStringTag,{value:"Module"})),h=`---
+`,D=Object.freeze(Object.defineProperty({__proto__:null,default:u},Symbol.toStringTag,{value:"Module"})),h=`---
 name: "Fate Siphon"
 introducedInVolume: 5
 category: "sealed artifact"
@@ -245,7 +281,7 @@ Fate Siphon is an item connected to fate manipulation.
 ## Volume 5 Role
 
 Its appearance reflects the increasing role of high-level artifacts and pathway authorities in the Backlund war and Amon-related threats.
-`,D=Object.freeze(Object.defineProperty({__proto__:null,default:h},Symbol.toStringTag,{value:"Module"})),f=`---
+`,G=Object.freeze(Object.defineProperty({__proto__:null,default:h},Symbol.toStringTag,{value:"Module"})),m=`---
 name: "Flower of Blood"
 introducedInVolume: 4
 category: "sealed artifact"
@@ -258,7 +294,7 @@ The Flower of Blood is an item Klein obtains from Mr. X.
 ## Volume 4 Role
 
 Klein gains it after killing Mr. X, making the assassination useful beyond removing an Aurora Order threat.
-`,x=Object.freeze(Object.defineProperty({__proto__:null,default:f},Symbol.toStringTag,{value:"Module"})),m=`---
+`,$=Object.freeze(Object.defineProperty({__proto__:null,default:m},Symbol.toStringTag,{value:"Module"})),g=`---
 name: "Groselle's Travels"
 introducedInVolume: 3
 category: "sealed artifact"
@@ -275,7 +311,7 @@ People pulled into the book can come from different historical eras. They remain
 ## Volume 3 Role
 
 Edwina Edwards is pulled into the book from the Golden Dream. Klein, Danitz, and Anderson Hood enter to rescue her, join the existing travelers, and defeat the ice dragon Ulyssan.
-`,G=Object.freeze(Object.defineProperty({__proto__:null,default:m},Symbol.toStringTag,{value:"Module"})),g=`---
+`,F=Object.freeze(Object.defineProperty({__proto__:null,default:g},Symbol.toStringTag,{value:"Module"})),f=`---
 name: "Leymano's Travels"
 introducedInVolume: 4
 category: "sealed artifact"
@@ -292,7 +328,7 @@ Its pages can record selected Beyonder powers and release them later. The copied
 ## Volume 4 Role
 
 Fors Wall gains access to the notebook through the Abraham family. It becomes a valuable Tarot Club resource because members can exchange recorded abilities across different pathways.
-`,E=Object.freeze(Object.defineProperty({__proto__:null,default:g},Symbol.toStringTag,{value:"Module"})),p=`---
+`,x=Object.freeze(Object.defineProperty({__proto__:null,default:f},Symbol.toStringTag,{value:"Module"})),p=`---
 name: "Life's Cane"
 introducedInVolume: 5
 category: "sealed artifact"
@@ -305,7 +341,7 @@ Life's Cane is a healing artifact with dangerous side effects.
 ## Volume 5 Role
 
 Klein uses Life's Cane to treat wounded civilians during the war, creating the hospital legend of the Clown and helping digest his Scholar of Yore potion.
-`,F=Object.freeze(Object.defineProperty({__proto__:null,default:p},Symbol.toStringTag,{value:"Module"})),y=`---
+`,E=Object.freeze(Object.defineProperty({__proto__:null,default:p},Symbol.toStringTag,{value:"Module"})),y=`---
 name: "Magic Wishing Lamp"
 introducedInVolume: 5
 category: "sealed artifact"
@@ -334,7 +370,7 @@ Klein makes a distorted wish through the genie to complete his Attendant of Myst
 Klein returns the lamp to Bernadette before entering slumber.
 
 :::
-`,L=Object.freeze(Object.defineProperty({__proto__:null,default:y},Symbol.toStringTag,{value:"Module"})),b=`---
+`,H=Object.freeze(Object.defineProperty({__proto__:null,default:y},Symbol.toStringTag,{value:"Module"})),b=`---
 name: "Master Key"
 introducedInVolume: 2
 category: "sealed artifact"
@@ -364,7 +400,7 @@ The Mutated Sun Sacred Emblem is a Sun-pathway sealed artifact kept by the Night
 ## Volume 5 Role
 
 Leonard returns to Blackthorn Security Company to use the emblem during the Amon-avatar crisis. Its Sun authority makes it useful against parasitic and corrupted threats.
-`,N=Object.freeze(Object.defineProperty({__proto__:null,default:v},Symbol.toStringTag,{value:"Module"})),_=`---
+`,L=Object.freeze(Object.defineProperty({__proto__:null,default:v},Symbol.toStringTag,{value:"Module"})),_=`---
 name: "Pale Death"
 introducedInVolume: 7
 category: "sealed artifact"
@@ -398,7 +434,7 @@ It can darken the surrounding area and produce black threads capable of restrain
 ## Volume 1 Role
 
 Dunn Smith removes the ashes during the final crisis and uses their power against the entity threatening Tingen. The artifact's use is inseparable from the sacrifice that ends the battle.
-`,H=Object.freeze(Object.defineProperty({__proto__:null,default:w},Symbol.toStringTag,{value:"Module"})),S=`---
+`,N=Object.freeze(Object.defineProperty({__proto__:null,default:w},Symbol.toStringTag,{value:"Module"})),S=`---
 name: "Sea God Scepter"
 introducedInVolume: 3
 category: "sealed artifact"
@@ -419,7 +455,7 @@ Klein takes the scepter into the gray fog and uses it to answer prayers under Ka
 ## Risk
 
 The scepter contains powerful mental corruption. Klein can use it safely only with the protection and isolation provided above the gray fog.
-`,U=Object.freeze(Object.defineProperty({__proto__:null,default:S},Symbol.toStringTag,{value:"Module"})),O=`---
+`,U=Object.freeze(Object.defineProperty({__proto__:null,default:S},Symbol.toStringTag,{value:"Module"})),k=`---
 name: "Spirit Medium's Mirror"
 introducedInVolume: 1
 category: "sealed artifact"
@@ -440,7 +476,7 @@ Its reflection can unexpectedly change and draw a nearby person's consciousness 
 ## Volume 1 Role
 
 Kenley White carries the mirror during the confrontation with Madam Sharon. Its dangerous side effect contributes directly to his death, demonstrating that even a Grade 3 artifact can be lethal.
-`,X=Object.freeze(Object.defineProperty({__proto__:null,default:O},Symbol.toStringTag,{value:"Module"})),k=`---
+`,Q=Object.freeze(Object.defineProperty({__proto__:null,default:k},Symbol.toStringTag,{value:"Module"})),T=`---
 name: "Trunsoest Brass Book"
 introducedInVolume: 7
 category: "sealed artifact"
@@ -453,7 +489,7 @@ The Trunsoest Brass Book is Sealed Artifact 0-02, a terrifying artifact that imp
 ## Volume 7 Role
 
 Larrion steals the book and uses it in Belltaine City. Klein and Arianna survive by exploiting the book's rule logic and eventually move it to the Hornacis Mountain Range.
-`,Y=Object.freeze(Object.defineProperty({__proto__:null,default:k},Symbol.toStringTag,{value:"Module"})),T=`---
+`,X=Object.freeze(Object.defineProperty({__proto__:null,default:T},Symbol.toStringTag,{value:"Module"})),O=`---
 name: "Unshadowed Crucifix"
 introducedInVolume: 5
 category: "sealed artifact"
@@ -466,4 +502,4 @@ The Unshadowed Crucifix is a powerful Sun-pathway artifact.
 ## Volume 6 Role
 
 Alger asks The Fool for the artifact when Klein is missing, showing how the Tarot Club tries to respond to Amon's threat without direct access to Klein.
-`,J=Object.freeze(Object.defineProperty({__proto__:null,default:T},Symbol.toStringTag,{value:"Module"}));export{j as a,I as b,V as c,M as d,A as e,P as f,B as g,R as h,K as i,z as j,C as k,$ as l,D as m,x as n,G as o,E as p,F as q,L as r,q as s,N as t,W as u,H as v,U as w,X as x,Y as y,J as z};
+`,J=Object.freeze(Object.defineProperty({__proto__:null,default:O},Symbol.toStringTag,{value:"Module"}));export{j as a,I as b,V as c,P as d,M as e,A as f,B as g,K as h,R as i,z as j,C as k,D as l,G as m,$ as n,F as o,x as p,E as q,H as r,q as s,L as t,W as u,N as v,U as w,Q as x,X as y,J as z};

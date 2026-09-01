@@ -1,0 +1,1 @@
+import{d,y as i}from"./index-DWAiWBdJ.js";function u(o,l,n=null){const[s,t]=d({data:n,loading:!0});return i(()=>{let a=!1;return t(e=>e.loading?e:{...e,loading:!0}),o().then(e=>{a||t({data:e,loading:!1})},e=>{console.error(e),a||t({data:n,loading:!1})}),()=>{a=!0}},l),s}export{u};
