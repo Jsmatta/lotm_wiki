@@ -1,39 +1,60 @@
 ---
 name: "Emlyn White"
 introducedInVolume: 2
-category: "character"
+category: "characters"
 ---
 
 ## Overview
 
-Emlyn White is a vampire living in Backlund. He is proud, eccentric, and strongly attached to his collection of dolls.
+**Emlyn White (The Moon)** is a noble of the **Sanguine (Vampire)** race residing in Backlund and a core member of the **Tarot Club**. Walking the **Moon Pathway (Apothecary / Vampire / Shaman / Scarlet Scholar / High Summoner)**, Emlyn serves as the divine envoy bridging the ancient Sanguine race, the **Church of the Earth Mother**, and **The Fool**.
 
-## Volume 2 Role
+Infamous for his supreme pride in Sanguine elegance, his passionate obsession with collecting and dressing porcelain dolls, and his reluctant service at Father Utravsky's Harvest Church, Emlyn grows from a sheltered aristocratic youth into a courageous Sanguine Viscount and savior of his people.
 
-Emlyn is introduced through Harvest Church and Father Utravsky. Elder Nibbs Odora later directs him to pray to The Fool, and he joins the Tarot Club as **The Moon** near the end of Volume 2.
+## Tarot Identity & Sequence Progression
 
-His arrival adds the Sanguine and the Moon Pathway to the story's expanding web of powers.
+- **Major Arcana Title**: **The Moon** (Seat representing nocturnal vitality, nature cycles, and ancestral bloodlines).
+- **Sequence Progression**:
+  - **Sequence 9: Apothecary** (Herbal medicine, healing, dark vision).
+  - **Sequence 8: Vampire** (Enhanced agility, blood wings, bat swarm transmutation, claws).
+  - **Sequence 7: Potions Professor** (Brewing mystical enhancements and biological serums).
+  - **Sequence 6: Potions Master / Beast Tamer / Scarlet Scholar** (Nocturnal blood magic, lunar rays, commanding nature beasts).
+  - **Sequence 5: Scarlet Scholar** (Full moon empowerment, blood manipulation, scarlet illusions).
+  - **Sequence 4: Shaman King** (Demigod of the Moon, commanding spiritual summonings and nature disasters).
 
-## Pathway
+## Key Relationships
 
-Emlyn follows the **Moon Pathway**, associated with the Sanguine, medicine, vitality, and blood-related powers.
+- **Father Utravsky**: The towering Earth Mother priest who trapped Emlyn in the Harvest Church to purge his psychological flaws, becoming Emlyn's mentor.
+- **Lord Nibbs Odora**: High elder of the Sanguines who recognized Emlyn as the chosen child of prophecy.
 
-## Personality
+:::reveal at=2
 
-Emlyn is vain, dramatic, and convinced of his own refinement. Beneath that pride, he is not cruel, and Volume 2 shows him helping with medicine after Backlund's disaster.
+## Volume 2: The Faceless & The Harvest Church
 
-:::spoiler volume=3
-
-## Volume 3
-
-Emlyn advances to **Sequence 7: Potions Professor**. He acts as one of Klein's contacts in Backlund, purchases the Tinder from Leonard Mitchell, and begins investigating believers of the Primordial Moon.
+Sherlock Moriarty (Klein Moretti) rescues Emlyn from psychological confinement at the Harvest Church. Guided by divine revelation, Lord Nibbs Odora instructs Emlyn to pray to Mr. Fool, leading to his initiation as **The Moon**.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5
+## Volume 5: Red Priest & The Ernes Boyar Ambush
 
-Emlyn receives a mission connected to the Rose School of Thought and works with the Tarot Club against Ernes Boyar. The operation sends Ernes to Harvest Church and helps Emlyn advance to **Sequence 5: Scarlet Scholar**.
+Emlyn coordinates with Tarot Club demigods to capture **Ernes Boyar** and eliminate experimental artificial vampire laboratories, securing his promotion to **Sequence 5: Scarlet Scholar** and earning the title of Sanguine Baron.
 
 :::
+
+:::spoiler volume=7
+
+## Volume 7: Secrets of the Cosmos & The Revelation of Lilith
+
+During the Battle of Gods, the Earth Mother reveals herself as the ancient Sanguine Ancestor **Lilith**. Emlyn is elevated to the rank of Sanguine Viscount and high priest of the unified church.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: Shaman King & Guardian of the Night
+
+Emlyn advances to **Sequence 4: Shaman King**, leading the Sanguine legions alongside the Church of the Fool to defend the Northern and Southern Continents from outer cosmic corruption.
+
+:::
+

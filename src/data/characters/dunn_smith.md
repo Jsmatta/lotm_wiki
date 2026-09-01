@@ -1,21 +1,36 @@
 ---
 name: "Dunn Smith"
 introducedInVolume: 1
-category: "character"
+category: "characters"
 ---
 
 ## Overview
 
-Dunn Smith is the captain of the Tingen Nighthawks and the public head of the Blackthorn Security Company. He is a steady, protective leader who treats his team as family.
+**Captain Dunn Smith (The Sleepless Guardian)** was the beloved captain of the **Tingen Nighthawks squad** and the public managing director of the **Blackthorn Security Company** (36 Zouteland Street). Walking the **Sleepless Pathway (Darkness Pathway)** as a **Sequence 7: Nightmare**, Dunn is remembered as Klein Moretti's foundational mentor, spiritual father figure, and the quintessential embodiment of the Nighthawks' tragic code of honor.
 
-## Beyonder Abilities
+Distinguished by his deep gray eyes, receding hairline, black trench coat, and habit of drinking strong coffee without sugar, Dunn bore the heavy mental burden of consuming the Beyonder characteristics of fallen teammates to preserve their memories and powers, leading to his chronic, endearing forgetfulness.
 
-Dunn is a **Sequence 7: Nightmare** of the Sleepless Pathway. His abilities center on sleep, dreams, darkness, and pacifying supernatural threats. Years of absorbing the characteristics of fallen teammates have made him unusually strong but increasingly forgetful.
+## Pathway & Nightmare Abilities
 
-## Volume 1 Role
+- **Sequence 9: Sleepless**: Minimal sleep requirement (2–3 hours), enhanced nocturnal vision, heightened spiritual sensitivity.
+- **Sequence 8: Midnight Poet**: Chanting soothing or terrifying dark poetry that tranquilizes souls or inflicts mental damage.
+- **Sequence 7: Nightmare**: Entering and manipulating the dreams of targets, dragging waking enemies into forced slumber, and probing subconscious memories.
 
-Dunn recruits Klein and guides him into the hidden world of Beyonders. He leads the investigations surrounding the Antigonus notebook, supernatural incidents in Tingen, and the conspiracy that threatens the city.
+:::reveal at=1
 
-## Fate
+## Volume 1: Clown & The Tragedy of Tingen
 
-During the final crisis, Dunn uses Saint Selena's Ashes and sacrifices himself to stop the descent of an evil entity. His actions save Tingen and leave a permanent mark on the surviving Nighthawks.
+Captain Dunn recruits Klein Moretti into the Nighthawks, patiently guiding him through potion consumption, mysticism, and acting methods. 
+
+During the climactic conspiracy orchestrated by Ince Zangwill and Lanevus, Dunn deploys **Saint Selena's Ashes** to suppress the descending fetus of the True Creator. Refusing to let his junior teammates die, Dunn consumes the remaining characteristics and sacrifices his life alongside Klein to incinerate the divine abomination, saving Tingen City from total destruction.
+
+:::
+
+:::spoiler volume=4
+
+## Volume 4: Undoing the Past & The Eternal Slumber
+
+In the Southern Continent, Leonard Mitchell, Daly Simone, and Dwayne Dantès (Klein Moretti) corner and execute the traitor **Ince Zangwill**, successfully avenging Captain Dunn Smith and freeing his spirit.
+
+:::
+

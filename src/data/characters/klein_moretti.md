@@ -1,7 +1,7 @@
 ---
 name: "Klein Moretti"
 introducedInVolume: 1
-category: "character"
+category: "characters"
 ---
 
 ## Overview

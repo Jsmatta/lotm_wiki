@@ -1,13 +1,30 @@
 ---
 name: "Verdu Garcia"
-introducedInVolume: 7
-category: "character"
+introducedInVolume: 6
+category: "characters"
 ---
 
 ## Overview
 
-Verdu Garcia is an Abraham Family member whose obsession with saving Mr. Door makes him vulnerable to manipulation.
+**Verdu Garcia Abraham** was a senior scion of the **Abraham Family**, an **Apprentice Pathway** Beyonder, and the fanatical ringleader of the family's extremist faction. Blaming the family's decline on the cowardice of elders like Dorian Gray, Verdu became obsessed with breaking the family's millennial curse by forcefully summoning their ancestral patriarch, **Bethel Abraham (Mr. Door)**, back to Earth.
 
-## Volume 7 Role
+Blind to the terrifying cosmic contamination surrounding Mr. Door, Verdu fell under the covert psychological manipulation of **Amon** and the **Aurora Order (True Creator)**.
 
-Verdu performs the ritual that allows Bethel Abraham to return. The result is not salvation for the family, but a disaster shaped by Amon and the Red Angel Evil Spirit.
+:::reveal at=6
+
+## Volume 6: Light of the City of Silver & The Secret Faction
+
+Verdu secretly gathers ancient ritual relics and establishes contact with the Aurora Order, believing he is orchestrating the glorious restoration of the Abraham Family.
+
+:::
+
+:::spoiler volume=7
+
+## Volume 7: Secrets of the Cosmos & The Catastrophic Descent
+
+Verdu conducts the forbidden celestial ritual on a desolate island, creating the dimensional conduit that allows **Mr. Door** to descend toward Earth. 
+
+As the cosmic corruption of the Mother Goddess of Depravity pours through the portal, Verdu's body instantly mutates into eldritch biomass, dying in horror and regret as he witnesses Amon consume Mr. Door's characteristics.
+
+:::
+

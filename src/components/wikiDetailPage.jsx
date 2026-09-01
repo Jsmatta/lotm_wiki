@@ -7,6 +7,7 @@ import { getWikiReferences } from "../utils/wikiReferences.js";
 import { getExternalReferences } from "../utils/externalReferences.js";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer.jsx";
 import { getCategory } from "../config/categories.js";
+import { ICON_PATHS } from "../config/icons.js";
 import { useSelectedVolume } from "../utils/volumeContext.jsx";
 import Icon from "./icon.jsx";
 import LoadingPage from "./loadingPage.jsx";

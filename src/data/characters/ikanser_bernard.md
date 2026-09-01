@@ -1,17 +1,33 @@
 ---
 name: "Ikanser Bernard"
 introducedInVolume: 2
-category: "character"
+category: "characters"
 ---
 
 ## Overview
 
-Ikanser Bernard is a deacon of the Machinery Hivemind in Backlund. He leads official investigations into dangerous Beyonder incidents and is one of Arrodes's regular users.
+**Deacon Ikanser Bernard** is a high-ranking deacon of the **Machinery Hivemind** (the official Beyonder organization of the Church of the God of Steam and Machinery) operating in **Backlund**. Walking the **Paragon Pathway (Savann / Artisan Pathway)**, Ikanser is an expert in mechanical weaponry, steam artillery, alchemical traps, and enchanted artifact containment.
 
-## Volume 2 Role
+Distinguished by his sharp jawline, high collar, strict military discipline, and receding hairline, Deacon Ikanser is famous among readers for his long-suffering, hilarious relationship with the sentient magical mirror **Arrodes (The Magic Mirror)**.
 
-Ikanser investigates several cases touched by Sherlock Moriarty, including the conflict involving Sharron and the aftermath of the Great Smog. Arrodes gives his team useful answers, but usually forces Ikanser to answer humiliating personal questions first.
+## The Machinery Hivemind & Arrodes's Humiliations
 
-## Personality
+- **Official Investigator**: Leading Hivemind teams in investigating high-profile occult murders, terrorist bombings, and black market alchemical laboratories in the capital.
+- **The Toll of Arrodes**: To obtain critical investigative intelligence from Arrodes, Ikanser is repeatedly subjected to deeply humiliating, personal questions about his romantic life, hair loss remedies, and private habits, which he endures with grim professional duty.
 
-He is competent, disciplined, and willing to endure embarrassment when an investigation requires it. His scenes demonstrate both the resources and the institutional constraints of an official Beyonder team.
+:::reveal at=2
+
+## Volume 2: The Faceless & The Backlund Inquiries
+
+Deacon Ikanser leads the investigation into the Capim mansion massacre and the Great Smog, repeatedly crossing paths with Sherlock Moriarty and using Arrodes to verify leads.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5 & Volume 8: Steam Defense of the Capital
+
+During the World War, Ikanser coordinates with the Nighthawks and Mandated Punishers, deploying colossal steam defense cannons and alchemical barriers to shield Backlund's civilians from enemy airships.
+
+:::
+

@@ -1,13 +1,31 @@
 ---
 name: "Jacob Family"
-introducedInVolume: 6
-category: "organization"
+introducedInVolume: 4
+category: "organizations"
 ---
 
 ## Overview
 
-The Jacob Family is an ancient family connected to the Error Pathway.
+The **Jacob Family** is an ancient, reclusive Fourth Epoch angel bloodline possessing hereditary inheritance of the **Error Pathway (Marauder Pathway)**. Originating as high-ranking imperial nobility of the **Solomon Empire** and later the **Tudor-Trunsoest United Empire**, the family once commanded supreme Sequence 1 Angels and demigods.
 
-## Volume 6 Role
+Throughout the Fifth Epoch, the family has lived in perpetual hiding, relentlessly hunted by **Amon (The Angel of Time)**, who seeks to eradicate all independent Marauder characteristics to monopolize the Error Pathway.
 
-The Hermits of Fate and Pallez-related developments bring the Jacob Family's hidden inheritance back into the story.
+## Pathway & Legacy
+
+- **Pathway Specialization**: Error Pathway (Marauder / Swindler / Baron of Corruption / Parasite / Trojan Horse of Destiny).
+- **Notable Figures**:
+  - **Flora Jacob**: A surviving high-ranking descendant in Backlund whose identity was compromised by Amon's parasitic avatars.
+  - **Jacob Patriarch**: Ancient angel of the Fourth Epoch who sealed his legacy and characteristics in subterranean vaults.
+
+## Volume 4 & Volume 5: The Backlund Infiltration
+
+The remnants of the Jacob family in Backlund are targeted by Amon's avatars. When Flora Jacob loses control, an Amon avatar parasitizes her mind, using the Jacob family's secret gathering houses as an ambush base against Leonard Mitchell, Pallez Zoroast, and Klein Moretti.
+
+:::spoiler volume=6
+
+## Volume 6: Light of the City of Silver
+
+Klein Moretti coordinates with Pallez Zoroast to secure the Jacob family's hidden historical treasures, recovering vital Sequence 2 *Trojan Horse of Destiny* characteristics to prevent Amon from consolidating unchallenged cosmic supremacy.
+
+:::
+

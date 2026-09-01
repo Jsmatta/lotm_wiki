@@ -1,19 +1,41 @@
 ---
 name: "Reinette Tinekerr"
 introducedInVolume: 3
-category: "character"
+category: "characters"
 ---
 
 ## Overview
 
-Reinette Tinekerr is a powerful spirit-world creature who becomes Klein's messenger.
+**Reinette Tinekerr (Miss Messenger / The Chained Angel)** is the supreme leader of the **Temperance Faction** of the Rose School of Thought, an ancient **Sequence 2: Chained Angel / Sequence 1: Abomination** of the **Chained Pathway (Prisoner Pathway)**, and Klein Moretti's personal spirit-world courier.
 
-## Appearance
+Taking the bizarre, iconic form of a towering, gothic headless woman clad in an intricate dark dress holding **four blonde, red-eyed severed heads** by their hair, Reinette is famous for her unique speech pattern (each head speaking one word at a time) and her strict fee of **one gold coin** per letter delivery.
 
-She commonly appears as a headless woman carrying four blonde, red-eyed heads. The heads speak one word at a time and collect payment for delivered letters.
+## Four-Headed Speech & Combat Supremacy
 
-## Volume 3 Role
+- **The Four Severed Heads**: Capable of casting high-sequence curses, soul restraints, spirit dimension travel, and psychic screams.
+- **The Contract of 1 Gold Coin**: In exchange for 1 gold coin per trip, Miss Messenger provides instant intercontinental spirit-world transportation and serves as Gehrman Sparrow's most reliable emergency combat backup.
 
-Klein summons Reinette while searching for a safer messenger. Her speed, strength, and knowledge of the spirit world make her far more capable than he expected.
+:::reveal at=3
 
-She later intervenes when the Rose School of Thought attacks Klein near Bayam, helping him survive a battle involving multiple high-level Beyonders.
+## Volume 3: Legend of the Pirate Hunter & The Messenger Contract
+
+Gehrman Sparrow uses a copper whistle and spirit summoning ritual to contract Miss Reinette Tinekerr. When the Rose School of Thought ambushes Klein in Bayam, Reinette manifests her full Angelic body to crush the enemy demigods.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5 & Volume 6: Strategic Operations
+
+Reinette delivers high-priority letters between Dwayne Dantès, Leonard Mitchell, and Sharron. She coordinates the assassination of Saint of Secrets Botis and unmasks royal mausoleum secrets.
+
+:::
+
+:::spoiler volume=7
+
+## Volume 7 & Volume 8: Liberation of the Highlands
+
+Klein Moretti and the Tarot Club assist Reinette Tinekerr in eradicating the corrupted Indulgence Faction in the Southern Continent. Reinette purges the Mother Tree of Desire's avatars, reclaiming the sacred Highlands under the Temperance philosophy.
+
+:::
+

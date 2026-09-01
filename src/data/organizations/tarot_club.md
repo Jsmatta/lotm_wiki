@@ -1,63 +1,77 @@
 ---
 name: "Tarot Club"
 introducedInVolume: 1
-category: "organization"
+category: "organizations"
 ---
 
 ## Overview
 
-The Tarot Club begins on June 28, 1349, after Klein accidentally draws Audrey Hall and Alger Wilson into the mysterious space above the gray fog.
+The **Tarot Club** is the preeminent secret organization in the series, established on June 28, Year 1349 of the Fifth Epoch. Convening in the divine divine hall of **Sefirah Castle** above the boundless gray fog, it is presided over by **Mr. Fool (Klein Moretti)**. 
 
-## Founding Members
+What initially began as Klein's improvised performance to maintain a safe aura of godhood transforms over time into the most formidable coalition of high-sequence demigods and regional leaders in the world.
 
-- **The Fool** — Klein's mysterious presiding identity
-- **Justice** — Audrey Hall
-- **The Hanged Man** — Alger Wilson
+## Divine Structure & Gatherings
 
-## Gatherings
+- **Location**: The ancient divine palace above the gray fog, featuring an immense bronze table flanked by twenty-two high-backed stone chairs, each bearing a unique astronomical and mystical symbol.
+- **Convening Schedule**: Every Monday at 3:00 PM Backlund time, Mr. Fool reaches out with crimson light to summon the astral projections of all seated members.
+- **Honorific Name of The Fool**:
+  > *"The Fool that doesn't belong to this era;*  
+  > *The Mysterious Ruler above the gray fog;*  
+  > *The King of Yellow and Black who wields good luck."*
 
-The group meets above the gray fog on Monday afternoons. Members exchange Beyonder formulas, ingredients, intelligence, diary pages, and requests while protecting their real identities with tarot codenames.
+## Gathering Protocols
 
-## Volume 1 Development
+1. **Presentation of Roselle's Diary**: Members submit newly discovered secret diary pages of Emperor Roselle Gustav to Mr. Fool as payment for guidance. Mr. Fool inspects the Chinese ideograms in silence while members wait in reverent anticipation.
+2. **Intelligence Exchange**: Members share geopolitical developments, ancient myths, church movements, and mystical phenomena.
+3. **Transaction & Commission**: Members trade sequence formulas, Beyonder ingredients, and sealed artifacts, utilizing Sefirah Castle's **Sacrifice and Bestowal Ritual** to bypass physical borders and church customs.
 
-What begins as Klein's improvised attempt to appear powerful develops into a genuine information network. Audrey and Alger's assumptions about Mr. Fool help Klein establish the gathering's rituals and authority.
+## Founding Major Arcana (Volume 1)
 
-:::spoiler volume=2
+- **The Fool (0)** — Klein Moretti, the mysterious convener and divine ruler.
+- **Justice (VII)** — Audrey Hall, providing funding, noble intelligence, and psychological counseling.
+- **The Hanged Man (XII)** — Alger Wilson, providing maritime experience, occult warnings, and orthodox church insights.
 
-## Volume 2 Expansion
+:::reveal at=2
 
-Derrick Berg joins as **The Sun**, Fors Wall as **The Magician**, and Emlyn White as **The Moon**. The club begins exchanging formulas, ingredients, diary pages, missions, and cross-regional intelligence at a larger scale.
+## Volume 2: The Major Arcana Expands
+
+- **The Sun (XIX)** — Derrick Berg: Joins from the isolated City of Silver, providing ancient Third Epoch history and receiving sunlight potions.
+- **The Magician (I)** — Fors Wall: Novelist from Backlund who trades local intelligence to survive blood moon curses.
+- **The Moon (XVIII)** — Emlyn White: Sanguine noble providing biological ingredients and medical expertise.
+- **The World (XXI)** — Gehrman Sparrow (Klein Moretti's marionette / persona), acting as The Fool's blessed and ruthless field executor.
 
 :::
 
 :::spoiler volume=3
 
-## Volume 3 Expansion
+## Volume 3: The Pirate Admiral
 
-Cattleya joins as **The Hermit**. Her high sequence and connection to Bernadette Gustav add substantial knowledge, but also force Klein to enforce clearer rules against investigating Mr. Fool without permission.
+- **The Hermit (IX)** — Cattleya (Admiral of Stars): Commander of the pirate flagship *Future*, providing high-sequence mysticism knowledge and Roselle's original handwritten diary pages.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5 Expansion
+## Volume 5: Red Gloves & Arbiters
 
-Leonard joins as **The Star** and Xio joins as **Judgment**. The Tarot Club is now powerful enough to coordinate hunts, intelligence work, and wartime support across multiple countries.
+- **The Star (XVII)** — Leonard Mitchell: High-ranking Red Glove of the Church of Evernight, providing internal church intelligence and hosting the ancient angel Pallez Zoroast.
+- **Judgment (VIII)** — Xio Derecha: MI9 operative and Backlund enforcer, ensuring legal and military intelligence coordination.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6 Expansion
+## Volume 6: The Great Exodus
 
-With Klein missing under Amon's control, members independently pray to The Fool and attempt to understand the crisis. Their cooperation in the Botis hunt shows that the club can act as a real organization even without direct public identity.
+During Klein's disappearance in the Forsaken Land, Tarot Club members operate as a synchronized global network, orchestrating the joint operation to execute Saint of Secrets Botis and opening the ancient gates of the Giant King's Court to liberate the City of Silver.
 
 :::
 
 :::spoiler volume=8
 
-## Volume 8 Commission
+## Volume 8: The Fool's Slumber & Long-Term Mandate
 
-Before entering slumber, The Fool assigns the Major Arcana members long-term missions: spread The Fool's name, prepare for the apocalypse, and maintain monthly meetings.
+Upon Klein's ascension to **Sequence 0: The Fool**, the Tarot Club is officially consecrated as the inner divine core of the **Church of the Fool**. Before entering his cosmic slumber to resist the Celestial Worthy, The Fool bestows Major Arcana divine blessings and tasks the members with safeguarding humanity and preparing for the coming cosmic barrier collapse.
 
 :::
+

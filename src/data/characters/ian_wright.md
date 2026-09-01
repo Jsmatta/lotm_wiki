@@ -1,21 +1,33 @@
 ---
 name: "Ian Wright"
 introducedInVolume: 2
-category: "character"
+category: "characters"
 ---
 
 ## Overview
 
-Ian Wright is a young information broker in Backlund whose commission pulls Sherlock Moriarty into a conflict involving Intis intelligence and MI9.
+**Ian Wright (Ian)** is a sharp, street-smart young boy and information broker operating across the docklands and slums of **Backlund**. Despite his tender age, Ian possesses remarkable observational skills, composure under extreme pressure, and an innate talent for tracking underground movements.
 
-## Volume 2 Role
+Hiring detective **Sherlock Moriarty (Klein Moretti)** to investigate a mysterious missing person case involving Intis diplomat Sir Baker, Ian unknowingly introduces Klein to the complex geopolitical espionage network spanning **MI9**, the **Intis Embassy**, the **Secret Order**, and the **Demoness Sect**.
 
-Ian hires Klein to investigate a dangerous matter connected to a missing item and competing intelligence forces. The case quickly becomes more serious than ordinary detective work and leads Klein into his first major Backlund Beyonder conflict.
+## Street Intellect & Growth
 
-## Importance
+- **Information Broker**: Operating out of the docks and taverns, Ian trades low-level information to detectives, bounty hunters, and police constables.
+- **The Red Chimney Clue**: Ian provides Klein with critical geographical leads regarding red-chimney houses in Backlund, helping Klein narrow down the residence of the fugitive Lanevus.
 
-Ian's case introduces Klein to the scale of Backlund's hidden world. It brings Sharron into the story, leads to Rosago's death, and helps Klein obtain formulas for later Seer pathway advancement.
+:::reveal at=2
 
-## Personality
+## Volume 2: The Faceless & The Embassy Infiltration
 
-Ian is cautious, street-smart, and used to surviving around adults who are more powerful than him. He is not a fighter, but he knows when information is valuable.
+Ian hires Sherlock Moriarty after discovering that his employer was murdered by rogue Intis agents. The investigation leads to Klein's clash with Ambassador Baker and Sequence 5 Marionettist Rosago, establishing Klein's reputation in Backlund's underworld.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5 & Volume 8: Career in the City
+
+Mentored by detective Isengard Stanton and aided by Klein's covert financial support, Ian grows into a highly respected private investigator and intelligence analyst in post-war Backlund.
+
+:::
+

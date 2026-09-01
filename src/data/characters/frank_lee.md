@@ -1,21 +1,31 @@
 ---
 name: "Frank Lee"
 introducedInVolume: 3
-category: "character"
+category: "characters"
 ---
 
 ## Overview
 
-Frank Lee is the first mate of the Future and a Planter-pathway Beyonder known as a poison expert.
+**Frank Lee (The Mad Botanist / Chief Mate)** is the First Mate and chief biological researcher aboard the pirate flagship **The Future**. Walking the **Planter Pathway (Sequence 5: Druid)** under the Mother Pathway, Frank is universally feared by pirates, demigods, and angels alike as the most terrifying, unhinged biological alchemist in the known world.
 
-## Research
+Possessing a gentle, friendly, kind-hearted personality with zero malicious intent, Frank is driven purely by a passionate scientific desire to solve world hunger and improve crop yields through revolutionary crossbreeding. However, his experimental creations inevitably mutate into eldritch, cosmic biological nightmares.
 
-Frank experiments with crops, animals, fungi, and cross-species reproduction. His goal is often practical—better food, stronger plants, or improved survival—but his methods produce results that alarm nearly everyone around him.
+## Legendary Creations & Horrors
 
-## Volume 3 Role
+- **Meat-Producing Mushrooms**: Fungi crossbred with beef that grow in minutes, consume surrounding blood, and attempt to crossbreed with any living organism within a ten-meter radius.
+- **Beer-Producing Dairy Cows**: Bovines modified to lactate chilled golden beer directly into wooden flagons.
+- **Blood-Drinking Wheat**: High-yield grain that feeds on the flesh of sea monsters and can scream when harvested.
+- **Fish-Rose Crosses**: Hybrid aquatic flora with human teeth capable of singing hypnotic melodies.
 
-Klein meets Frank while sailing with Cattleya through the Sea of Ruins. Frank's enthusiastic descriptions of mushrooms and biological experiments become one of the voyage's recurring hazards.
+## Volume 3: Legend of the Pirate Hunter
 
-## Personality
+When Gehrman Sparrow boards the *Future*, even the cold-blooded pirate hunter is terrified by Frank Lee's casual descriptions of crossbreeding humans with mushrooms. Gehrman uses Frank's terrifying mutated mushroom spores as biochemical biological weapons during coastal skirmishes.
 
-He is friendly, sincere, and scientifically fearless. The danger comes from his complete lack of instinctive limits rather than deliberate cruelty.
+:::spoiler volume=8
+
+## Volume 8: The Cosmic Savior
+
+During the Outer Deity crisis, Frank Lee's biological crossbreeding techniques are weaponized against the encroaching outer horrors, turning Frank into Earth's most bizarre biological defensive vanguard.
+
+:::
+

@@ -56,8 +56,8 @@ export default function Navbar() {
   const closeDropdown = () => setOpenDropdown(null);
 
   return (
-    <header className="sticky top-3 mx-3 sm:mx-6 max-w-[calc(100vw-1.5rem)] sm:max-w-7xl z-50">
-      <div className="navbar bg-base-200 border-2 border-base-content brutal-shadow rounded-none px-3 sm:px-5 min-h-[3.75rem] flex items-center justify-between">
+    <header className="sticky top-3 z-50 w-full px-3 sm:px-6 flex justify-center pointer-events-none">
+      <div className="navbar bg-base-200 border-2 border-base-content brutal-shadow rounded-none px-3 sm:px-5 min-h-[3.75rem] flex items-center justify-between w-full max-w-7xl pointer-events-auto">
         <div className="navbar-start w-auto flex items-center gap-2">
           <button
             type="button"

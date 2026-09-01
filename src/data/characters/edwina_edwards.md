@@ -1,19 +1,33 @@
 ---
 name: "Edwina Edwards"
 introducedInVolume: 3
-category: "character"
+category: "characters"
 ---
 
 ## Overview
 
-Edwina Edwards is **Vice Admiral Iceberg**, captain of the Golden Dream, and a Sequence 5 Mysticism Magister of the Reader Pathway.
+**Edwina Edwards (Vice Admiral Iceberg)** is one of the Seven Pirate Admirals of the **Five Seas**, captain of the flagship **The Golden Dream**, and a **Sequence 5: Mysticism Magister / Sequence 4: Prophet** of the **Reader Pathway (White Tower Pathway)**. Renowned as the most intellectual and refined pirate admiral on the ocean, Edwina rejects senseless plundering in favor of linguistic archaeology, ancient ruins exploration, and mystical research.
 
-## Volume 3 Role
+A former elite student of the **Church of the God of Knowledge and Wisdom** and headmistress of her floating academy, Edwina commands high-level spell imitation, dream navigation, and elemental magic.
 
-Edwina first communicates with Klein through Danitz's dreams and later cooperates with him directly. She is an unusually scholarly pirate admiral who teaches her crew languages, history, and mysticism.
+## Intellectual Pirate Leadership
 
-When Groselle's Travels pulls her into its internal world, Danitz asks Gehrman Sparrow for help. Klein, Danitz, and Anderson Hood enter the book to rescue her.
+- **The Floating Academy**: Edwina conducts mandatory morning classes for her crew on ancient Hermes, Elvish, Jotun, Fourth Epoch history, and mysticism fundamentals.
+- **Strict Moral Code**: Forbidding slaughter of surrendered crews, wanton arson, and unnecessary violence.
 
-## Personality
+:::reveal at=3
 
-Edwina is calm, rigorous, curious, and more interested in knowledge than pirate theatrics. She values contracts and treats useful information seriously.
+## Volume 3: Legend of the Pirate Hunter & Groselle's Travels
+
+Gehrman Sparrow partners with Edwina to explore ancient relics. When the mystical book **Groselle's Travels** traps Edwina inside its story world, Gehrman, Danitz, and Anderson Hood enter the book, fighting alongside ancient heroes to slay the King of the North.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5 & Volume 8: The Prophet of the Five Seas
+
+Edwina advances to Demigod Sequences within the White Tower Pathway, using her prophetic vision and diplomatic alliance with the Church of the Fool to safeguard maritime trade routes during the World War.
+
+:::
+

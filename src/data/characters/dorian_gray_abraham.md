@@ -1,21 +1,33 @@
 ---
 name: "Dorian Gray Abraham"
-introducedInVolume: 6
-category: "character"
+introducedInVolume: 3
+category: "characters"
 ---
 
 ## Overview
 
-Dorian Gray Abraham is an Abraham Family member tied to Fors Wall's advancement and the family's curse.
+**Dorian Gray Abraham** is a senior teacher and elder of the **Abraham Family**, a **Sequence 7: Astrologer / Sequence 6: Scribe** of the **Door Pathway (Apprentice Pathway)** residing in the coastal city of **Pritz Harbor**, and the mystical mentor to **Fors Wall (The Magician)**.
 
-## Volume 6 Role
+Gentle, cautious, weary from watching generations of family members succumb to madness during the Blood Moon, Dorian dedicated his life to preserving what little remained of the ancient Fourth Epoch angel family's mystical heritage and protecting young apprentices.
 
-Fors's interactions with Dorian make the Abraham Family's curse — any member who advances past Sequence 5 is cursed by Mr. Door — the emotional core of the volume. Dorian's teacher Ma'am Esvlad is one of the cursed, which drives Fors's determination to find a way to save the family while advancing her own Apprentice pathway.
+## Mentorship of Fors Wall & The Family Curse
 
-:::spoiler volume=7
+- **Correspondence Mentorship**: Recognizing Fors's talent and honesty, Dorian provides her with Apprentice pathway potion formulas, supernatural charms, and the magical notebook *Leymano's Travels*.
+- **The Blood Moon Mystery**: Dorian shares the tragic curse of the Abraham bloodline with Fors, unaware that Fors is bringing these secrets to **Mr. Fool's** Tarot Club to find a divine cure.
 
-## Volume 7 Role
+:::reveal at=3
 
-Dorian explains more of the Abraham blood curse as Verdu Garcia moves toward the ritual that will release Mr. Door.
+## Volume 3: The Teacher in Pritz Harbor
+
+Fors Wall establishes formal academic correspondence with Dorian Gray Abraham in Pritz Harbor, purchasing the Trickmaster and Astrologer formulas on behalf of the Tarot Club.
 
 :::
+
+:::spoiler volume=6
+
+## Volume 6 & Volume 7: Preserving the Heritage
+
+Dorian provides Fors with the **Sequence 6: Scribe** and **Sequence 5: Traveler** formulas. Following Mr. Door's sacrifice, Dorian is named the Patriarch of the revived Abraham Family, leading his surviving kin under the protection of the Church of the Fool.
+
+:::
+

@@ -1,29 +1,61 @@
 ---
 name: "Cattleya"
 introducedInVolume: 3
-category: "character"
+category: "characters"
 ---
 
 ## Overview
 
-Cattleya is **Admiral of Stars**, captain of the Future, and a high-sequence Mystery Pryer-pathway Beyonder.
+**Admiral of Stars Cattleya (Ma'am Hermit)** is one of the Seven Pirate Admirals ruling the **Five Seas**, captain of the flagship **The Future**, and a core member of the **Tarot Club**. Walking the **Mystery Pryer Pathway (Hermit Pathway)**, Cattleya is a master of astromancy, spell scrolls, mysticism languages, and fairy-tale magic.
 
-## Tarot Club
+Raised from childhood as the adopted daughter and disciple of **Queen Mystic Bernadette Gustav** (daughter of Emperor Roselle), Cattleya serves as the essential maritime bridge between the Five Seas, the Element Dawn, and the divine table of **Mr. Fool**.
 
-She joins the Tarot Club as **The Hermit**. Unlike the earlier members, Cattleya immediately recognizes that the gathering involves powers far beyond ordinary secret organizations.
+## Tarot Identity & Sequence Progression
 
-## Volume 3 Role
+- **Major Arcana Title**: **The Hermit** (Seat representing esoteric scholarship, astronomy, and hidden wisdom).
+- **Sequence Progression**:
+  - **Sequence 9: Mystery Pryer** (Spirit vision, mysticism knowledge, magical analysis).
+  - **Sequence 8: Melee Scholar** (Enhanced physical defense, ancient weapon mastery).
+  - **Sequence 7: Warlock** (Elemental spells, fire/water control, ritual offensive spells).
+  - **Sequence 6: Scroll Professor** (Crafting powerful spell scrolls, rune etching).
+  - **Sequence 5: Astronomer / Stargazer** (Fate observation, planetary alignments, spirit projection).
+  - **Sequence 4: Mysticologist** (Demigod authority, fairy tale magic, knowledge manifestation).
+  - **Sequence 3: Clairvoyant** (Deep omniscience, foreseeing future variables).
+  - **Sequence 2: Sage** (Angel of the Hermit Pathway, pure information transmutation).
 
-Cattleya carries Klein across the Sea of Ruins to find mermaids for his Marionettist ritual. Her ship introduces him to Frank Lee and eventually Anderson Hood.
+## The Heavy Price of Probing the Fog
 
-## Connections
+Early in her Tarot Club tenure, Cattleya secretly wore heavy glasses to analyze Mr. Fool with high-tier spirit vision and reported clues to Bernadette. Mr. Fool imposed a gentle yet terrifying divine warning, causing Cattleya to realize the unfathomable chasm between mortal demigods and Great Old Ones, cementing her unyielding loyalty.
 
-Cattleya was raised under Bernadette Gustav and remains closely connected to her. Her attempt to report on Mr. Fool creates tension because Tarot Club members are forbidden from probing the gray fog's secrets carelessly.
+:::reveal at=3
+
+## Volume 3: Legend of the Pirate Hunter & The Sea of Ruins
+
+Cattleya welcomes Gehrman Sparrow aboard the *Future*. She navigates the dangerous Sea of Ruins to help Klein find mermaids for his Sequence 5 ritual, before being formally invited to the Tarot Club as **The Hermit**.
+
+:::
 
 :::spoiler volume=5
 
-## Volume 5
+## Volume 5: Red Priest & Demigod Advancement
 
-Cattleya advances to **Sequence 4: Mysticologist**. Her higher status increases the Tarot Club's access to Hermit-pathway knowledge and strengthens the indirect link between Klein and Bernadette.
+Cattleya consumes the potion and advances to **Sequence 4: Mysticologist**, acquiring fairytale demigod abilities (e.g. *Cinderella's Glass Slipper*, *Match Girl's Flame*) to protect her fleet during the World War.
 
 :::
+
+:::spoiler volume=7
+
+## Volume 7: Secrets of the Cosmos & The Emperor's Daughter
+
+Cattleya reconciles with Queen Mystic Bernadette Gustav, assisting Klein Moretti in reaching Emperor Roselle's sealed imperial mausoleum on the primitive island.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: Sage of the High Seas
+
+Cattleya advances to **Sequence 2: Sage**, commanding the allied maritime fleet alongside the Church of the Fool to defend oceanic portals during the cosmic apocalypse.
+
+:::
+
