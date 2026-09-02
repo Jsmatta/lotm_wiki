@@ -54,7 +54,7 @@ Following the Apotheosis of The Fool, the Abraham Family officially aligns with 
 
 :::
 
-`,M=Object.freeze(Object.defineProperty({__proto__:null,default:e},Symbol.toStringTag,{value:"Module"})),n=`---
+`,C=Object.freeze(Object.defineProperty({__proto__:null,default:e},Symbol.toStringTag,{value:"Module"})),n=`---
 name: "Aurora Order"
 introducedInVolume: 1
 category: "organizations"
@@ -119,7 +119,7 @@ Following the merge of the **True Creator** and **Adam (The Visionary)** to rest
 
 :::
 
-`,C=Object.freeze(Object.defineProperty({__proto__:null,default:n},Symbol.toStringTag,{value:"Module"})),t=`---
+`,M=Object.freeze(Object.defineProperty({__proto__:null,default:n},Symbol.toStringTag,{value:"Module"})),t=`---
 name: "Blackthorn Security Company"
 introducedInVolume: 1
 category: "organizations"
@@ -127,32 +127,46 @@ category: "organizations"
 
 ## Overview
 
-The **Blackthorn Security Company**, situated at **36 Zouteland Street** in Tingen City, is the civilian front and covert operational headquarters of the **Tingen City Nighthawks Squad** under the Church of the Evernight Goddess. To the outside public and ordinary constabulary, it operates as a private commercial security enterprise handling VIP protection, missing property investigations, and corporate security.
+The **Blackthorn Security Company**, situated at **36 Zouteland Street** in Tingen City, is the civilian front and covert operational headquarters of the **Tingen City Nighthawks Squad** under the Church of the Evernight Goddess. To the outside public and ordinary constabulary, it operates as a respectable private security and investigation firm.
 
-Behind its receptionist desk, accounting office, and lounge, Blackthorn conceals an underground elevator descending into the holy **Chanis Gate**, armory chambers, divination rooms, and containment cells.
+Behind its unassuming reception office and shooting range lies the subterranean tunnel leading to **Chanis Gate**, the armory, the potion brewing room, and the archives of sealed mysticism.
 
-## Internal Structure & Personnel
+## The Tingen Squad
 
-- **Captain**: **Dunn Smith** (Sequence 7: Nightmare), commanding overall investigations, budget allocations, and holy seals.
-- **Beyonder Operatives**:
-  - **Klein Moretti**: Civilian historical consultant turned Sequence 9 Seer / Sequence 8 Clown.
-  - **Leonard Mitchell**: Sequence 8 Midnight Poet harboring the parasite Pallez Zoroast.
-  - **Daly Simone**: Sequence 7 Spirit Medium (later promoted to Backlund diocese).
-  - **Old Neil**: Sequence 9 Mystery Pryer handling alchemy, rituals, and library archives.
-  - **Frye (Corpse Collector)**, **Kenley White**, **Royale Reeg**, and **Seeka Tron**.
-- **Civilian Administrative Staff**: **Rozanne** (receptionist), **Mrs. Orianna** (accountant), and **Bredt** (carriage driver).
+- **Dunn Smith**: Captain, Sequence 7 Nightmare, who guides his subordinates like family.
+- **Klein Moretti**: Civilian history consultant who advances to Sequence 9 Seer and Sequence 8 Clown.
+- **Leonard Mitchell**: Sequence 8 Midnight Poet harboring ancient angel Pallez Zoroast in his soul.
+- **Old Neil**: Elderly Sequence 9 Mystery Pryer and mentor who tragically succumbs to corruption.
+- **Frye, Royale Reauth, Kenley, Ciel**: Dedicated Nighthawk operatives.
+- **Rozanne & Mrs. Orianna**: Warm-hearted civilian staff managing reception and logistics.
 
-## Chanis Gate Facilities
+:::reveal at=1
 
-Beneath the offices lies the underground subterranean sanctuary protected by **Saint Selena's Ashes** and the ancient **Chanis Gate**:
-- **Sealed Artifact Vault**: Storing Grade 3 and Grade 2 sealed relics (including *3-0782: Mutated Sun Sacred Emblem* and *3-0271: Magic Mirror*).
-- **Subterranean Alchemy Lab & Firing Range**: Where Nighthawks practice marksmanship with demon-hunting silver bullets and prepare holy purification water.
+## Volume 1: Clown & The Fall of Zouteland Street
 
-## Volume 1: The Tragedy of Tingen
+In the climax of Volume 1, former Archbishop **Ince Zangwill** and Megose attack 36 Zouteland Street. Captain Dunn Smith consumes the characteristics of his fallen comrades and sacrifices his life to defeat Megose, while Klein Moretti sacrifices himself to protect Tingen, leaving Blackthorn forever scarred by grief.
 
-Blackthorn Security Company serves as the cradle of Klein Moretti's mystical awakening. The squad uncovers serial coincidences orchestrated by Ince Zangwill and the Antigonus Notebook. During the catastrophic final battle, Captain Dunn Smith sacrifices his life to defeat Megose, and the company office is destroyed during the clash, marking the end of Klein's initial mortal life.
+:::
 
-`,k=Object.freeze(Object.defineProperty({__proto__:null,default:t},Symbol.toStringTag,{value:"Module"})),a=`---
+:::spoiler volume=4
+
+## Volume 4: Undoing the Past & Dwayne Dantès's Return
+
+Years later, Klein returns to Tingen under the identity of **Dwayne Dantès**. Standing across 36 Zouteland Street, Klein quietly gazes upon the repaired company sign and Rozanne through the window, unable to reunite with them but finding solace in their ongoing peace.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Eternal Memory of the Nighthawks
+
+As Klein ascends to **Sequence 0: The Fool** and prepares to enter his divine slumber, his thoughts return to 36 Zouteland Street, the smell of Dunn's bitter coffee, and the quiet camaraderie of his first home in this world:
+> *"We are guardians, but also a bunch of miserable wretches that are constantly fighting against threats and madness."*
+
+The Blackthorn Security Company remains etched in the historical memory of the cosmos as the birthplace of the Lord of the Mysteries.
+
+:::
+`,k=Object.freeze(Object.defineProperty({__proto__:null,default:t},Symbol.toStringTag,{value:"Module"})),o=`---
 name: "Church of the Evernight Goddess"
 introducedInVolume: 1
 category: "organizations"
@@ -211,7 +225,7 @@ The Church enters a sacred pact with the emerging **Church of the Fool**, establ
 
 :::
 
-`,F=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"})),o=`---
+`,F=Object.freeze(Object.defineProperty({__proto__:null,default:o},Symbol.toStringTag,{value:"Module"})),a=`---
 name: "Church of the Lord of Storms"
 introducedInVolume: 1
 category: "organizations"
@@ -270,7 +284,7 @@ Following the peace settlement, Lord of Storms Leodero approves the deployment o
 
 :::
 
-`,A=Object.freeze(Object.defineProperty({__proto__:null,default:o},Symbol.toStringTag,{value:"Module"})),i=`---
+`,A=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"})),i=`---
 name: "Church of the Earth Mother"
 introducedInVolume: 2
 category: "organizations"
@@ -393,43 +407,50 @@ category: "organizations"
 
 ## Overview
 
-The **Church of the God of Combat** was the state orthodox religion of the **Feysac Empire**, the dominant military superpower of the Northern Continent. Worshipping **Badheil (The God of Combat)**, the church promoted a culture of iron discipline, martial prowess, giant physical stature, and unrelenting territorial expansion.
+The **Church of the God of Combat** was the state orthodox religion of the **Feysac Empire**, the dominant military superpower of the Northern Continent. Worshipping **Badheil (The God of Combat)**, the church promoted a culture of iron discipline, martial prowess, giant physical stature, and unyielding courage on the battlefield.
 
-Its clergy and Beyonders traversed the **Twilight Giant Pathway (Warrior Pathway)**, revered across the world as formidable frontline vanguard juggernauts.
+Its clergy and elite paladins predominantly walked the **Twilight Giant Pathway (Warrior Pathway)**, commanding devastating dawn light, heavy physical armor, and two-handed greatswords.
 
-## Armed Forces & Hierarchy
+## Hierarchy & Divine Order
 
-- **Supreme Deity**: Badheil (The God of Combat).
-- **Armed Vanguard**: The **Silver Knights** and the imperial battle legions of Feysac, wielding enchanted greatswords and twilight aura armor capable of decaying enemy spells.
-- **Holy Emblem**: A giant silver broadsword pointed downward, enshrouded in the orange glow of twilight dusk.
+- **Supreme Deity**: Badheil (Sequence 0 Twilight Giant).
+- **Holy Seat**: The Cathedral of Dusk in Saint Mill, Feysac Empire.
+- **Elite Knights**: Dawn Paladins and Silver Knights who spearheaded Feysac's imperial legions.
 
 :::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & Feysac Clashes
+## Volume 3: Maritime Clashes in the Sonia Sea
 
-Feysacian privateers and church-affiliated battle groups skirmish with Loen Kingdom fleets across the Sonia Sea, demonstrating the overwhelming physical durability and dawn-blade destructive power of the Warrior Pathway.
+Feysacian combat paladins and naval airships engage in aggressive border skirmishes with the Loen Kingdom and the Church of the Lord of Storms across the northern waterways.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The World War
+## Volume 5: Red Priest & The Great World War
 
-Under the divine guidance of the God of Combat and imperial marshal decrees, the Church of the God of Combat mobilizes the entirety of the Feysac Empire, launching catastrophic airship blitzkrieg attacks and artillery bombardments against Backlund, triggering the World War.
+Under the direct divine mandate of the God of Combat, the Church mobilizes Feysac's titanic airship armada and paladin corps to launch a surprise bombardment on Backlund, plunging the entire continent into the cataclysmic World War.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7: Secrets of the Cosmos & The Fall of Badheil
+## Volume 7: The Fall of the God of Combat
 
-In the climax of the World War, the **Evernight Goddess** and the **Earth Mother (Lilith)** lure the God of Combat into an ambush. Badheil is slain in the astral realm. 
+In the astral battlefield, Badheil is ambushed and slain through the coordinated trap of the **Evernight Goddess** and the **Earth Mother (Lilith)**. 
 
-Following their deity's demise, the Church of the God of Combat collapses, and its remaining clergy, temples, and Beyonder characteristics are peacefully assimilated into the Church of the Evernight Goddess.
+With their deity dead, the Church's divine grace shatters, causing panic and despair across the Feysac Empire.
 
 :::
 
-`,B=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"})),l=`---
+:::spoiler volume=8
+
+## Volume 8: Complete Dissolution & Absorption
+
+In Volume 8, the Church of the God of Combat officially ceases to exist. Its cathedrals, holy texts, and surviving Silver Knights across Feysac are systematically absorbed and reorganized into the **Church of the Evernight Goddess**, bringing an end to centuries of religious warfare between Loen and Feysac.
+
+:::
+`,E=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"})),l=`---
 name: "Demoness Sect"
 introducedInVolume: 1
 category: "organizations"
@@ -479,7 +500,7 @@ The Primordial Demoness attempts to align with the Outer Deity **Calamity of Des
 
 :::
 
-`,E=Object.freeze(Object.defineProperty({__proto__:null,default:l},Symbol.toStringTag,{value:"Module"})),h=`---
+`,B=Object.freeze(Object.defineProperty({__proto__:null,default:l},Symbol.toStringTag,{value:"Module"})),h=`---
 name: "Eternal Life Society"
 introducedInVolume: 4
 category: "organizations"
@@ -487,19 +508,47 @@ category: "organizations"
 
 ## Overview
 
-The **Eternal Life Society** (also known as the *Life School of Thought / Everlasting Life Fellowship*) is an underground occult cult active in the slums and suburban territories of the **Loen Kingdom**, particularly Backlund's North and East Boroughs. 
+The **Eternal Life Society** (also known as the *Life School of Thought / Everlasting Life Fellowship*) is an underground occult cult active in the slums and suburban territories of the **Loen Kingdom**, particularly Backlund's North and East Boroughs, as well as the Southern Continent.
 
-Operating under the guise of an esoteric fraternity offering miraculous biological rejuvenation and longevity, it attracts desperate elderly nobles, impoverished factory workers, and terminally ill patients, secretly indoctrinating them into illegal Beyonder activities and biological experimentation.
+Operating under the guise of an esoteric fraternity promising biological longevity, resurrection, and freedom from disease, the society secretly preys upon vulnerable factory workers and grieving families, manipulating the dark powers of the **Death Pathway (Corpse Collector)** and ancient Balam necromancy.
 
-## Pathway Specialization & Modus Operandi
+## Doctrines & Secret Practices
 
-- **Pathway Specialization**: Primarily lower-sequence Beyonders of the **Apothecary / Planter Pathways** mixed with corrupted **Secrets Supplicant** and **Moon** heretics.
-- **Activities**: Selling addictive concoctions, conducting unauthorized organ transfers, breeding chimeric lifeforms, and harvesting human biomass for dark alchemy.
+- **The Myth of Resurrection**: Promising that deceased relatives can be safely returned to life through special spirit medium ceremonies.
+- **Corpse Harvesting**: Secretly gathering human remains, biological organs, and spiritual essences to feed high-sequence death rituals and cultivate artificial zombies.
+- **Covert Alliances**: Acting as an operational front and proxy recruiting ground for the radical **Numinous Episcopate** and rogue royal conspirators.
 
-## Volume 4: Undoing the Past
+:::reveal at=4
 
-The Eternal Life Society crosses paths with Klein Moretti during his residency in Backlund as the gentleman tycoon **Dwayne Dantès**. When cult operatives extort and threaten Dwayne's loyal valet **Richardson**, Klein uses his demigod marionette abilities to swiftly raid and eradicate their underground laboratory in Backlund, liberating their victims and recovering secret potion formulas.
+## Volume 4: Undoing the Past & The Slum Infiltration
 
+Klein Moretti (as Dwayne Dantès) uncovers the society's clandestine cells in East Borough while funding charitable soup kitchens. Klein discovers the cult is orchestrating mass necromantic ceremonies connected to the stolen **Saint Selena's Ashes** and **Ince Zangwill**.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5: Red Priest & The Numinous Cleansing
+
+During the investigations into Artificial Death, the Nighthawks and Klein systematically raid the Eternal Life Society's secret catacombs across Backlund, purifying their undead pits and rescuing bewitched citizens.
+
+:::
+
+:::spoiler volume=7
+
+## Volume 7: The Underworld Pacification
+
+With Mr. Azik Eggers beginning his awakening and the Evernight Goddess seizing control of Death pathway authorities, rogue cults like the Eternal Life Society lose their foundational supernatural patrons, collapsing into disorganized remnants.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Dissolution
+
+In Volume 8, the Eternal Life Society is completely eradicated. Its surviving victims are rehabilitated by the Church of the Evernight Goddess and the Church of the Fool, putting an end to predatory necromancy across the kingdom.
+
+:::
 `,V=Object.freeze(Object.defineProperty({__proto__:null,default:h},Symbol.toStringTag,{value:"Module"})),c=`---
 name: "Golden Dream Pirates"
 introducedInVolume: 3
@@ -508,38 +557,49 @@ category: "organizations"
 
 ## Overview
 
-The **Golden Dream Pirates** (operating aboard their flagship *The Golden Dream*) are one of the most distinctive and scholarly pirate crews sailing the **Sonia Sea** and the **Fog Sea**. Commanded by Pirate Admiral **Edwina Edwards (Vice Admiral Iceberg)**, the crew rejects mindless slaughter and looting in favor of archaeological expeditions, ancient ruins exploration, linguistic research, and the pursuit of forbidden historical knowledge.
+The **Golden Dream Pirates** (operating aboard their flagship *The Golden Dream*) are one of the most distinctive and scholarly pirate crews sailing the **Sonia Sea** and the **Fog Sea**. Commanded by Pirate Admiral **Edwina Edwards (Vice Admiral Iceberg)**, the crew rejects mindless slaughter and looting, prioritizing archaeological excavations, historical treasure hunting, and the translation of ancient Fourth Epoch texts.
 
-## Unique Ship Culture
+Officially affiliated with the **Church of the God of Knowledge and Wisdom**, the crew operates under strict maritime discipline.
 
-Unlike conventional cutthroat buccaneers, life aboard the *Golden Dream* resembles an itinerant floating academy:
-- **Mandatory Lessons**: Captain Edwina holds mandatory morning lectures on ancient Hermes, Elvish grammar, Fourth Epoch history, and mysticism for all crew members.
-- **Strict Code of Conduct**: Murdering surrendering merchants, senseless arson, and senseless cruelty are strictly forbidden under penalty of expulsion or execution.
+## Key Members & Specialists
 
-## Key Crew Members
-
-- **Captain**: **Edwina Edwards (Vice Admiral Iceberg)** — Sequence 5: Mysticism Magister (Reader / White Tower Pathway) and former student of the Church of Knowledge and Wisdom.
-- **Fourth Boatswain**: **Danitz (The Blazing)** — Sequence 7: Pyromaniac (Hunter Pathway), Klein Moretti's comical yet indispensable maritime informant and later Oracle of The Fool.
-- **First Mate**: **Anderson Hood** (The Strongest Hunter, guest associate).
-- **Barrel**, **Jodes**, **Gourmet Flower**, and **Iron Skin**.
+- **Edwina Edwards (Vice Admiral Iceberg)**: Captain, master of the Reader Pathway (Sequence 4: Mysticism Magister / demigod scholar).
+- **Danitz (Blazing)**: Fourth mate, Hunter Pathway (Sequence 8: Provoker), whose hot-headed exterior masks genuine loyalty.
+- **Frank Lee**: First mate, Mother Pathway (Sequence 6: Biologist), whose reckless agricultural and cross-breeding experiments strike terror into allies and enemies alike.
+- **Jodes**: Second mate and lookout.
 
 :::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & Groselle's Travels
+## Volume 3: Legend of the Pirate Hunter
 
-Gehrman Sparrow partners with Danitz in Bayam, boarding the *Golden Dream* to study ancient relics. When the mystical book **Groselle's Travels** draws the crew inside its pages, Klein and Edwina fight alongside ancient Second Epoch figures to defeat the King of the North.
+Klein Moretti boards *The Golden Dream* as the fearsome pirate hunter **Gehrman Sparrow**. Klein subdues Danitz into becoming his reluctant valet, while forming an intellectual partnership with Edwina to explore Fourth Epoch ruins and decipher **Groselle's Travels**.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & Maritime Support
+## Volume 5: Red Priest & Maritime Operations
 
-Following the outbreak of the World War, the *Golden Dream* helps safeguard non-combatant refugees across the Five Seas and maintains regular diplomatic communication with the Church of the Fool through Danitz.
+During the onset of the World War, *The Golden Dream* navigates blockades and skirmishes between the Loen and Feysac navies, protecting neutral shipping channels and recovering ancient historical relics.
 
 :::
 
-`,G=Object.freeze(Object.defineProperty({__proto__:null,default:c},Symbol.toStringTag,{value:"Module"})),d=`---
+:::spoiler volume=7
+
+## Volume 7: The Oracle's Emergence
+
+Danitz undergoes rapid spiritual transformation after establishing direct contact with **The Fool**. Commissioned as the official **Oracle of The Fool**, Danitz gains newfound authority, astonishing Edwina and the entire crew of *The Golden Dream*.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Scholarly Flagship of Peace
+
+In Volume 8, *The Golden Dream* serves as an honored liaison vessel between the Church of the God of Knowledge and Wisdom and the **Church of the Fool**. Under Edwina and Oracle Danitz, the crew leads scholarly maritime expeditions to document the newly opened Western Continent and historical Fourth Epoch sanctuaries.
+
+:::
+`,D=Object.freeze(Object.defineProperty({__proto__:null,default:c},Symbol.toStringTag,{value:"Module"})),d=`---
 name: "Jacob Family"
 introducedInVolume: 4
 category: "organizations"
@@ -558,9 +618,21 @@ Throughout the Fifth Epoch, the family has lived in perpetual hiding, relentless
   - **Flora Jacob**: A surviving high-ranking descendant in Backlund whose identity was compromised by Amon's parasitic avatars.
   - **Jacob Patriarch**: Ancient angel of the Fourth Epoch who sealed his legacy and characteristics in subterranean vaults.
 
-## Volume 4 & Volume 5: The Backlund Infiltration
+:::reveal at=4
 
-The remnants of the Jacob family in Backlund are targeted by Amon's avatars. When Flora Jacob loses control, an Amon avatar parasitizes her mind, using the Jacob family's secret gathering houses as an ambush base against Leonard Mitchell, Pallez Zoroast, and Klein Moretti.
+## Volume 4: The Hunt in Backlund
+
+The remnants of the Jacob family in Backlund are targeted by Amon's avatars. Surviving family members struggle to maintain their secret hideouts while evading the monocle-wearing parasites.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5: The Parasitization of Flora Jacob
+
+When Flora Jacob loses control, an Amon avatar parasitizes her mind, using the Jacob family's secret gathering houses as an ambush base against Leonard Mitchell, Pallez Zoroast, and Klein Moretti.
+
+:::
 
 :::spoiler volume=6
 
@@ -570,6 +642,21 @@ Klein Moretti coordinates with Pallez Zoroast to secure the Jacob family's hidde
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Secrets of the Cosmos
+
+Klein uses historical void projections to trace the ancient legacy of the Jacob Patriarch, understanding the metaphysical laws of the Error pathway before entering his climactic battles.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: Liberation from the Blasphemer
+
+Following Klein Moretti's victory over Amon in Sefirah Castle and Klein's accommodation of the Error Uniqueness, the curse of eternal extermination hunting the Jacob family is broken forever. The surviving descendants find sanctuary under the protection of **The Fool**.
+
+:::
 `,I=Object.freeze(Object.defineProperty({__proto__:null,default:d},Symbol.toStringTag,{value:"Module"})),u=`---
 name: "Loen Royal Family"
 introducedInVolume: 1
@@ -623,42 +710,55 @@ category: "organizations"
 
 ## Overview
 
-The **Machinery Hivemind** is the official Beyonder enforcement and investigative arm of the **Church of the God of Steam and Machinery**. Blending mystical knowledge with modern industrial engineering, chemistry, steam mechanics, and alchemical firearms, the Machinery Hivemind safeguards factories, research institutions, and urban infrastructure across the **Loen Kingdom** and **Intis Republic**.
+The **Machinery Hivemind** is the official Beyonder enforcement and investigative arm of the **Church of the God of Steam and Machinery**. Blending mystical knowledge with modern industrial engineering, chemistry, steam mechanics, and alchemical firearms, the Machinery Hivemind safeguards factories, research labs, and metropolitan infrastructure across the Loen Kingdom and Intis Republic.
 
-Its operatives traverse the **Paragon Pathway (Savant / Mystery Pryer / Artisan)**, excelling at crafting powerful mystical scrolls, enchanted firearms, steam mechanisms, and analyzing mechanical anomalies.
+Its members walk the **Savant Pathway (Paragon)** and **Mystery Pryer Pathway**, wielding devastating mechanical contraptions, steam-powered exoskeletons, and precision alchemical rifles.
 
-## Organization & Key Operatives
+## Organization & Leaders
 
-- **Deity**: The God of Steam and Machinery (Sequence 0: Paragon).
-- **Leadership**: Led by Deacon **Ikanser Bernard** in the Backlund diocese.
-- **Key Sealed Relics Managed**:
-  - **Grade 2 Sealed Artifact 2-111 (Arrodes / The Magic Mirror)**: The omniscient, silver-bordered sentient mirror that demands humiliating or terrifying personal questions before answering divinations.
+- **Ikanser Bernard**: Deacon of the Backlund Machinery Hivemind squad, distinguished by his voluminous curls, high-powered steam carbine, and frequent traumatic interrogations by **Arrodes**.
+- **Special Equipment**: Specialized lead-lined containment vaults, steam cannons, mechanical tracking hounds, and rapid-firing alchemical revolvers.
 
 :::reveal at=1
 
-## Volume 1: Industrial Surveillance in Tingen
+## Volume 1: Clown & Early Mechanical Inventions
 
-The Machinery Hivemind coordinates with the Tingen Nighthawks and Mandated Punishers to inspect railway lines, factory laboratories, and alchemical patents.
+The Machinery Hivemind coordinates with the Tingen Nighthawks on high-tech industrial sabotage cases, introducing Klein to the fusion of steam power and mysticism.
 
 :::
 
 :::spoiler volume=2
 
-## Volume 2: The Faceless & The Magic Mirror
+## Volume 2: The Investigation into the Great Smog
 
-In Backlund, Deacon Ikanser Bernard deploys the Magic Mirror **Arrodes** during the investigation of Capim's estate. When Arrodes detects Klein Moretti's supreme divine aura above the gray fog, the mirror immediately switches its absolute loyalty to Mr. Fool, playing along with the Machinery Hivemind while secretly serving Klein.
+In Backlund, Ikanser Bernard and the Machinery Hivemind deploy the sentient magic mirror **Arrodes** to decipher the True Creator's descent rituals and track serial killers in East Borough.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & Industrial Mobilization
+## Volume 5: Red Priest & Industrial Warfare
 
-During the World War, the Machinery Hivemind spearheads the mass production of mechanized airships, enchanted artillery shells, and telecommunication networks to defend Backlund against foreign bombardments.
+During the World War, the Machinery Hivemind deploys advanced steam-powered anti-aircraft cannons and alchemical communication networks to defend Backlund's industrial district from Feysacian air raids.
 
 :::
 
-`,D=Object.freeze(Object.defineProperty({__proto__:null,default:m},Symbol.toStringTag,{value:"Module"})),g=`---
+:::spoiler volume=7
+
+## Volume 7: The Battle of Gods & Technological Innovation
+
+The Church of Steam and the Machinery Hivemind develop experimental telegraphic sensors and wireless radio transmitters, providing crucial tactical support to the Allied defense.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Reconstruction of the Industrial World
+
+In Volume 8, the Machinery Hivemind leads post-war industrial reconstruction, deploying advanced steam technology and alchemical clean energy across the continent under the peaceful alliance between the Orthodox Gods and **The Fool**.
+
+:::
+`,z=Object.freeze(Object.defineProperty({__proto__:null,default:m},Symbol.toStringTag,{value:"Module"})),g=`---
 name: "MI9"
 introducedInVolume: 2
 category: "organizations"
@@ -666,42 +766,56 @@ category: "organizations"
 
 ## Overview
 
-**MI9** (Military Intelligence Department 9) is the premier state intelligence agency and domestic espionage organization of the **Loen Kingdom Armed Forces**. Directly subordinate to the Ministry of Defense and the Royal Family, MI9 oversees foreign intelligence collection, counter-espionage, internal political surveillance, and colonial security.
+**MI9** (Military Intelligence Department 9) is the premier state intelligence agency and domestic espionage organization of the **Loen Kingdom Armed Forces**. Directly subordinate to the Ministry of Defense and the Royal Family, MI9 oversees foreign intelligence collection, counter-espionage, internal political surveillance, and national security investigations.
 
-Unlike the orthodox church Beyonder squads who focus on religious heresy and evil spirits, MI9 operates strictly for the national and geopolitical interests of the Loen Empire, employing Beyonders of the **Justiciar (Arbiter)**, **Black Emperor (Lawyer)**, and **Hunter Pathways**.
+Heavily populated by Beyonders of the **Justiciar Pathway (Arbiter)** and **Black Emperor Pathway (Lawyer)**, MI9 operates with bureaucratic ruthlessness to protect the Loen Kingdom's imperial interests.
 
-## Leadership & Hierarchy
+## Leadership & Operatives
 
-- **Executive Director**: Major General **Qonas Kilgor** (Sequence 4: Earl of The Fallen), who was secretly deeply entrenched in the royal family's Black Emperor conspiracy.
-- **Key Field Operatives**:
-  - **Xio Derecha (Miss Judgment)**: Fierce bounty hunter and arbiter who joins MI9 as an unofficial external contractor before rising through the ranks.
-  - **Sherlock Moriarty (Klein Moretti)**: Recruited as an external special investigator during the Backlund diplomatic crises.
+- **Major General Qonas Kilgor**: Deputy Director, Earl of the Fallen (Sequence 4 demigod), covertly serving King George III's secret conspiracies.
+- **Xio Derecha**: Bounty hunter and unofficial external contractor who infiltrates East Borough under MI9 directives before discovering its inner corruption.
+- **Sherlock Moriarty (Klein Moretti)**: Retained as a private consultant on several high-profile diplomatic assassinations in Backlund.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & Backlund Espionage
+## Volume 2: The Backlund Espionage
 
-MI9 competes against Intis Republic spies, the Aurora Order, and Feysacian infiltrators in Backlund. Klein Moretti is hired by MI9 through young Ian Wright to track rogue Intis ambassadors, navigating complex embassy crossfires.
+MI9 investigates diplomatic tensions in Backlund, deploying informants across East Borough and hiring private detectives like Sherlock Moriarty to resolve the mysterious assassination of the Intis ambassador Bakerland Jean Madan.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Fall of Qonas Kilgor
+## Volume 5: Red Priest & The Purge of the Deputy Director
 
-Klein Moretti and Miss Judgment uncover Major General Qonas Kilgor's direct involvement in human trafficking and the royal mausoleum network. Klein ambushes and executes Qonas Kilgor, stripping his Beyonder characteristic and breaking the royal family's control over MI9.
+Klein Moretti discovers that MI9 Deputy Director Qonas Kilgor is deeply implicated in the human trafficking rings supporting King **George Augustus III's** secret apotheosis mausoleums. Klein ambushes and eliminates Qonas, turning him into a marionette and crippling the royal family's covert operations.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6 & Volume 8: The Reconstructed Intelligence Bureau
+## Volume 6: Wartime Mobilization
 
-Following the war, **Xio Derecha** is promoted to high-ranking Colonel within MI9, transforming the agency into an ethical intelligence apparatus cooperating with the Church of the Fool.
+Following the outbreak of the World War, MI9 coordinates anti-airship defenses, cracks enemy Feysacian spy rings, and enforces martial law across Loen's metropolitan centers.
 
 :::
 
-`,z=Object.freeze(Object.defineProperty({__proto__:null,default:g},Symbol.toStringTag,{value:"Module"})),f=`---
+:::spoiler volume=7
+
+## Volume 7: Internal Reclamation
+
+With the death of George III and the exposure of royal corruption, **Xio Derecha** advances to higher sequences in the Justiciar Pathway, systematically reforming MI9 from within alongside allies from the Church of Evernight.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The New Era of Intelligence
+
+In Volume 8, MI9 transitions into a stabilized, transparent intelligence service stripped of corrupt royal cliques. Working in close tandem with the Tarot Club, Xio Derecha oversees domestic peacekeeping and guards the kingdom against Outer Deity infiltrations.
+
+:::
+`,G=Object.freeze(Object.defineProperty({__proto__:null,default:g},Symbol.toStringTag,{value:"Module"})),f=`---
 name: "Nighthawks"
 introducedInVolume: 1
 category: "organizations"
@@ -751,7 +865,7 @@ Following the World War and the ascension of The Fool, the Nighthawks coordinate
 
 :::
 
-`,H=Object.freeze(Object.defineProperty({__proto__:null,default:f},Symbol.toStringTag,{value:"Module"})),y=`---
+`,K=Object.freeze(Object.defineProperty({__proto__:null,default:f},Symbol.toStringTag,{value:"Module"})),p=`---
 name: "Psychology Alchemists"
 introducedInVolume: 2
 category: "organizations"
@@ -796,7 +910,7 @@ Following Adam's divine fusion and the fall of the dragon elders, the Psychology
 
 :::
 
-`,K=Object.freeze(Object.defineProperty({__proto__:null,default:y},Symbol.toStringTag,{value:"Module"})),p=`---
+`,R=Object.freeze(Object.defineProperty({__proto__:null,default:p},Symbol.toStringTag,{value:"Module"})),y=`---
 name: "Resistance"
 introducedInVolume: 3
 category: "organizations"
@@ -806,27 +920,46 @@ category: "organizations"
 
 The **Resistance** (formally the **Rorsted Liberation Resistance Movement**) is an indigenous anti-colonial insurgent coalition fighting against **Loen Kingdom colonial oppression**, military exploitation, and forced taxation across the **Rorsted Archipelago** and **Bayam**.
 
-Combining indigenous guerrillas, naval defectors, and native shamans, the Resistance fights to preserve local cultural heritage, sacred islands, and the faith of their traditional deity, **Kalvetua (The Sea God)**.
+Combining indigenous guerrillas, native shamans, and former believers of the ancient sea serpent **Kalvetua**, the Resistance fights an asymmetric war in the rainforests and coastal waters of the colonial islands.
 
-## Religious Core & The Sea God Faith
+## Beliefs & Key Leaders
 
-For generations, the Resistance maintained religious cohesion by offering prayers and offerings to the giant sea serpent **Kalvetua**. However, by the Fifth Epoch, Kalvetua had degraded into a half-insane pseudo-deity, causing severe spiritual corruption and madness among its devout worshippers.
+- **Original Faith**: The cult of Sea God Kalvetua, offering desperate prayers and animal sacrifices in subterranean sea caves.
+- **Katlaya & Native Leaders**: Local chiefs and Beyonders who lead guerrilla ambushes against Loen colonial garrisons.
+- **Transformation to The Fool**: Following Kalvetua's death, the Resistance embraces **The Fool** as the true, benevolent Sea God who protects indigenous islanders from colonial cruelty.
 
-## Volume 3: Legend of the Pirate Hunter & The New Sea God
+:::reveal at=3
 
-In Bayam, Danitz connects Klein Moretti (Gehrman Sparrow) with local Resistance cells to procure mystical ingredients. When Archbishop Jahn Kottman slays Kalvetua, Klein Moretti claims the **Sea God Scepter**. 
+## Volume 3: Legend of the Pirate Hunter
 
-Rather than abandoning the indigenous people, Klein uses Sefirah Castle to answer their prayers, cleansing their blood sacrifices, performing agricultural miracles, and transforming the Resistance from a fanatical cult into the righteous civilian vanguard of the **Church of the Fool**.
-
-:::spoiler volume=7
-
-## Volume 7 & Volume 8: Freedom and Autonomy
-
-Following the end of the World War, the Resistance successfully negotiates full political autonomy for the Rorsted Archipelago, establishing Bayam as a thriving sovereign city protected by the Church of the Fool.
+Klein Moretti (as Gehrman Sparrow) encounters the Resistance in Bayam following Kalvetua's demise. By retrieving the Sea God Scepter and answering their sincere prayers from Sefirah Castle, Klein guides the Resistance away from bloodthirsty extremism toward peaceful devotion.
 
 :::
 
-`,R=Object.freeze(Object.defineProperty({__proto__:null,default:p},Symbol.toStringTag,{value:"Module"})),v=`---
+:::spoiler volume=5
+
+## Volume 5: Red Priest & Danitz's Commission
+
+Danitz arrives in Bayam and is recognized by the Resistance as the official **Oracle of The Fool**. The Resistance transforms into the legitimate administrative and security foundation of the newly formed **Church of the Fool** in the archipelago.
+
+:::
+
+:::spoiler volume=7
+
+## Volume 7: Colonial Liberation
+
+As the World War distracts Loen's military resources, the Resistance and the Church of the Fool achieve de facto self-governance across the Rorsted Archipelago, abolishing colonial plantation abuses.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Free Archipelago
+
+In Volume 8, the Resistance successfully concludes its historical mission. The Rorsted Archipelago stands as a prosperous, independent sovereign territory under the perpetual divine protection of **The Fool**, with native islanders living in harmony alongside Tarot Club representatives.
+
+:::
+`,H=Object.freeze(Object.defineProperty({__proto__:null,default:y},Symbol.toStringTag,{value:"Module"})),v=`---
 name: "Rose School of Thought"
 introducedInVolume: 2
 category: "organizations"
@@ -834,51 +967,57 @@ category: "organizations"
 
 ## Overview
 
-The **Rose School of Thought** is an ancient, bloodthirsty occult organization originating from the **Southern Continent (Highlands and Star Highlands)**. Controlling the **Chained Pathway (Prisoner / Zombie / Wraith / Abomination)** and elements of the **Apocalypse / Moon Pathway**, the school was originally a philosophical Beyonder tradition practicing strict asceticism, emotional restraint, and moral discipline to prevent madness.
+The **Rose School of Thought** is an ancient, bloodthirsty occult organization originating from the **Southern Continent (Highlands and Star Highlands)**. Controlling the **Chained Pathway (Prisoner)** and elements of the **Moon Pathway**, the school was originally founded upon ascetic principles of self-restraint and spiritual discipline.
 
-However, during the late Fifth Epoch, the school was corrupted by the outer deity **Mother Tree of Desire**, transforming into the fanatical **Indulgence Faction** that embraces primal hedonism, human sacrifices, dismemberment, and total submission to base instincts.
+However, during the Fifth Epoch, the school was completely corrupted by the Outer Deity **Mother Tree of Desire**, transforming into a horrifying death cult divided between two bitter factions.
 
-## The Great Schism: Indulgence vs. Temperance
+## The Two Factions
 
-- **The Indulgence Faction (Ruling Majority)**:
-  - Believes that true digestion of the Chained Pathway requires complete release of all violent, sexual, and primal desires.
-  - Serves the **Mother Tree of Desire** and the ancient demigod angel **Suah (Abomination)**.
-- **The Temperance Faction (Hunted Minority)**:
-  - Led by **Miss Reinette Tinekerr** (The Chained Angel) and her disciples **Sharron** and **Maric**, holding fast to the ancient creed: *"Restrain desires; resist corruption."*
+1. **The Indulgence Faction (Dominant)**: Fanatical worshippers of the Mother Tree of Desire who advocate for the uninhibited release of all base instincts, sadism, blood sacrifices, and sexual depravity. Led by **Abomination Suah** (King of Angels).
+2. **The Temperance Faction (Exiled)**: Ascetic reformists led by **Sharron** and **Maric** who preach strict emotional restraint and desire control to resist monstrous mutation.
 
 :::reveal at=2
 
-## Volume 2: The Backlund Ambush
+## Volume 2: The Shadow in Backlund
 
-Sharron and Maric flee to Backlund to escape Indulgence Faction assassins. They hire detective Sherlock Moriarty (Klein Moretti) for assistance, successfully eliminating the pursuing Sequence 5 Wraith Steve and acquiring **Creeping Hunger**.
+The Indulgence Faction pursues Sharron and Maric into Backlund, seeking to eradicate all remaining Temperance adherents. Klein Moretti forms an alliance with Sharron, helping her repel Rose School of Thought assassins.
 
 :::
 
 :::spoiler volume=3
 
-## Volume 3: Legend of the Pirate Hunter & The Bayam Skirmish
+## Volume 3: Legend of the Pirate Hunter
 
-The Indulgence Faction coordinates with **Admiral of Blood Senor** in the Rorsted Archipelago to ambush Gehrman Sparrow. Klein eliminates Senor and turns him into his first permanent demigod-tier marionette.
+The Rose School of Thought expands its hunting ground to the colonial seas, targeting Klein Moretti (Gehrman Sparrow) in Bayam and deploying demonic wraiths and mutated sea beasts to crush opposition.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Southern Continent War
+## Volume 5: Red Priest & The Highland Wars
 
-During the World War, the Rose School of Thought deploys Abominations and bloodthirsty Wraith assassins across the Southern Continent colonies, engaging in brutal guerrilla warfare against the Loen military.
+During the World War, the Rose School of Thought launches brutal incursions across the Southern Continent, utilizing flesh-and-blood sacrificial altars to summon abyssal projections of the Mother Tree of Desire.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Abomination's Demise
+## Volume 7: Secrets of the Southern Wastelands
 
-Klein Moretti, Reinette Tinekerr, and the Tarot Club launch a devastating campaign against the Rose School's strongholds, severing the Mother Tree of Desire's avatars and liberating the Highland regions under the Temperance philosophy.
+Klein Moretti, Miss Messenger (**Reinette Tinekerr**), and Sharron launch a counteroffensive into the Southern Continent, slaying Indulgence demigods and reclaiming ancient Chained Pathway holy grounds.
 
 :::
 
-`,W=Object.freeze(Object.defineProperty({__proto__:null,default:v},Symbol.toStringTag,{value:"Module"})),b=`---
+:::spoiler volume=8
+
+## Volume 8: The Battle of Sefirah Castle
+
+During Klein's apotheosis, the Mother Tree of Desire commands Abomination Suah and the entire Indulgence armada to launch a desperate assault on Sefirah Castle. 
+
+Klein repels the assault as **The Fool**, shattering the Indulgence leadership and allowing Sharron's Temperance Faction to liberate the Southern Continent from centuries of terror.
+
+:::
+`,L=Object.freeze(Object.defineProperty({__proto__:null,default:v},Symbol.toStringTag,{value:"Module"})),b=`---
 name: "Sanguines"
 introducedInVolume: 2
 category: "organizations"
@@ -886,42 +1025,48 @@ category: "organizations"
 
 ## Overview
 
-The **Sanguines** (colloquially referred to by humans as **Vampires**) are an ancient, aristocratic non-human race tracing their mythical genesis back to the Second Epoch under their supreme progenitor **Lilith (The Beauty Goddess / Mother Goddess)**. Naturally possessing long lifespans (over 300 years), supreme nocturnal regenerative biology, and innate magical talent, Sanguines walk the **Moon Pathway (Apothecary / Vampire / Scarlet Scholar)**.
+The **Sanguines** (colloquially referred to by humans as **Vampires**) are an ancient, aristocratic non-human race tracing their mythical genesis back to the Second Epoch under their supreme progenitor **Lilith (The Beauty Goddess / Mother Goddess)**. Naturally possessing long lifespans (over 300 years), supreme physical beauty, enhanced night vision, and innate affinity for the **Moon Pathway (Apothecary)**, the Sanguines pride themselves on refined etiquette, noble genealogy, and artistic sensibilities.
 
-Despite human folklore depicting them as blood-crazed monsters, modern Sanguines operate as proud, refined noble families who purchase animal or donated human blood, prioritize familial honor, and maintain strict secrecy within human high society.
+Throughout the Fifth Epoch, the race has lived in reclusive aristocratic enclaves across Backlund and Intis, carefully avoiding friction with the Orthodox Churches.
 
-## Culture & The Sanguine Council
+## Customs & The Tarot Club
 
-- **The Council of Elders**: Governing body of ancient Sanguine Barons, Viscounts, and Earls who safeguard ancestral relics and maintain racial peace.
-- **Key Figures**:
-  - **Emlyn White (The Moon)**: Backlund Sanguine noble, doll enthusiast, and core Tarot Club member.
-  - **Lord Nibbs Odora**: High-ranking Sanguine elder who received divine revelation to direct Emlyn to pray to Mr. Fool.
+- **The Moon Pathway**: Sanguines inherit the natural sequences of Apothecary, Beast Tamer, Vampire, Potions Professor, and Scarlet Scholar.
+- **Emlyn White (The Moon)**: A Backlund Sanguine youth fascinated by porcelain dolls who joins the **Tarot Club**, becoming the crucial bridge between his ancient race and The Fool.
+- **The Sanguine Elders**: High-sequence demigods residing in subterranean castles who strictly oversee blood purity and secret clan traditions.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & The Sanguine Awakening
+## Volume 2: The Awakening in the Harvest Church
 
-Emlyn White is captured by Father Utravsky at the Harvest Church in Backlund. Rescued by detective Sherlock Moriarty (Klein Moretti), Emlyn is guided by Lord Nibbs Odora to establish contact with The Fool, leading to his initiation as **The Moon** in the Tarot Club.
+Emlyn White is imprisoned by Father Utravsky inside Backlund's **Harvest Church**, forced to reflect on his arrogance and clean pews. Through the Tarot Club, Emlyn begins procuring sequence formulas to liberate himself and elevate his standing within the clan.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Hunt for Artificial Vampires
+## Volume 5: Red Priest & Emlyn's Leadership
 
-The Sanguines mobilize their hidden forces in Backlund to assist the Tarot Club against the Rose School of Thought, eradicating experimental artificial vampire laboratories created by foreign cultists.
+Emlyn advances to Sequence 5 Scarlet Scholar and later Sequence 4 Shaman King. Recognizing his miraculous connections and access to high-sequence ingredients, the Sanguine Council of Elders appoints Emlyn as their official regional representative.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Ancestor's Return
+## Volume 7: The Revelation of Ancestor Lilith
 
-When the Earth Mother reveals her true identity as their ancient progenitor **Lilith**, the Sanguines experience a massive spiritual awakening. They unite under the banner of the Church of the Earth Mother and the Church of the Fool, taking up arms to defend the material plane.
+The Sanguines discover the earth-shattering truth: their ancient Ancestor **Lilith** was not slain in the Second Epoch! She had secretly taken the identity of the **Earth Mother**, surviving five epochs to strike down the God of Combat and reclaim supreme dominion over nature and the moon.
 
 :::
 
-`,L=Object.freeze(Object.defineProperty({__proto__:null,default:b},Symbol.toStringTag,{value:"Module"})),w=`---
+:::spoiler volume=8
+
+## Volume 8: The Sanguines in the New Age
+
+In Volume 8, the Sanguine race emerges from centuries of isolation. Reunited under the divine grace of Ancestor Lilith and aligned with **The Fool**, Emlyn White leads his people in defending human civilization and preparing for the cosmic apocalypse.
+
+:::
+`,W=Object.freeze(Object.defineProperty({__proto__:null,default:b},Symbol.toStringTag,{value:"Module"})),w=`---
 name: "Stars Pirates"
 introducedInVolume: 3
 category: "organizations"
@@ -929,35 +1074,48 @@ category: "organizations"
 
 ## Overview
 
-The **Stars Pirates** (also known as the *Pirates of the Future*) are an elite privateer armada sailing aboard their mystical flagship, the **Future**. Commanded by **Admiral of Stars Cattleya (Ma'am Hermit)**—one of the Seven Pirate Admirals of the Five Seas and the adopted daughter of **Queen Mystic Bernadette Gustav**—the crew specializes in traversing forbidden sea territories, stargazing divination, and trading high-sequence Beyonder artifacts.
+The **Stars Pirates** (also known as the *Pirates of the Future*) are an elite privateer armada sailing aboard their mystical flagship, the **Future**. Commanded by **Admiral of Stars Cattleya (Ma'am Hermit)**—one of the Seven Pirate Admirals of the Five Seas and the adopted daughter of **Queen Mystic Bernadette Gustav**—the crew is renowned for navigating uncharted cosmic waters, deciphering esoteric constellations, and avoiding senseless violence.
 
-## Unique Ship Atmosphere & The Mad Artisan
+The crew specializes in the **Mystery Pryer Pathway** and **Reader Pathway**, operating with scholarly precision across the Sonia Sea.
 
-Life aboard the *Future* is defined by a bizarre combination of astrological research and harrowing biological experiments:
-- **Frank Lee (First Mate / Chief Botanist)**: Sequence 5 Druid (Planter Pathway) whose eccentric crossbreeding experiments (meat-bearing mushrooms, beer-producing cows, blood-drinking wheat) terrify hardened pirates and demigods alike.
-- **Other Key Crew**: **Artisan Heath Doyle (Vampire)**, **Celia**, and **Nina**.
+## Key Officers & Specialists
 
-## Pathway Specialization
-
-- **Mystery Pryer Pathway (Hermit)**: Commanded by Captain Cattleya, specializing in spell scrolls, spirit eyes, astronomy, and fairy tale magic.
-- **Planter Pathway**: Championed by Frank Lee's uncontrollable biological breeding.
+- **Cattleya (Admiral of Stars)**: Captain, master of the Mystery Pryer Pathway, high-ranking member of the **Tarot Club**.
+- **Frank Lee**: Chief Alchemist and first mate, notorious for biological monstrosities and mutating fungal crops.
+- **Artisan**: Shipwright capable of enchanting naval cannons and reinforcing ship hulls with alchemical runes.
+- **Nina & Heath Doyle**: Senior deck officers and navigators.
 
 :::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & The Sea of Ruins
+## Volume 3: Legend of the Pirate Hunter
 
-Klein Moretti (as Gehrman Sparrow) boards the *Future* to navigate the treacherous **Sea of Ruins** and hunt mermaids for his Sequence 5 Marionettist advancement. The journey cements Cattleya's awe of The Fool, leading to her official induction into the Tarot Club as **The Hermit**.
+Klein Moretti boards the *Future* under the guise of the cold-blooded adventurer **Gehrman Sparrow**. Despite early tension, Klein and Cattleya form a deep, mutually respectful alliance, exploring Fourth Epoch anomalies and surviving attacks by pirate fleets.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5 & Volume 6: Fleet Mobilization
+## Volume 5: Red Priest & Cattleya's Demigod Ascension
 
-The Stars Pirates coordinate with Queen Mystic Bernadette Gustav and the Tarot Club to run naval blockades during the World War and assist in securing Fourth Epoch historical relics.
+With formula guidance and mystical ingredients supplied through the Tarot Club, Cattleya advances to **Sequence 4: Mysticologist**. The *Future* gains the ability to manifest fairy-tale magic, establishing dominance over hostile privateer fleets during the World War.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Secrets of the Cosmos
+
+The Stars Pirates coordinate with Queen Mystic Bernadette to monitor anomalous cosmic discharges in the astral sky, defending marine shipping routes from the corruptive whispers of the Hidden Sage.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Flagship of the Stars
+
+In Volume 8, Cattleya commands the Stars Pirates as an Archangel and trusted agent of **The Fool**. The *Future* leads grand maritime voyages toward the enigmatic **Western Continent**, guarding Earth's oceans from Outer Deity incursions.
+
+:::
 `,q=Object.freeze(Object.defineProperty({__proto__:null,default:w},Symbol.toStringTag,{value:"Module"})),S=`---
 name: "Tarot Club"
 introducedInVolume: 1
@@ -1043,40 +1201,46 @@ category: "organizations"
 
 ## Overview
 
-The **Temperance Faction** is the noble, ascetic reformist branch of the **Rose School of Thought** originating from the Southern Continent. Adhering to the ancient teachings of the **Chained Pathway (Prisoner / Zombie / Wraith / Puppet / Demigod Abomination)**, the faction preaches that the only way to resist the inherent madness and bloodlust of the pathway is through strict moral asceticism, suppression of physical desires, emotional tranquility, and deep self-discipline.
+The **Temperance Faction** is the noble, ascetic reformist branch of the **Rose School of Thought** originating from the Southern Continent. Adhering to the ancient teachings of the **Chained Pathway (Prisoner)**, the faction preaches that the only way to avoid the horrifying mental and physical degeneration inherent to the pathway is through absolute **Restraint**, **Temperance**, and **Self-Discipline**.
 
-Their core guiding principle is:
-> *"Restrain your desires; do not let your desires control you."*
+Persecuted and exiled by the corrupt **Indulgence Faction** (who worship the Outer Deity Mother Tree of Desire), the Temperance Faction operates as a resilient underground resistance.
 
-## Leadership & Key Figures
+## Core Ideology & Leaders
 
-- **Supreme Spiritual Leader**: **Reinette Tinekerr** (The Chained Angel / Miss Messenger), ancient Sequence 2 Angel of the Chained Pathway carrying four blonde severed heads.
-- **Key Operatives**:
-  - **Sharron**: Sequence 5 Wraith (later Sequence 4 Puppet demigod), quiet, pale, disciplined leader of the Backlund cell.
-  - **Maric**: Sequence 6 Zombie who controls spirit corpses while resisting the urge for violence and flesh.
+- **Ascetic Restraint**: Rather than indulging in primal bloodlust, members voluntarily restrain their desires, suppressing impulses to maintain their humanity and sanity.
+- **Sharron**: A serene, doll-like Sequence 5 Wraith who later advances to Sequence 4 Puppet and beyond, serving as the faction's field commander.
+- **Maric**: A devoted zombie-controller and loyal companion to Sharron who provides tactical muscle and underground reconnaissance.
+- **Reinette Tinekerr (Miss Messenger)**: Ancient angel and former leader who supports the Temperance Faction from the Spirit World.
 
 :::reveal at=2
 
-## Volume 2: The Backlund Alliance
+## Volume 2: The Alliance in Backlund
 
-Fleeing the lethal purges of the corrupted **Indulgence Faction** (servants of the Mother Tree of Desire), Sharron and Maric hide in East Borough, Backlund. They ally with detective Sherlock Moriarty (Klein Moretti) to eliminate the pursuing Indulgence demigod proxies, forging a lifelong partnership.
+Sharron and Maric forge a close alliance with Klein Moretti (Sherlock Moriarty) in Backlund, combining their Wraith and Marionettist powers to eliminate Indulgence assassins and disrupt criminal networks.
 
 :::
 
 :::spoiler volume=3
 
-## Volume 3: Legend of the Pirate Hunter & The Gold Coin Messenger
+## Volume 3: The Pirate Seas Support
 
-Klein Moretti establishes a formal supernatural contract with the leader of the Temperance Faction, **Reinette Tinekerr**. In exchange for 1 gold coin per letter, Miss Messenger provides instant intercontinental spirit-world courier delivery and demigod combat assistance for Klein throughout his voyages.
+Sharron travels across maritime networks to assist Klein during perilous operations in the Sonia Sea, while Klein procures rare Chained Pathway ingredients for the faction through the Tarot Club.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Rebirth of the Southern Highlands
+## Volume 7: Slaying the Abomination
 
-The Temperance Faction unites with the Tarot Club, the Sanguines, and the Church of the Fool to launch a decisive counter-offensive against the Rose School's Indulgence strongholds in the Southern Continent. Following the defeat of the Abomination angels, the Temperance Faction re-establishes peace, reclaiming their ancestral lands under the protection of The Fool.
+With Klein advancing to Angel rank, Klein and Miss Messenger lead a devastating assault against the Rose School of Thought's stronghold in the Southern Continent, freeing thousands of enslaved Temperance believers.
 
 :::
 
-`,x=Object.freeze(Object.defineProperty({__proto__:null,default:T},Symbol.toStringTag,{value:"Module"}));export{M as a,C as b,k as c,F as d,A as e,_ as f,P as g,B as h,E as i,V as j,G as k,I as l,O as m,D as n,z as o,H as p,K as q,R as r,W as s,L as t,q as u,j as v,x as w};
+:::spoiler volume=8
+
+## Volume 8: The Restoration of the Highlands
+
+In Volume 8, under the divine protection of **The Fool**, Sharron and Maric lead the fully reconstituted Temperance Faction in restoring peace and sanity across the Southern Continent, wiping out the Indulgence cults permanently.
+
+:::
+`,x=Object.freeze(Object.defineProperty({__proto__:null,default:T},Symbol.toStringTag,{value:"Module"}));export{C as a,M as b,k as c,F as d,A as e,_ as f,P as g,E as h,B as i,V as j,D as k,I as l,O as m,z as n,G as o,K as p,R as q,H as r,L as s,W as t,q as u,j as v,x as w};

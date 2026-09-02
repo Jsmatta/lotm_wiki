@@ -252,11 +252,10 @@ Along with the *Lord of the Mysteries* and the *Mother Goddess of Depravity*, Go
 - **Authorities**: Omnipotence, omniscience, mind alteration, light creation, elemental storm destruction, infinite knowledge, and sin redemption.
 - **Sefirah Source**: **The Chaos Sea**, the primordial sub-dimensional ocean of spiritual magma that lies beneath the Northern Continent.
 
-## Lineage & Reconstitution
+## Ancient Lineage
 
 - **Pre-Epoch**: The original God Almighty engaged in a cataclysmic battle against the Celestial Worthy, leading to both of their physical deaths on ancient Earth.
 - **Third Epoch**: The **Ancient Sun God** awakened in Chernobyl, accommodating the Chaos Sea and walking the path of God Almighty before being betrayed by Storm, Sun, and Wisdom.
-- **Fifth Epoch**: In Volume 8, **Adam** (holding the Visionary Uniqueness and author authority) fuses with the **True Creator** (holding the Hanged Man Uniqueness and Chaos Sea control), resurrecting the dual divine essence of God Almighty to repel the Outer Deities.
 
 :::reveal at=4
 
@@ -270,7 +269,7 @@ On the primitive island, murals document the ancient battle between God Almighty
 
 ## Volume 7: The Divine Unification
 
-Adam completes his grand novel of history. As the World War rages across the Northern Continent, the True Creator embraces Adam in the astral realm, initiating their divine fusion.
+Adam completes his grand novel of history. As the World War rages across the Northern Continent, the True Creator embraces Adam in the astral realm, initiating their divine fusion to reclaim their ancient divine essence.
 
 :::
 
@@ -278,10 +277,9 @@ Adam completes his grand novel of history. As the World War rages across the Nor
 
 ## Volume 8: The Awakened Pillar
 
-The reconstituted God Almighty coordinates with Klein Moretti (Lord of the Mysteries) and the Evernight Goddess, maintaining Earth's astral barrier against the Outer Deities.
+In Volume 8, **Adam** (holding the Visionary Uniqueness and author authority) fully fuses with the **True Creator** (holding the Hanged Man Uniqueness and Chaos Sea control), resurrecting the dual divine essence of God Almighty. The reconstituted God Almighty coordinates with Klein Moretti (Lord of the Mysteries) and the Evernight Goddess, maintaining Earth's astral barrier against the Outer Deities.
 
 :::
-
 `,T=Object.freeze(Object.defineProperty({__proto__:null,default:i},Symbol.toStringTag,{value:"Module"})),r=`---
 name: "God of Combat"
 introducedInVolume: 3
@@ -298,19 +296,11 @@ Portrayed as a colossal warrior in orange dusk plate armor wielding a gargantuan
 
 Badheil was originally born in the Second Epoch as the biological son of **Aurmir (The Giant King)** and Queen Omebella. When the Ancient Sun God eradicated the Giant Court during the Cataclysm, Badheil survived by submitting to the divine order, eventually claiming the Sequence 0 Warrior Uniqueness during the Third Epoch.
 
-## The World War & The Astral Trap
-
-During the Fifth Epoch, Badheil sought to accommodate neighboring pathways (**Death** and **Darkness**) to form the Great Old One **Eternal Darkness**. Believing the Evernight Goddess was vulnerable following King George III's demise, Badheil instigated the Feysac blitzkrieg across Loen, triggering the World War.
-
-However, Badheil walked straight into a trap prepared by the **Evernight Goddess (Amanises)** and the **Earth Mother (Lilith)**:
-- Badheil mistakenly believed the Earth Mother was his mother Omebella.
-- In the astral realm, when Badheil engaged Amanises, Lilith struck Badheil from behind with divine motherly nature authority, allowing Evernight to slay him and absorb his characteristics.
-
 :::reveal at=3
 
 ## Volume 3: Naval Skirmishes & Feysac Valor
 
-Feysacian warriors and paladins manifest the divine strength and twilight blessings of the God of Combat across maritime naval battles in the Sonia Sea.
+Feysacian warriors and paladins manifest the divine strength and twilight blessings of the God of Combat across maritime naval battles in the Sonia Sea, coming into frequent friction with the Church of the Lord of Storms and Loen naval fleets.
 
 :::
 
@@ -318,7 +308,7 @@ Feysacian warriors and paladins manifest the divine strength and twilight blessi
 
 ## Volume 5: Red Priest & The Great World War
 
-Under Badheil's direct divine revelation, Feysacian airship armadas launch catastrophic air raids on Backlund, sparking the devastating continental war.
+Under Badheil's direct divine revelation, Feysacian airship armadas launch catastrophic air raids on Backlund, sparking the devastating continental war. Believing the Evernight Goddess was vulnerable following King George III's demise, Badheil instigated the Feysac blitzkrieg across Loen.
 
 :::
 
@@ -326,10 +316,18 @@ Under Badheil's direct divine revelation, Feysacian airship armadas launch catas
 
 ## Volume 7: The Battle of Gods & The Fall of Badheil
 
-In the astral battlefield, the Evernight Goddess and Earth Mother execute their master plan: Lilith stabs Badheil through the back, leading to his divine death and the total collapse of the Church of the God of Combat.
+In the astral battlefield, Badheil sought to accommodate the neighboring Death and Darkness pathways to form the Great Old One **Eternal Darkness**. However, he walked straight into a master trap prepared by the **Evernight Goddess (Amanises)** and the **Earth Mother (Lilith)**.
+
+Mistakenly believing the Earth Mother was his mother Omebella, Badheil was ambushed when Lilith struck him from behind with divine motherly nature authority, allowing Evernight to slay him and absorb his characteristics and Uniqueness.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Dissolution of Combat
+
+Following the death of Badheil, the Church of the God of Combat completely dissolved. Its cathedrals, clergymen, and remaining Silver Knights across Feysac were reorganized and integrated into the Church of the Evernight Goddess, ending centuries of northern religious hostility.
+:::
 `,w=Object.freeze(Object.defineProperty({__proto__:null,default:r},Symbol.toStringTag,{value:"Module"})),a=`---
 name: "God of Knowledge and Wisdom"
 introducedInVolume: 3
@@ -663,7 +661,7 @@ During the cosmic crisis of Volume 8, the Mother Tree of Desire launches coordin
 
 :::
 
-`,E=Object.freeze(Object.defineProperty({__proto__:null,default:c},Symbol.toStringTag,{value:"Module"})),u=`---
+`,G=Object.freeze(Object.defineProperty({__proto__:null,default:c},Symbol.toStringTag,{value:"Module"})),u=`---
 name: "Outer Deities"
 introducedInVolume: 6
 category: "gods"
@@ -713,7 +711,7 @@ Klein Moretti (as Lord of the Mysteries) enters his cosmic slumber above the gra
 
 :::
 
-`,G=Object.freeze(Object.defineProperty({__proto__:null,default:u},Symbol.toStringTag,{value:"Module"})),g=`---
+`,E=Object.freeze(Object.defineProperty({__proto__:null,default:u},Symbol.toStringTag,{value:"Module"})),g=`---
 name: "Sea God Kalvetua"
 introducedInVolume: 3
 category: "gods"
@@ -731,16 +729,47 @@ By the Fifth Epoch, Kalvetua's physical body was rotting beneath the seafloor of
 - It manifested violent undersea earthquakes, tidal waves, and unnatural maritime hurricanes around Bayam.
 - It attempted to possess living hosts and forced its native Resistance believers into fanatical human sacrifices to prolong its agonizing existence.
 
-## The Purge & The Sea God Scepter
+:::reveal at=3
 
-In Volume 3, the **Church of the Lord of Storms** (led by Archbishop Jahn Kottman) launched a decisive divine assault, obliterating Kalvetua's physical form. 
+## Volume 3: Legend of the Pirate Hunter & The Fall of the Serpent
 
-Before its remnant malice could dissipate, **Klein Moretti (Gehrman Sparrow)** intervened, securing Kalvetua's high-sequence Beyonder characteristic and forging the legendary **Sea God Scepter (Staff of the Sea God)**. Klein took the scepter above the gray fog, answering the prayers of indigenous believers and becoming the true, benevolent Sea God.
+The **Church of the Lord of Storms** (led by Archbishop Jahn Kottman) launched a decisive divine assault, obliterating Kalvetua's physical form. 
 
-## Volume 3: Legend of the Pirate Hunter
+Before its remnant malice could dissipate, **Klein Moretti (Gehrman Sparrow)** intervened, securing Kalvetua's high-sequence Beyonder characteristic and forging the legendary **Sea God Scepter (Staff of the Sea God)**. Klein took the scepter above the gray fog into Sefirah Castle, answering the prayers of indigenous believers and becoming the true, benevolent Sea God.
 
-Klein Moretti uses Sefirah Castle to purify the Sea God faith, granting rain, wind protection, and agricultural blessings to the Rorsted Archipelago natives, establishing the operational foundation for the **Church of the Fool**.
+:::
 
+:::spoiler volume=4
+
+## Volume 4: Undoing the Past & The Hidden Believers
+
+Klein Moretti continues to respond to Sea God believers through Sefirah Castle, using the Sea God Scepter to provide miraculous rainfall, soothe storms, and guide naval ships safely across colonial waterways.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5: Red Priest & The Oracle's Rise
+
+As colonial tensions mount, the native resistance and Sea God followers gradually transition their reverence toward The Fool. Danitz is appointed as the official Oracle, serving as the physical conduit between Bayam believers and the divine realm.
+
+:::
+
+:::spoiler volume=7
+
+## Volume 7: The Transformed Archipelago
+
+The former cult of Kalvetua is completely reformed into the open Church of the Fool. The native islanders of Bayam and the Rorsted Archipelago enjoy genuine divine protection against colonial exploitation and wartime devastation.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Sea God's Eternal Port
+
+In Volume 8, the Sea God identity remains an active divine mask of **The Fool**. The Sea God Scepter rests within Sefirah Castle, wielded to calm global typhoons, while Oracle Danitz and the Church of the Fool maintain prosperity across the maritime world.
+
+:::
 `,D=Object.freeze(Object.defineProperty({__proto__:null,default:g},Symbol.toStringTag,{value:"Module"})),m=`---
 name: "Son of Chaos"
 introducedInVolume: 5
@@ -848,4 +877,4 @@ The True Creator fuses with his divine counterpart **Adam (The Visionary)**, rec
 
 :::
 
-`,k=Object.freeze(Object.defineProperty({__proto__:null,default:f},Symbol.toStringTag,{value:"Module"}));export{p as a,b,y as c,w as d,v as e,S as f,T as g,C as h,O as i,E as j,_ as k,A as l,M as m,G as o,D as s,k as t};
+`,k=Object.freeze(Object.defineProperty({__proto__:null,default:f},Symbol.toStringTag,{value:"Module"}));export{p as a,b,y as c,w as d,v as e,S as f,T as g,C as h,O as i,G as j,_ as k,A as l,M as m,E as o,D as s,k as t};
