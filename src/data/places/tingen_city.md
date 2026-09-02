@@ -6,25 +6,30 @@ category: "places"
 
 ## Overview
 
-**Tingen City (The City of Universities)** is a prominent cultural and industrial city situated in **Awwa County** within the **Loen Kingdom**, positioned at the confluence of the Khoy and Tussock rivers. Renowned for its prestigious academic institutions—including **Tingen University**, **Khoy University**, and the **Tingen Technical School**—the city serves as the foundational setting for Volume 1 (Clown) and the birthplace of **Klein Moretti's** supernatural journey.
+**Tingen City** is a historic university town and industrial center located in the Awwa County of the **Loen Kingdom**, situated along the serene Tingen River. Characterized by cobbled streets, Victorian row houses, steam factories, and prestigious academic institutions (including Khoy University and Tingen Technical School), it serves as the foundational setting of Volume 1 (Clown).
 
-Divided into prosperous collegiate districts, bustling commercial hubs, middle-class suburban residential zones, and smoke-choked industrial ironworks, Tingen balances Victorian-style industrial progress with deep mystical undercurrents.
-
-## Key Landmarks & Locations
-
-- **36 Zouteland Street (Blackthorn Security Company)**: The public commercial front and operational headquarters of the **Tingen Nighthawks squad** led by Captain **Dunn Smith**.
-- **Daffodil Street**: The charming two-story brick townhouse rented by the Moretti family (Benson, Melissa, and Klein).
-- **Saint Selena Cathedral & Chanis Gate**: The central regional cathedral of the **Church of the Evernight Goddess**, housing the underground vault protected by sacred iron doors and sealed artifacts.
-- **The Divination Club**: A gentleman's society located in Hanass Vincent's district where Klein digested his **Sequence 9: Seer** and **Sequence 8: Clown** potions.
-- **Khoy River & Iron Shanty Slums**: The industrial heartland of Tingen where laborers endure brutal factory shifts and low wages.
+It is where **Klein Moretti (Zhou Mingrui)** awoke, lived with his siblings Benson and Melissa on Daffodil Street, joined the **Blackthorn Security Company**, and took his first steps as a Beyonder.
 
 :::reveal at=1
 
 ## Volume 1: Clown & The Tragedy of Tingen
 
-Tingen becomes the target of a catastrophic conspiracy orchestrated by **Ince Zangwill**, **Lanevus**, and the **Aurora Order**. The conspirators steer the cursed **Antigonus Family's Notebook** into the hands of Welch McGovern and the original Klein Moretti, while implanting the descending fetus of the **True Creator** into the body of Megose.
-
-The resulting clash at Chanis Gate claims the lives of Captain Dunn Smith and Klein Moretti, saving Tingen from apocalyptic annihilation before Klein resurrects from his grave in the municipal cemetery.
+Tingen becomes the epicenter of Ince Zangwill and 0-08's demonic conspiracy. Captain Dunn Smith sacrifices himself to stop Megose, and Klein gives his life to protect the city from the Antigonus puppet, staging his death before departing for Backlund.
 
 :::
 
+:::spoiler volume=4
+
+## Volume 4: Dwayne Dantès's Silent Pilgrimage
+
+Klein returns to Tingen under the guise of the wealthy gentleman **Dwayne Dantès**. He quietly visits Daffodil Street, watches Benson and Melissa living peacefully in their new home, and leaves a secret donation to support their future.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Epilogue of The Fool
+
+In Volume 8, Tingen remains a tranquil, thriving haven spared from the worst ravages of the World War. In the epilogue, Melissa Moretti and her young niece Alice quietly perform a ritual honoring **The Fool**, showing that Melissa has uncovered the truth and reveres her brother's immortal sacrifice.
+
+:::

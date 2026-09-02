@@ -14,19 +14,11 @@ Portrayed as a colossal warrior in orange dusk plate armor wielding a gargantuan
 
 Badheil was originally born in the Second Epoch as the biological son of **Aurmir (The Giant King)** and Queen Omebella. When the Ancient Sun God eradicated the Giant Court during the Cataclysm, Badheil survived by submitting to the divine order, eventually claiming the Sequence 0 Warrior Uniqueness during the Third Epoch.
 
-## The World War & The Astral Trap
-
-During the Fifth Epoch, Badheil sought to accommodate neighboring pathways (**Death** and **Darkness**) to form the Great Old One **Eternal Darkness**. Believing the Evernight Goddess was vulnerable following King George III's demise, Badheil instigated the Feysac blitzkrieg across Loen, triggering the World War.
-
-However, Badheil walked straight into a trap prepared by the **Evernight Goddess (Amanises)** and the **Earth Mother (Lilith)**:
-- Badheil mistakenly believed the Earth Mother was his mother Omebella.
-- In the astral realm, when Badheil engaged Amanises, Lilith struck Badheil from behind with divine motherly nature authority, allowing Evernight to slay him and absorb his characteristics.
-
 :::reveal at=3
 
 ## Volume 3: Naval Skirmishes & Feysac Valor
 
-Feysacian warriors and paladins manifest the divine strength and twilight blessings of the God of Combat across maritime naval battles in the Sonia Sea.
+Feysacian warriors and paladins manifest the divine strength and twilight blessings of the God of Combat across maritime naval battles in the Sonia Sea, coming into frequent friction with the Church of the Lord of Storms and Loen naval fleets.
 
 :::
 
@@ -34,7 +26,7 @@ Feysacian warriors and paladins manifest the divine strength and twilight blessi
 
 ## Volume 5: Red Priest & The Great World War
 
-Under Badheil's direct divine revelation, Feysacian airship armadas launch catastrophic air raids on Backlund, sparking the devastating continental war.
+Under Badheil's direct divine revelation, Feysacian airship armadas launch catastrophic air raids on Backlund, sparking the devastating continental war. Believing the Evernight Goddess was vulnerable following King George III's demise, Badheil instigated the Feysac blitzkrieg across Loen.
 
 :::
 
@@ -42,7 +34,15 @@ Under Badheil's direct divine revelation, Feysacian airship armadas launch catas
 
 ## Volume 7: The Battle of Gods & The Fall of Badheil
 
-In the astral battlefield, the Evernight Goddess and Earth Mother execute their master plan: Lilith stabs Badheil through the back, leading to his divine death and the total collapse of the Church of the God of Combat.
+In the astral battlefield, Badheil sought to accommodate the neighboring Death and Darkness pathways to form the Great Old One **Eternal Darkness**. However, he walked straight into a master trap prepared by the **Evernight Goddess (Amanises)** and the **Earth Mother (Lilith)**.
+
+Mistakenly believing the Earth Mother was his mother Omebella, Badheil was ambushed when Lilith struck him from behind with divine motherly nature authority, allowing Evernight to slay him and absorb his characteristics and Uniqueness.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Dissolution of Combat
+
+Following the death of Badheil, the Church of the God of Combat completely dissolved. Its cathedrals, clergymen, and remaining Silver Knights across Feysac were reorganized and integrated into the Church of the Evernight Goddess, ending centuries of northern religious hostility.
+:::

@@ -6,30 +6,38 @@ category: "characters"
 
 ## Overview
 
-**Darkwill** is a member of the **Life School of Thought** (Faction of Fate/Moon), an **Apothecary / Sequence 8: Beast Tamer** of the **Moon Pathway / Monster Pathway**, and the reluctant traveling companion of an extraordinarily intelligent, sarcastic fat owl named **Harry**.
+**Darkwill** is an eccentric, nervous, yet kind-hearted apothecary walking the **Moon Pathway (Apothecary Pathway)** as a **Sequence 8: Beast Tamer**. Accompanied by his intelligent, foul-tempered pet owl, Darkwill operates under the underground medical networks of Backlund and the coastal ports.
 
-Nervous, cowardly, yet carrying a strong sense of student loyalty, Darkwill was apprenticed to the Fate scholar **Roy King**. He is famous for hiring **Gehrman Sparrow (Klein Moretti)** for what turned out to be one of the most perilous escort missions on the Five Seas.
-
-## The Die of Probability Escort
-
-- **Owl Harry**: A mutated magical owl capable of telepathic grumbling, scouting, and dispensing herbal remedies.
-- **The Die of Probability**: A Grade 0 / Grade 1 Sealed Artifact resembling a milky white bone die with crimson dots; every roll alters probability and luck, generating bizarre and lethal coincidences for everyone in the vicinity.
+He is the loyal mortal guardian and caretaker of the ancient demigod **Will Auceptin (The Snake of Mercury)**, who periodically undergoes cyclical reincarnation as a newborn infant.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & Backlund Medicine
+## Volume 2: The Apothecary & The Die of Probability
 
-Klein Moretti meets Darkwill in Backlund's underground Beyonder gatherings, purchasing calming herbal potions and sedatives.
+Klein Moretti (Sherlock Moriarty) meets Darkwill in Backlund, tasked with protecting him and escorting him away from bounty hunters and the erratic curses of the **Die of Probability**.
 
 :::
 
 :::spoiler volume=3
 
-## Volume 3: Legend of the Pirate Hunter & The Voyage to Oravi Island
+## Volume 3: Maritime Escort
 
-Roy King entrusts Darkwill with transporting the **Die of Probability** across the sea. Terrified of dying from probability backlashes, Darkwill hires the infamous pirate hunter Gehrman Sparrow. 
-
-Together, they survive pirate ambushes, sea monster mutations, and bizarre luck anomalies to safely deliver the die to Oravi Island, earning Gehrman's respect.
+Darkwill travels aboard maritime transport ships, relying on Klein's protection to deliver the sacred silver dice and ensure Will Auceptin's safe journey toward his next physical rebirth.
 
 :::
 
+:::spoiler volume=5
+
+## Volume 5: The Rebirth of Will Ceres
+
+With Klein's assistance, Will Auceptin is safely reborn as a baby into the Ceres family. Darkwill breathes a massive sigh of relief, resuming his peaceful career as an apothecary while enjoying occasional ice cream visits from Klein.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Guardian's Peaceful Life
+
+In Volume 8, Darkwill lives peacefully in Backlund under the covert protection of the Tarot Club, revered by young Will Auceptin as his most devoted mortal uncle and friend.
+
+:::

@@ -6,36 +6,47 @@ category: "characters"
 
 ## Overview
 
-**Reinette Tinekerr (Miss Messenger / The Chained Angel)** is the supreme leader of the **Temperance Faction** of the Rose School of Thought, an ancient **Sequence 2: Chained Angel / Sequence 1: Abomination** of the **Chained Pathway (Prisoner Pathway)**, and Klein Moretti's personal spirit-world courier.
+**Reinette Tinekerr (Miss Messenger)** is an ancient, enigmatic angel of the **Chained Pathway (Sequence 2: Ancient Bane)**, the former high-ranking leader of the **Temperance Faction**, and Klein Moretti's faithful supernatural courier. Manifesting in the Spirit World as a strikingly beautiful woman in dark Victorian mourning dress who holds **four blonde, red-eyed severed heads** in her hands, Reinette speaks in an iconic, halting rhythm through her four speaking heads.
 
-Taking the bizarre, iconic form of a towering, gothic headless woman clad in an intricate dark dress holding **four blonde, red-eyed severed heads** by their hair, Reinette is famous for her unique speech pattern (each head speaking one word at a time) and her strict fee of **one gold coin** per letter delivery.
+She enters a formal contract with Klein Moretti: delivering letters anywhere in the world in exchange for **one gold coin** per delivery.
 
-## Four-Headed Speech & Combat Supremacy
+## Four-Headed Courier & Angelic Might
 
-- **The Four Severed Heads**: Capable of casting high-sequence curses, soul restraints, spirit dimension travel, and psychic screams.
-- **The Contract of 1 Gold Coin**: In exchange for 1 gold coin per trip, Miss Messenger provides instant intercontinental spirit-world transportation and serves as Gehrman Sparrow's most reliable emergency combat backup.
+- **Speech Pattern**:
+  - Head 1: *"One..."*
+  - Head 2: *"Letter..."*
+  - Head 3: *"One..."*
+  - Head 4: *"Gold Coin..."*
+- **Ancient Bane Abilities**: Manifesting ancient curses, mirror traversal, spiritual possession, and summoning colossal spectral avatars.
 
 :::reveal at=3
 
 ## Volume 3: Legend of the Pirate Hunter & The Messenger Contract
 
-Gehrman Sparrow uses a copper whistle and spirit summoning ritual to contract Miss Reinette Tinekerr. When the Rose School of Thought ambushes Klein in Bayam, Reinette manifests her full Angelic body to crush the enemy demigods.
+Klein signs a spiritual summoning pact with Reinette in Bayam. Miss Messenger becomes Klein's lifeline to the outside world, delivering letters between Backlund, the Five Seas, and the Southern Continent.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5 & Volume 6: Strategic Operations
+## Volume 5: Red Priest & Tactical Angelic Support
 
-Reinette delivers high-priority letters between Dwayne Dantès, Leonard Mitchell, and Sharron. She coordinates the assassination of Saint of Secrets Botis and unmasks royal mausoleum secrets.
+Reinette assists Klein in critical high-stakes ambushes, providing demigod-level curse suppression against Qonas Kilgor and Hvin Rambis.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: Liberation of the Highlands
+## Volume 7: Reclaiming the Highlands
 
-Klein Moretti and the Tarot Club assist Reinette Tinekerr in eradicating the corrupted Indulgence Faction in the Southern Continent. Reinette purges the Mother Tree of Desire's avatars, reclaiming the sacred Highlands under the Temperance philosophy.
+Reinette joins Klein in assaulting the Rose School of Thought's strongholds in the Southern Continent, securing vital Chained Pathway characteristics to restore the Temperance Faction.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Archangel of The Fool
+
+In Volume 8, Miss Messenger stands as an honored Archangel and trusted ally of **The Fool**. As Klein enters his epochal slumber, Reinette receives an abundant hoard of gold coins, continuing to guard the Spirit World and protect the Tarot Club's communications.
+
+:::

@@ -6,15 +6,20 @@ category: "characters"
 
 ## Overview
 
-**Flora Jacob** was a surviving descendant of the ancient **Jacob Family** (a prominent Fourth Epoch angel family of the Marauder pathway) and a **Sequence 5: Mentor of Deceit / Sequence 6: Prometheus** of the **Error Pathway (Marauder Pathway)**. Operating in Backlund under heavy disguise, Flora attempted to reclaim lost family relics and escape the relentless hunting of the Blasphemer **Amon**.
-
-Her tragic demise in Backlund revealed the terrifying extent of Amon's parasitic infiltration into the capital's aristocratic circles.
+**Flora Jacob** was a surviving high-ranking descendant of the ancient Fourth Epoch **Jacob Family**, walking the **Error Pathway (Marauder Pathway)** as a demigod **Sequence 4: Parasite**. Residing in deep secrecy in Backlund, Flora sought to preserve her family's ancestral formulas while evading the terrifying manhunt conducted by **Amon (The Angel of Time)**.
 
 :::reveal at=5
 
-## Volume 5: Red Priest & The Parasite in Backlund
+## Volume 5: Red Priest & The Parasitization of Flora
 
-Amon's avatars locate Flora Jacob in Backlund. Amon completely steals Flora's identity, life, and Beyonder characteristics, using her body as a bait parasite to lure out Leonard Mitchell and Klein Moretti before triggering a city-wide purge of Amon clones.
+Tragically, Flora Jacob was tracked down by Amon. An avatar of Amon parasitized her spiritual body, turning her into a living puppet to ambush Leonard Mitchell, Pallez Zoroast, and Klein Moretti in a Backlund townhouse. Klein and Pallez severed the avatar's connection, but Flora's original consciousness perished in the spiritual struggle.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Family's Liberation
+
+In Volume 8, with Amon's defeat and Klein's ascension as **The Fool**, the eternal terror hunting the Jacob family is shattered forever, with Flora's remaining kin finding sanctuary under the Church of the Fool.
+
+:::

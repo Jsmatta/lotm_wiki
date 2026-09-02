@@ -6,28 +6,27 @@ category: "sealed_artifacts"
 
 ## Overview
 
-**Creeping Hunger** is an infamous human-skin glove crafted from the Beyonder characteristic of a **Sequence 5: Shepherd** (Secrets Supplicant / Hanged Man Pathway). Originally wielded by Pirate Admiral **Qilangos (Rear Admiral Hurricane)** to infiltrate Backlund and assassinate Duke Negan, it eventually becomes Klein Moretti's signature combat artifact throughout his adventures as the legendary pirate hunter **Gehrman Sparrow**.
+**Creeping Hunger** is a terrifying, versatile human-skin glove artifact originally crafted by the Aurora Order demigod **Mr. A** from the characteristic of a **Shepherd (Sequence 5 of the Secrets Supplicant / Hanged Man Pathway)**. Later wielded by Pirate Admiral **Qilangos**, it became **Klein Moretti's** signature combat companion throughout Volumes 2 through 6.
 
-When unequipped, it resembles a thin, pale glove woven from human skin. When worn and activated, it fuses with the wielder's left hand, turning transparent with mystical blood-red vessels.
+Resembling a thin, pale glove crafted from smooth human skin, it harbors five trapped souls from distinct Beyonder pathways, allowing the wearer to graze their powers and swap between devastating abilities instantaneously.
 
-## Core Abilities: Grazing Souls
+## Abilities & Grazed Souls
 
-Creeping Hunger possesses the terrifying authority to **Graze** the souls and astral projections of deceased Beyonders, allowing the wielder to deploy their sequence powers as if they were their own:
-- **Capacity**: Can store up to **5 distinct grazed souls** simultaneously.
-- **Ability Deployment**: For each soul, the wielder can unleash up to **3 specific Beyonder abilities** associated with that target's original sequence.
-- **Instantaneous Switching**: The wielder can cycle between different souls in combat with a mere thought, creating devastating multi-pathway combination attacks.
+- **Traveler Teleportation (Door Pathway)**: Blinking across battlefields, spatial evasion, and long-range spatial jumps.
+- **Zombie Frost & Hardening (Chained Pathway)**: Extreme physical durability, frost aura, and razor-sharp claws.
+- **Baron of Corruption (Black Emperor Pathway)**: Distortion of enemy attack trajectories, words, and spell effects.
+- **Interrogator Psychic Piercing (Justiciar Pathway)**: Mental stabs that shatter enemy concentration and paralyze thoughts.
+- **Pyromaniac Flames (Hunter Pathway)**: Blazing crimson fireballs and explosive flame bursts.
 
-## Negative Effects & Price of Use
+## Negative Side Effect & Bloodlust
 
-Creeping Hunger is a Grade 1 Sealed Artifact possessing a ravenous, sadistic semi-sentience:
-- **The Hunger**: It demands a fresh, living human being to devour every single day. If deprived of food for more than 24 hours, it will turn upon its wielder and consume their flesh, blood, and soul.
-- **Suppression & Feeding Methods**: Klein strictly refuses to harm innocents. He satisfies the glove's hunger by executing condemned pirates, murderers, and corrupt criminals, or suppresses its hunger temporarily using high-tier mystical artifacts like **Azik's Copper Whistle** and divine purification above the gray fog.
+- **The Insatiable Hunger**: Creeping Hunger must consume one living human soul every single day. If deprived, it will bite into the wearer's hand and devour their flesh, soul, and Beyonder characteristics until nothing remains.
 
 :::reveal at=2
 
-## Volume 2: The Backlund Hunt
+## Volume 2: The Slaying of Qilangos & The Detective's Glove
 
-Klein acquires Creeping Hunger after partnering with the demigod Azik Eggers to eliminate Qilangos. After neutralizing the soul-taint above the gray fog, Klein begins experimenting with its soul slots, preparing versatile combat combinations for his time in Backlund as Sherlock Moriarty.
+In Backlund, with the assistance of Mr. Azik, Klein slays Pirate Admiral Qilangos and claims Creeping Hunger. By keeping it inside the safe dimensional isolation of **Sefirah Castle**, Klein starves its daily hunger and feeds it only notorious criminals, assassins, and human traffickers.
 
 :::
 
@@ -35,27 +34,30 @@ Klein acquires Creeping Hunger after partnering with the demigod Azik Eggers to 
 
 ## Volume 3: Legend of the Pirate Hunter
 
-Creeping Hunger becomes the foundation of **Gehrman Sparrow's** terrifying maritime reputation across the Five Seas:
-- **The Traveler (Door Pathway)**: Grants **Teleportation / Blink**, allowing Gehrman Sparrow to vanish instantly from artillery fire and reposition across islands.
-- **The Baron of Corruption (Black Emperor Pathway)**: Grants **Distortion** (bending enemy trajectories and intent) and **Bribe**.
-- **The Zombie (Death Pathway)**: Grants superhuman physical defense, frost manipulation, and dead-silence concealment.
-- **The Interrogator (Justiciar Pathway)**: Grants **Psychic Piercing**, stunning enemy minds during critical shootouts.
-
-:::
-
-:::spoiler volume=4
-
-## Volume 4: Undoing the Past
-
-Klein utilizes Creeping Hunger during high-stakes covert operations in Backlund, combining its Traveler teleportation with Magician paper-figurine substitutions to infiltrate Saint Samuel Cathedral and escape the Red Gloves.
+As **Gehrman Sparrow**, Klein terrorizes pirate crews across the Sonia Sea. Creeping Hunger becomes his lethal trump card, allowing him to teleport across ships, distort cannon fire, and graze high-tier pirate captains like Senor.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Demigod Transformations
+## Volume 5: Purification by the Unshadowed Crucifix
 
-After Klein advances to **Sequence 4: Bizarro Sorcerer**, Creeping Hunger is further purified with the blood of divine angels and demigods. Its negative backlash is permanently suppressed, turning it into a compliant holy relic subordinate to The Fool.
+Klein purges Creeping Hunger using the **Unshadowed Crucifix**. The extreme solar radiance purifies the corruptive bloodlust of the Shepherd characteristic, liberating the trapped souls and transforming the glove into an obedient, purer magical item.
 
 :::
 
+:::spoiler volume=6
+
+## Volume 6: Light of the City of Silver
+
+Klein carries Creeping Hunger through the horrors of the **Forsaken Land of the Gods**, relying on its spatial teleportation and defense to evade Amon's avatars.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: Slumber in Sefirah Castle
+
+Upon Klein's ascension to **Sequence 0: The Fool**, Creeping Hunger is permanently retired. Having faithfully accompanied Klein from a mortal detective to a supreme deity, the glove rests in the divine pavilion of Sefirah Castle.
+
+:::

@@ -6,22 +6,28 @@ category: "places"
 
 ## Overview
 
-**Oravi Island** is a fortified naval base and colonial territory governed by the **Loen Kingdom** in the mid-Sonia Sea, serving as the strategic logistical hub connecting Backlund to the Rorsted Archipelago. Commanded by Loen Royal Navy High Admiral **Amyrius Rieveldt**, Oravi Island is defined by massive limestone coastal fortresses, ironclad naval docks, military barracks, and colonial plantations.
-
-The island serves as the pivotal operational stage where **Gehrman Sparrow (Klein Moretti)** masters the deepest psychological principles of the **Sequence 6: Faceless** acting method.
-
-## The Impersonation of High Admiral Amyrius
-
-- **The Secret Commission**: Admiral Amyrius secretly hires Gehrman Sparrow to impersonate him for three days on Oravi Island while the real admiral tends to a private matter.
-- **Faceless Acting Masterclass**: Klein reproduces Amyrius's stern aristocratic posture, cold disciplinary voice, military authority, and complex domestic interactions under intense scrutiny from naval aides and family members.
+**Oravi Island** is an important naval outpost and maritime supply hub located along the eastern sea routes of the **Sonia Sea**, controlled by the Loen Kingdom. Defined by its deep-water harbor, naval coaling stations, and fortified coastal batteries, Oravi serves as a strategic crossroads for merchant fleets, privateers, and military convoys.
 
 :::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & The Mother Tree Ambush
+## Volume 3: Legend of the Pirate Hunter & The Governor's Manhunt
 
-During the impersonation on Oravi Island, the **Rose School of Thought's Indulgence Faction** attempts to assassinate and corrupt the Admiral through his mistress **Cynthia**, who is mutated into an eldritch flesh abomination by the **Mother Tree of Desire**. 
-
-Klein uses his Clown agility, Faceless transformation, and Sun charms to eradicate the corrupted entity, completing his Faceless potion digestion.
+Gehrman Sparrow (Klein) arrives on Oravi Island, becoming entangled in skirmishes with pirate champions, intelligence informants, and agents tied to the **Die of Probability**.
 
 :::
 
+:::spoiler volume=5
+
+## Volume 5: Red Priest & Maritime Clashes
+
+Oravi Island becomes a fiercely contested naval battlefield during the World War, withstanding Feysacian naval blockades and submarine raids.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Restored Free Port
+
+In Volume 8, Oravi Island returns to peace as a demilitarized free trade port, facilitating maritime expeditions toward the newly opened Western Continent under Tarot Club supervision.
+
+:::

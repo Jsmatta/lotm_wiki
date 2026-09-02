@@ -6,28 +6,38 @@ category: "characters"
 
 ## Overview
 
-**Dorian Gray Abraham** is a senior teacher and elder of the **Abraham Family**, a **Sequence 7: Astrologer / Sequence 6: Scribe** of the **Door Pathway (Apprentice Pathway)** residing in the coastal city of **Pritz Harbor**, and the mystical mentor to **Fors Wall (The Magician)**.
+**Dorian Gray Abraham** is an elderly, honorable elder of the ancient **Abraham Family** residing in Pritz Harbor, walking the **Door Pathway (Sequence 7: Astrologer / Sequence 6: Scribe)**. Devoted to preserving the fragile, fading legacy of his cursed Fourth Epoch bloodline, Dorian works tirelessly as a music teacher and tutor, searching for trustworthy disciples to inherit the family's spatial mysticism.
 
-Gentle, cautious, weary from watching generations of family members succumb to madness during the Blood Moon, Dorian dedicated his life to preserving what little remained of the ancient Fourth Epoch angel family's mystical heritage and protecting young apprentices.
-
-## Mentorship of Fors Wall & The Family Curse
-
-- **Correspondence Mentorship**: Recognizing Fors's talent and honesty, Dorian provides her with Apprentice pathway potion formulas, supernatural charms, and the magical notebook *Leymano's Travels*.
-- **The Blood Moon Mystery**: Dorian shares the tragic curse of the Abraham bloodline with Fors, unaware that Fors is bringing these secrets to **Mr. Fool's** Tarot Club to find a divine cure.
+He becomes the beloved teacher and mentor to **Fors Wall (Miss Magician)**.
 
 :::reveal at=3
 
-## Volume 3: The Teacher in Pritz Harbor
+## Volume 3: Legend of the Pirate Hunter & The Guidance of Fors
 
-Fors Wall establishes formal academic correspondence with Dorian Gray Abraham in Pritz Harbor, purchasing the Trickmaster and Astrologer formulas on behalf of the Tarot Club.
+Dorian recognizes Fors Wall's natural talent and integrity, officially accepting her as his student and gifting her the foundational potion formulas and the spellbook **Leymano's Travels**.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6 & Volume 7: Preserving the Heritage
+## Volume 6: Reclaiming the Family Secrets
 
-Dorian provides Fors with the **Sequence 6: Scribe** and **Sequence 5: Traveler** formulas. Following Mr. Door's sacrifice, Dorian is named the Patriarch of the revived Abraham Family, leading his surviving kin under the protection of the Church of the Fool.
+Dorian provides Fors with higher-sequence formulas (Traveler and Secrets Sorcerer), while Fors covertly assists the Abraham Family in recovering lost heirlooms stolen by Aurora Order traitors like Botis.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Secrets of the Cosmos & The Relic Recovery
+
+When Botis is slain, Fors returns **The Box of the Great Old Ones** to Dorian. Dorian weeps tears of gratitude, realizing that the mysterious deity backing Fors (**The Fool**) is the true savior of the Abraham Family.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Reborn House of Abraham
+
+In Volume 8, following Mr. Door's heroic sacrifice and the cessation of the Full Moon curse, Dorian Gray Abraham witnesses the revival of his ancient house. Guided by Archangel Fors Wall, the Abraham Family flourishes in peace under the divine protection of The Fool.
+
+:::

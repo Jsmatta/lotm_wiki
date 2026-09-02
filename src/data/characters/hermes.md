@@ -6,37 +6,38 @@ category: "characters"
 
 ## Overview
 
-**Hermes (The Ancient Sorcerer / Master of Mysticism)** is an ancient human pioneer and legendary **Sequence 2: Discerner / Author Angel** of the **Spectator Pathway (Visionary Pathway)**. Awakening during the dawn of the Second Epoch alongside the ancient humans, Hermes is celebrated in history as the **Creator of the Ancient Hermes Language**, the primary linguistic conduit used across all 22 pathways for ritual magic, incantations, and divine communication.
+**Hermes** is an ancient human scholar from the Second Epoch, the creator of the **Hermetic Language (Ancient Hermes)** used universally across all occult rituals and spellcraft, and an ancient archangel of the **Spectator Pathway (Sequence 2: Discerner)**. Having survived from the pre-Cataclysm era alongside the Ancient Sun God, Hermes was a founding leader of the **Psychology Alchemists** and a high-ranking elder of the **Twilight Hermit Order (Adam)**.
 
-Quiet, scholarly, gentle, and profoundly ancient, Hermes served as a founding elder of both the **Twilight Hermit Order** and the **Psychology Alchemists**, working under the guidance of **Adam**.
-
-## The Foundation of Mysticism Language
-
-Before Hermes, mortals lacked a safe medium to invoke mystical phenomena without instantly attracting direct madness and lethal corruption:
-- Hermes formulated **Ancient Hermes** by condensing the natural resonances of the Spirit World and the Astral Realm into structured runes and vocal tones.
-- Later in the Fifth Epoch, he created **Modern Hermes** to simplify ritual magic for lower-sequence Beyonders and academic scholars.
+Appearing as an elderly, benevolent philosopher clad in simple linen robes, Hermes possesses fathomless insight into the human mind, history, and collective unconsciousness.
 
 :::reveal at=1
 
-## Volume 1: The Incantations of Mysticism
+## Volume 1: Clown & The Ancient Language
 
-Klein Moretti uses Ancient Hermes to recite the four-line fortune-telling ritual, establishing his connection with Sefirah Castle and conducting daily divination.
+Klein Moretti learns ancient Hermes at the Blackthorn Security Company, recognizing Hermes as the legendary pioneer who codified mystical linguistics.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Subterranean Conspiracies
+## Volume 5: Red Priest & The Psychology Alchemists
 
-Hermes assists Adam and the Twilight Hermit Order in orchestrating the geopolitical events surrounding King George III's apotheosis ritual.
+Hermes operates from the shadows of the Psychology Alchemists in Backlund, observing Audrey Hall's development and covertly facilitating Adam's historical scripts.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Great Old One Era
+## Volume 7: The Witness of Creation
 
-Hermes assists in preserving human mystical history, retiring from active mortal politics as Adam ascends toward God Almighty.
+Hermes appears before Klein Moretti, engaging in profound philosophical discussions regarding the nature of humanity, madness, and the cyclical rebirth of deities. Hermes stands beside Adam as Adam begins his fusion with the True Creator.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Chronicler of the End
+
+In Volume 8, Hermes witnesses the rise of **The Fool** and the reconstitution of **God Almighty**. Choosing to remain a neutral, immortal chronicler of cosmic history, Hermes documents the Fifth Epoch for future civilizations.
+
+:::

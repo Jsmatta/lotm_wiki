@@ -6,26 +6,44 @@ category: "characters"
 
 ## Overview
 
-**Frank Lee (The Mad Botanist / Chief Mate)** is the First Mate and chief biological researcher aboard the pirate flagship **The Future**. Walking the **Planter Pathway (Sequence 5: Druid)** under the Mother Pathway, Frank is universally feared by pirates, demigods, and angels alike as the most terrifying, unhinged biological alchemist in the known world.
+**Frank Lee** is the cheerful, stout, and deeply terrifying chief alchemist and first mate of the **Golden Dream Pirates**, walking the **Mother Pathway (Planter Pathway)** as a **Sequence 6: Biologist**. Driven by boundless scientific curiosity and a genuine desire to eradicate world hunger, Frank conducts bizarre biological hybridization and cross-breeding experiments that cause hardened pirate captains, demigods, and eldritch monsters to break down in tears of pure horror.
 
-Possessing a gentle, friendly, kind-hearted personality with zero malicious intent, Frank is driven purely by a passionate scientific desire to solve world hunger and improve crop yields through revolutionary crossbreeding. However, his experimental creations inevitably mutate into eldritch, cosmic biological nightmares.
+Frank remains delightfully oblivious to the cosmic terror he generates, enthusiastically offering his "revolutionary" specimens to anyone within arm's reach.
 
-## Legendary Creations & Horrors
+## Legendary Hybrid Monstrosities
 
-- **Meat-Producing Mushrooms**: Fungi crossbred with beef that grow in minutes, consume surrounding blood, and attempt to crossbreed with any living organism within a ten-meter radius.
-- **Beer-Producing Dairy Cows**: Bovines modified to lactate chilled golden beer directly into wooden flagons.
-- **Blood-Drinking Wheat**: High-yield grain that feeds on the flesh of sea monsters and can scream when harvested.
-- **Fish-Rose Crosses**: Hybrid aquatic flora with human teeth capable of singing hypnotic melodies.
+- **Self-Propagating Fungi**: Mushrooms that rapidly multiply in any organic medium (including blood, sweat, and earwax), capable of purifying toxins, synthesizing beer, or violently exploding upon maturity.
+- **Self-Breeding Dairy Cows**: Bovine specimens capable of cross-breeding with fish, plants, or rocks to produce infinite milk and steak.
+- **The Beer Tree**: Grapevines grafted with yeast and wheat stalks that gush chilled, freshly fermented ale directly from their stems.
 
-## Volume 3: Legend of the Pirate Hunter
+:::reveal at=3
 
-When Gehrman Sparrow boards the *Future*, even the cold-blooded pirate hunter is terrified by Frank Lee's casual descriptions of crossbreeding humans with mushrooms. Gehrman uses Frank's terrifying mutated mushroom spores as biochemical biological weapons during coastal skirmishes.
+## Volume 3: Legend of the Pirate Hunter & The Captain's Nightmare
 
-:::spoiler volume=8
-
-## Volume 8: The Cosmic Savior
-
-During the Outer Deity crisis, Frank Lee's biological crossbreeding techniques are weaponized against the encroaching outer horrors, turning Frank into Earth's most bizarre biological defensive vanguard.
+Gehrman Sparrow (Klein) boards *The Golden Dream*, witnessing Frank's nightmarish botanical experiments firsthand. Even Klein's seasoned psychological composure is tested when Frank cheerfully asks if it is possible to cross-breed humans with mushrooms to solve famine.
 
 :::
 
+:::spoiler volume=5
+
+## Volume 5: Red Priest & Wartime Sustenance
+
+During the continental blockade of the World War, Frank Lee's fast-growing hybrid crops and miracle mushrooms feed entire fleets and civilian coastal settlements, averting catastrophic starvation.
+
+:::
+
+:::spoiler volume=7
+
+## Volume 7: Demigod of Agriculture
+
+Frank advances to **Sequence 4: Ancient Alchemist**, unlocking the ability to synthesize sentient botanical guardians and living ecosystem biospheres.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Father of Miracle Harvests
+
+In Volume 8, Frank Lee is hailed across the globe as the greatest agricultural genius of the Fifth Epoch. Working under the protection of the Church of the Fool and the Earth Mother, Frank leads research institutes in Bayam, while the Tarot Club strictly monitors his laboratories to ensure his mushrooms do not accidentally conquer the cosmos.
+
+:::

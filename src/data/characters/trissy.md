@@ -6,40 +6,46 @@ category: "characters"
 
 ## Overview
 
-**Trissy (Tris / Demoness of Despair / Trissy Cheek)** is a central tragic figure and high-ranking Beyonder of the **Demoness Pathway (Sequence 4: Demoness of Despair)**. Starting in Volume 1 as the male assassin **Tris** in Tingen, Trissy was forcibly gender-transformed upon consuming the **Sequence 7: Witch** potion under the direction of the **Demoness Sect**.
+**Trissy (originally Tris)** began her journey in Tingen as a male cutthroat walking the **Demoness Pathway (Sequence 9: Assassin / Sequence 8: Instigator)**. After drinking the **Sequence 7: Witch** potion, Tris underwent a permanent biological transition into a stunningly beautiful woman, taking the name **Trissy**.
 
-Entangled in the tragic romantic manipulation of Loen's **Prince Edessak**, Trissy became the biological and spiritual catalyst for the catastrophic **Great Smog of Backlund**. Fueled by profound trauma, hatred, and a burning desire for revenge against the royal family and the Primordial Demoness, Trissy becomes a critical wildcard in exposing King George III's apotheosis conspiracy.
-
-## Pathway Progression
-
-- **Sequence 9: Assassin & Sequence 8: Instigator**: Martial agility, instigating emotional conflict and riots.
-- **Sequence 7: Witch**: Complete physical transformation into a stunning woman, mastering black flame, ice magic, and invisible spider silk.
-- **Sequence 6: Demoness of Pleasure & Sequence 5: Demoness of Affliction**: Seduction, charm, biological plagues, and spreading curses.
-- **Sequence 4: Demoness of Despair**: Demigod authority, petrification gaze, mirror world traversal, and spreading lethal regional pestilence.
+Fleeing to Backlund, Trissy became ensnared in high-society royal intrigue, entering a genuine, tragic romantic relationship with **Prince Edessak Augustus**. Prince Edessak's subsequent death during the Great Smog transformed Trissy into a vengeance-driven avenger determined to destroy King George III and the Demoness Sect.
 
 :::reveal at=1
 
-## Volume 1: The Assassin of Tingen
+## Volume 1: Clown & The Instigator of Tingen
 
-Tris assassinates prominent officials in Tingen before consuming the Witch potion and fleeing the city under the new name **Trissy**.
+Tris incites riots and serial assassinations in Tingen under the orders of secret societies before escaping Nighthawk pursuit by advancing to Witch and fleeing to the capital.
 
 :::
 
 :::spoiler volume=2
 
-## Volume 2: The Faceless & The Great Smog
+## Volume 2: The Faceless & The Prince's Love
 
-Trissy is groomed by the Demoness Sect to seduce Prince Edessak. During the Great Smog, she is used as the living altar for the descent of the Primordial Demoness. Witnessing Prince Edessak's forced suicide, Trissy vows eternal vengeance.
+In Backlund, Trissy is groomed by the Demoness Sect to serve as a catalyst for the True Creator's descent. Prince Edessak falls deeply in love with her, sacrificing his life to shield her from immediate assassination when the plot collapses during the Great Smog.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Vengeance Sacrifice
+## Volume 5: Red Priest & The Vengeance Against the King
 
-Trissy allies with Sherlock Moriarty (Klein Moretti), providing the secret spatial coordinates to King George III's hidden Black Emperor mausoleums. 
-
-During the apotheosis battle, Trissy detonates the *Yesterday Once More* charm to summon the Primordial Demoness's mirror power, destroying the royal mausoleum and dying alongside the royal conspirators to avenge Prince Edessak.
+Advancing to **Sequence 5: Affliction**, Trissy allies with Klein Moretti to avenge Prince Edessak. During George III's apotheosis ritual, Trissy courageously detonates the Demoness mirror wards inside the secret mausoleums, triggering the divine backlash that destroys the king.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Final Demonic Sacrifice
+
+Trissy is pursued by Katarina Pelle and high-level Demonesses. Refusing to become a vessel for the Primordial Demoness Cheek, Trissy detonates her own Beyonder characteristics in a blaze of black flames, choosing death on her own terms alongside the memory of Prince Edessak.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Vengeance Honored
+
+In Volume 8, Trissy is remembered as a tragic rebel who defied the monstrous fate imposed by the Demoness Pathway, her final defiance honored by Klein Moretti and the Tarot Club.
+
+:::

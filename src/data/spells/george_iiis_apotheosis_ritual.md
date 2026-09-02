@@ -30,3 +30,19 @@ With the nine-pyramid matrix severed, George III's ritual collapses into massive
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Dismantling of the Mausoleums
+
+Following George III's death, the Orthodox Churches and the Loen Parliament conduct sweeping investigations, dismantling the remaining secret pyramid mausoleums and cataloging the royal family's forbidden Lawyer Pathway artifacts.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Cosmic Repercussions
+
+In Volume 8, the failure of George III's apotheosis ritual ensures that the Black Emperor Uniqueness remains free from corrupt mortal tyrants. The unique resurrection mechanics of the Black Emperor remain linked to Emperor Roselle Gustav on the Moon, with The Fool preserving humanity's defenses against the Outer Deities.
+
+:::
+

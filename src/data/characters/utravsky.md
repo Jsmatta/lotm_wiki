@@ -6,29 +6,38 @@ category: "characters"
 
 ## Overview
 
-**Father Utravsky (Bishop Utravsky)** is the towering, gentle head priest of the **Harvest Church** in Backlund, dedicated to the worship of the **Earth Mother**. Standing over 2.2 meters tall with a colossal, muscular physique and a serene, benevolent countenance, Father Utravsky is a reformed pirate and warrior walking the **Planter Pathway / Warrior Pathway (Sequence 6: Dawn Paladin / Sequence 5: Guardian)**.
+**Father Utravsky** is the towering, gentle, and profoundly compassionate parish priest of the **Harvest Church** on Rose Street in Backlund, dedicated to the worship of the **Earth Mother**. Standing over two meters tall with giant bloodline heritage, Utravsky was once a bloodthirsty pirate and berserker of the **Warrior Pathway (Sequence 6: Dawn Paladin)** who terrorized the Five Seas in his youth.
 
-Once a bloodthirsty berserker pirate in his youth, Utravsky was redeemed and converted by the Earth Mother (Lilith), dedicating his remaining life to gardening, herbal healing, sheltering orphans, and providing free medicine to Backlund's poor.
-
-## The Harvest Sanctuary & The Dream Candle
-
-- **The Harvest Church**: A modest stone chapel in Backlund surrounded by vegetable gardens and herbal medicine plots, providing sanctuary to outcasts and Sanguines.
-- **The Psychological Candle**: A mystical candle gifted to Klein Moretti; by entering Utravsky's dream realm, Klein helps purge lingering violent demonic memories from the Father's subconscious mind.
-- **Mentorship of Emlyn White**: Forcing Sanguine Viscount Emlyn White to clean the church pews and study scriptures, guiding Emlyn toward his true divine destiny under Lilith.
+Transformed by divine remorse, Utravsky renounced violence, took holy vows, and dedicated his life to healing the sick, tending fragrant gardens, and preaching peace.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & The Harvest Sanctuary
+## Volume 2: The Sanctuary on Rose Street
 
-Klein Moretti meets Father Utravsky, cleanses the psychological corruption in his dreams, and receives the **Master Key** and **Apothecary formula**.
+Father Utravsky welcomes Detective Sherlock Moriarty, while patiently housing the arrogant Sanguine **Emlyn White**, guiding Emlyn away from prejudice toward genuine spiritual maturity.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5 & Volume 8: The Relief of Backlund
+## Volume 5: Red Priest & Wartime Relief
 
-During the Great Smog and the World War, Father Utravsky turns Harvest Church into a massive humanitarian hospital and relief shelter, saving thousands of wounded civilians with divine herbal remedies.
+During the Backlund air raids, Father Utravsky turns the Harvest Church into a civilian hospital. Drawing upon his Dawn Paladin light and Earth Mother blessings, Utravsky shields thousands of mangled refugees from falling bombs and toxic smoke.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Revelation of Lilith
+
+Utravsky rejoices with tears of joy when the true identity of the Earth Mother is revealed as **Lilith**, witnessing Emlyn White's rise as an honored bishop of the church.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Shepherd of Peace
+
+In Volume 8, Father Utravsky continues his peaceful ministry at the Harvest Church, revered by citizens of all faiths as the gentle giant whose warm hands healed Backlund in its darkest hour.
+
+:::

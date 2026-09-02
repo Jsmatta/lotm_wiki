@@ -6,20 +6,32 @@ category: "characters"
 
 ## Overview
 
-**Old Kohler (Kohler)** was an impoverished, elderly working-class laborer residing in the slums of **East Borough, Backlund**. Employed by detective **Sherlock Moriarty (Klein Moretti)** as a paid informant to gather street intelligence on human trafficking, underground gangs, and factory conditions, Old Kohler stands as one of the most poignant symbols of the suffering working class in industrial Backlund.
+**Old Kohler** was an elderly, impoverished factory worker and day-laborer residing in the destitute slums of **East Borough** in Backlund. Suffering from severe chronic respiratory illness caused by industrial coal smog, Old Kohler struggled to afford stale black bread and a corner of a rented bunk bed, personifying the quiet dignity, endurance, and tragic vulnerability of the Victorian working class.
 
-Despite living in extreme poverty, enduring freezing winters, and surviving on cheap black bread and hot water, Old Kohler was honest, humble, hard-working, and deeply grateful for the modest financial stability provided by Klein's employment.
+He became one of **Sherlock Moriarty's (Klein Moretti's)** most trusted street informants, providing grassroots intelligence on East Borough's underbelly in exchange for modest copper pence.
 
-## The Informant of East Borough
+:::reveal at=2
 
-- **Street Intelligence**: Helping Sherlock Moriarty navigate the tangled alleyways of East Borough, identifying Capim's human trafficking network and tracing suspicious chemical odors.
-- **The Dream of Ham Bone**: His modest life ambition was to save enough pennies to purchase a cured pork leg bone to brew a warm, rich ham broth for the winter.
+## Volume 2: The Faceless & The Ham in the Pocket
 
-## Volume 2: The Faceless & The Great Smog Tragedy
+Klein treats Old Kohler with deep warmth, giving him money to buy a piece of cooked ham for a celebratory meal. However, during the sudden outbreak of the **Great Smog of Backlund**, toxic demonic fumes sweep through East Borough. 
 
-Klein gives Old Kohler extra shillings so he can finally purchase his long-awaited ham bone. However, that very afternoon, the **Demoness Sect** and the **Aurora Order** unleash the toxic biological cauldrons of the **Great Smog of Backlund**.
+Klein later discovers Old Kohler's frozen, suffocated body lying in a dirty alleyway, his cold fingers still clutching the unopened paper package of cooked ham he never got to eat. Old Kohler's death deeply scars Klein, fueling his burning determination to bring down the royal and demonic conspirators responsible for the disaster.
 
-Trapped in the dense yellow fog of East Borough, Old Kohler suffocates to death clutching his bag of groceries, coughing up blood in the street alongside thousands of innocent laborers.
+:::
 
-Finding Old Kohler's lifeless body in the smog-choked ruins crystallizes Klein Moretti's burning resolve: to relentlessly hunt down the high-ranking nobles, princes, and cultists who treat ordinary human lives as expendable stepping stones for their divine ambitions.
+:::spoiler volume=4
 
+## Volume 4: Undoing the Past & Dwayne Dantès's Charity
+
+Klein establishes a massive charitable scholarship and slum-relief foundation under the name of Dwayne Dantès, specifically creating clean housing and medical funds to prevent other workers from suffering Old Kohler's tragic fate.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Anchor of Humanity
+
+In Volume 8, as Klein ascends to **Sequence 0: The Fool** and faces the cold, eldritch awakening of the Celestial Worthy, his memories of Old Kohler and the paper packet of ham serve as an unyielding anchor of compassion, preserving his mortal soul amidst cosmic divinity.
+
+:::

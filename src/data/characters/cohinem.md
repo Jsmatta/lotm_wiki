@@ -6,36 +6,38 @@ category: "characters"
 
 ## Overview
 
-**Cohinem (The Queen of Calamity / The Elf Queen)** was the ancient sovereign ruler of the **Elf Race** during the Second Epoch (The Dark Epoch). Walking the **Sailor Pathway (Tyrant Pathway)**, Cohinem was a supreme **Sequence 1: Lord of Storms / Calamity Intercessor Angel**, commanding oceanic storms, tidal cataclysms, and celestial thunder alongside the Elven King Soniathrym.
+**Cohinem (The Queen of Calamity)** was the legendary Elven Queen of the Second Epoch, serving as the primary consort to Elf King **Soniathrym** and commanding supreme authority over the **Sailor Pathway (Sequence 1: Thunder God / Sequence 2: Calamity)**. Renowned for her divine beauty, emerald hair, and terrifying dominion over global oceanic tempests, Cohinem fell during the Cataclysm when the Ancient Sun God conquered the ancient non-human courts.
 
-Following the fall of the Elven Empire during the Ancient Sun God's conquests, Cohinem's lingering soul and divine consciousness merged with the mythical ghost ship **The Blue Avenger**, awaiting a worthy successor of the sea.
-
-## Legacy & The Blue Avenger
-
-- **The Blue Avenger**: An ancient elven ghost ship crafted from the crystallized wood of world trees and enchanted with elven blood magic.
-- **Successor Connection**: When **Alger Wilson (The Hanged Man)** claims the *Blue Avenger*, Cohinem's spiritual presence tests and guides him, providing ancient elven knowledge, songs of the sea, and potion recipes.
+Her soul and spiritual memories survived within the mystical relics of the **Sea of Ruins** and the magical book **Groselle's Travels**.
 
 :::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & The Ghost Ship
+## Volume 3: Legend of the Pirate Hunter & The Elven Song
 
-Alger Wilson commands the *Blue Avenger*, experiencing strange maritime resonance and hearing the ancient melodious songs of the Queen of Calamity echoing through the ship's timbers.
+Klein Moretti discovers ancient elven relics in the Sea of Ruins, hearing Cohinem's haunting melodies and encountering her elven descendants (including Siatas).
 
 :::
 
 :::spoiler volume=4
 
-## Volume 4: The Primitive Island Murals
+## Volume 4: Undoing the Past & Groselle's Liberation
 
-Alger and Gehrman Sparrow discover elven murals depicting Queen Cohinem battling ancient demonic wolves and sea monsters during the Second Epoch.
+Through the experiences within Groselle's Travels, Klein uncovers the tragedy of the ancient Elven Kingdom and the profound historical bond between Queen Cohinem and the oceans.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6 & Volume 8: The Western Continent Voyage
+## Volume 6: The Western Continent Connection
 
-Cohinem's residual soul fully merges with Alger's spiritual sea, granting him the ancient elven blessing to navigate the celestial storms shielding the Western Continent.
+Archaeological investigations reveal that Cohinem and the ancient elves originated from the mystical **Western Continent**, sealed behind spatial barriers by the Celestial Worthy before the First Epoch.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Sea Sovereign's Blessing
+
+In Volume 8, with Klein Moretti ascending to **The Fool** and Alger Wilson journeying toward the Western Continent, the ancient maritime blessings of Queen Cohinem guide the Tarot Club's ships across the uncharted cosmic waters.
+
+:::

@@ -6,39 +6,40 @@ category: "characters"
 
 ## Overview
 
-**Sharron (Miss Sharron / The Wraith)** is a high-ranking Beyonder of the **Chained Pathway (Prisoner Pathway)** and a prominent leader of the **Temperance Faction** operating in **Backlund**. Walking the path from **Sequence 5: Wraith** to **Sequence 4: Puppet (Demigod)**, Sharron is one of Klein Moretti's most loyal, dependable, and capable long-term comrades.
+**Sharron (Miss Sharron)** is an aloof, doll-like, and profoundly disciplined leader of the **Temperance Faction** within the **Rose School of Thought**, walking the **Chained Pathway (Mutant Pathway)**. Clad in an iconic dark Gothic bonnet, black Victorian mourning dress, and pale, delicate features that resemble an exquisite porcelain doll, Sharron embodies absolute ascetic restraint, keeping her voice to a quiet whisper and concealing her intense emotions behind an icy, tranquil exterior.
 
-Distinguished by her pale, doll-like skin, flaxen blonde hair, black gothic bonnet, and habit of floating seamlessly out of mirrors and shadows, Sharron speaks in concise, minimalist sentences while practicing strict emotional asceticism to resist the instinctual madness of the Chained Pathway.
-
-## Pathway & Wraith Abilities
-
-- **Sequence 9: Prisoner**: Physical resilience, pain tolerance, desperate combat爆发.
-- **Sequence 7: Werewolf**: Regeneration, dark claws, frost and poison attacks.
-- **Sequence 6: Zombie**: Steel-like invulnerable flesh, manipulating dead bodies, cold magic.
-- **Sequence 5: Wraith**: True spiritualization, phasing through walls, jumping between reflective surfaces, and possessing living targets from within.
-- **Sequence 4: Puppet**: Controlling invisible cursed strings, manipulating targets into living marionette puppets.
+She and her partner **Maric** become **Klein Moretti's (Sherlock Moriarty's)** most steadfast, trustworthy allies across Backlund, the Five Seas, and the Southern Continent.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & The Bravehearts Bar
+## Volume 2: The Temperance Alliance in Backlund
 
-Sherlock Moriarty hires Sharron as a bodyguard during the Ian Wright investigation. Sharron aids Klein in killing Sequence 5 Marionettist Rosago and battling the Desire Apostle in Backlund.
+Sharron (a **Sequence 5: Wraith**) hires Detective Sherlock Moriarty for tactical bodyguard and surveillance work in Backlund. Together, they eliminate Rose School of Thought assassins and rogue swindlers like Lanevus.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & Demigod Advancement
+## Volume 5: Red Priest & Demigod Ascension
 
-Sharron consumes the **Sequence 4: Puppet** potion formula and characteristics obtained through the Tarot Club, successfully advancing to Demigod status while defending her refuge from the Rose School of Thought.
+With sequence formulas and characteristics provided through Klein and the Tarot Club, Sharron advances to **Sequence 4: Puppet**, gaining the ability to swap positions with wooden effigies, redirect curses, and resist high-level mental attacks during the Backlund air raids.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Reclamation of the Highlands
+## Volume 7: Secrets of the Southern Wastelands
 
-Sharron leads the Temperance Faction alongside Reinette Tinekerr and Maric, cleansing the Southern Continent of Indulgence corruption and aligning with the Church of the Fool.
+Sharron leads the Temperance Faction alongside Klein and Miss Messenger (**Reinette Tinekerr**) in an offensive into the Southern Continent, dismantling Indulgence Faction altars and advancing to **Sequence 3: Disciple of Silence**.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Reborn Highlands
+
+In Volume 8, with Klein's divine assistance as **The Fool**, Sharron advances to **Sequence 2: Ancient Bane (Angel)**. 
+
+Following the defeat of Abomination Suah and the expulsion of the Mother Tree of Desire's corruption, Sharron stands as the undisputed Archangel of the Chained Pathway, restoring freedom, peace, and spiritual temperance across the Southern Continent.
+
+:::

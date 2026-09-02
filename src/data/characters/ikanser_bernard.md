@@ -6,28 +6,40 @@ category: "characters"
 
 ## Overview
 
-**Deacon Ikanser Bernard** is a high-ranking deacon of the **Machinery Hivemind** (the official Beyonder organization of the Church of the God of Steam and Machinery) operating in **Backlund**. Walking the **Paragon Pathway (Savann / Artisan Pathway)**, Ikanser is an expert in mechanical weaponry, steam artillery, alchemical traps, and enchanted artifact containment.
+**Deacon Ikanser Bernard** is the spirited, dedicated commander of the Backlund **Machinery Hivemind** squad under the **Church of the God of Steam and Machinery**, walking the **Savant Pathway (Sequence 6: Artisan / Sequence 5: Astronomer)**. Distinguished by his voluminous curly chestnut hair, high-collared blue uniform, customized steam carbine, and earnest dedication to duty, Ikanser is infamous for his traumatic relationship with the sentient magic mirror **Arrodes**.
 
-Distinguished by his sharp jawline, high collar, strict military discipline, and receding hairline, Deacon Ikanser is famous among readers for his long-suffering, hilarious relationship with the sentient magical mirror **Arrodes (The Magic Mirror)**.
+## The Ordeals with Arrodes
 
-## The Machinery Hivemind & Arrodes's Humiliations
-
-- **Official Investigator**: Leading Hivemind teams in investigating high-profile occult murders, terrorist bombings, and black market alchemical laboratories in the capital.
-- **The Toll of Arrodes**: To obtain critical investigative intelligence from Arrodes, Ikanser is repeatedly subjected to deeply humiliating, personal questions about his romantic life, hair loss remedies, and private habits, which he endures with grim professional duty.
+Whenever Ikanser seeks mystical answers from Arrodes, the mirror sadistically subjects him to intensely humiliating questions regarding his receding hairline, romantic failures, and private bathroom habits—leaving Ikanser perpetually dreading every interrogation session.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & The Backlund Inquiries
+## Volume 2: The Investigation into the Great Smog
 
-Deacon Ikanser leads the investigation into the Capim mansion massacre and the Great Smog, repeatedly crossing paths with Sherlock Moriarty and using Arrodes to verify leads.
+Ikanser deploys Arrodes in Backlund to investigate serial murders, repeatedly enduring the mirror's comedic torture before coordinating with Sherlock Moriarty to raid cultist safehouses.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5 & Volume 8: Steam Defense of the Capital
+## Volume 5: Red Priest & The Defense of the Capital
 
-During the World War, Ikanser coordinates with the Nighthawks and Mandated Punishers, deploying colossal steam defense cannons and alchemical barriers to shield Backlund's civilians from enemy airships.
+Ikanser leads Machinery Hivemind squads in shooting down Feysacian airships, utilizing high-powered steam cannons and alchemical artillery to defend industrial plants.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Technological Upgrades
+
+Ikanser advances to **Sequence 4: Alchemist (Demigod)**, pioneering rapid telegraphic communication devices that coordinate the Allied war effort.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Steam Pioneer
+
+In Volume 8, Deacon Ikanser Bernard is promoted to Archbishop of the Church of Steam's Backlund Diocese, leading post-war technological reconstruction with his head held high (and thankfully relieved that Arrodes now resides peacefully in Sefirah Castle!).
+
+:::

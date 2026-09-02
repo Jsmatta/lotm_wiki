@@ -6,38 +6,52 @@ category: "organizations"
 
 ## Overview
 
-**MI9** (Military Intelligence Department 9) is the premier state intelligence agency and domestic espionage organization of the **Loen Kingdom Armed Forces**. Directly subordinate to the Ministry of Defense and the Royal Family, MI9 oversees foreign intelligence collection, counter-espionage, internal political surveillance, and colonial security.
+**MI9** (Military Intelligence Department 9) is the premier state intelligence agency and domestic espionage organization of the **Loen Kingdom Armed Forces**. Directly subordinate to the Ministry of Defense and the Royal Family, MI9 oversees foreign intelligence collection, counter-espionage, internal political surveillance, and national security investigations.
 
-Unlike the orthodox church Beyonder squads who focus on religious heresy and evil spirits, MI9 operates strictly for the national and geopolitical interests of the Loen Empire, employing Beyonders of the **Justiciar (Arbiter)**, **Black Emperor (Lawyer)**, and **Hunter Pathways**.
+Heavily populated by Beyonders of the **Justiciar Pathway (Arbiter)** and **Black Emperor Pathway (Lawyer)**, MI9 operates with bureaucratic ruthlessness to protect the Loen Kingdom's imperial interests.
 
-## Leadership & Hierarchy
+## Leadership & Operatives
 
-- **Executive Director**: Major General **Qonas Kilgor** (Sequence 4: Earl of The Fallen), who was secretly deeply entrenched in the royal family's Black Emperor conspiracy.
-- **Key Field Operatives**:
-  - **Xio Derecha (Miss Judgment)**: Fierce bounty hunter and arbiter who joins MI9 as an unofficial external contractor before rising through the ranks.
-  - **Sherlock Moriarty (Klein Moretti)**: Recruited as an external special investigator during the Backlund diplomatic crises.
+- **Major General Qonas Kilgor**: Deputy Director, Earl of the Fallen (Sequence 4 demigod), covertly serving King George III's secret conspiracies.
+- **Xio Derecha**: Bounty hunter and unofficial external contractor who infiltrates East Borough under MI9 directives before discovering its inner corruption.
+- **Sherlock Moriarty (Klein Moretti)**: Retained as a private consultant on several high-profile diplomatic assassinations in Backlund.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & Backlund Espionage
+## Volume 2: The Backlund Espionage
 
-MI9 competes against Intis Republic spies, the Aurora Order, and Feysacian infiltrators in Backlund. Klein Moretti is hired by MI9 through young Ian Wright to track rogue Intis ambassadors, navigating complex embassy crossfires.
+MI9 investigates diplomatic tensions in Backlund, deploying informants across East Borough and hiring private detectives like Sherlock Moriarty to resolve the mysterious assassination of the Intis ambassador Bakerland Jean Madan.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Fall of Qonas Kilgor
+## Volume 5: Red Priest & The Purge of the Deputy Director
 
-Klein Moretti and Miss Judgment uncover Major General Qonas Kilgor's direct involvement in human trafficking and the royal mausoleum network. Klein ambushes and executes Qonas Kilgor, stripping his Beyonder characteristic and breaking the royal family's control over MI9.
+Klein Moretti discovers that MI9 Deputy Director Qonas Kilgor is deeply implicated in the human trafficking rings supporting King **George Augustus III's** secret apotheosis mausoleums. Klein ambushes and eliminates Qonas, turning him into a marionette and crippling the royal family's covert operations.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6 & Volume 8: The Reconstructed Intelligence Bureau
+## Volume 6: Wartime Mobilization
 
-Following the war, **Xio Derecha** is promoted to high-ranking Colonel within MI9, transforming the agency into an ethical intelligence apparatus cooperating with the Church of the Fool.
+Following the outbreak of the World War, MI9 coordinates anti-airship defenses, cracks enemy Feysacian spy rings, and enforces martial law across Loen's metropolitan centers.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Internal Reclamation
+
+With the death of George III and the exposure of royal corruption, **Xio Derecha** advances to higher sequences in the Justiciar Pathway, systematically reforming MI9 from within alongside allies from the Church of Evernight.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The New Era of Intelligence
+
+In Volume 8, MI9 transitions into a stabilized, transparent intelligence service stripped of corrupt royal cliques. Working in close tandem with the Tarot Club, Xio Derecha oversees domestic peacekeeping and guards the kingdom against Outer Deity infiltrations.
+
+:::

@@ -6,38 +6,41 @@ category: "characters"
 
 ## Overview
 
-**Antigonus (The Half-Fool / The Ancient Demonic Wolf Patriarch)** was an ancient **King of Angels** of the **Fool Pathway (Seer Pathway)** during the Fourth Epoch (Solomon Empire and Tudor Dynasty). Born as the biological child of the Second Epoch's **Annihilation Demonic Wolf Flegrea**, Antigonus accommodated the **Fool Pathway Uniqueness** and two Sequence 1: Attendant of Mysteries characteristics.
+**Antigonus (The Half-Fool / Demonic Wolf Ancestor)** was an ancient King of Angels of the **Seer Pathway (Sequence 1: Attendant of Mysteries)** and the biological child of ancient Demonic Wolf God **Flegrea**. During the Fourth Epoch, Antigonus founded the infamous Antigonus Family, serving as high nobility in the Solomon and Tudor Empires.
 
-Following the devastating War of the Four Emperors and the Tudor Empire's destruction, Antigonus lost control under the mental awakening of the **Celestial Worthy**, transforming into a colossal, eight-legged Demonic Wolf of Fog sealed atop the peaks of the **Hornacis Mountain Range**.
-
-## The Ancient Curse & The Notebook
-
-- **The Antigonus Family's Notebook**: An ancient cursed grimoire bound in black leather that carries Antigonus's residual psychic contamination, compelling mortals to travel to the main peak of Hornacis to become marionettes.
-- **The Slumbering Half-Fool**: Guarded in deep slumber within the concealment realm created by the **Evernight Goddess**, Antigonus serves as the living seal holding the Fool Pathway Uniqueness.
+Accommodating the **Fool Pathway Uniqueness** during the War of the Four Emperors, Antigonus succumbed to uncontrollable madness, losing control and mutating into a titanic, multi-eyed Demonic Wolf entity who was subdued and sealed in eternal slumber atop the highest peak of the **Hornacis Mountain Range**.
 
 :::reveal at=1
 
-## Volume 1: Tragedy in Tingen & The Black Notebook
+## Volume 1: The Hornacis Whispers
 
-The theft of the Antigonus Notebook in Tingen leads to the tragic suicide of the original Klein Moretti and the destruction of the Tingen Nighthawks squad.
+Klein Moretti repeatedly hears hypnotic, maddening whispers during his dreams in Tingen:
+> *"Hornacis... Flegrea... Hornacis... Flegrea..."*
+
+These subconscious beacons radiate directly from Antigonus's slumbering body atop the mountain range.
 
 :::
 
 :::spoiler volume=4
 
-## Volume 4: The Infiltration of Saint Samuel Cathedral
+## Volume 4: Undoing the Past & The Foggy Town
 
-Klein Moretti (as Dwayne Dantès) infiltrates the underground Chanis Gate of Saint Samuel Cathedral to view the Antigonus Notebook, obtaining the Sequence 4: Bizarro Sorcerer potion formula.
+Klein encounters the spatial domain surrounding the Hornacis peak, witnessing the terrifying puppet anomalies maintaining the Half-Fool's slumber.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7: Secrets of the Cosmos & The Fool's Apotheosis
+## Volume 7: Secrets of the Cosmos & The Hornacis Ascent
 
-Klein Moretti journeys to the Hornacis mountain peak. With the assistance of the Evernight Goddess, Klein confronts the slumbering Antigonus, using the water from the River of Eternal Darkness to lull the monstrous wolf into eternal peace. 
-
-Klein safely extracts the Fool Uniqueness and Sequence 1 characteristic, freeing Antigonus from his millennia of agonizing madness as Klein ascends to **Sequence 0: The Fool**.
+Klein journeys to the Hornacis peak with the assistance of the **Evernight Goddess**. Amanises uses the pacifying waters of the River of Eternal Darkness to soothe the titanic Demonic Wolf, allowing Klein to safely extract the **Fool Pathway Uniqueness** and the Attendant of Mysteries characteristic to perform **Klein's Apotheosis Ritual**.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Peaceful Slumber
+
+Following the extraction of the Uniqueness and Klein's ascension as **Sequence 0: The Fool**, Antigonus is permanently freed from madness. The ancient wolf reverts to a calm, tranquil state, resting peacefully under the nocturnal care of the Church of the Evernight Goddess.
+
+:::

@@ -6,27 +6,35 @@ category: "characters"
 
 ## Overview
 
-**Hvin Rambis** was a member of the supreme **Council of Seven** of the **Psychology Alchemists**, a high-ranking aristocratic consultant in the Loen Kingdom, and a dangerous **Sequence 4: Manipulator (Demigod)** of the **Spectator Pathway (Visionary Pathway)**. Working directly on behalf of **Adam (The Twilight Hermit Order)** and the royal conspirators, Hvin was tasked with hypnotizing and manipulating noble elites across Backlund.
+**Hvin Rambis** was a senior councilor of the **Psychology Alchemists**, an elite agent of the **Twilight Hermit Order (Adam)**, and a terrifying demigod walking the **Spectator Pathway (Sequence 3: Manipulator / Sequence 4: Iron-Blooded Counselor)**. Infiltrating the highest echelons of Backlund nobility, Hvin Rambis served as an influential political advisor to the Loen Royal Family, covertly manipulating the emotions and thoughts of cabinet ministers and aristocrats to steer the empire toward the World War.
 
-Posing as a refined, cultured aristocratic gentleman, Hvin targeted **Audrey Hall (Miss Justice)**, attempting to plant psychological subconscious cues and hypnotic commands into her mind to control the Hall family.
+## Abilities & Psychological Manipulation
 
-## Pathway & Manipulator Abilities
-
-- **Sequence 4: Manipulator**: Reading subconscious mindscapes, inserting artificial memories, placing delayed psychological cues, manipulating collective consciousness, and inducing mental collapses.
+- **Mind Infiltration & Cueing**: Silently planting subconscious psychological cues in targets through casual conversations, dictating their long-term decisions without their conscious awareness.
+- **Mental Plague**: Unleashing contagious emotional frenzies, deep depressive spirals, and instant psychic lobotomies.
 
 :::reveal at=4
 
-## Volume 4: Dwayne Dantès & The Hypnotic Threat
+## Volume 4: Undoing the Past & The Guidance of Audrey
 
-Hvin approaches Audrey Hall, testing her loyalty to the Psychology Alchemists and attempting to implant subtle psychological suggestions regarding noble politics. Audrey detects the intrusion with her Spectator skills and warns the Tarot Club.
+Hvin Rambis approaches **Audrey Hall (Miss Justice)**, attempting to guide her into becoming his puppet operative inside the prestigious Hall family.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Assassination of Hvin Rambis
+## Volume 5: Red Priest & The Elimination of the Manipulator
 
-With the aid of **Madam Arianna's** divine concealment, Klein Moretti ambushes Hvin Rambis in Backlund. Klein uses marionette switching and spirit attacks to neutralize Hvin's mind manipulation, executing him and channeling his spirit to expose King George III's secret Black Emperor mausoleums.
+Audrey Hall recognizes Hvin Rambis's insidious psychological cues and alerts Klein Moretti. 
+
+Klein devises a master ambush in Backlund: while Audrey maintains a calm facade, Klein, Miss Messenger, and Creeping Hunger corner Hvin Rambis in a suburban villa. Klein bypasses his psychological defenses and slays Hvin Rambis, securing his Sequence 3 **Manipulator** characteristic for Audrey's eventual advancement.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Cleansed Nobility
+
+In Volume 8, Hvin Rambis's demise stands as a turning point that liberated Backlund's aristocracy from the covert mind control of the Twilight Hermit Order, allowing Miss Justice to guide the psychology of the kingdom toward genuine peace.
+
+:::

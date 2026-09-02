@@ -6,30 +6,38 @@ category: "places"
 
 ## Overview
 
-**Bayam (The City of Generosity)** is the bustling colonial capital and primary deep-water seaport of the **Rorsted Archipelago** in the **Sonia Sea**, governed under the colonial administration of the **Loen Kingdom**. Characterized by azure ocean waters, tropical palm trees, white limestone colonnades, spice markets, and dense pirate undergrounds, Bayam is the main setting for Volume 3 (Legend of the Pirate Hunter).
+**Bayam (The City of Generosity)** is the bustling colonial capital of the **Rorsted Archipelago** in the **Sonia Sea**, controlled by the **Loen Kingdom**. Known for its tropical heat, sugarcane plantations, spice docks, and vibrant pirate underground, Bayam is a melting pot where Loen colonial garrisons, pirate crews, and native islanders collide.
 
-Serving as the crossroads where colonial naval fleets, indigenous islanders, the Church of the Lord of Storms, the **Resistance**, and pirate armadas collide, Bayam is the cradle where the legend of **Gehrman Sparrow** and the **Sea God Kalvetua** transformation unfolds.
-
-## Key Landmarks & Underground Hubs
-
-- **Sweet Lemon Bar (Fishscale Street)**: The notorious pirate tavern where Gehrman Sparrow captures **Danitz (The Blazing)** and collects bounties from pirate brokers.
-- **Governor-General's Mansion**: The administrative seat of Loen colonial power in the archipelago.
-- **The Wind Cathedral**: The regional high diocese of the **Church of the Lord of Storms**, maintaining strict naval surveillance over coastal shipping.
-- **Bell of Death Tavern & Resistance Safehouses**: Hidden enclaves where native islanders plot against Loen colonial rule and pray to Sea God Kalvetua.
+Bayam serves as the primary setting for Volume 3 (Traveler) and the terrestrial birthplace of the **Church of the Fool**.
 
 :::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & The Sea God Scepter
+## Volume 3: Legend of the Pirate Hunter
 
-Klein Moretti arrives in Bayam as the cold-blooded adventurer **Gehrman Sparrow**. Following the madness and collapse of **Sea God Kalvetua**, Klein claims the **Sea God Scepter** above the gray fog, answering prayers from Bayam's indigenous believers and protecting the city from pirate massacres.
+Klein Moretti operates in Bayam as the intimidating adventurer **Gehrman Sparrow**, hunting notorious pirates at the Wind of Azure bar and vanquishing the corrupted sea serpent **Kalvetua**.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5: Red Priest & Danitz's Headquarters
+
+Danitz arrives in Bayam, where he is welcomed by native believers as the revered **Oracle of The Fool**, establishing the first public cathedral of The Fool in the city.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Holy City of the Fool
+## Volume 7: Colonial Liberation
 
-Following the exodus from the Forsaken Land of the Gods, Bayam becomes the earthly holy city of the **Church of the Fool**. The newly constructed **Cathedral of the Fool** welcomes thousands of relocated citizens from the City of Silver and Moon City, turning Bayam into a thriving multicultural bastion of freedom.
+With Loen's military bogged down in the continental war, Bayam transitions into a de facto autonomous free city administered by native councils and the Church of the Fool.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Capital of The Fool
+
+In Volume 8, Bayam flourishes as the supreme maritime cultural and trade capital of the Five Seas. Under Oracle Danitz and the protection of The Fool, pirate violence gives way to thriving commerce and naval peace.
+
+:::

@@ -6,25 +6,30 @@ category: "characters"
 
 ## Overview
 
-**Verdu Garcia Abraham** was a senior scion of the **Abraham Family**, an **Apprentice Pathway** Beyonder, and the fanatical ringleader of the family's extremist faction. Blaming the family's decline on the cowardice of elders like Dorian Gray, Verdu became obsessed with breaking the family's millennial curse by forcefully summoning their ancestral patriarch, **Bethel Abraham (Mr. Door)**, back to Earth.
+**Verdu Garcia** was a tragic, desperate descendant of the ancient Fourth Epoch **Abraham Family**, walking the **Door Pathway (Sequence 7: Astrologer / Sequence 6: Scribe)**. Residing in Trier, Verdu was consumed by obsessive grief over his family's decline and the agonizing Full Moon curses afflicting his bloodline.
 
-Blind to the terrifying cosmic contamination surrounding Mr. Door, Verdu fell under the covert psychological manipulation of **Amon** and the **Aurora Order (True Creator)**.
+Desperate to restore the glory of the House of Abraham, Verdu sought forbidden shortcuts to contact his sealed ancestor **Bethel Abraham (Mr. Door)**, falling prey to treacherous cosmic deceits.
 
 :::reveal at=6
 
-## Volume 6: Light of the City of Silver & The Secret Faction
+## Volume 6: Light of the City of Silver & The Secret Invocations
 
-Verdu secretly gathers ancient ritual relics and establishes contact with the Aurora Order, believing he is orchestrating the glorious restoration of the Abraham Family.
+Verdu begins performing forbidden astral rituals in Trier, believing he is communicating directly with Bethel Abraham, unaware that his rituals are being manipulated by Outer Deity cultists.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7: Secrets of the Cosmos & The Catastrophic Descent
+## Volume 7: The Cosmic Contagion & Verdu's Fall
 
-Verdu conducts the forbidden celestial ritual on a desolate island, creating the dimensional conduit that allows **Mr. Door** to descend toward Earth. 
-
-As the cosmic corruption of the Mother Goddess of Depravity pours through the portal, Verdu's body instantly mutates into eldritch biomass, dying in horror and regret as he witnesses Amon consume Mr. Door's characteristics.
+Verdu's secret ceremonies are intercepted by the **Mother Goddess of Depravity**. Contaminated by cosmic corruption, Verdu's mind and body mutate, forcing **Fors Wall (Miss Magician)** to intervene and neutralize the ritual site to save the rest of the Abraham Family.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Lesson of the Cosmos
+
+In Volume 8, Verdu's tragic downfall stands as a somber cautionary tale within the Abraham archives, illustrating the absolute danger of seeking cosmic power without demigod protection and reinforcing the wisdom of relying on **The Fool**.
+
+:::

@@ -6,23 +6,20 @@ category: "characters"
 
 ## Overview
 
-**Alice Moretti** is the young daughter of **Benson Moretti**, the niece of **Melissa Moretti** and **Klein Moretti (The Fool)**. Born in Backlund during the peaceful reconstruction era following the World War, Alice represents the innocent new generation of humanity born under the protective aegis of the Orthodox Churches and the **Church of the Fool**.
+**Alice Moretti** is the beloved young daughter of **Benson Moretti** and his wife, the niece of **Melissa Moretti**, and the biological niece of **Klein Moretti (Zhou Mingrui)**. Born into the peaceful fifth-epoch era following the conclusion of the World War, Alice grew up in a warm, loving, and prosperous household in Tingen City, surrounded by books, mechanical toys, and gentle family laughter.
 
-Curious, bright, and deeply loved by her father and aunt, Alice is the central focal point of the novel's famous, emotional epilogue scene.
+She represents the sweet, hard-won fruits of Klein Moretti's immense sacrifices—the living embodiment of the future Klein fought so desperately to protect.
 
-## The Epilogue: The Secret of Uncle Klein
+## The Epilogue of The Fool
 
-Ten years after Klein Moretti fell into cosmic slumber above the gray fog to defend Earth against the Outer Deities:
-- Aunt Melissa secretly teaches little Alice the mysterious ritual to pray to **The Fool**.
-- Inside their peaceful Backlund study, Melissa sets up four candles and draws the holy emblem of the Pupil-less Eye and Contorted Lines of Fog.
-- Little Alice recites the honorific incantation in clear, sweet tones:
-  > *"The Fool that doesn't belong to this era;*  
-  > *The Mysterious Ruler above the gray fog;*  
-  > *The King of Yellow and Black who wields good luck."*
+In the emotional epilogue of Book 1 (Volume 8), young Alice is brought by her aunt **Melissa Moretti** (who has become an accomplished engineer and an initiate of the **Church of the Evernight Goddess**) into a quiet room:
+- Melissa teaches Alice the secret ritual to pray to **The Fool**, showing that Melissa has uncovered the truth of Klein's divine identity.
+- As Alice recites the honorific title of The Fool with innocent, wide-eyed reverence, subtle, gentle spiritual tentacles from **Sefirah Castle** gently caress Alice's face and hair, confirming that the slumbering God above the gray fog still watches over and loves his family.
 
-## Volume 8: The Divine Tap
+:::reveal at=8
 
-As Alice completes the prayer, the air gently ripples with sacred gray fog. A translucent, slippery tentacle extending from the Spirit World extends forward, gently tapping the little girl's forehead in affectionate blessing before lightly stroking Melissa's hair.
+## Volume 8: The Miracle of the Moretti Family
 
-Alice giggles and looks up in wonder, while Melissa gazes into the thinning mist with tears of joy, knowing that her brother Klein has not forgotten his family.
+Alice grows up under the quiet, unbreakable divine blessing of **The Fool**. Her laughter and bright future stand as the ultimate triumph of Klein Moretti's journey—proving that even amidst eldritch madness and cosmic horrors, love, family, and humanity endure forever.
 
+:::

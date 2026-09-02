@@ -20,11 +20,10 @@ Along with the *Lord of the Mysteries* and the *Mother Goddess of Depravity*, Go
 - **Authorities**: Omnipotence, omniscience, mind alteration, light creation, elemental storm destruction, infinite knowledge, and sin redemption.
 - **Sefirah Source**: **The Chaos Sea**, the primordial sub-dimensional ocean of spiritual magma that lies beneath the Northern Continent.
 
-## Lineage & Reconstitution
+## Ancient Lineage
 
 - **Pre-Epoch**: The original God Almighty engaged in a cataclysmic battle against the Celestial Worthy, leading to both of their physical deaths on ancient Earth.
 - **Third Epoch**: The **Ancient Sun God** awakened in Chernobyl, accommodating the Chaos Sea and walking the path of God Almighty before being betrayed by Storm, Sun, and Wisdom.
-- **Fifth Epoch**: In Volume 8, **Adam** (holding the Visionary Uniqueness and author authority) fuses with the **True Creator** (holding the Hanged Man Uniqueness and Chaos Sea control), resurrecting the dual divine essence of God Almighty to repel the Outer Deities.
 
 :::reveal at=4
 
@@ -38,7 +37,7 @@ On the primitive island, murals document the ancient battle between God Almighty
 
 ## Volume 7: The Divine Unification
 
-Adam completes his grand novel of history. As the World War rages across the Northern Continent, the True Creator embraces Adam in the astral realm, initiating their divine fusion.
+Adam completes his grand novel of history. As the World War rages across the Northern Continent, the True Creator embraces Adam in the astral realm, initiating their divine fusion to reclaim their ancient divine essence.
 
 :::
 
@@ -46,7 +45,6 @@ Adam completes his grand novel of history. As the World War rages across the Nor
 
 ## Volume 8: The Awakened Pillar
 
-The reconstituted God Almighty coordinates with Klein Moretti (Lord of the Mysteries) and the Evernight Goddess, maintaining Earth's astral barrier against the Outer Deities.
+In Volume 8, **Adam** (holding the Visionary Uniqueness and author authority) fully fuses with the **True Creator** (holding the Hanged Man Uniqueness and Chaos Sea control), resurrecting the dual divine essence of God Almighty. The reconstituted God Almighty coordinates with Klein Moretti (Lord of the Mysteries) and the Evernight Goddess, maintaining Earth's astral barrier against the Outer Deities.
 
 :::
-

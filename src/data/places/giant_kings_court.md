@@ -6,22 +6,30 @@ category: "places"
 
 ## Overview
 
-The **Giant King's Court (The Twilight Citadel / The Court of the Sun)** is a legendary, colossal Second Epoch divine palace complex perched atop the precipitous mountain ranges of the **Forsaken Land of the Gods**. Once the supreme seat of power for **Giant King Aurmir** and the ancient giant race, the citadel was later claimed by the **Ancient Sun God** in the Third Epoch.
+The **Giant King's Court** is the monumental Second Epoch capital of the ancient Giants, ruled by Giant King **Aurmir** and Queen **Omebella**. Situated atop titanic crimson mountain cliffs overlooking the cursed expanse of the **Forsaken Land of the Gods**, its colossal architecture—built for beings dozens of meters tall—is bathed in an eerie, perpetual sunset dusk.
 
-Constructed from cyclopean orange-tinted stone blocks, colossal colonnades, and immense bronze gates, the palace is frozen in an eternal, melancholic twilight, untouched by normal decay yet radiating terrifying ancient power.
-
-## The Residence of the Gods & Sasrir's Seal
-
-- **The Grand Twilight Palace**: Massive halls built for thirty-meter-tall ancient giants, featuring ornate murals depicting the Dark Epoch's wars against dragons, mutants, and elves.
-- **The Slumber of Dark Angel Sasrir**: The deepest sanctum where the evil spirit of Dark Angel Sasrir (the First King of Angels) guarded the first Blasphemy Slate and the gateway to the Chaos Sea.
+The court serves as the physical and mystical barrier separating the Forsaken Land of the Gods from the outside Northern Continent.
 
 :::reveal at=6
 
-## Volume 6: Light of the City of Silver & The Breach of the Court
+## Volume 6: Light of the City of Silver & The Breaking of the Seal
 
-Klein Moretti, Chief Colin Iliad, Elder Lovia Tiffany, and Derrick Berg enter the Giant King's Court. In a ferocious clash against the evil spirit Sasrir, Chief Colin and Lovia sacrifice their lives.
-
-Derrick Berg uses the *Unshadowed Spear* to push open the massive bronze gates of the Giant King's Court, finally breaking the 2,500-year barrier and connecting the Forsaken Land to the outside world.
+Klein Moretti, Colin Iliad, Lovia, and Derrick Berg assault the Giant King's Court, battling ancient guardians, demigod shadows, and the mutated remnant of the ancient Silver Knight Chief. Colin Iliad slays the chief at the cost of his own life, unlocking the ancient doorway to the outside world.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Astral Battlefield
+
+During the World War, the astral space above the Giant King's Court becomes the battlefield where the **God of Combat (Badheil)** is ambushed and slain by the **Evernight Goddess** and **Lilith**, sealing the fate of the Feysac Empire.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Monument of History
+
+In Volume 8, the Giant King's Court stands as a silent monument to Second Epoch history, guarded by the Church of the Evernight Goddess and the Tarot Club as a sacred gate of remembrance.
+
+:::

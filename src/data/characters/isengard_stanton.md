@@ -6,28 +6,38 @@ category: "characters"
 
 ## Overview
 
-**Isengard Stanton (The Eye of Wisdom)** is the most famous and highly respected private detective in **Backlund**, renowned in the high society of the Loen Kingdom as the mortal counterpart to the legendary consulting detectives. In the mystical underground, Isengard is an initiated Beyonder of the **Reader Pathway (White Tower Pathway)** and the anonymous convenor of the **Eye of Wisdom Beyonder Gathering**.
+**Isengard Stanton** is a nationally renowned, highly distinguished private detective based in Backlund, walking the **Reader Pathway (Sequence 7: Detective)**. Respected across Scotland Yard, the judiciary, and the high nobility for his deductive genius, calm composure, pipe-smoking contemplation, and rigorous adherence to evidence, Stanton was regarded as the foremost consulting detective of the Loen Kingdom.
 
-Distinguished by his sharp eyes, calm demeanor, pipe-smoking habit, and immense breadth of encyclopedic knowledge, Isengard becomes Sherlock Moriarty's (Klein Moretti's) closest professional detective ally in Backlund.
-
-## The Eye of Wisdom Gathering & Pathway Abilities
-
-- **Pathway Specialization**: **Reader Pathway (Sequence 7: Knowledge Polymath / Detective)**, excelling at logical deduction, historical analysis, weakness identification, and spell analysis.
-- **The Eye of Wisdom Gathering**: A prestigious, highly disciplined secret gathering held in a secluded villa in Backlund where mid-to-high sequence Beyonders safely trade mystical charms, formulas, monster materials, and intelligence under magical privacy wards.
+He developed a deep, mutual professional admiration for his fellow consulting detective **Sherlock Moriarty (Klein Moretti)**.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & The Devil Serial Murders
+## Volume 2: The Devil Murder Cases
 
-Isengard partners with Sherlock Moriarty and the Backlund police to investigate a string of brutal occult murders committed by a Sequence 6 Devil (Desire Apostle). During a lethal ambush by the Devil, Klein and Isengard cooperate to neutralize the demon, cementing their mutual respect.
+Stanton teams up with Sherlock Moriarty to solve the terrifying Devil serial killings in Backlund, surviving an ambush by an ancient Devil demigod through Klein's covert intervention.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5 & Volume 8: The Lenburg Scholar
+## Volume 5: Red Priest & Wartime Deductions
 
-During the World War, Isengard coordinates with the Church of Knowledge and Wisdom to protect historical libraries and occult archives across Backlund, continuing to mentor young investigators like Ian Wright.
+During the World War and the Backlund air raids, Stanton assists municipal emergency committees, utilizing his Reader Pathway intellect to coordinate civil defense and deduce enemy espionage targets.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Wise Elder of Backlund
+
+Stanton advances to **Sequence 6: Polymath**, continuing his consultative work while privately writing foundational memoirs on modern forensic criminology and mysticism.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Legend of Two Detectives
+
+In Volume 8, Isengard Stanton enjoys a peaceful retirement in Backlund. Reflecting upon his illustrious career, he warmly remembers the brilliant, mysterious young detective Sherlock Moriarty who saved his life, unaware that his former colleague now watches over the cosmos as **The Fool**.
+
+:::

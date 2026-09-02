@@ -8,7 +8,7 @@ category: "places"
 
 **Backlund (The City of Capitals / The City of Hope / The Fog Capital)** is the supreme political, financial, and cultural capital of the **Loen Kingdom** and the largest metropolis on the Northern Continent, boasting a population exceeding five million residents. Situated along the expansive **Taspin River**, Backlund is a sprawling Victorian-era metropolis defined by industrial coal smokestacks, dense yellow smog, gas streetlamps, magnificent royal palaces, and sharp socio-economic disparities.
 
-Serving as the primary setting for Volume 2 (Faceless), Volume 4 (Undoing the Past), and Volume 5 (Red Priest), Backlund is the terrestrial epicenter where the orthodox churches, military intelligence (**MI9**), aristocratic dynasties, foreign embassies, and ancient secret organizations collide.
+Backlund is the terrestrial epicenter where the orthodox churches, military intelligence (**MI9**), aristocratic dynasties, foreign embassies, and ancient secret organizations collide.
 
 ## Boroughs & Notable Districts
 
@@ -16,7 +16,7 @@ Serving as the primary setting for Volume 2 (Faceless), Volume 4 (Undoing the Pa
 - **Hillston & Cherwood Boroughs**: Middle-class districts housing professionals, doctors, and detective agencies (including **15 Minsk Street**, home of **Sherlock Moriarty**).
 - **North Borough**: The religious and administrative heartland featuring **Saint Samuel Cathedral** (Church of Evernight), the Holy Wind Cathedral, and government ministries.
 - **East Borough & The Docklands**: The overcrowded, destitute industrial slums characterized by smog, sweatshops, disease, and extreme poverty (home to **Old Kohler** and **Bravehearts Bar**).
-- **Bäcklund Underground Ruins**: Ancient Fourth Epoch subterranean remnants from the Tudor and Solomon dynasties, harboring evil spirits and sealed artifacts.
+- **Backlund Underground Ruins**: Ancient Fourth Epoch subterranean remnants from the Tudor and Solomon dynasties, harboring evil spirits and sealed artifacts.
 
 :::reveal at=2
 
@@ -42,3 +42,26 @@ Backlund becomes the front line of the **World War**, enduring bombing runs from
 
 :::
 
+:::spoiler volume=6
+
+## Volume 6: Wartime Resilience
+
+Backlund withstands severe aerial bombardments and food rationing. The civilian population rallies behind charitable foundations, while the Nighthawks and Machinery Hivemind shoot down enemy airships.
+
+:::
+
+:::spoiler volume=7
+
+## Volume 7: Merlin Hermes's Wandering Wishes
+
+Klein returns to Backlund as the wandering miracle magician **Merlin Hermes**, quietly granting wishes to impoverished factory workers, wounded soldiers, and grieving orphans across East Borough to digest his **Sequence 2: Miracle Invoker** potion.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Reborn Fog Capital
+
+Following Klein Moretti's victory over Amon and the cessation of the World War, Backlund enters an era of environmental and social reform. Gas and coal emissions are regulated, the smog clears, and the capital commemorates the heroic protection of **The Fool**.
+
+:::

@@ -6,32 +6,40 @@ category: "characters"
 
 ## Overview
 
-**Madame Daly Simone (The Spirit Medium)** is an exceptionally talented Beyonder of the **Death Pathway (Corpse Collector Pathway)** and a high-ranking investigator within the **Church of the Evernight Goddess**. Starting as the local Spirit Medium for the Tingen Nighthawks, Daly advanced rapidly to **Sequence 7: Spirit Medium** and **Sequence 5: Gatekeeper**.
+**Daly Simone (Madame Daly)** was a brilliant, eccentric, and free-spirited Spirit Medium of the **Church of the Evernight Goddess** and a core member of the Tingen and Backlund Nighthawks. Walking the **Death Pathway (Corpse Collector Pathway)** as a **Sequence 7: Spirit Guide** and later **Sequence 6: Spirit Medium**, Daly was renowned for her unconventional wit, dark sense of humor, bold romantic nature, and deep, unspoken devotion to **Captain Dunn Smith**.
 
-Bold, uninhibited, witty, and fiercely independent, Daly is famous for wearing loose blue mystical robes, applying heavy eye makeup, and speaking with humorous, provocative candor. Beneath her playful demeanor lay an enduring, unspoken love for Captain **Dunn Smith**.
+Distinguished by her dark blue robes, silver star earrings, and fondness for aromatic spirit wines, Daly was instrumental in recognizing Klein Moretti's talent and inducting him into the occult world.
 
-## Pathway & Spirit Channeling
+## Abilities & Spirit Medium Specialization
 
-- **Sequence 9: Corpse Collector**: Cold tolerance, spirit sensing, handling dead bodies without biological contamination.
-- **Sequence 8: Gravedigger / Midnight Channeler**: Enhanced physical constitution, summoning lingering soul traces.
-- **Sequence 7: Spirit Medium**: Directly communicating with the spirit world, channeling dead souls into her body, dancing with spirits.
-- **Sequence 5: Gatekeeper**: Opening the gates to the Underworld, commanding hordes of undead souls and underworld beasts.
+- **Sequence 9: Corpse Collector**: Natural resistance to decay and cold, deciphering post-mortem spiritual residues.
+- **Sequence 8: Gravedigger**: Superhuman physical strength, agility, and underworld vision.
+- **Sequence 7: Spirit Guide**: Communicating directly with newly deceased souls and guiding lost wraiths.
+- **Sequence 6: Spirit Medium**: Channeling ancestral spirits through one's body, conducting séances, and interpreting underworld omens.
 
 :::reveal at=1
 
-## Volume 1: The Spirit Medium of Tingen
+## Volume 1: Clown & The Guidance of the Medium
 
-Daly performs spirit channeling on the deceased Welch McGovern to assist Klein Moretti's initial recruitment into the Nighthawks, teaching Klein the basics of acting and potion digestion.
+Madame Daly conducts the crucial spirit medium interrogation that clears Klein Moretti of suspicion following the Welch suicide incident, warmly encouraging Klein's rapid development as a civilian consultant and Nighthawk.
 
 :::
 
 :::spoiler volume=4
 
-## Volume 4: Undoing the Past & The Final Dance
+## Volume 4: The Final Waltz with Dunn
 
-Daly joins Leonard Mitchell's Red Gloves squad on the Southern Continent to hunt down **Ince Zangwill**. In the climactic battle against Ince Zangwill, Daly channels the spirit of Dunn Smith and drinks an overdose of medicine, suffering fatal loss of control.
+In the Southern Continent, Daly joins Leonard Mitchell and Klein Moretti in the final hunt for Ince Zangwill. To avenge Dunn Smith, Daly over-draws her spiritual body and drinks an incompatible potion. 
 
-As she lies dying, Gehrman Sparrow (Klein Moretti) removes his disguise and uses his Marionettist and Clown abilities to transform into the image of **Dunn Smith**. Dunn extends his hand, asking Daly for a final dance in the snow. Daly smiles peacefully and closes her eyes in Dunn's arms, concluding one of the most heartbreaking romances in the story.
+As her life fades amidst white feathers, Klein projects Dunn Smith's gentle spiritual form into her arms. Daly dances a final, beautiful waltz with Dunn, closing her eyes with a peaceful smile:
+> *"I have danced with the man I love."*
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: Slumber in the Astral Night
+
+In Volume 8, the souls of Daly Simone and Dunn Smith rest peacefully within the tranquil embrace of the Evernight Goddess's Astral Kingdom, commemorated by Leonard Mitchell and The Fool as true guardians of humanity.
+
+:::

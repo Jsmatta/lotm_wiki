@@ -6,28 +6,38 @@ category: "characters"
 
 ## Overview
 
-**Anderson Hood (The Strongest Hunter)** is a legendary pirate adventurer and high-tier mercenary walking the **Hunter Pathway (Sequence 5: Reaper / Sequence 4: Iron-Blooded Knight)**. Famous across the Fog Sea and Sonia Sea as the greatest solo monster hunter of the Fifth Epoch, Anderson is notorious for his relaxed demeanor, invincible combat instincts, and an uncontrollable habit of delivering devastating, sarcastic verbal provocations.
+**Anderson Hood (The Strongest Hunter)** is a legendary freelance adventurer and treasure seeker sailing the **Fog Sea** and the **Sonia Sea**. Walking the **Hunter Pathway (Sequence 5: Reaper)** and later advancing to **Sequence 4: Iron-Blooded Knight**, Anderson is celebrated for his unparalleled swordsmanship, keen tactical instincts, and infuriatingly sarcastic, shameless humor that makes friends and foes alike want to throttle him.
 
-Despite making enemies wherever he opens his mouth, Anderson is a fiercely loyal combatant with extraordinary survival instincts and lethality.
-
-## Pathway Abilities & The Stomach Parasite
-
-- **Hunter Pathway (Sequence 5: Reaper)**: Pinpointing physical and mystical weak points, executing lethal precision strikes, hyper-enhanced agility, and wielding blazing flames.
-- **The Mysterious Fetus**: During a dangerous archaeological expedition, an evil angel spirit impregnated Anderson's stomach. Klein Moretti (Gehrman Sparrow) performed surgical and mystical extractions above the gray fog, extracting the monstrous entity and saving Anderson's life.
+Despite his irreverent banter, Anderson possesses iron courage and an uncanny ability to survive the most deadly supernatural disasters.
 
 :::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & Groselle's Travels
+## Volume 3: Legend of the Pirate Hunter & The Pregnancy Crisis
 
-Gehrman Sparrow meets Anderson aboard the *Future*. Inside *Groselle's Travels*, Anderson unleashes his supreme swordplay and flame techniques alongside Klein to decapitate the ancient frost dragon, the King of the North.
+Anderson teams up with Gehrman Sparrow across the Sonia Sea. During an expedition into an ancient subterranean ruin tainted by the Mother Goddess of Depravity, Anderson's belly mysteriously swells as he becomes "pregnant" with a demonic fetus. Klein utilizes Sefirah Castle's purification and medical charms to surgically extract the demonic baby, saving Anderson's life.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5 & Volume 8: Iron-Blooded Knight
+## Volume 5: Red Priest & Demigod Advancement
 
-Anderson advances to **Sequence 4: Iron-Blooded Knight**, leading privateer strike teams across the Southern Continent and establishing himself as an independent military commander aligned with the Church of the Fool.
+Anderson completes his Sequence 4 advancement ritual during the wartime conflagrations, becoming an **Iron-Blooded Knight**. He acts as an indispensable combat advisor, training guerrilla fighters against Feysacian air incursions.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Secrets of the War Angel
+
+Anderson encounters the terrifying aura of the **Red Angel Evil Spirit (Medici)**, realizing the deep cosmic dangers inherent to the peak of the Hunter Pathway and wisely choosing to align his survival with Klein Moretti's faction.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Wandering Legend
+
+In Volume 8, Anderson Hood travels the world as a legendary freelance demigod, drinking rum in Bayam's taverns, swapping outrageous war stories with Oracle Danitz, and serving as a covert enforcer for the Church of the Fool.
+
+:::

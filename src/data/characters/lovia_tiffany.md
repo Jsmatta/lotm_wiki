@@ -6,37 +6,51 @@ category: "characters"
 
 ## Overview
 
-**Elder Lovia Tiffany (The Shepherd)** is a prominent, enigmatic member of the **Six-Member Council of the City of Silver**. Walking the **Hanged Man Pathway (Secrets Supplicant / Shepherd / Sequence 4: Black Knight)**, Lovia was widely feared, mistrusted, and suspected of heretical corruption due to her grazing of terrifying soul spirits and her secretive prayers to the **True Creator (The Lord who created everything)**.
+**Lovia Tiffany (Elder Lovia)** was a powerful, enigmatic Elder of the **Six-Member Council of the City of Silver**. Walking the **Secrets Supplicant Pathway (Hanged Man Pathway)** as a **Sequence 5: Shepherd**, Lovia bore profound physical and mental mutations from grazing high-sequence evil spirits and demigod remnants of the **True Creator**.
 
-Despite her grim, intimidating exterior, Lovia was motivated entirely by a fierce, uncompromising love for the City of Silver, willing to bear the burden of corruption and universal hatred if it meant finding salvation for her doomed people.
+Initially suspected of being a dangerous heretic who might betray the city to the Fallen Creator, Lovia in truth carried unbearable spiritual torment solely to protect her people from extinction.
 
-## True Allegiance & The Shepherd's Faith
+## Abilities & Shepherd Mastery
 
-During an exploration mission in her youth, Lovia encountered the ancient murals and prayers of the True Creator. Recognizing that the ancient Lord was the only entity still responding within the Forsaken Land, she established contact with the deity, grazing evil spirits to safeguard the city from extinction during catastrophic monster sieges.
+- **Grazed Souls**: Lovia grazed the souls of ancient Second Epoch abominations, a Silver Knight demigod, and wraiths, switching abilities fluidly in battle.
+- **Mental Resistance**: Channeled the corruptive ravings of the True Creator into focused protective wards, shielding City of Silver warriors from worse horrors.
 
 :::reveal at=2
 
-## Volume 2: The Suspicious Elder
+## Volume 2: The Suspicions in the Council
 
-Derrick Berg reports Elder Lovia's strange behavior and her possession of grazed evil spirits to the Tarot Club, suspecting her of being a corrupted plant of the True Creator.
+Derrick Berg and the Six-Member Council place Lovia under close surveillance following her return from the cursed ruins of the True Creator's temple, fearing her growing spiritual instability.
 
 :::
 
 :::spoiler volume=4
 
-## Volume 4: The Internal Inquisition
+## Volume 4: Undoing the Past & The Shepherd's Vigil
 
-Chief Colin Iliad places Lovia under surveillance during the temple investigations. While confirming her connection to the True Creator, Colin recognizes that her loyalty to the survival of the City of Silver remains absolute.
+Despite her imprisonment and isolation, Lovia repeatedly warns Chief Colin Iliad of impending supernatural incursions, proving that her loyalty to the survival of the City of Silver never wavered.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6: Light of the City of Silver & Lovia's Redemption
+## Volume 6: The Ultimate Sacrifice at the Court
 
-Lovia joins Chief Colin Iliad, Derrick Berg, and Gehrman Sparrow on the final expedition into the **Giant King's Court**. 
-
-During the confrontation against Dark Angel Sasrir's shadow manifestation, Lovia unleashes all her grazed souls, sacrificing her life and enduring total physical and spiritual obliteration to hold back the shadow corruption, proving her unwavering love for the City of Silver before dying in the dark.
+During the final assault on the **Giant King's Court**, Elder Lovia faces the terrifying manifestation of ancient corruption. Unleashing her grazed True Creator evil spirit to buy time for Chief Colin and Derrick Berg, Lovia exhausts her lifeforce, perishing with a peaceful smile as the doors to the outside world open.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Redeemed Elder
+
+Following the exodus, Derrick Berg publicly reveals Lovia's secret sacrifices to the entire City of Silver. Her name is cleared of all heretical suspicion, honored as a noble martyr who bore darkness so her people could walk in light.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Hall of Heroes
+
+In Volume 8, Elder Lovia's portrait hangs in the high council hall of the New City of Silver, revered as one of the bravest Shepherds in human history.
+
+:::

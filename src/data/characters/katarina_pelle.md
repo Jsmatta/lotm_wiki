@@ -6,23 +6,41 @@ category: "characters"
 
 ## Overview
 
-**Katarina Pelle (The Demoness of White)** was a high-ranking Saint of the **Demoness Sect** and a lethal **Sequence 3: Demoness of White / Unaging** of the **Demoness Pathway**. Serving as one of the primary terrestrial liaisons between the Demoness Sect, the Loen Royal Family, and the Psychology Alchemists, Katarina was instrumental in orchestrating the royal mausoleum network for King George III.
+**Katarina Pelle (The Demoness of White)** was an ancient, ruthless saint of the **Demoness Sect**, walking the **Demoness Pathway (Sequence 3: Unaging)**. Surviving from the Fourth Epoch with immortal youthful beauty, Katarina was a master of biological plagues, mirror curses, and political seduction, serving as the sect's senior coordinator in Backlund and the biological mother of several high-ranking conspirators.
 
-Possessing eternal youthful beauty, chilling silver-white hair, and absolute mastery over mirror curses, petrification, and biological epidemics, Katarina relentlessly hunted Trissy to prevent leaks of the royal conspiracy.
+## Abilities & Unaging Immortality
+
+- **Unaging Regeneration**: Cellular immortality that prevents physical aging, allowing instant physical reconstruction through shattered mirrors.
+- **Lethal White Frost & Plague**: Manifesting chilling frost storms and contagious biological curses that wither organs.
 
 :::reveal at=3
 
-## Volume 3: The Shadow of the Demoness Sect
+## Volume 3: Legend of the Pirate Hunter & The Seduction Networks
 
-Katarina coordinates maritime operations and human trafficking networks in the Sonia Sea to funnel victims into secret royal mausoleums.
+Katarina coordinates maritime Demoness cells, establishing clandestine contacts with pirate admirals and corrupt colonial officers.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Fall of the Demoness
+## Volume 5: Red Priest & The Royal Alliance
 
-Katarina works alongside Viscount Stratford in Backlund to capture Trissy. When Klein Moretti and the Tarot Club infiltrate the mausoleum, Katarina is trapped within an enchanted mirror space, suffering complete destruction under the combined assault of Miss Judgment and The World.
+Katarina operates as the direct liaison between Primordial Demoness Cheek and King George III, orchestrating the demonic cooperation that built the nine secret mausoleums.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Secrets of the Cosmos & The Downfall of White
+
+Klein Moretti, Miss Justice, and Leonard Mitchell hunt Katarina Pelle across Backlund. Trapping her within a multi-layered historical void domain, Klein and Leonard shatter her reflective mirrors and eliminate her, securing her Sequence 3 characteristic and shattering the Demoness Sect's command structure in the capital.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Eradication of the Cult
+
+In Volume 8, Katarina's fall marks the collapse of the Demoness Sect's mortal dominance, liberating thousands of ensnared women across the Northern Continent.
+
+:::

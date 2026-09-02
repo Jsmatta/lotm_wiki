@@ -6,16 +6,41 @@ category: "characters"
 
 ## Overview
 
-**Senor (The Admiral of Blood)** was one of the Seven Pirate Admirals of the **Five Seas**, captain of the flagship **The Tree of Desire (Black Tulip)**, and a **Sequence 5: Wraith** of the **Chained Pathway (Prisoner Pathway)**. As a high-ranking field operative of the **Rose School of Thought's Indulgence Faction**, Senor was notorious for his blood-soaked massacres, human sacrifice rituals, and enslavement of coastal crews.
+**Senor (Admiral of Blood)** was one of the infamous Seven Pirate Admirals of the Five Seas, captaining his flagship *The Tree of Desire*. Walking the **Chained Pathway (Sequence 5: Wraith)** and allied with the bloodthirsty **Indulgence Faction** of the **Rose School of Thought**, Senor was notorious across the Sonia Sea for his ruthless slaughter, slave trade, and worship of the Mother Tree of Desire.
 
-Following his defeat by **Gehrman Sparrow (Klein Moretti)**, Senor became Klein's most famous and frequently utilized **Marionette Puppet**, accompanying Gehrman throughout Volumes 3, 4, and 5.
+## Abilities & Wraith Powers
 
-## Pathway & Marionette Utility
+- **Spectral Transformation & Mirror Traversal**: Phasing through physical walls, traveling through mirrors, and vanishing into reflective surfaces.
+- **Body Possession & Chilling Shriek**: Possessing living adversaries to seize control of their muscles while emitting bone-chilling screams that freeze blood.
 
-- **Sequence 5: Wraith**: True spiritualization, phasing through solid physical obstacles, jumping through reflective surfaces (mirrors, eyes, metallic cutlery), and possessing enemy targets from within.
-- **Gehrman's Marionette Arsenal**: Klein equipped Senor with the cursed **Paper Figurine Substitution**, **Black Emperor Card of Blasphemy**, and spiritual revolvers, turning Senor into an invincible assassin.
+:::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & The Marionette Transformation
+## Volume 3: Legend of the Pirate Hunter & The Marionette Conversion
 
-Senor ambushes Gehrman Sparrow in the colonial waters near Bayam under orders from the Rose School of Thought. With the intervention of **Reinette Tinekerr** and **Mr. Azik**, Gehrman severs Senor's spirit body threads, turning the pirate admiral into his core combat marionette.
+In Bayam, Pirate Hunter **Gehrman Sparrow (Klein Moretti)** ambushes Senor with the assistance of Miss Sharron. Slaying Senor's physical body, Klein seizes his spirit-body threads, converting Admiral of Blood Senor into his primary, signature **Marionette**.
 
+:::
+
+:::spoiler volume=4
+
+## Volume 4: Undoing the Past & The Loyal Valet
+
+Senor serves as Dwayne Dantès's invisible bodyguard in Backlund, utilizing his Wraith mirror travel and possession abilities to spy on royal conspirators and protect Miss Justice.
+
+:::
+
+:::spoiler volume=6
+
+## Volume 6: Light of the City of Silver
+
+Klein brings Senor into the Forsaken Land of the Gods, using his spectral powers to scout dark ruins and distract Amon's avatars before Senor's characteristic is repurposed into higher-sequence demigod magic.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Marionette in the Hall of History
+
+In Volume 8, Senor's form remains preserved in the **Historical Void**, summonable by The Fool as an iconic reflection of Gehrman Sparrow's legendary sea adventures.
+
+:::

@@ -40,9 +40,16 @@ Klein utilizes the ritual as an instant emergency escape button for his spiritua
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Celestial Worthy's Awakening
+## Volume 7: Secrets of the Ancient Transmigrators
 
-Klein discovers the dark truth behind the ritual: it was created by the **Celestial Worthy** as a soul-harvesting and resurrection protocol to implant transmigrators with the Sefirah Castle seal. As Klein ascends to Sequence 0: The Fool, the incantation becomes Klein's own divine anchor.
+Klein discovers the dark truth behind the ritual: it was created by the **Celestial Worthy of Heaven and Earth** as a soul-harvesting and resurrection protocol to implant transmigrators with the Sefirah Castle seal, cocooning them above the gray fog until their release in later epochs.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Anchor of The Fool
+
+As Klein ascends to **Sequence 0: The Fool**, the Chinese incantation of the Luck Enhancement Ritual becomes Klein's own supreme divine anchor. Before descending into his eternal slumber to suppress the Celestial Worthy, Klein imparts the ritual's secret knowledge to his closest allies in the Tarot Club to ensure they can awaken him when the apocalypse arrives.
+
+:::

@@ -6,29 +6,38 @@ category: "places"
 
 ## Overview
 
-The **City of Silver (Berg / The Bastion of Silver)** is a massive, heavily fortified circular stone fortress-city situated in the western expanse of the **Forsaken Land of the Gods**. Descended from the Third Epoch's **Giant King's Court** and the **Ancient Sun God's** mortal subjects, the City of Silver represents the greatest surviving enclave of humanity in the eternal darkness, enduring 2,500 years of isolation, monster sieges, and psychological torment.
+The **City of Silver** (ancient enclave of Berg) is the resilient last bastion of humanity in the eternal darkness of the **Forsaken Land of the Gods**. Preserving the martial discipline of the Second Epoch Giant Court, its citizens walk the **Twilight Giant Pathway (Warrior)** and **Sun Pathway**, defending circular stone ramparts against continuous sieges by mutated Second and Third Epoch abominations.
 
-Governed by the **Six-Member Council of Elders** (led by **Chief Colin Iliad**), the city practices strict martial law, mandatory Beyonder conscription, and rigorous emotional discipline to preserve its population.
-
-## Society, Culture & Martial Tradition
-
-- **The Warrior Pathway**: The foundational martial pathway of the city, with citizens advancing through **Warrior**, **Pugilist**, **Weapon Master**, **Dawn Paladin**, **Guardian**, and **Demon Hunter**.
-- **The Spire of the Chief**: The central towering citadel housing the council chambers, mystical archives, and the sealed relics of the city.
-- **The Lightning Calendar**: Time is measured not by day and night, but by cycles of lightning storms and frequency of flashes.
+Governed by the **Six-Member Council** and led by Chief **Colin Iliad**, the city endured 2,500 years of perpetual darkness without losing its civilized spirit or faith in light.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & The Tarot Connection
+## Volume 2: The Sun's Reports to the Tarot Club
 
-Young warrior **Derrick Berg** is summoned to the **Tarot Club** as **The Sun**, receiving formulas and holy purification charms from Mr. Fool that protect the City of Silver from creeping madness.
+Young warrior **Derrick Berg** joins the Tarot Club, obtaining vital knowledge of the acting method and sun sequence formulas to save his expedition teams from corruption.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6: Light of the City of Silver & The Dawn of Freedom
+## Volume 6: The Opening of the Court & Colin's Sacrifice
 
-Chief Colin Iliad, Elder Lovia Tiffany, Derrick Berg, and Gehrman Sparrow slay Dark Angel Sasrir in the Giant King's Court. Chief Colin and Lovia make the ultimate sacrifice, allowing Derrick to open the bronze gates and lead the entire City of Silver to the outside world, settling peacefully in **Bayam**.
+Under Chief Colin Iliad, Elder Lovia, and Derrick Berg, the City of Silver storms the **Giant King's Court**. Colin Iliad sacrifices his life in battle to unlock the door, allowing his people to march out of the eternal night.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Arrival at the Sea
+
+The City of Silver emerges on the eastern coast of the Northern Continent, beholding the sea, the blue sky, and the golden sun. They establish their new home—the **New City of Silver**—under the benevolent protection of **The Fool**.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The City of Light
+
+In Volume 8, the New City of Silver thrives as a beacon of martial honor, agriculture, and divine faith. Derrick Berg serves as High Priest of the Sun, while monuments honor the eternal memory of Chief Colin Iliad and Elder Lovia.
+
+:::

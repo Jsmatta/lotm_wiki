@@ -6,23 +6,30 @@ category: "places"
 
 ## Overview
 
-**Calderón City (The City of the Dead / The Pale Necropolis)** is a colossal, ruined mythical city suspended within the deepest layers of the **Spirit World**, originally founded in the Second Epoch by **Gregrace (The Ancestor of the Undead / The Phoenix)**. Woven from spectral mist, pale soul stones, and bones of ancient mythical creatures, the city served as the original gateway connecting the Spirit World to the **Underworld** and the Sefirah **River of Eternal Darkness**.
+**Calderon City (The City of the Dead)** is an ancient, nightmarish underworld metropolis situated in the subterranean depths of the **Southern Continent**. Created in the Second Epoch by the **Phoenix Ancestor Gregrace (Death Pathway)**, it exists as a spectral city suspended between the physical earth and the primordial **River of Eternal Darkness**.
 
-Following the death of Gregrace during the Third Epoch, Calderón City collapsed into an eerie, gravity-defying labyrinth of inverted towers, spectral storms, and high-sequence death spirits.
+Carved entirely from bone, soul stones, and pale spectral marble, Calderon City is inhabited by ancient underworld spirits and rotting mythical beasts.
 
 :::reveal at=4
 
-## Volume 4 & Volume 5: The Spirit World Expeditions
+## Volume 4: Undoing the Past & The Golden Comb
 
-High-sequence Beyonders of the Death and Sleepless pathways study Calderón City's coordinates to retrieve rare soul crystals and underworld materials.
+Klein Moretti ventures into the terrifying depths of Calderon City to retrieve the **Phoenix Ancestor's Golden Comb** and underworld soul water, using his abilities to evade demonic wraiths and underworld guardians.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The River of Eternal Darkness Quest
+## Volume 7: The Source of Eternal Darkness
 
-Klein Moretti ventures into the dangerous depths of Calderón City. Navigating past soul vortexes and ancient undead guardians, Klein locates the dimensional rift leading to the **River of Eternal Darkness**, successfully gathering water from the river to aid the **Evernight Goddess** and pacify Antigonus during his Apotheosis Ritual.
+Klein and the Evernight Goddess explore Calderon City's deepest abysses, locating the primary mystical conduit that connects physical reality to the Sefirah **River of Eternal Darkness**.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Subterranean Realm of Peace
+
+Following the Evernight Goddess's accommodation of the River of Eternal Darkness in Volume 8, Calderon City is permanently pacified, transformed into the peaceful soul realm where deceased heroic spirits rest under the Goddess's nocturnal blessing.
+
+:::

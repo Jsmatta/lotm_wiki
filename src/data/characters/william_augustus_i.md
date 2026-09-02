@@ -6,18 +6,32 @@ category: "characters"
 
 ## Overview
 
-**Prince William Augustus I** is the ancient ancestral founding patriarch of the **Augustus Royal Family** of the Loen Kingdom and a supreme **Sequence 2: Hand of Order / Sequence 1: Prince of Abolition Angel** of the **Justiciar / Black Emperor Pathways**. As the supreme divine protector of the royal bloodline residing in the deepest catacombs beneath Backlund Palace, William Augustus I commands absolute authority over imperial laws, national order, and royal succession.
+**Prince William Augustus** was an influential high-ranking prince of the **Loen Royal Family (House of Augustus)** and a key general within the Ministry of Defense. Walking the **Black Emperor Pathway (Lawyer Pathway)** as a demigod, William was fiercely loyal to King George III, commanding elite royal guards and coordinating clandestine military logistics in Backlund.
 
-## The Royal Guardian & The Apotheosis Defense
-
-- **Imperial Law & Distortion**: Capable of creating absolute legal zones that neutralize enemy spells and banish foreign entities from royal grounds.
-- **Defending the Black Emperor Ritual**: Directly intervening during George III's apotheosis ritual to suppress intruders.
+Deeply involved in state security, Prince William was entrusted with safeguarding the royal family's hidden strategic assets during the escalation of the World War.
 
 :::reveal at=5
 
-## Volume 5: Red Priest & The Clash of Angels
+## Volume 5: Red Priest & The Royal Defense
 
-When the royal mausoleums are attacked, William Augustus I manifests his Angelic Hand of Order to crush the intruders. **Queen Mystic Bernadette Gustav** uses the Grade 0 Sealed Artifact **Magic Wishing Lamp** to temporarily elevate her power to Angelic tier, holding William Augustus I at bay while Klein Moretti destroys the final mausoleum anchor.
+Prince William oversees defense operations in Backlund during the Feysac air raids. He coordinates with MI9 and Colonel Stratford to suppress domestic unrest and defend the covert approaches to King George III's secret apotheosis mausoleums. 
+
+Following the destruction of the mausoleums and George III's execution, Prince William is neutralized by allied demigods, ending his faction's grip on the kingdom's armed forces.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Royal Reckoning
+
+With the royal family's Black Emperor conspiracy exposed to the Orthodox Churches, Prince William and surviving royal conspirators face tribunal investigations, stripped of their military commands and high-sequence artifacts.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Reformed Monarchy
+
+In Volume 8, the House of Augustus is restructured under parliamentary oversight and church vigilance, preventing rogue royals from ever attempting forbidden mass-sacrifice rituals again.
+
+:::

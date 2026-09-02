@@ -6,18 +6,27 @@ category: "characters"
 
 ## Overview
 
-**Rosago** was a high-ranking intelligence operative of the **Intis Republic Embassy in Backlund** and a dangerous **Sequence 5: Marionettist** of the **Fool Pathway (Seer Pathway)**. Serving Ambassador Baker, Rosago was tasked with tracking down the young informant **Ian Wright** and eliminating the private detective **Sherlock Moriarty (Klein Moretti)**.
+**Rosago** was a ruthless demigod-tier assassin and intelligence operative of the **Intis Republic**, secretly walking the **Seer Pathway (Sequence 5: Marionettist)**. Stationed in Backlund as the personal security enforcer for Intis Ambassador Bakerland Jean Madan, Rosago specialized in spirit-body thread manipulation, sensory misdirection, and covert political assassinations.
 
-As the first mid-sequence Marionettist Klein encountered in the series, Rosago demonstrated the terrifying, invisible lethality of controlling **Spirit Body Threads**, turning living targets into paralyzed, obedient marionettes.
+## Abilities & Marionette Combat
 
-## The Seer Pathway Inheritance
+- **Spirit-Body Thread Manipulation**: Paralyzing targets from a distance and turning living enemies into obedient marionettes.
+- **Paper Figurine Substitution & Flame Jumps**: Slipping away from lethal attacks and teleporting through open flame sources.
 
-- **Sequence 5: Marionettist**: Controlling spirit body threads within a certain radius, turning living humans into permanent puppet marionettes possessing all their original Beyonder powers.
-- **The Formulas of Fate**: Rosago carried the complete potion formulas for **Sequence 7: Magician**, **Sequence 6: Faceless**, and **Sequence 5: Marionettist**, which Klein claimed after his death.
+:::reveal at=2
 
-## Volume 2: The Faceless & The Battle at Minsk Street
+## Volume 2: The Faceless & The Assassination of the Ambassador
 
-Rosago ambushes Sherlock Moriarty at his residence on 15 Minsk Street, deploying his marionettes and swiftly capturing Klein's spirit body threads. 
+Following the murder of Ambassador Bakerland, Rosago tracks Detective Sherlock Moriarty to 15 Minsk Street, attempting to seize Klein's spirit-body threads. 
 
-However, Klein had proactively hired **Miss Sharron (Sequence 5 Wraith)** as his concealed bodyguard. Sharron materializes from the wall, freezing Rosago's body, while Klein retaliates with Sun charms and Azik's copper whistle, killing Rosago and seizing the formulas that fueled Klein's advancement across the next three volumes.
+Klein activates **Sefirah Castle's** spiritual aura and calls upon **Mr. Azik Eggers**, whose overwhelming demigod strike obliterates Rosago. Klein retrieves Rosago's Beyonder characteristic, utilizing it to craft his own **Sequence 5: Marionettist** potion and study high-tier thread control.
 
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Foundation of Marionettist Mastery
+
+In Volume 8, Rosago is remembered as the vital stepping stone whose characteristic enabled Klein to advance into the demigod realms of the Seer pathway, culminating in his mastery over the phantom city of Utopia.
+
+:::

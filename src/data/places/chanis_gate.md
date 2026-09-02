@@ -6,29 +6,38 @@ category: "places"
 
 ## Overview
 
-A **Chanis Gate (The Gate of Night)** is a heavily fortified, sacred underground vault located beneath every major cathedral and diocese of the **Church of the Evernight Goddess**. Named after the Fourth Epoch saint and Grand Master **Chanis**, these subterranean chambers serve as the Church's primary secure containment facility for **Sealed Artifacts**, potion formulas, high-tier Beyonder ingredients, cursed grimoires, and captured cultists.
+**Chanis Gate** refers to the heavy, magically reinforced subterranean vault doors guarded by the **Church of the Evernight Goddess** in every major diocese cathedral across the world. Named after the legendary high-sequence saint Chanis, the gate is inscribed with profound darkness and pacification runes, sealing dangerous **Sealed Artifacts**, Beyonder characteristics, and forbidden occult texts.
 
-Constructed from cold, black celestial iron and engraved with the sacred **Seven Stars of the Crimson Moon** and deep concealment runes, Chanis Gates are guarded day and night by dedicated **Nighthawk Keepers**.
-
-## Internal Structure & Vault Protocols
-
-- **Vault Chambers**: Divided into strict security sectors based on artifact danger grades (Grade 3, Grade 2, Grade 1, and the highest-risk Grade 0 artifacts kept only beneath the Holy See in the Cathedral of Serenity).
-- **The Keepers**: Retired veteran Nighthawks who have volunteered to live in isolation behind the gate, using high-sequence containment charms to pacify restless artifacts.
-- **Living Artifact Hazards**: At night, the spiritual resonance of the contained artifacts amplifies exponentially, making unauthorized entry or prolonged exposure lethal to mortal sanity.
+Guarded by dedicated Keepers of the Gate who spend decades in subterranean isolation, Chanis Gate is the ultimate defense against supernatural containment breaches.
 
 :::reveal at=1
 
-## Volume 1: Clown & The Fall of Tingen Chanis Gate
+## Volume 1: Clown & The Vault of Tingen
 
-The Chanis Gate beneath **Saint Selena Cathedral** in Tingen houses **Saint Selena's Ashes** and Grade 3 artifacts. Captain Dunn Smith leads Klein Moretti inside to study historical documents. During Ince Zangwill's treason, Ince breaches the gate, murders Megose, and steals the holy ashes.
+Klein Moretti frequently enters Tingen's Chanis Gate behind 36 Zouteland Street to collect mystical ingredients and study archives. The gate is breached by Ince Zangwill, leading to the tragedy of the Tingen squad.
 
 :::
 
 :::spoiler volume=4
 
-## Volume 4: Undoing the Past & Infiltrating Saint Samuel
+## Volume 4: Infiltrating Saint Samuel Cathedral
 
-Klein Moretti (as Dwayne Dantès) infiltrates the underground Chanis Gate of **Saint Samuel Cathedral** in Backlund, using the **Master Key** and spirit-body projection to read the **Antigonus Family's Notebook** and retrieve the **Sequence 4: Bizarro Sorcerer** formula.
+As Dwayne Dantès, Klein infiltrates the supreme Chanis Gate beneath Backlund's Saint Samuel Cathedral, locating the **Antigonus Family's Notebook** and learning crucial demigod sequence formulas.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Battle of Gods & Grade 0 Containment
+
+During the World War, Backlund's Chanis Gate is reinforced by Archbishop Anthony Stevenson and the Goddess's divine grace to securely contain Grade 0 artifacts like the Trunsoest Brass Book.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Sanctuary of Night
+
+In Volume 8, Chanis Gates across the globe remain the gold standard of supernatural containment, safeguarding human society under the enduring vigilance of the Nighthawks.
+
+:::

@@ -6,16 +6,30 @@ category: "characters"
 
 ## Overview
 
-**Botis (The Saint of Secrets)** was a high-ranking saint of the **Aurora Order**, a traitor to the Abraham Family, and a powerful **Sequence 4: Secrets Sorcerer** of the **Door Pathway (Apprentice Pathway)**. Armed with high-sequence Door spells, spatial blinking, dimension exile, and the cursed **Box of the Great Old Ones**, Botis was a primary enforcer for the True Creator.
+**Botis (The Saint of Secrets)** was an elite demigod of the **Aurora Order** and a traitor to the ancient **Abraham Family**, walking the **Door Pathway (Sequence 4: Secrets Sorcerer)**. Treacherously betraying his mentors, Botis stole sacred Abraham family heirlooms—most notably the catastrophic Grade 0 Sealed Artifact **The Box of the Great Old Ones**—using spatial banishment and spirit-world teleportation to execute terror attacks for the True Creator.
 
-Arrogant, treacherous, and ruthless, Botis stole precious inheritance relics and formulas from the Abraham Family to fuel the Aurora Order's global rituals.
+:::reveal at=6
 
-## The Coordinated Tarot Club Operation
+## Volume 6: Light of the City of Silver & The Aurora Conspiracies
 
-In Volume 6, the Tarot Club launched its first fully synchronized, multi-member tactical assassination operation against Botis:
-- **Xio Derecha (Judgment)** restricted Botis's spatial blinking with legal decrees.
-- **Fors Wall (The Magician)** deployed *Leymano's Travels* to counter his Door spells.
-- **Gehrman Sparrow (The World)** unleashed high-tier marionettes and spirit bullets to deliver the killing blow.
+Botis coordinates secret Aurora Order operations in Backlund, utilizing spatial cages and dimensional slicing to assassinate rival demigods and protect the order's subterranean altars.
 
-Botis's defeat yielded the **Sequence 4: Secrets Sorcerer** characteristic (enabling Fors Wall to advance to Demigod) and the Grade 0 Sealed Artifact **Box of the Great Old Ones**.
+:::
 
+:::spoiler volume=7
+
+## Volume 7: The Ambush & Execution of Botis
+
+Fors Wall, Xio Derecha, and Klein Moretti (as Merlin Hermes) organize a master ambush in Backlund. Anticipating Botis's spatial escapes, Klein locks dimensional coordinates using historical void projections, while Fors and Xio execute divine punishments. 
+
+Klein slays Botis, recovering his **Secrets Sorcerer** characteristic and reclaiming **The Box of the Great Old Ones** for the Abraham Family.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: Justice for the Abrahams
+
+In Volume 8, the elimination of Botis serves as the catalyst that allowed Fors Wall to advance to Sequence 2 Planeswalker, restoring honor and security to the ancient Abraham lineage.
+
+:::

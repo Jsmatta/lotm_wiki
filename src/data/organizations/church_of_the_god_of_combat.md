@@ -6,39 +6,46 @@ category: "organizations"
 
 ## Overview
 
-The **Church of the God of Combat** was the state orthodox religion of the **Feysac Empire**, the dominant military superpower of the Northern Continent. Worshipping **Badheil (The God of Combat)**, the church promoted a culture of iron discipline, martial prowess, giant physical stature, and unrelenting territorial expansion.
+The **Church of the God of Combat** was the state orthodox religion of the **Feysac Empire**, the dominant military superpower of the Northern Continent. Worshipping **Badheil (The God of Combat)**, the church promoted a culture of iron discipline, martial prowess, giant physical stature, and unyielding courage on the battlefield.
 
-Its clergy and Beyonders traversed the **Twilight Giant Pathway (Warrior Pathway)**, revered across the world as formidable frontline vanguard juggernauts.
+Its clergy and elite paladins predominantly walked the **Twilight Giant Pathway (Warrior Pathway)**, commanding devastating dawn light, heavy physical armor, and two-handed greatswords.
 
-## Armed Forces & Hierarchy
+## Hierarchy & Divine Order
 
-- **Supreme Deity**: Badheil (The God of Combat).
-- **Armed Vanguard**: The **Silver Knights** and the imperial battle legions of Feysac, wielding enchanted greatswords and twilight aura armor capable of decaying enemy spells.
-- **Holy Emblem**: A giant silver broadsword pointed downward, enshrouded in the orange glow of twilight dusk.
+- **Supreme Deity**: Badheil (Sequence 0 Twilight Giant).
+- **Holy Seat**: The Cathedral of Dusk in Saint Mill, Feysac Empire.
+- **Elite Knights**: Dawn Paladins and Silver Knights who spearheaded Feysac's imperial legions.
 
 :::reveal at=3
 
-## Volume 3: Legend of the Pirate Hunter & Feysac Clashes
+## Volume 3: Maritime Clashes in the Sonia Sea
 
-Feysacian privateers and church-affiliated battle groups skirmish with Loen Kingdom fleets across the Sonia Sea, demonstrating the overwhelming physical durability and dawn-blade destructive power of the Warrior Pathway.
+Feysacian combat paladins and naval airships engage in aggressive border skirmishes with the Loen Kingdom and the Church of the Lord of Storms across the northern waterways.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The World War
+## Volume 5: Red Priest & The Great World War
 
-Under the divine guidance of the God of Combat and imperial marshal decrees, the Church of the God of Combat mobilizes the entirety of the Feysac Empire, launching catastrophic airship blitzkrieg attacks and artillery bombardments against Backlund, triggering the World War.
+Under the direct divine mandate of the God of Combat, the Church mobilizes Feysac's titanic airship armada and paladin corps to launch a surprise bombardment on Backlund, plunging the entire continent into the cataclysmic World War.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7: Secrets of the Cosmos & The Fall of Badheil
+## Volume 7: The Fall of the God of Combat
 
-In the climax of the World War, the **Evernight Goddess** and the **Earth Mother (Lilith)** lure the God of Combat into an ambush. Badheil is slain in the astral realm. 
+In the astral battlefield, Badheil is ambushed and slain through the coordinated trap of the **Evernight Goddess** and the **Earth Mother (Lilith)**. 
 
-Following their deity's demise, the Church of the God of Combat collapses, and its remaining clergy, temples, and Beyonder characteristics are peacefully assimilated into the Church of the Evernight Goddess.
+With their deity dead, the Church's divine grace shatters, causing panic and despair across the Feysac Empire.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: Complete Dissolution & Absorption
+
+In Volume 8, the Church of the God of Combat officially ceases to exist. Its cathedrals, holy texts, and surviving Silver Knights across Feysac are systematically absorbed and reorganized into the **Church of the Evernight Goddess**, bringing an end to centuries of religious warfare between Loen and Feysac.
+
+:::

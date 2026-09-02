@@ -6,17 +6,22 @@ category: "characters"
 
 ## Overview
 
-**Baron Ernes Boyar** was an arrogant, high-ranking noble of the **Sanguine (Vampire)** race in Backlund and a **Sequence 5: Scarlet Scholar** of the **Moon Pathway**. Clinging fiercely to old aristocratic Sanguine pride and looking down upon humans with contempt, Ernes was manipulated by external cultist elements in the capital.
-
-His capture and psychological reformation became a critical stepping stone in **Emlyn White's (The Moon)** rise to prominence within the Sanguine hierarchy.
+**Ernes Boyar** was an arrogant, high-ranking **Sanguine Viscount** residing in Backlund, walking the **Moon Pathway (Sequence 5: Scarlet Scholar)**. Secretly corrupted by the malevolent whispers of the Outer Deity **Mother Tree of Desire**, Ernes betrayed his ancestral traditions to serve the Indulgence Faction of the Rose School of Thought.
 
 :::reveal at=5
 
-## Volume 5: Red Priest & The Capture at the Villa
+## Volume 5: Red Priest & The Trap of The Moon
 
-The Tarot Club coordinates an operation to capture Ernes Boyar. Emlyn White and Gehrman Sparrow ambush Ernes, neutralizing his scarlet wings and lunar magic.
+Ernes Boyar targets **Emlyn White**, attempting to lure him into an ambush to corrupt the Sanguine Council of Elders. Emlyn reports the threat to the Tarot Club. 
 
-Rather than executing him, Emlyn brings Ernes to Father Utravsky's **Harvest Church**, forcing him to clean church floors, study Earth Mother scriptures, and undergo behavioral reform alongside other young Sanguines, preparing the Sanguine race for Lilith's divine revelation.
+Klein Moretti (as Gehrman Sparrow) and Miss Sharron ambush Ernes in a Backlund cemetery, neutralizing his lunar curses and eliminating him. Klein gifts Ernes's purified Sequence 5 characteristic to Emlyn White, enabling Emlyn to advance to **Scarlet Scholar**.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Purified Lineage
+
+In Volume 8, Ernes Boyar's elimination stands as the crucial victory that prevented the Sanguine race from being corrupted by Outer Deities, securing their allegiance to Ancestor Lilith and The Fool.
+
+:::

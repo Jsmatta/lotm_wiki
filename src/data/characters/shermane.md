@@ -6,17 +6,24 @@ category: "characters"
 
 ## Overview
 
-**Shermane** was an innocent young woman drawn into the sinister web of the **Demoness Sect**, walking the **Demoness Pathway (Sequence 7: Witch)**. Used by Demoness Saint **Katarina Pelle** and the royal conspirators as an expendable pawn, Shermane was tasked with seducing **Viscount Stratford** to maintain surveillance over the royal guards.
+**Shermane** was a tragic, young transgender youth living in Backlund who sought acceptance, identity, and relief from poverty. Walking the **Demoness Pathway (Sequence 7: Witch)**, Shermane was manipulated and recruited into the lower ranks of the **Demoness Sect**, unaware that she was merely an expendable pawn in the high-level political espionage between the royal family and demonic factions.
 
-Despite her gentle, terrified demeanor and her genuine friendship with **Xio Derecha**, Shermane became one of the most tragic victims of the royal conspiracy in Volume 5.
+Possessing delicate beauty and a fragile, gentle heart, Shermane formed a deep, poignant bond with **Miss Justice (Audrey Hall)** and **Xio Derecha**, who attempted to protect her from the shadows of the cult.
 
 :::reveal at=5
 
-## Volume 5: Red Priest & The Tragic Loss of Control
+## Volume 5: Red Priest & The Tragic Pawn
 
-Xio Derecha recruits Shermane as a confidential informant to investigate Viscount Stratford. When Stratford and Katarina discover the breach, they trigger a dark potion curse in Shermane's body.
+Shermane is assigned by high-ranking Demonesses to seduce and spy on royal figures. Desperate to escape the sect's clutches, Shermane confides in Audrey Hall. 
 
-Shermane undergoes agonizing, irreversible loss of control, mutating into a monstrous flesh abomination. To save Shermane from eternal suffering and prevent civilian slaughter, Xio is forced to strike Shermane down, sobbing as she vows to bring down the royal conspirators responsible for her death.
+However, before Audrey can rescue her, Shermane is fatally infected by **Katarina Pelle's** blood plague curses, tragically perishing in Audrey's arms. Her senseless death profoundly affects Audrey Hall, awakening her resolve to use her Spectator demigod powers to actively fight evil rather than remain a sheltered aristocrat.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: Audrey's Everlasting Resolve
+
+In Volume 8, Shermane's memory lives on in the humanitarian foundations established by Audrey Hall across Backlund, inspiring widespread medical aid and psychological support for marginalized youths.
+
+:::

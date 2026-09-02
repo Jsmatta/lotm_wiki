@@ -6,36 +6,46 @@ category: "places"
 
 ## Overview
 
-The **Feysac Empire (The Empire of Giants)** is a vast, militaristic superpower occupying the frozen northern regions of the Northern Continent, centered around the imperial capital of **St. Millen**. Descended from the ancient giant bloodlines of the Second Epoch, the people of Feysac are physically imposing, hardy, and martial in culture.
+The **Feysac Empire** is the northern continental superpower renowned for its frozen tundra, colossal warrior citizens, and fierce martial traditions. Worshipping the **God of Combat (Badheil)** as its supreme state deity, Feysacians possess giant bloodline heritage, commanding the **Twilight Giant Pathway (Warrior)** and the **Hunter Pathway**.
 
-With the **Church of the God of Combat** as its state religion and supreme military backing, Feysac commands massive ironclad battleships, colossal aerial dreadnought airships, and fierce winter infantry legions.
-
-## Culture, Military & Pathway Heritage
-
-- **Warrior Pathway Dominance**: The imperial royal family (Einhorn Family) and high military officers primarily follow the **Warrior Pathway (Twilight Giant Pathway)** and **Hunter Pathway (Red Priest Pathway)**.
-- **Imperialist Rivalry**: Feysac maintains a fierce, century-long geopolitical rivalry with the **Loen Kingdom** over colonial resource channels in the Sonia Sea and East Balam.
+With its capital at **Saint Mill**, Feysac maintained intense geopolitical rivalry with the Loen Kingdom, culminating in the catastrophic **World War**.
 
 :::reveal at=1
 
-## Volume 1: Clown & The Northern Threat
+## Volume 1: Clown & Northern Tensions
 
-Feysac is introduced through geopolitical trade tensions and international military reports discussed by Nighthawks and Loen government officials.
+Feysacian merchant vessels and military scouts maintain tense borders with Loen, with Klein learning of their formidable dawn warriors in Tingen's history classes.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The World War Blitzkrieg
+## Volume 5: Red Priest & The Airship Blitzkrieg
 
-Supported by the God of Combat (Badheil), Feysac launches a surprise aerial blitzkrieg against Backlund and Pritz Harbor, deploying colossal rigid airships to bomb Loen's capital and officially igniting the **World War**.
+Under the direct divine revelation of the God of Combat, Feysac launches massive surprise airship bombardments across Backlund and Loen's naval ports, initiating the bloody World War.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6 & Volume 8: The Fall of the God of Combat
+## Volume 6: Brutal Winter Warfare
 
-Following the God of Combat's defeat by the Evernight Goddess and Earth Mother (Lilith), Feysac's divine backing collapses. The Church of Evernight expands into Feysac territory, bringing an end to the empire's imperialist aggression.
+The empire mobilizes millions of soldiers, engaging in savage trench battles and naval warfare across the freezing northern seas.
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: The Fall of the State Deity
+
+In the astral realm, the God of Combat is slain through the coordinated strike of the Evernight Goddess and Earth Mother. Deprived of divine backing, Feysac's war effort collapses into devastating defeat.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: Post-War Reconciliation
+
+In Volume 8, Feysac concludes a lasting peace treaty with Loen. The Church of the God of Combat is reorganized under the **Church of the Evernight Goddess**, ushering in an era of cultural and economic partnership across the North.
+
+:::

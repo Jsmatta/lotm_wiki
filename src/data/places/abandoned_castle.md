@@ -6,17 +6,28 @@ category: "places"
 
 ## Overview
 
-The **Abandoned Castle (The Tudor Manor Ruins)** is an ancient, ivy-clad Gothic castle situated in the misty forested outskirts of **Backlund**, dating back to the Fourth Epoch (Tudor Dynasty and Abraham Family era). Preserved across centuries due to ancient concealment wards and spatial displacement enchantments, the castle serves as an essential site of mystical archaeology in Volumes 4 and 5.
-
-Surrounded by cursed iron gates, crumbling gargoyles, and spatial mirages, the castle contains hidden underground vaults where Fourth Epoch noble families stored grimoires, potion formulas, and sealed relics before their fall.
+The **Abandoned Castle** refers to ancient Fourth Epoch ruined strongholds situated in the desolate northern borderlands and the **Forsaken Land of the Gods**. Once fortified palaces belonging to ancient demigod nobles of the Tudor or Solomon Empires, these decaying stone citadels are shrouded in supernatural mists, lingering spiritual curses, and lurking mutated wraiths.
 
 :::reveal at=4
 
-## Volume 4 & Volume 5: The Exploration of Fors and Xio
+## Volume 4: Undoing the Past & Foggy Town
 
-Guided by astrological divination and clues from **Dorian Gray Abraham**, **Fors Wall (The Magician)** and **Xio Derecha (Judgment)** infiltrate the Abandoned Castle. 
-
-Navigating through spatial mirror traps and spectral guardians using *Leymano's Travels*, Fors and Xio recover ancient Apprentice pathway potion formulas and historical manuscripts documenting the War of the Four Emperors. The successful expedition cements Xio's readiness to be formally initiated into the **Tarot Club**.
+Klein Moretti discovers an ancient abandoned castle in the mysterious Foggy Town, uncovering high-sequence Seer and Marionettist artifacts sealed behind Fourth Epoch stone gates.
 
 :::
 
+:::spoiler volume=6
+
+## Volume 6: Light of the City of Silver & Amon's Trail
+
+During his perilous trek across the Forsaken Land of the Gods, Klein takes temporary refuge in an abandoned castle to plan his evasion strategies against Amon's avatars.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: Historical Relics
+
+In Volume 8, these abandoned castles are cataloged by the Church of the Fool as historical archaeological monuments documenting the pre-apocalyptic history of Earth.
+
+:::

@@ -6,19 +6,37 @@ category: "characters"
 
 ## Overview
 
-**Old Neil (Neil)** was a veteran civilian mysticism instructor for the **Tingen Nighthawks** and a **Sequence 9: Mystery Pryer** of the **Hermit Pathway (Mystery Pryer Pathway)**. Serving as Klein Moretti's foundational teacher in Hermes linguistics, astrological divination, pendulum dowsing, talisman crafting, and ritual magic, Old Neil is fondly remembered for his thrifty lifestyle, hilarious habit of filing absurd expense reimbursement claims to the Church, and warm mentorship.
+**Old Neil** was a veteran civilian Beyonder of the **Tingen Nighthawks**, walking the **Mystery Pryer Pathway** as a **Sequence 9: Mystery Pryer**. Serving as Klein Moretti's foundational instructor in occultism, herbal alchemy, ritual magic, and ancient languages (Hermetic, Jotun, and Dragonese), Old Neil was a warm, humorous, and frugal mentor who loved strong coffee, pastries, and claiming petty expenses from the church.
 
-Beneath his jovial, eccentric exterior lay a deep, unresolved grief over the death of his beloved fiancée **Celeste**, which ultimately led to his tragic downfall.
+Despite his cheerful demeanor, Old Neil carried profound private grief: the tragic death of his beloved fiancée decades prior, which left an unhealable void in his soul.
 
-## Practical Mysticism Lessons
+## Occult Mentorship & The Acting Method
 
-Old Neil introduced Klein to the practical, daily realities of occultism:
-- **Astrology & Spirit Vision**: Teaching Klein how to open his third eye and interpret aura colors without going insane.
-- **The Dangers of Free Knowledge**: Warning Klein that *"Knowledge is power, but knowledge is also the greatest source of corruption."*
+Old Neil was the first to explain the **Acting Method** to Klein Moretti:
+> *"The potion name is not merely a title—it is an acting instruction. You must act as the role, but never forget who you truly are."*
 
-## Volume 1: Clown & The Hidden Sage's Murmurs
+:::reveal at=1
 
-Grieving over Celeste, Old Neil began performing forbidden resurrection rituals and secretly invoking the **Hidden Sage**. The entity's continuous high-frequency information murmurings corrupted Neil's mind, causing him to lose control and mutate into an eyeless monster surrounded by glowing white eyes.
+## Volume 1: The Tragedy of Loss & The Hidden Sage
 
-When Klein and Captain Dunn Smith discover him in his cottage, Neil retains a brief moment of sanity, begging his teammates to end his suffering. Dunn executes Neil with a silver demon-hunting bullet, teaching Klein the horrifying reality of the Beyonder curse: even the gentlest souls can succumb to madness.
+Desperate to resurrect his deceased fiancée, Old Neil attempted forbidden ritual magic. In his grief, his mind was contaminated by the malevolent cosmic entity **The Hidden Sage**. 
 
+Succumbing to irreversible mental breakdown, Old Neil began mutating into a terrifying ritualistic monster. Captain Dunn Smith was forced to mercifully end his suffering. Old Neil's death shattered Klein's early optimism, serving as an indelible, painful warning of the cruel price of mysticism.
+
+:::
+
+:::spoiler volume=4
+
+## Volume 4: Undoing the Past & Dwayne Dantès's Reflection
+
+When Klein visits Tingen as Dwayne Dantès, he visits Old Neil's peaceful grave, placing fresh flowers and thanking his first teacher for the acting method that kept him sane through countless demigod trials.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: The Teacher Remembered
+
+As Klein Moretti ascends to **Sequence 0: The Fool**, Old Neil's early teachings remain alive in Klein's memory. When Klein faces the terrifying whispers of the Celestial Worthy, he remembers Old Neil's cautionary words, using his humanity as an anchor to preserve his identity against the cosmos.
+
+:::

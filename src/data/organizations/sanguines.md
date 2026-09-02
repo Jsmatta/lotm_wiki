@@ -6,38 +6,44 @@ category: "organizations"
 
 ## Overview
 
-The **Sanguines** (colloquially referred to by humans as **Vampires**) are an ancient, aristocratic non-human race tracing their mythical genesis back to the Second Epoch under their supreme progenitor **Lilith (The Beauty Goddess / Mother Goddess)**. Naturally possessing long lifespans (over 300 years), supreme nocturnal regenerative biology, and innate magical talent, Sanguines walk the **Moon Pathway (Apothecary / Vampire / Scarlet Scholar)**.
+The **Sanguines** (colloquially referred to by humans as **Vampires**) are an ancient, aristocratic non-human race tracing their mythical genesis back to the Second Epoch under their supreme progenitor **Lilith (The Beauty Goddess / Mother Goddess)**. Naturally possessing long lifespans (over 300 years), supreme physical beauty, enhanced night vision, and innate affinity for the **Moon Pathway (Apothecary)**, the Sanguines pride themselves on refined etiquette, noble genealogy, and artistic sensibilities.
 
-Despite human folklore depicting them as blood-crazed monsters, modern Sanguines operate as proud, refined noble families who purchase animal or donated human blood, prioritize familial honor, and maintain strict secrecy within human high society.
+Throughout the Fifth Epoch, the race has lived in reclusive aristocratic enclaves across Backlund and Intis, carefully avoiding friction with the Orthodox Churches.
 
-## Culture & The Sanguine Council
+## Customs & The Tarot Club
 
-- **The Council of Elders**: Governing body of ancient Sanguine Barons, Viscounts, and Earls who safeguard ancestral relics and maintain racial peace.
-- **Key Figures**:
-  - **Emlyn White (The Moon)**: Backlund Sanguine noble, doll enthusiast, and core Tarot Club member.
-  - **Lord Nibbs Odora**: High-ranking Sanguine elder who received divine revelation to direct Emlyn to pray to Mr. Fool.
+- **The Moon Pathway**: Sanguines inherit the natural sequences of Apothecary, Beast Tamer, Vampire, Potions Professor, and Scarlet Scholar.
+- **Emlyn White (The Moon)**: A Backlund Sanguine youth fascinated by porcelain dolls who joins the **Tarot Club**, becoming the crucial bridge between his ancient race and The Fool.
+- **The Sanguine Elders**: High-sequence demigods residing in subterranean castles who strictly oversee blood purity and secret clan traditions.
 
 :::reveal at=2
 
-## Volume 2: The Faceless & The Sanguine Awakening
+## Volume 2: The Awakening in the Harvest Church
 
-Emlyn White is captured by Father Utravsky at the Harvest Church in Backlund. Rescued by detective Sherlock Moriarty (Klein Moretti), Emlyn is guided by Lord Nibbs Odora to establish contact with The Fool, leading to his initiation as **The Moon** in the Tarot Club.
+Emlyn White is imprisoned by Father Utravsky inside Backlund's **Harvest Church**, forced to reflect on his arrogance and clean pews. Through the Tarot Club, Emlyn begins procuring sequence formulas to liberate himself and elevate his standing within the clan.
 
 :::
 
 :::spoiler volume=5
 
-## Volume 5: Red Priest & The Hunt for Artificial Vampires
+## Volume 5: Red Priest & Emlyn's Leadership
 
-The Sanguines mobilize their hidden forces in Backlund to assist the Tarot Club against the Rose School of Thought, eradicating experimental artificial vampire laboratories created by foreign cultists.
+Emlyn advances to Sequence 5 Scarlet Scholar and later Sequence 4 Shaman King. Recognizing his miraculous connections and access to high-sequence ingredients, the Sanguine Council of Elders appoints Emlyn as their official regional representative.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Ancestor's Return
+## Volume 7: The Revelation of Ancestor Lilith
 
-When the Earth Mother reveals her true identity as their ancient progenitor **Lilith**, the Sanguines experience a massive spiritual awakening. They unite under the banner of the Church of the Earth Mother and the Church of the Fool, taking up arms to defend the material plane.
+The Sanguines discover the earth-shattering truth: their ancient Ancestor **Lilith** was not slain in the Second Epoch! She had secretly taken the identity of the **Earth Mother**, surviving five epochs to strike down the God of Combat and reclaim supreme dominion over nature and the moon.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Sanguines in the New Age
+
+In Volume 8, the Sanguine race emerges from centuries of isolation. Reunited under the divine grace of Ancestor Lilith and aligned with **The Fool**, Emlyn White leads his people in defending human civilization and preparing for the cosmic apocalypse.
+
+:::

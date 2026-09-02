@@ -6,28 +6,30 @@ category: "characters"
 
 ## Overview
 
-**Kotar (The God of Wishes / The Dark Demonic Wolf)** is an ancient mythical creature and high-ranking **Sequence 2: Miracle Invoker Angel** of the **Fool Pathway (Seer Pathway)**. Surviving since the Second Epoch (The Dark Epoch), Kotar was originally a direct subsidiary god of the ancient mythical beast **Flegrea (The Annihilation Demonic Wolf)**.
+**Kotar (The Demonic Wolf of Wishes)** was an ancient, cunning demigod and King of Angels tier mythical creature of the **Seer Pathway (Sequence 2: Miracle Invoker)** who roamed the pitch-black wastelands of the **Forsaken Land of the Gods**. Surviving from the Second Epoch Flegrea Court, Kotar survived by adopting a solitary, paranoid lifestyle, granting wishes to wanderers while constantly rebooting and concealing his spiritual coordinates.
 
-Taking the physical form of a colossal pitch-black wolf with eight legs and a coat of dark mist containing floating white maggots of time and wishes, Kotar wandered the desolate ruins of the **Forsaken Land of the Gods** for thousands of years, granting twisted wishes to surviving monsters to digest his potion.
-
-## Characteristics & Powers
-
-- **Sequence 2: Miracle Invoker**: Granting reality-bending wishes, reversing cause-and-effect, summoning historical projections from the fog of history, and resurrecting through wish anchors.
-- **The Curtain of Characteristics**: Kotar accumulated multiple high-tier characteristics of the Seer pathway, forming a pitch-black velvet curtain of divine power.
+Possessing a jet-black wolf form covered in shimmering star-like fur and writhing spiritual tentacles, Kotar was a master of wish-granting, historical projection, and dimensional evasion.
 
 :::reveal at=6
 
-## Volume 6: Light of the City of Silver & The Hunt for Kotar
+## Volume 6: Light of the City of Silver & The Hunt in the Dark
 
-Klein Moretti (as Gehrman Sparrow) hunts Kotar across the Forsaken Land to obtain the Sequence 2 Miracle Invoker characteristic. Amon intervenes to steal the kill, but Kotar cunningly executes a suicide technique to scatter his spirit through wishes, leaving behind the black-velvet **Curtain** containing the Miracle Invoker characteristic and Sequence 1 Attendant of Mysteries characteristic that Klein claims.
+Klein Moretti, seeking the **Sequence 2: Miracle Invoker** characteristic to advance, engages in an intense, high-stakes game of cat-and-mouse against Kotar across the ruined wastelands of the Forsaken Land of the Gods.
 
 :::
 
 :::spoiler volume=7
 
-## Volume 7 & Volume 8: The Aftermath
+## Volume 7: The Slaying of the Demonic Wolf
 
-Klein consumes the Miracle Invoker characteristic left by Kotar to advance to Sequence 2, performing 300 wishes as Merlin Hermes. Kotar's scattered remnant consciousness is later permanently neutralized as Klein ascends to Lord of the Mysteries.
+Klein corners Kotar in an abandoned fourth-epoch cathedral. Combining his Scholar of Yore void summons, Miss Messenger's intervention, and Sefirah Castle's suppression, Klein successfully slays Kotar, claiming his Sequence 2 characteristic and the Curtain to prepare for his **Miracle Invoker** advancement.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Historical Curtain
+
+In Volume 8, the ancient legacy of the Demonic Wolves is fully integrated into Klein's divine authority as **The Fool**, with Kotar's characteristics contributing to the restoration of the cosmic balance over the Seer pathway.
+
+:::

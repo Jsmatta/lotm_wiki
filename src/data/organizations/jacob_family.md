@@ -17,9 +17,21 @@ Throughout the Fifth Epoch, the family has lived in perpetual hiding, relentless
   - **Flora Jacob**: A surviving high-ranking descendant in Backlund whose identity was compromised by Amon's parasitic avatars.
   - **Jacob Patriarch**: Ancient angel of the Fourth Epoch who sealed his legacy and characteristics in subterranean vaults.
 
-## Volume 4 & Volume 5: The Backlund Infiltration
+:::reveal at=4
 
-The remnants of the Jacob family in Backlund are targeted by Amon's avatars. When Flora Jacob loses control, an Amon avatar parasitizes her mind, using the Jacob family's secret gathering houses as an ambush base against Leonard Mitchell, Pallez Zoroast, and Klein Moretti.
+## Volume 4: The Hunt in Backlund
+
+The remnants of the Jacob family in Backlund are targeted by Amon's avatars. Surviving family members struggle to maintain their secret hideouts while evading the monocle-wearing parasites.
+
+:::
+
+:::spoiler volume=5
+
+## Volume 5: The Parasitization of Flora Jacob
+
+When Flora Jacob loses control, an Amon avatar parasitizes her mind, using the Jacob family's secret gathering houses as an ambush base against Leonard Mitchell, Pallez Zoroast, and Klein Moretti.
+
+:::
 
 :::spoiler volume=6
 
@@ -29,3 +41,18 @@ Klein Moretti coordinates with Pallez Zoroast to secure the Jacob family's hidde
 
 :::
 
+:::spoiler volume=7
+
+## Volume 7: Secrets of the Cosmos
+
+Klein uses historical void projections to trace the ancient legacy of the Jacob Patriarch, understanding the metaphysical laws of the Error pathway before entering his climactic battles.
+
+:::
+
+:::spoiler volume=8
+
+## Volume 8: Liberation from the Blasphemer
+
+Following Klein Moretti's victory over Amon in Sefirah Castle and Klein's accommodation of the Error Uniqueness, the curse of eternal extermination hunting the Jacob family is broken forever. The surviving descendants find sanctuary under the protection of **The Fool**.
+
+:::

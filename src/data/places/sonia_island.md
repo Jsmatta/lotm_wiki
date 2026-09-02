@@ -6,23 +6,28 @@ category: "places"
 
 ## Overview
 
-**Sonia Island** is the largest and most ancient continental island in the **Sonia Sea**, situated between the Northern and Southern Continents. Bearing the name of the ancient **Elf Queen Soniathrym**, the island preserves prehistoric elven ruins, sacred redwood forests, and maritime leylines dating back to the Second Epoch (The Dark Epoch).
-
-Governed by colonial treaties between the Loen Kingdom and the Feysac Empire, Sonia Island is an essential mystical nexus for high-sequence Beyonders of the **Sailor Pathway (Tyrant Pathway)**.
+**Sonia Island** is a massive, resource-rich continental island located in the northern **Sonia Sea**, jointly contested by the **Loen Kingdom** and the **Feysac Empire**. Characterized by dense primeval pine forests, iron mines, and heavily fortified naval stations, Sonia Island is the strategic linchpin of maritime dominance across the northern waters.
 
 :::reveal at=3
 
-## Volume 3 & Volume 4: The Sea's Echoes
+## Volume 3: Naval Tensions
 
-Maritime Beyonders experience strange spiritual resonance when sailing near Sonia Island, hearing the ancient elven songs echoing across the reef systems.
+Loen and Feysac naval squadrons engage in frequent cat-and-mouse skirmishes around Sonia Island, with privateers and pirate admirals navigating the contested waters.
 
 :::
 
 :::spoiler volume=6
 
-## Volume 6: Light of the City of Silver & The Elven Commission
+## Volume 6: The Fierce Naval Campaigns
 
-Alger Wilson (The Hanged Man) anchors the ghost ship *Blue Avenger* off Sonia Island. In a sacred dream trance atop the island's elven ruins, Alger receives direct divine guidance from the residual consciousness of **Queen of Calamity Cohinem**, unlocking the secrets to cross the celestial storm barrier toward the Western Continent.
+During the height of the World War, Sonia Island becomes the site of colossal dreadnought engagements and airship bombardments, with thousands of soldiers clashing for control of its coaling ports.
 
 :::
 
+:::spoiler volume=8
+
+## Volume 8: The Demilitarized Island
+
+In Volume 8, the postwar peace treaty establishes Sonia Island as a jointly administered demilitarized economic zone, ending decades of naval bloodshed.
+
+:::
